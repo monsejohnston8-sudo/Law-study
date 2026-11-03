@@ -21,7 +21,12 @@ import {
 } from "lucide-react";
 import { essayMarkdown } from "@/lib/study";
 import AIStudyPanel from "./ai-study-panel";
-import { courseName, moduleName, cleanLabel } from "@/lib/display";
+import {
+  courseName,
+  moduleName,
+  cleanLabel,
+  displayState,
+} from "@/lib/display";
 import readingGuides from "@/content/reading-guides.json";
 // Server DTOs include heterogeneous editorial model fields.
 type Row = Record<string, any>;
@@ -42,6 +47,7 @@ type State = {
 const tabs = [
   "Overview",
   "Assigned Readings",
+  "Optional Readings",
   "Rules & Elements",
   "Cases",
   "Notes",
@@ -156,7 +162,7 @@ export default function Workspace() {
   const refresh = useCallback(async () => {
     try {
       const d = await api("state");
-      setData(d);
+      setData(displayState(d));
       document.documentElement.dataset.theme = d.preferences?.theme ?? "light";
     } catch (e) {
       setError(String(e));
@@ -838,6 +844,43 @@ export default function Workspace() {
                       Import a reading
                     </button>
                   </section>
+                ) : tab === "Optional Readings" ? (
+                  <section className="card">
+                    <h3>Optional readings</h3>
+                    <p>
+                      Additional readings from the supplied outline. Listed-only
+                      items have no supplied source text; their notes and briefs
+                      have not been invented.
+                    </p>
+                    {(() => {
+                      const assignment = readingGuides.assignments.find(
+                        (a) => a.moduleId === module.id,
+                      );
+                      return assignment?.optionalReadings.length ? (
+                        <>
+                          {assignment.optionalReadings.map((text, i) => (
+                            <article key={i}>
+                              <p className="preserve">{cleanLabel(text)}</p>
+                            </article>
+                          ))}
+                          <p className="muted">
+                            Available supplemental briefs are labeled Optional
+                            reading in the Cases tab.
+                          </p>
+                          <button
+                            className="outline"
+                            onClick={() => setTab("Cases")}
+                          >
+                            Read available case briefs
+                          </button>
+                        </>
+                      ) : (
+                        <p>
+                          No optional reading list was supplied for this module.
+                        </p>
+                      );
+                    })()}
+                  </section>
                 ) : tab === "Mini Module Exam" ? (
                   <MiniModuleExam
                     key={module.id}
@@ -959,6 +1002,10 @@ export default function Workspace() {
                               <small>{item.origin}</small>
                             </div>
                             <h3>{item.title}</h3>
+                            {kinds[tab] === "caseBrief" &&
+                              item.body?.startsWith("Optional reading") && (
+                                <Badge>Optional reading</Badge>
+                              )}
                             <p className="preserve">
                               {item.body ||
                                 (kinds[tab] === "flashcard"
@@ -1698,7 +1745,8 @@ function Editor({
             {m.sources.flatMap((s: Row) =>
               s.excerpts.map((ex: Row) => (
                 <option key={ex.id} value={ex.id}>
-                  {s.title} · {ex.page ? `page ${ex.page}` : ex.section}
+                  {cleanLabel(s.title)} ·{" "}
+                  {ex.page ? `page ${ex.page}` : cleanLabel(ex.section ?? "")}
                 </option>
               )),
             )}
@@ -1794,7 +1842,8 @@ function SourceViewer({
     [error, setError] = useState(""),
     [section, setSection] = useState(""),
     [target, setTarget] = useState(s.moduleId ?? ""),
-    [passage, setPassage] = useState("");
+    [passage, setPassage] = useState(""),
+    [showOriginal, setShowOriginal] = useState(false);
   useEffect(() => {
     if (!open) return;
     let live = true;
@@ -1841,17 +1890,28 @@ function SourceViewer({
         >
           {s.excerpts.map((e: Row, i: number) => (
             <option key={e.id} value={i}>
-              {e.page ? `PDF page ${e.page}` : e.section}
+              {e.page ? `PDF page ${e.page}` : cleanLabel(e.section ?? "")}
             </option>
           ))}
         </select>
       </label>
       {excerpt ? (
         <div className="excerpt">
-          <h4>{excerpt.page ? `PDF page ${excerpt.page}` : excerpt.section}</h4>
+          <h4>
+            {excerpt.page
+              ? `PDF page ${excerpt.page}`
+              : cleanLabel(excerpt.section ?? "")}
+          </h4>
           <p className="preserve">
-            {excerpt.text || "No extractable text on this page — OCR needed."}
+            {(showOriginal ? excerpt.text : cleanLabel(excerpt.text ?? "")) ||
+              "No extractable text on this page — OCR needed."}
           </p>
+          <button
+            className="text-button"
+            onClick={() => setShowOriginal(!showOriginal)}
+          >
+            {showOriginal ? "Use course names" : "View original text"}
+          </button>
           {!excerpt.page && (
             <>
               <label className="field">
@@ -2735,7 +2795,7 @@ function Analytics({ data, modules }: { data: State; modules: Module[] }) {
   }));
   const groups = new Map<string, { correct: number; total: number }>();
   for (const a of attempts) {
-    const key = `${a.question?.module.courseId ?? "Unknown"} · ${a.question?.topic || a.question?.module.title || "Untitled"}`;
+    const key = `${courseName(a.question?.module.courseId ?? "")} · ${a.question?.topic || a.question?.module.title || "Untitled"}`;
     const v = groups.get(key) ?? { correct: 0, total: 0 };
     v.total++;
     if (a.correct) v.correct++;

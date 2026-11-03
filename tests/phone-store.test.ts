@@ -31,7 +31,7 @@ describe("iPhone local persistence", () => {
     ).toBe(true);
     expect(
       cards.filter((c: any) => c.origin === "Shared study draft"),
-    ).toHaveLength(53);
+    ).toHaveLength(117);
     const note = await api("item", {
       kind: "note",
       moduleId: "CL650-M01",

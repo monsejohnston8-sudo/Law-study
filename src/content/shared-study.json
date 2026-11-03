@@ -1,5 +1,5 @@
 {
-  "version": 2,
+  "version": 3,
   "description": "Original concise study explanations and practice questions. No textbook text or files. Drafts require review.",
   "entries": [
     {
@@ -1197,6 +1197,91 @@
         "reasoning": "Constitutional jury and proof protections concern the facts authorizing punishment, not merely whether the legislature calls them elements or sentencing factors. The decision stated a prior-conviction exception.",
         "rule": "Other than the stated prior-conviction exception, a fact increasing the maximum must be submitted to a jury and proved beyond a reasonable doubt.",
         "significance": "Find the maximum authorized before the disputed finding. Keep the assigned historical formulation separate from later sentencing developments not reviewed here."
+      }
+    },
+    {
+      "id": "optional-CL650-M03-elk-grove-unified-school-district-v-newdow",
+      "moduleId": "CL650-M03",
+      "title": "Elk Grove Unified School District v. Newdow",
+      "citation": "542 U.S. 1 (2004)",
+      "locator": "Supplied Constitutional Law Module 3 detailed notes, optional case discussion",
+      "scope": "Optional reading. Review draft from the supplied detailed study notes; the original assigned opinion has not been independently supplied or authenticated.",
+      "fields": {
+        "facts": "Newdow challenged the school-led Pledge on behalf of himself and his daughter while the child’s mother disputed his litigation authority under the custody arrangement.",
+        "posture": "The supplied notes describe the Court’s disposition of the stated constitutional threshold issue.",
+        "issue": "Could he assert the child’s interests despite uncertain representative authority?",
+        "holding": "The Court declined to reach the constitutional merits on the standing-related ground described in the supplied notes.",
+        "reasoning": "The unsettled family-law relationship and competing parental authority made this an unsuitable vehicle for adjudicating the asserted rights.",
+        "rule": "A federal constitutional theory does not automatically resolve who may represent a child where domestic-relations authority is contested.",
+        "significance": "Distinguish the threshold ruling from a merits holding about the Pledge, and identify whose rights the claimant seeks to litigate."
+      }
+    },
+    {
+      "id": "optional-CL650-M03-murthy-v-missouri",
+      "moduleId": "CL650-M03",
+      "title": "Murthy v. Missouri",
+      "citation": "603 U.S. 43 (2024)",
+      "locator": "Supplied Constitutional Law Module 3 detailed notes, optional case discussion",
+      "scope": "Optional reading. Review draft from the supplied detailed study notes; the original assigned opinion has not been independently supplied or authenticated.",
+      "fields": {
+        "facts": "States and social-media users sought prospective restrictions on officials’ communications with platforms, alleging that government pressure caused moderation.",
+        "posture": "The supplied notes describe the Court’s disposition of the stated constitutional threshold issue.",
+        "issue": "Were the asserted future injuries sufficiently traceable to the named officials and redressable?",
+        "holding": "The Court found that the plaintiffs lacked standing on the record.",
+        "reasoning": "The claimed chain did not connect particular plaintiffs’ moderation injuries to particular official communications, and platforms retained independent incentives and choices.",
+        "rule": "An injunction claim involving independent intermediaries still requires concrete causal links and likely redress for the plaintiff.",
+        "significance": "Do not infer that the Court approved the challenged conduct; the threshold ruling left the constitutional merits unresolved."
+      }
+    },
+    {
+      "id": "optional-CL650-M03-fda-v-alliance-for-hippocratic-medicine",
+      "moduleId": "CL650-M03",
+      "title": "FDA v. Alliance for Hippocratic Medicine",
+      "citation": "602 U.S. 367 (2024)",
+      "locator": "Supplied Constitutional Law Module 3 detailed notes, optional case discussion",
+      "scope": "Optional reading. Review draft from the supplied detailed study notes; the original assigned opinion has not been independently supplied or authenticated.",
+      "fields": {
+        "facts": "Doctors and associations who neither prescribed nor used the drug challenged FDA actions affecting others’ access to mifepristone.",
+        "posture": "The supplied notes describe the Court’s disposition of the stated constitutional threshold issue.",
+        "issue": "Did the challengers show the required personal injury, causation and redressability?",
+        "holding": "The Court unanimously found no standing and did not decide the FDA actions’ legality under the APA.",
+        "reasoning": "Moral opposition was not a personal injury; the asserted workload and conscience chains were insufficient on the record. An organization could not manufacture standing merely by spending money opposing a policy.",
+        "rule": "A policy disagreement or self-selected advocacy expense does not replace a legally sufficient injury connected to the challenged conduct.",
+        "significance": "Analyze standing before the merits and separate organizational injury from an attempt to sue on behalf of members."
+      }
+    },
+    {
+      "id": "optional-CL650-M05-alden-v-maine",
+      "moduleId": "CL650-M05",
+      "title": "Alden v. Maine",
+      "citation": "527 U.S. 706 (1999)",
+      "locator": "Supplied Constitutional Law Module 5 detailed notes, optional case discussion",
+      "scope": "Optional reading. Review draft from the supplied detailed study notes; the original assigned opinion has not been independently supplied or authenticated.",
+      "fields": {
+        "facts": "Probation officers pursued federal wage claims against Maine in state court after encountering immunity problems in federal court.",
+        "posture": "The supplied notes describe the Court’s disposition of the stated constitutional threshold issue.",
+        "issue": "Could Congress’s ordinary Article I commerce power authorize the private damages suit against the nonconsenting state?",
+        "holding": "The Court held that the asserted suit was barred by state sovereign immunity.",
+        "reasoning": "The immunity principle was structural and not confined to the literal party combinations or forum in the Eleventh Amendment’s text. Supremacy did not itself remove immunity.",
+        "rule": "Moving an ordinary Article I private damages claim to state court does not necessarily bypass a state’s immunity.",
+        "significance": "Keep this source-of-power problem separate from valid Fourteenth Amendment enforcement and specialized exceptions."
+      }
+    },
+    {
+      "id": "optional-CL650-M05-pennhurst-state-school-and-hospital-v-halderman",
+      "moduleId": "CL650-M05",
+      "title": "Pennhurst State School and Hospital v. Halderman",
+      "citation": "465 U.S. 89 (1984)",
+      "locator": "Supplied Constitutional Law Module 5 detailed notes, optional case discussion",
+      "scope": "Optional reading. Review draft from the supplied detailed study notes; the original assigned opinion has not been independently supplied or authenticated.",
+      "fields": {
+        "facts": "Residents obtained federal-court relief directing state officials to comply with duties based on state law.",
+        "posture": "The supplied notes describe the Court’s disposition of the stated constitutional threshold issue.",
+        "issue": "Could Ex parte Young support that order merely because relief was prospective?",
+        "holding": "The Court rejected the federal order enforcing state law against state officials.",
+        "reasoning": "The federal-law supremacy rationale for Ex parte Young did not support judicial orders based only on state law; supplemental jurisdiction did not override the immunity problem.",
+        "rule": "For the asserted official-capacity relief, prospective form alone does not suffice: the source of the violated duty matters.",
+        "significance": "Distinguish this 1984 state-law immunity case from the different 1981 Pennhurst decision listed as optional in the spending-power module."
       }
     }
   ]

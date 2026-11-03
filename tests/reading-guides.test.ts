@@ -7,8 +7,8 @@ import { courseName, moduleName, cleanLabel } from "../src/lib/display";
 it("maps every assignment and distinguishes missing and supplemental readings", () => {
   expect(guides.assignments).toHaveLength(45);
   expect(new Set(guides.assignments.map((a) => a.moduleId)).size).toBe(45);
-  expect(guides.guides).toHaveLength(31);
-  expect(catalog.cases).toHaveLength(36);
+  expect(guides.guides).toHaveLength(33);
+  expect(catalog.cases).toHaveLength(41);
   for (const g of guides.guides) {
     expect(g.references.length).toBeGreaterThan(0);
     expect(g.sections.length).toBeGreaterThanOrEqual(3);
@@ -52,7 +52,7 @@ it("adds substantial reading notes and cases without replacing an earlier edited
       .table("caseBrief")
       .filter((c) => c.id.startsWith("study-case-reading-"))
       .delete();
-    await db.table("meta").delete("shared-study-v2");
+    await db.table("meta").delete("shared-study-v3");
     await db.table("meta").put({ id: "shared-study-v1", value: true });
     const state = await api("state");
     expect(
@@ -60,14 +60,14 @@ it("adds substantial reading notes and cases without replacing an earlier edited
         .table("note")
         .filter((n) => n.kind === "Detailed reading notes")
         .count(),
-    ).toBe(31);
+    ).toBe(33);
     expect((await db.table("note").get(old.id)).body).toBe(
       "My edited earlier note",
     );
     const cases = state.courses
       .flatMap((c: any) => c.modules.flatMap((m: any) => m.cases))
       .filter((c: any) => c.holding);
-    expect(cases).toHaveLength(36);
+    expect(cases).toHaveLength(41);
     expect(
       await db
         .table("note")
@@ -80,8 +80,63 @@ it("adds substantial reading notes and cases without replacing an earlier edited
         .table("note")
         .filter((n) => n.kind === "Detailed reading notes")
         .count(),
-    ).toBe(31);
+    ).toBe(33);
   } finally {
     await db.delete();
   }
+});
+
+it("normalizes legacy display text while preserving record identifiers and stored values", async () => {
+  const { displayState } = await import("../src/lib/display");
+  const raw = {
+    id: "CL700-M01",
+    courseId: "CL700",
+    moduleId: "CL700-M01",
+    title: "CL700 notes",
+    body: "CL 700 and cl-685 reading",
+    source: { filename: "CL700.txt", section: "CL650 Module 2" },
+  };
+  const shown = displayState(raw);
+  expect(shown.title).toBe("Business Organizations notes");
+  expect(shown.body).toBe(
+    "Business Organizations and Criminal Procedure reading",
+  );
+  expect(shown.source.section).toBe("Constitutional Law Module 2");
+  expect(shown.id).toBe(raw.id);
+  expect(shown.courseId).toBe(raw.courseId);
+  expect(shown.source.filename).toBe(raw.source.filename);
+  expect(raw.title).toBe("CL700 notes");
+});
+
+it("preserves saved exam lookup titles and question IDs in the display copy", async () => {
+  const { displayState } = await import("../src/lib/display");
+  const exam = {
+    id: "saved",
+    title: "Mini module exam: CL700-M01",
+    rule: '["study-card-CL700-M01"]',
+    application: '{"study-card-CL700-M01":"Answer"}',
+    checklist: "[]",
+  };
+  expect(displayState({ drafts: [exam] }).drafts[0]).toEqual(exam);
+});
+
+it("includes optional assignments and explicitly authored questions with sourced answers", () => {
+  expect(
+    guides.assignments.filter((a) => a.optionalReadings.length).length,
+  ).toBe(10);
+  expect(
+    guides.assignments
+      .find((a) => a.moduleId === "CL650-M05")!
+      .optionalReadings.join(" "),
+  ).toContain("Alden");
+  const questions = guides.guides.flatMap((g) => g.examQuestions);
+  expect(questions).toHaveLength(64);
+  for (const q of questions) {
+    expect(q.question.length).toBeGreaterThan(30);
+    expect(q.answer.length).toBeGreaterThan(40);
+    expect(q.explanation.length).toBeGreaterThan(20);
+  }
+  expect(
+    catalog.cases.filter((c) => c.scope.startsWith("Optional reading")),
+  ).toHaveLength(5);
 });

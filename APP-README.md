@@ -113,3 +113,12 @@ progress. For desktop, `npm run db:seed` now installs the reading companions as
 well as the curriculum. An existing seeded desktop database can also run
 `node --import tsx scripts/seed-reading-content.ts` additively. Catalog entries
 remain review drafts. This update is local and has not been published.
+
+The next catalog revision adds 64 original, source-linked short-answer exam
+questions with answer explanations (no API key required), five source-backed
+optional case briefs, two in-depth optional-reading comparison guides, and a
+separate Optional Readings tab. The resulting shared collection has 33 detailed
+guides, 41 briefs, and 117 answer-bearing practice cards. Listed-only optional
+readings remain identified as absent sources. Display normalization also handles
+legacy titles and spaced/hyphenated class codes while preserving saved exam
+lookup keys, user writing, backups, and original documents.

@@ -475,3 +475,89 @@ test("detailed readings and real briefs are visible without class codes", async 
     /CL(?:650|685|700)/,
   );
 });
+
+test("legacy saved labels use course names without rewriting stored notes", async ({
+  page,
+}) => {
+  await page.goto("/");
+  await expect(
+    page.getByRole("heading", { name: "A little progress. Every day." }),
+  ).toBeVisible();
+  await page.evaluate(() =>
+    window.casebookTransport!("item", {
+      kind: "note",
+      moduleId: "CL700-M01",
+      title: "CL700 legacy notes",
+      body: "CL 700 and cl-685 study labels",
+      fields: { kind: "notes" },
+    }),
+  );
+  await page.reload();
+  await nav(page, "Business Organizations");
+  await page
+    .getByRole("button", { name: /Non-Corporate Entities/ })
+    .first()
+    .click();
+  await page.getByRole("button", { name: "Notes", exact: true }).click();
+  await expect(
+    page.getByRole("heading", {
+      name: "Business Organizations legacy notes",
+      exact: true,
+    }),
+  ).toBeVisible();
+  await expect(
+    page.getByText(
+      "Business Organizations and Criminal Procedure study labels",
+      { exact: true },
+    ),
+  ).toBeVisible();
+  expect(await page.locator("body").innerText()).not.toMatch(
+    /\bCL[ -]?\d{3}\b/i,
+  );
+  const raw = await page.evaluate(() => window.casebookTransport!("export"));
+  expect(
+    raw.data.note.find((n: any) => n.title === "CL700 legacy notes").body,
+  ).toBe("CL 700 and cl-685 study labels");
+});
+
+test("optional readings and authored application questions are available without an AI key", async ({
+  page,
+}) => {
+  await page.goto("/");
+  await expect(
+    page.getByRole("heading", { name: "A little progress. Every day." }),
+  ).toBeVisible();
+  await nav(page, "Constitutional Law");
+  await page.getByRole("button", { name: /Justiciability: Standing/ }).click();
+  await page
+    .getByRole("button", { name: "Optional Readings", exact: true })
+    .click();
+  await expect(page.getByText(/Elk Grove Unified School Dist/)).toBeVisible();
+  await page.getByRole("button", { name: "Cases", exact: true }).click();
+  await expect(
+    page.getByRole("heading", { name: "Murthy v. Missouri", exact: true }),
+  ).toBeVisible();
+  await expect(
+    page.getByText("Optional reading", { exact: true }).first(),
+  ).toBeVisible();
+  await page
+    .getByRole("button", { name: "Mini Module Exam", exact: true })
+    .click();
+  await expect(
+    page
+      .getByText(
+        /A previously injured plaintiff seeks damages and an injunction/,
+      )
+      .last(),
+  ).toBeVisible();
+  const raw = await page.evaluate(() => window.casebookTransport!("export"));
+  const qs = raw.data.flashcard.filter(
+    (q: any) => q.id.includes("-exam-") || q.id.startsWith("optional-exam-"),
+  );
+  expect(qs).toHaveLength(64);
+  expect(
+    qs.every(
+      (q: any) => q.answer && q.excerptId && q.status === "needs_review",
+    ),
+  ).toBe(true);
+});

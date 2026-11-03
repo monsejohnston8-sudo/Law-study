@@ -140,6 +140,30 @@ export async function seedSharedStudy(db: Dexie) {
             updatedAt: stamp,
           });
       }
+      for (const guide of c.guides) {
+        if (!(await db.table("module").get(guide.moduleId))) continue;
+        for (const q of guide.examQuestions) {
+          if (!(await db.table("flashcard").get(q.id)))
+            await db
+              .table("flashcard")
+              .add({
+                id: q.id,
+                moduleId: guide.moduleId,
+                title: q.question,
+                body: q.explanation,
+                answer: q.answer,
+                status: "needs_review",
+                origin: "Shared study draft",
+                excerptId: `shared-source-${guide.id}`,
+                interval: 0,
+                ease: 2.5,
+                repetitions: 0,
+                due: stamp,
+                createdAt: stamp,
+                updatedAt: stamp,
+              });
+        }
+      }
       for (const entry of [...c.entries, ...c.cases]) {
         if (!(await db.table("module").get(entry.moduleId))) continue;
         const excerptId = `shared-source-${entry.id}`;
