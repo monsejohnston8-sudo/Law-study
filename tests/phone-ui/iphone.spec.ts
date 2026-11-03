@@ -35,7 +35,7 @@ test("install assets, on-device notes, and offline reload without server APIs", 
         ),
       );
   });
-  await nav(page, "CL650 Constitutional Law");
+  await nav(page, "Constitutional Law");
   await page
     .getByRole("button", { name: /Overview of the Constitution/ })
     .click();
@@ -54,7 +54,7 @@ test("install assets, on-device notes, and offline reload without server APIs", 
   await expect(
     page.getByRole("heading", { name: "A little progress. Every day." }),
   ).toBeVisible();
-  await nav(page, "CL650 Constitutional Law");
+  await nav(page, "Constitutional Law");
   await page
     .getByRole("button", { name: /Overview of the Constitution/ })
     .click();
@@ -190,7 +190,7 @@ test("mini exam saves answers, reveals explanations only after submission, and s
     });
   });
   await page.reload();
-  await nav(page, "CL700 Corporations Business Organizations");
+  await nav(page, "Business Organizations");
   await page
     .getByRole("button", { name: /Non-Corporate Entities/ })
     .first()
@@ -209,7 +209,7 @@ test("mini exam saves answers, reveals explanations only after submission, and s
     page.getByText("Exam draft saved on this device.", { exact: true }),
   ).toBeVisible();
   await page.reload();
-  await nav(page, "CL700 Corporations Business Organizations");
+  await nav(page, "Business Organizations");
   await page
     .getByRole("button", { name: /Non-Corporate Entities/ })
     .first()
@@ -234,7 +234,7 @@ test("mini exam saves answers, reveals explanations only after submission, and s
   await expect(
     page.getByText(/Your existing work and progress were kept/),
   ).toBeVisible();
-  await nav(page, "CL700 Corporations Business Organizations");
+  await nav(page, "Business Organizations");
   await page
     .getByRole("button", { name: /Non-Corporate Entities/ })
     .first()
@@ -306,7 +306,7 @@ test("shared notes are automatic; personal upload AI stays private and feeds its
   await expect(
     page.getByRole("heading", { name: "A little progress. Every day." }),
   ).toBeVisible();
-  await nav(page, "CL700 Corporations Business Organizations");
+  await nav(page, "Business Organizations");
   await page
     .getByRole("button", { name: /Non-Corporate Entities/ })
     .first()
@@ -388,7 +388,7 @@ test("shared notes are automatic; personal upload AI stays private and feeds its
   await dialog
     .getByRole("button", { name: "Close dialog", exact: true })
     .click();
-  await nav(page, "CL700 Corporations Business Organizations");
+  await nav(page, "Business Organizations");
   await page
     .getByRole("button", { name: /Non-Corporate Entities/ })
     .first()
@@ -407,7 +407,7 @@ test("shared notes are automatic; personal upload AI stays private and feeds its
     .click();
   await expect(page.getByText("Alpha.", { exact: true })).toBeVisible();
   await page.reload();
-  await nav(page, "CL700 Corporations Business Organizations");
+  await nav(page, "Business Organizations");
   await page
     .getByRole("button", { name: /Non-Corporate Entities/ })
     .first()
@@ -437,4 +437,41 @@ test("shared notes are automatic; personal upload AI stays private and feeds its
   } finally {
     await other.close();
   }
+});
+
+test("detailed readings and real briefs are visible without class codes", async ({
+  page,
+}) => {
+  await page.goto("/");
+  await expect(
+    page.getByRole("heading", { name: "A little progress. Every day." }),
+  ).toBeVisible();
+  expect(await page.locator("body").innerText()).not.toMatch(
+    /CL(?:650|685|700)/,
+  );
+  await nav(page, "Constitutional Law");
+  await page
+    .getByRole("button", { name: /Federal Jurisdiction and Judicial Review/ })
+    .click();
+  await page
+    .getByRole("button", { name: "Assigned Readings", exact: true })
+    .click();
+  await expect(page.getByText(/Marbury v. Madison, 5 U.S. 137/)).toBeVisible();
+  await page.getByRole("button", { name: "Notes", exact: true }).click();
+  await expect(
+    page.getByRole("heading", { name: /Detailed reading notes/ }),
+  ).toBeVisible();
+  await expect(
+    page.getByText(/Federal judicial power must fit an Article III category/),
+  ).toBeVisible();
+  await page.getByRole("button", { name: "Cases", exact: true }).click();
+  await expect(
+    page.getByRole("heading", { name: "Marbury v. Madison", exact: true }),
+  ).toBeVisible();
+  await expect(
+    page.getByText(/The writ was denied for lack of original jurisdiction/),
+  ).toBeVisible();
+  expect(await page.locator("body").innerText()).not.toMatch(
+    /CL(?:650|685|700)/,
+  );
 });

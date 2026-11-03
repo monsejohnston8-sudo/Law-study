@@ -1,5 +1,5 @@
 {
-  "version": 1,
+  "version": 2,
   "description": "Original concise study explanations and practice questions. No textbook text or files. Drafts require review.",
   "entries": [
     {
@@ -620,6 +620,584 @@
         "significance": "Spot the conflict, then identify the applicable statutory and substantive review framework. Do not treat a 1987 case as an unqualified statement of later statutory law."
       },
       "scope": "Supplied fourteenth edition differs from assigned fifteenth edition; case text and citation were checked in the supplied file."
+    },
+    {
+      "id": "reading-CL650-M02-marbury-v-madison",
+      "moduleId": "CL650-M02",
+      "title": "Marbury v. Madison",
+      "citation": "5 U.S. 137 (1803)",
+      "locator": "Supplied Constitutional Law Module 2 Detailed Notes, case brief section",
+      "scope": "Review draft based on supplied detailed study notes; the underlying assigned opinion was not independently supplied for verification.",
+      "fields": {
+        "facts": "Marbury’s judicial commission was signed and sealed but not delivered before the change of presidential administration. Madison withheld it at Jefferson’s direction.",
+        "posture": "Marbury sought an original writ of mandamus directly from the Supreme Court.",
+        "issue": "Could this Court compel delivery under its claimed statutory original jurisdiction?",
+        "holding": "The writ was denied for lack of original jurisdiction, despite Marbury’s legal entitlement.",
+        "reasoning": "The Court separated the right to the office, availability of a remedy, and the tribunal’s jurisdiction. A statute could not enlarge the original jurisdiction Article III fixed. In resolving conflicting laws, the Court applied the superior Constitution.",
+        "rule": "A court must possess jurisdiction, and legislation conflicting with the Constitution cannot supply a valid enlargement of it.",
+        "significance": "Keep judicial review separate from a successful remedy. Marbury did not receive the requested commission through the Court."
+      }
+    },
+    {
+      "id": "reading-CL650-M02-ex-parte-mccardle",
+      "moduleId": "CL650-M02",
+      "title": "Ex parte McCardle",
+      "citation": "74 U.S. 506 (1869)",
+      "locator": "Supplied Constitutional Law Module 2 Detailed Notes, case brief section",
+      "scope": "Review draft based on supplied detailed study notes; the underlying assigned opinion was not independently supplied for verification.",
+      "fields": {
+        "facts": "A military detainee challenging Reconstruction sought habeas relief through an appellate route created by the 1867 statute. Congress withdrew that route while his appeal was pending.",
+        "posture": "Appeal from denial of habeas relief, after argument but before judgment.",
+        "issue": "Did repeal remove the Court’s authority over this appeal?",
+        "holding": "The appeal was dismissed for want of jurisdiction.",
+        "reasoning": "The Exceptions Clause allowed Congress to withdraw the particular appellate grant. The repeal preserved no pending-case exception. The Court distinguished that grant from other habeas authority and did not decide the constitutional merits of detention.",
+        "rule": "The Court cannot reach merits once the applicable appellate jurisdiction has been validly withdrawn.",
+        "significance": "Identify the exact route removed. Do not state that McCardle approved detention or eliminated all possible habeas review."
+      }
+    },
+    {
+      "id": "reading-CL650-M02-martin-v-hunter-s-lessee",
+      "moduleId": "CL650-M02",
+      "title": "Martin v. Hunter’s Lessee",
+      "citation": "14 U.S. 304 (1816)",
+      "locator": "Supplied Constitutional Law Module 2 Detailed Notes, case brief section",
+      "scope": "Review draft based on supplied detailed study notes; the underlying assigned opinion was not independently supplied for verification.",
+      "fields": {
+        "facts": "Competing claims to Virginia land implicated federal treaties. Virginia’s highest court resisted the Supreme Court’s earlier reversal.",
+        "posture": "Review following the state court’s refusal to follow the federal mandate.",
+        "issue": "May the Supreme Court review state judgments resolving federal questions?",
+        "holding": "The Court upheld its appellate authority over the federal issue.",
+        "reasoning": "Article III describes categories of cases rather than only proceedings begun in federal courts. Supreme Court review protects supremacy and national uniformity of federal law, even where state courts initially adjudicate the dispute.",
+        "rule": "Authorized Supreme Court appellate review extends to qualifying state-court federal-law decisions.",
+        "significance": "Distinguish federal-question review from general supervision of state-law issues."
+      }
+    },
+    {
+      "id": "reading-CL650-M02-cooper-v-aaron",
+      "moduleId": "CL650-M02",
+      "title": "Cooper v. Aaron",
+      "citation": "358 U.S. 1 (1958)",
+      "locator": "Supplied Constitutional Law Module 2 Detailed Notes, case brief section",
+      "scope": "Review draft based on supplied detailed study notes; the underlying assigned opinion was not independently supplied for verification.",
+      "fields": {
+        "facts": "Arkansas resistance and unrest obstructed the school district’s desegregation plan. The district sought a lengthy postponement.",
+        "posture": "The Supreme Court reviewed the rejection of a district-court delay.",
+        "issue": "Could official resistance or hostility justify suspending desegregation obligations?",
+        "holding": "The requested delay was denied; constitutional obligations remained binding.",
+        "reasoning": "Constitutional supremacy and officials’ oaths prevented state actors from nullifying Brown. Allowing hostility to defeat rights would reward resistance and undermine the authority of federal law.",
+        "rule": "State officials must comply with controlling constitutional decisions and cannot sacrifice established rights to public hostility.",
+        "significance": "Use Cooper for compliance and supremacy, while recognizing that judicial enforcement also depends on institutional cooperation."
+      }
+    },
+    {
+      "id": "reading-CL650-M03-lujan-v-defenders-of-wildlife",
+      "moduleId": "CL650-M03",
+      "title": "Lujan v. Defenders of Wildlife",
+      "citation": "504 U.S. 555 (1992)",
+      "locator": "Supplied Constitutional Law Module 3 Detailed Notes, case brief section",
+      "scope": "Review draft based on supplied detailed study notes; the underlying assigned opinion was not independently supplied for verification.",
+      "fields": {
+        "facts": "Organizations attacked a rule limiting endangered-species consultation. Members described past foreign travel and undated plans to return.",
+        "posture": "Standing challenge to the organizations’ requested declaratory and injunctive relief.",
+        "issue": "Did the members establish imminent personal injury and redressability?",
+        "holding": "The organizations failed to establish Article III standing.",
+        "reasoning": "An interest in observing animals can be cognizable, but a vague someday intention did not establish actual or imminent personal harm. The effects of the requested order on third parties also created redressability problems.",
+        "rule": "Article III requires a concrete personal injury, traceability, and likely redress by the requested relief.",
+        "significance": "State the factual defect in each element; do not confuse an important environmental issue with a personal stake."
+      }
+    },
+    {
+      "id": "reading-CL650-M03-city-of-los-angeles-v-lyons",
+      "moduleId": "CL650-M03",
+      "title": "City of Los Angeles v. Lyons",
+      "citation": "461 U.S. 95 (1983)",
+      "locator": "Supplied Constitutional Law Module 3 Detailed Notes, case brief section",
+      "scope": "Review draft based on supplied detailed study notes; the underlying assigned opinion was not independently supplied for verification.",
+      "fields": {
+        "facts": "Lyons alleged injury from a police chokehold during a traffic stop and sought damages and prospective restrictions on chokeholds.",
+        "posture": "Challenge to standing for an injunction.",
+        "issue": "Did his past encounter establish a sufficient future threat for injunctive relief?",
+        "holding": "It did not establish the required real and immediate future threat.",
+        "reasoning": "The future injury depended on another police encounter and another decision to apply a chokehold to Lyons. Past injury supported a different remedial inquiry and did not establish the necessary personal risk of recurrence.",
+        "rule": "Standing must be established for each requested remedy; past injury alone does not necessarily support an injunction.",
+        "significance": "Analyze damages and prospective relief separately rather than granting or denying standing for the entire complaint."
+      }
+    },
+    {
+      "id": "reading-CL650-M03-united-food-and-commercial-workers-union-local-751-v-brown-group",
+      "moduleId": "CL650-M03",
+      "title": "United Food and Commercial Workers Union Local 751 v. Brown Group",
+      "citation": "517 U.S. 544 (1996)",
+      "locator": "Supplied Constitutional Law Module 3 Detailed Notes, case brief section",
+      "scope": "Review draft based on supplied detailed study notes; the underlying assigned opinion was not independently supplied for verification.",
+      "fields": {
+        "facts": "A union sought backpay and benefits for affected workers under a statute expressly allowing representative labor-organization suits.",
+        "posture": "Dispute about an association’s ability to seek member damages.",
+        "issue": "Could Congress displace the usual individual-participation restriction?",
+        "holding": "Yes; the participation restriction was prudential and could be altered by statute.",
+        "reasoning": "Member injury and a suitable organizational connection remain distinct from the convenience concerns behind individual participation. Congress’s authorization could change the prudential restriction without eliminating Article III requirements.",
+        "rule": "Statutory representative authority can modify prudential associational-standing restrictions, not constitutional injury requirements.",
+        "significance": "Do not conclude that Congress may authorize an organization to sue without any injured member or redressable controversy."
+      }
+    },
+    {
+      "id": "reading-CL650-M03-air-courier-conference-of-america-v-american-postal-workers-union",
+      "moduleId": "CL650-M03",
+      "title": "Air Courier Conference of America v. American Postal Workers Union",
+      "citation": "498 U.S. 517 (1991)",
+      "locator": "Supplied Constitutional Law Module 3 Detailed Notes, case brief section",
+      "scope": "Review draft based on supplied detailed study notes; the underlying assigned opinion was not independently supplied for verification.",
+      "fields": {
+        "facts": "Postal employees and unions challenged relaxed restrictions on private international remailing, asserting threatened jobs and revenue.",
+        "posture": "Challenge to the statutory basis for pursuing the postal-law claim.",
+        "issue": "Were postal workers’ employment interests within the statute’s protected zone?",
+        "holding": "The employment interests were outside the relevant zone of interests.",
+        "reasoning": "The statutory scheme protected postal revenues and the postal system rather than employment security as such. An economic injury did not alone establish that the particular statute authorized this plaintiff’s challenge.",
+        "rule": "A statutory claim requires the plaintiff’s interests to fall within the relevant statutory protection.",
+        "significance": "The course’s historical standing terminology should be distinguished from the modern cause-of-action characterization."
+      }
+    },
+    {
+      "id": "reading-CL650-M03-flast-v-cohen",
+      "moduleId": "CL650-M03",
+      "title": "Flast v. Cohen",
+      "citation": "392 U.S. 83 (1968)",
+      "locator": "Supplied Constitutional Law Module 3 Detailed Notes, case brief section",
+      "scope": "Review draft based on supplied detailed study notes; the underlying assigned opinion was not independently supplied for verification.",
+      "fields": {
+        "facts": "Federal taxpayers challenged congressional expenditures supporting religious-school instruction and materials.",
+        "posture": "Taxpayer-standing challenge to an Establishment Clause claim.",
+        "issue": "Did the claim fit the narrow exception to the general bar on generalized taxpayer grievances?",
+        "holding": "The taxpayers met the exception’s requirements.",
+        "reasoning": "The challenge connected taxpayer status to a taxing-and-spending enactment and to a specific constitutional limit on that power. The Court did not create a general right to challenge any unconstitutional action involving federal money.",
+        "rule": "Flast requires both the enactment nexus and the specific-constitutional-limitation nexus.",
+        "significance": "State the general bar first and apply both nexuses narrowly."
+      }
+    },
+    {
+      "id": "reading-CL650-M03-eisenstadt-v-baird",
+      "moduleId": "CL650-M03",
+      "title": "Eisenstadt v. Baird",
+      "citation": "405 U.S. 438 (1972)",
+      "locator": "Supplied Constitutional Law Module 3 Detailed Notes, case brief section",
+      "scope": "Review draft based on supplied detailed study notes; the underlying assigned opinion was not independently supplied for verification.",
+      "fields": {
+        "facts": "Baird distributed contraceptive foam to an unmarried woman after a lecture and was convicted under a Massachusetts distribution law.",
+        "posture": "Challenge to the conviction and the law’s distinction between married and unmarried recipients.",
+        "issue": "Could the prosecuted distributor assert the rights of unmarried recipients?",
+        "holding": "The Court permitted the third-party claim and invalidated the distinction.",
+        "reasoning": "Baird faced prosecution personally, his activity was linked to the recipients’ interests, and practical obstacles affected their ability to litigate the issue themselves. The supplied notes distinguish his role as lecturer from an inaccurate physician description.",
+        "rule": "A personally injured litigant may satisfy a recognized exception to the ordinary restriction on asserting another person’s rights.",
+        "significance": "Analyze the representative exception instead of treating third-party standing as an absolute prohibition."
+      }
+    },
+    {
+      "id": "reading-CL650-M05-baker-v-carr",
+      "moduleId": "CL650-M05",
+      "title": "Baker v. Carr",
+      "citation": "369 U.S. 186 (1962)",
+      "locator": "Supplied Constitutional Law Module 5 Essay Exam Notes, case brief section",
+      "scope": "Review draft based on supplied detailed study notes; the underlying assigned opinion was not independently supplied for verification.",
+      "fields": {
+        "facts": "Tennessee voters challenged longstanding legislative apportionment that failed to reflect population changes.",
+        "posture": "Threshold review of whether the equal-protection challenge was justiciable.",
+        "issue": "Was this apportionment challenge a political question?",
+        "holding": "The equal-protection claim was justiciable.",
+        "reasoning": "The pleaded constitutional theory supplied judicially manageable standards, and the issue was not automatically committed elsewhere simply because apportionment was politically sensitive. The decision supplies the framework of political-question factors.",
+        "rule": "Political significance alone does not establish a political question; the relevant constitutional assignment and standards matter.",
+        "significance": "Identify the theory and relevant Baker factors rather than dismissing every districting dispute categorically."
+      }
+    },
+    {
+      "id": "reading-CL650-M05-united-states-v-nixon",
+      "moduleId": "CL650-M05",
+      "title": "United States v. Nixon",
+      "citation": "418 U.S. 683 (1974)",
+      "locator": "Supplied Constitutional Law Module 5 Essay Exam Notes, case brief section",
+      "scope": "Review draft based on supplied detailed study notes; the underlying assigned opinion was not independently supplied for verification.",
+      "fields": {
+        "facts": "A criminal-trial subpoena sought presidential recordings and documents. The President asserted an absolute confidentiality privilege.",
+        "posture": "Review of the dispute over enforcement of the subpoena.",
+        "issue": "Was the dispute reviewable, and did generalized confidentiality defeat the need for criminal-trial evidence?",
+        "holding": "The dispute was reviewable; the qualified privilege did not defeat the demonstrated evidentiary need.",
+        "reasoning": "Courts routinely resolve legal privilege disputes. Separation of powers did not eliminate judicial review, and the generalized confidentiality claim yielded to the specific needs of criminal justice on the facts.",
+        "rule": "Executive privilege is not an absolute barrier to a concrete criminal evidentiary demand.",
+        "significance": "Do not confuse this President Nixon case with the impeachment-procedure decision involving Judge Walter Nixon."
+      }
+    },
+    {
+      "id": "reading-CL650-M05-nixon-v-united-states",
+      "moduleId": "CL650-M05",
+      "title": "Nixon v. United States",
+      "citation": "506 U.S. 224 (1993)",
+      "locator": "Supplied Constitutional Law Module 5 Essay Exam Notes, case brief section",
+      "scope": "Review draft based on supplied detailed study notes; the underlying assigned opinion was not independently supplied for verification.",
+      "fields": {
+        "facts": "Impeached Judge Walter Nixon objected that a Senate committee, rather than all senators, received evidence.",
+        "posture": "Judicial challenge to the Senate’s impeachment-trial procedure.",
+        "issue": "Could courts review the Senate’s chosen trial procedures under the cited constitutional text?",
+        "holding": "The challenge presented a nonjusticiable political question.",
+        "reasoning": "The sole impeachment-trial power was textually committed to the Senate, and the word try did not supply a manageable judicial test for the contested procedure. Judicial involvement threatened the finality and constitutional checking function of impeachment.",
+        "rule": "A textual commitment and lack of judicially manageable standards can foreclose merits review.",
+        "significance": "Explain the constitutional text and procedural issue; do not describe the result as judicial approval of the procedure’s fairness."
+      }
+    },
+    {
+      "id": "reading-CL650-M05-michigan-v-long",
+      "moduleId": "CL650-M05",
+      "title": "Michigan v. Long",
+      "citation": "463 U.S. 1032 (1983)",
+      "locator": "Supplied Constitutional Law Module 5 Essay Exam Notes, case brief section",
+      "scope": "Review draft based on supplied detailed study notes; the underlying assigned opinion was not independently supplied for verification.",
+      "fields": {
+        "facts": "A Michigan decision suppressing car-search evidence discussed both federal and state constitutional law without clearly establishing an independent state basis.",
+        "posture": "Supreme Court examination of its ability to review the state judgment.",
+        "issue": "How is an ambiguous, apparently federal or interwoven state decision treated?",
+        "holding": "The Court presumed a reviewable federal basis absent a sufficient plain statement.",
+        "reasoning": "An adequate independent state ground would preserve the judgment despite reversal on federal law. A clear statement protects a genuinely independent state disposition, while ambiguity in a primarily federal analysis supports review.",
+        "rule": "Adequate and independent state grounds bar review; Long addresses the specified ambiguous-opinion setting.",
+        "significance": "Ask whether changing federal law could change the judgment. Do not treat any mention of state law as dispositive."
+      }
+    },
+    {
+      "id": "reading-CL650-M05-edelman-v-jordan",
+      "moduleId": "CL650-M05",
+      "title": "Edelman v. Jordan",
+      "citation": "415 U.S. 651 (1974)",
+      "locator": "Supplied Constitutional Law Module 5 Essay Exam Notes, case brief section",
+      "scope": "Review draft based on supplied detailed study notes; the underlying assigned opinion was not independently supplied for verification.",
+      "fields": {
+        "facts": "Illinois benefit applicants sought future compliance and payment of benefits withheld during earlier violations.",
+        "posture": "Review of relief directed at state officials.",
+        "issue": "Could nominally equitable relief require retrospective payments from the treasury?",
+        "holding": "The retroactive monetary portion was barred by sovereign immunity.",
+        "reasoning": "The practical effect was liability payable from state funds for past conduct, unlike prospective compliance relief. Calling the remedy restitution did not change its effect. Participation in the federal program did not alone establish waiver.",
+        "rule": "Prospective compliance and retrospective monetary relief require separate immunity analyses.",
+        "significance": "Classify the actual financial and temporal effect of each remedy rather than relying on its label."
+      }
+    },
+    {
+      "id": "reading-CL650-M05-fitzpatrick-v-bitzer",
+      "moduleId": "CL650-M05",
+      "title": "Fitzpatrick v. Bitzer",
+      "citation": "427 U.S. 445 (1976)",
+      "locator": "Supplied Constitutional Law Module 5 Essay Exam Notes, case brief section",
+      "scope": "Review draft based on supplied detailed study notes; the underlying assigned opinion was not independently supplied for verification.",
+      "fields": {
+        "facts": "State employees challenged discriminatory retirement benefits under Title VII as amended to cover state employers.",
+        "posture": "Question concerning congressional authorization of monetary relief against a state.",
+        "issue": "Could Section 5 enforcement legislation abrogate state immunity?",
+        "holding": "Yes, Congress could act under its Fourteenth Amendment enforcement authority.",
+        "reasoning": "The later Amendment directly limited state power and conferred enforcement authority. The source of congressional power therefore mattered to the immunity analysis.",
+        "rule": "Valid Fourteenth Amendment Section 5 legislation can support abrogation when the governing requirements are met.",
+        "significance": "Establish both the clear congressional intent and a valid constitutional basis; this case does not validate every statute labeled enforcement."
+      }
+    },
+    {
+      "id": "reading-CL650-M05-kimel-v-florida-board-of-regents",
+      "moduleId": "CL650-M05",
+      "title": "Kimel v. Florida Board of Regents",
+      "citation": "528 U.S. 62 (2000)",
+      "locator": "Supplied Constitutional Law Module 5 Essay Exam Notes, case brief section",
+      "scope": "Review draft based on supplied detailed study notes; the underlying assigned opinion was not independently supplied for verification.",
+      "fields": {
+        "facts": "State employees sought damages under the federal age-discrimination statute.",
+        "posture": "Review of whether the statute validly displaced state immunity.",
+        "issue": "Were clear abrogation language and the invoked enforcement power sufficient here?",
+        "holding": "The intended abrogation was not valid Section 5 enforcement as applied to the states.",
+        "reasoning": "The substantive constitutional protection against age classifications was narrower than the statute’s broad restrictions. The legislative record and remedy did not establish the required congruence and proportionality.",
+        "rule": "Clear intent and valid constitutional power are independent abrogation requirements.",
+        "significance": "Compare the constitutional right, evidence of state violations, and statutory remedy rather than stopping at express coverage of states."
+      }
+    },
+    {
+      "id": "reading-CL685-M01-gideon-v-wainwright",
+      "moduleId": "CL685-M01",
+      "title": "Gideon v. Wainwright",
+      "citation": "372 U.S. 335 (1963)",
+      "locator": "Modern Criminal Procedure, 15th ed., ch. 4, Gideon v. Wainwright",
+      "scope": "Primary decision reproduced in the supplied Modern Criminal Procedure casebook, 15th ed. The assigned source is a different seventh-edition treatise; this does not certify completion of its pages.",
+      "fields": {
+        "facts": "An indigent defendant requested counsel for a state felony trial. Florida denied appointment because the charge was not capital; he defended himself and was convicted.",
+        "posture": "Supreme Court review of the state conviction.",
+        "issue": "Did the state felony trial require appointed counsel for an indigent accused?",
+        "holding": "The Court recognized the fundamental right and overruled Betts v. Brady.",
+        "reasoning": "An adversarial criminal trial cannot reliably provide a fair contest where a person unable to afford counsel must face trained prosecution alone. The Sixth Amendment guarantee applied to the states through the Fourteenth Amendment.",
+        "rule": "Indigent defendants have the recognized right to appointed counsel for the state felony-trial setting at issue.",
+        "significance": "Distinguish this trial right from Miranda counsel safeguards and do not extrapolate appointment to every government encounter."
+      }
+    },
+    {
+      "id": "reading-CL685-M03-katz-v-united-states",
+      "moduleId": "CL685-M03",
+      "title": "Katz v. United States",
+      "citation": "389 U.S. 347 (1967)",
+      "locator": "Modern Criminal Procedure, 15th ed., ch. 6, Katz v. United States",
+      "scope": "Primary decision reproduced in the supplied Modern Criminal Procedure casebook, 15th ed. The assigned source is a different seventh-edition treatise; this does not certify completion of its pages.",
+      "fields": {
+        "facts": "FBI agents attached a listening device outside a public telephone booth and recorded Katz’s end of calls used in a wagering prosecution.",
+        "posture": "Review of a conviction upheld on the ground that agents had not physically entered the booth.",
+        "issue": "Could electronic interception constitute a search without physical entry?",
+        "holding": "The Court rejected the physical-entry limitation and found the surveillance constitutionally impermissible.",
+        "reasoning": "The conversation was something Katz sought to preserve as private despite the booth’s public accessibility. Visual exposure through glass did not mean his words were exposed for unrestricted listening.",
+        "rule": "Fourth Amendment protection is not confined to physical entry into a protected place.",
+        "significance": "Do not call every privacy interest a Fourth Amendment search; identify the actual governmental intrusion and the protected communication."
+      }
+    },
+    {
+      "id": "reading-CL685-M03-united-states-v-jones",
+      "moduleId": "CL685-M03",
+      "title": "United States v. Jones",
+      "citation": "565 U.S. 400 (2012)",
+      "locator": "Modern Criminal Procedure, 15th ed., ch. 6, United States v. Jones",
+      "scope": "Primary decision reproduced in the supplied Modern Criminal Procedure casebook, 15th ed. The assigned source is a different seventh-edition treatise; this does not certify completion of its pages.",
+      "fields": {
+        "facts": "Agents placed a GPS tracker on a vehicle and used it to monitor movements over several weeks.",
+        "posture": "Review following reversal of a drug conviction based on the tracking evidence.",
+        "issue": "Was installation and monitoring a search under the property-based theory?",
+        "holding": "Installation and use constituted a search.",
+        "reasoning": "Government physically occupied a protected effect to obtain information. Katz supplemented rather than eliminated the property-based protections of the Amendment.",
+        "rule": "An information-gathering physical intrusion on a protected person, house, paper, or effect can qualify as a search.",
+        "significance": "Keep property and privacy theories distinct. The search holding is not a universal resolution of every form of location surveillance."
+      }
+    },
+    {
+      "id": "reading-CL685-M05-terry-v-ohio",
+      "moduleId": "CL685-M05",
+      "title": "Terry v. Ohio",
+      "citation": "392 U.S. 1 (1968)",
+      "locator": "Modern Criminal Procedure, 15th ed., ch. 7, Terry v. Ohio",
+      "scope": "Primary decision reproduced in the supplied Modern Criminal Procedure casebook, 15th ed. The assigned source is a different seventh-edition treatise; this does not certify completion of its pages.",
+      "fields": {
+        "facts": "An experienced officer observed repeated walks past a store and conversations suggesting a planned robbery. He approached the men, frisked Terry, and recovered a gun.",
+        "posture": "Review of denial of suppression in a concealed-weapon prosecution.",
+        "issue": "Could the limited stop and weapons frisk be reasonable without a full arrest supported by probable cause?",
+        "holding": "The limited intervention was upheld on the particular facts.",
+        "reasoning": "Reasonableness depended on specific observations and the safety concern that the suspected robbers were armed. The scope of the frisk was tied to finding weapons rather than an unlimited search for criminal evidence.",
+        "rule": "A justified investigative stop and a justified protective frisk require their respective particularized grounds.",
+        "significance": "Explain the stop and frisk separately. Mere suspicion of crime does not automatically authorize a weapons search."
+      }
+    },
+    {
+      "id": "reading-CL685-M06-arizona-v-gant",
+      "moduleId": "CL685-M06",
+      "title": "Arizona v. Gant",
+      "citation": "556 U.S. 332 (2009)",
+      "locator": "Modern Criminal Procedure, 15th ed., ch. 7, Arizona v. Gant",
+      "scope": "Primary decision reproduced in the supplied Modern Criminal Procedure casebook, 15th ed. The assigned source is a different seventh-edition treatise; this does not certify completion of its pages.",
+      "fields": {
+        "facts": "After a suspended-license arrest, Gant was handcuffed and secured in a patrol car. Officers searched his vehicle and found cocaine in a jacket.",
+        "posture": "Review of the Arizona decision rejecting the asserted incident-to-arrest search.",
+        "issue": "Did the arrest automatically authorize the vehicle search?",
+        "holding": "The search was not justified by the asserted incident-to-arrest rationale.",
+        "reasoning": "Gant could not reach the car when searched, and the arrest offense did not supply a reasonable basis to expect relevant evidence in the car. The Court rejected an automatic search rule detached from those justifications.",
+        "rule": "A vehicle search incident to arrest requires the specified accessibility condition or the distinct reasonable-belief route for offense-of-arrest evidence.",
+        "significance": "Analyze both routes separately and do not silently substitute an inventory, consent, or general vehicle exception."
+      }
+    },
+    {
+      "id": "reading-CL685-M10-miranda-v-arizona",
+      "moduleId": "CL685-M10",
+      "title": "Miranda v. Arizona",
+      "citation": "384 U.S. 436 (1966)",
+      "locator": "Modern Criminal Procedure, 15th ed., ch. 9, Miranda v. Arizona",
+      "scope": "Primary decision reproduced in the supplied Modern Criminal Procedure casebook, 15th ed. The assigned source is a different seventh-edition treatise; this does not certify completion of its pages.",
+      "fields": {
+        "facts": "Police questioned Miranda in custody and obtained a written confession without advising him of the right to counsel during questioning. A printed assertion of rights knowledge appeared on the statement.",
+        "posture": "Review of convictions affirmed by the Arizona court.",
+        "issue": "Were the interrogation statements admissible without the required safeguards and waiver?",
+        "holding": "The conviction was reversed; the statements were inadmissible under the stated framework.",
+        "reasoning": "Custodial interrogation threatened the privilege against compelled self-incrimination. Required warnings and a knowing, intelligent waiver could not be replaced by a boilerplate assertion in a signed confession.",
+        "rule": "The custodial-interrogation framework requires the recognized warnings or effective equivalent safeguards and an adequate waiver before use of resulting statements.",
+        "significance": "Analyze custody, interrogation, warnings, waiver, and invocation distinctly; do not infer waiver from a signature alone."
+      }
+    },
+    {
+      "id": "reading-CL685-M10-rhode-island-v-innis",
+      "moduleId": "CL685-M10",
+      "title": "Rhode Island v. Innis",
+      "citation": "446 U.S. 291 (1980)",
+      "locator": "Modern Criminal Procedure, 15th ed., ch. 9, Rhode Island v. Innis",
+      "scope": "Primary decision reproduced in the supplied Modern Criminal Procedure casebook, 15th ed. The assigned source is a different seventh-edition treatise; this does not certify completion of its pages.",
+      "fields": {
+        "facts": "After Innis requested counsel, officers transporting him discussed a missing shotgun and the risk to children. Innis interrupted and offered to show them the gun.",
+        "posture": "Review of the state court’s conclusion that the discussion was interrogation.",
+        "issue": "Was the conversation the functional equivalent of questioning under Miranda?",
+        "holding": "The Court found no interrogation on the circumstances presented.",
+        "reasoning": "The test includes conduct officers should know is reasonably likely to elicit an incriminating response, beyond routine custody conduct. The short discussion and what officers knew did not satisfy that test on this record.",
+        "rule": "Interrogation includes express questions and their functional equivalent under the reasonably-likely-to-elicit formulation.",
+        "significance": "Do not classify every police conversation within hearing as interrogation or limit the analysis solely to an officer’s asserted intent."
+      }
+    },
+    {
+      "id": "reading-CL685-M12-barker-v-wingo",
+      "moduleId": "CL685-M12",
+      "title": "Barker v. Wingo",
+      "citation": "407 U.S. 514 (1972)",
+      "locator": "Modern Criminal Procedure, 15th ed., ch. 20, Barker v. Wingo",
+      "scope": "Primary decision reproduced in the supplied Modern Criminal Procedure casebook, 15th ed. The assigned source is a different seventh-edition treatise; this does not certify completion of its pages.",
+      "fields": {
+        "facts": "Barker’s trial was repeatedly continued while the prosecution pursued a codefendant whose testimony it wanted. Barker did not object to many continuances.",
+        "posture": "Constitutional speedy-trial challenge after conviction.",
+        "issue": "How should lengthy delay be evaluated?",
+        "holding": "The Court adopted balancing and found no speedy-trial violation on this record.",
+        "reasoning": "Length, reasons, assertion of the right, and prejudice interact. The record indicated Barker did not truly want an earlier trial and did not establish the prejudice needed in the overall assessment.",
+        "rule": "The constitutional test balances the four identified factors rather than applying one fixed deadline.",
+        "significance": "Do not treat silence as automatic waiver or long delay as automatically conclusive; explain the weight of each factor."
+      }
+    },
+    {
+      "id": "reading-CL685-M14-faretta-v-california",
+      "moduleId": "CL685-M14",
+      "title": "Faretta v. California",
+      "citation": "422 U.S. 806 (1975)",
+      "locator": "Modern Criminal Procedure, 15th ed., ch. 4, Faretta v. California",
+      "scope": "Primary decision reproduced in the supplied Modern Criminal Procedure casebook, 15th ed. The assigned source is a different seventh-edition treatise; this does not certify completion of its pages.",
+      "fields": {
+        "facts": "Faretta asked to represent himself before trial. The judge tested his legal knowledge and required representation by appointed counsel despite his stated choice.",
+        "posture": "Review of the resulting conviction.",
+        "issue": "Could a competent defendant make an informed choice to conduct the trial defense personally?",
+        "holding": "The Court recognized the right of self-representation in the trial setting.",
+        "reasoning": "The Sixth Amendment gives defense rights to the accused personally. Legal skill and an informed choice to surrender counsel are distinct; unwanted counsel cannot simply replace the defendant’s considered decision.",
+        "rule": "A legally sufficient knowing and intelligent choice can support trial self-representation despite lack of a lawyer’s technical ability.",
+        "significance": "Keep trial self-representation separate from appellate representation and later competency or procedural limitations not resolved by this brief."
+      }
+    },
+    {
+      "id": "reading-CL700-M01-martin-v-peyton",
+      "moduleId": "CL700-M01",
+      "title": "Martin v. Peyton",
+      "citation": "158 N.E. 77 (N.Y. 1927)",
+      "locator": "Macey, Moll & Hamilton, 14th ed., ch. 3, Martin v. Peyton",
+      "scope": "Decision reproduced in the supplied Macey, Moll & Hamilton casebook, 14th ed.; the syllabus assigns the 15th edition. Use the case citation, not an assumed edition-to-edition page match.",
+      "fields": {
+        "facts": "Creditors providing financial support to a brokerage firm received profit-related returns and contractual protections. Another creditor sought to treat them as partners.",
+        "posture": "Appeal from a judgment rejecting actual-partnership liability.",
+        "issue": "Did the financing arrangement make the lenders co-owners of a business for profit?",
+        "holding": "The court affirmed that the lenders were not actual partners under the agreement.",
+        "reasoning": "The arrangement had to be assessed as a whole. Profit participation could compensate a loan, and protective terms did not necessarily transfer the ownership role. A disclaimer of partnership was relevant but not conclusive.",
+        "rule": "The relationship’s substance controls; a share of profits is important evidence but not invariably determinative of partnership.",
+        "significance": "Identify meaningful co-ownership and management powers, not just profit-based compensation or a no-partnership label."
+      }
+    },
+    {
+      "id": "reading-CL700-M07-bartle-v-home-owners-co-op",
+      "moduleId": "CL700-M07",
+      "title": "Bartle v. Home Owners Co-op.",
+      "citation": "127 N.E.2d 832 (N.Y. 1955)",
+      "locator": "Macey, Moll & Hamilton, 14th ed., ch. 6, Bartle v. Home Owners Co-op.",
+      "scope": "Decision reproduced in the supplied Macey, Moll & Hamilton casebook, 14th ed.; the syllabus assigns the 15th edition. Use the case citation, not an assumed edition-to-edition page match.",
+      "fields": {
+        "facts": "A cooperative created a wholly owned construction subsidiary. After cost overruns and bankruptcy, the trustee sought to impose the subsidiary’s contract debts on the parent.",
+        "posture": "Appeal from refusal to pierce the subsidiary’s veil.",
+        "issue": "Did ownership and control justify charging the parent with these debts?",
+        "holding": "The refusal to pierce was affirmed.",
+        "reasoning": "Findings established maintained separate corporate indicia, no creditor deception, no fraud, and no injurious asset depletion. Forming an entity to obtain limited liability was itself legitimate.",
+        "rule": "Ownership and control alone do not necessarily supply the misuse or inequity required to disregard an entity.",
+        "significance": "Compare the claimant’s facts to actual abuse. Do not turn this result into immunity for every parent-subsidiary arrangement."
+      }
+    },
+    {
+      "id": "reading-CL700-M12-smith-v-van-gorkom",
+      "moduleId": "CL700-M12",
+      "title": "Smith v. Van Gorkom",
+      "citation": "488 A.2d 858 (Del. 1985)",
+      "locator": "Macey, Moll & Hamilton, 14th ed., ch. 10, Smith v. Van Gorkom",
+      "scope": "Decision reproduced in the supplied Macey, Moll & Hamilton casebook, 14th ed.; the syllabus assigns the 15th edition. Use the case citation, not an assumed edition-to-edition page match.",
+      "fields": {
+        "facts": "Trans Union directors approved a cash-out merger. Shareholders challenged whether the board had adequately informed itself before approving the transaction.",
+        "posture": "Appeal from Chancery judgment for the directors.",
+        "issue": "Was the merger approval the product of an informed business judgment?",
+        "holding": "The judgment for directors was reversed; the Court found the decision uninformed.",
+        "reasoning": "The decision-making process, rather than merely the perceived attractiveness of the deal, was central. The record did not support the finding that the board had acted on an adequate informed basis.",
+        "rule": "Business judgment deference does not dispense with the governing duty to become adequately informed before deciding.",
+        "significance": "Compare the process challenge with Shlensky’s policy disagreement. Keep historical liability rules separate from any later exculpation analysis."
+      }
+    },
+    {
+      "id": "reading-CL685-M02-kirby-v-illinois",
+      "moduleId": "CL685-M02",
+      "title": "Kirby v. Illinois",
+      "citation": "406 U.S. 682 (1972)",
+      "locator": "Modern Criminal Procedure, 15th ed., chapter 10, Kirby v. Illinois",
+      "scope": "Review draft from the supplied casebook’s reproduction or discussion of this decision. This is supplemental to the assigned seventh-edition treatise and does not certify completion of its pages.",
+      "fields": {
+        "facts": "The challenged identification was a showup conducted before indictment or other initiation of adversary judicial proceedings.",
+        "posture": "The supplied chapter discusses the Court’s refusal to extend the counsel rule to that pre-proceeding identification.",
+        "issue": "Had the Sixth Amendment assistance-of-counsel right attached at that point?",
+        "holding": "The Court refused to apply the identification counsel rule in that pre-proceeding setting.",
+        "reasoning": "Formal commencement marks the government’s commitment to prosecute and the point at which the Sixth Amendment prosecution-related guarantees attach. The Court distinguished the counsel inquiry from a due-process challenge to prejudicial identification procedures.",
+        "rule": "The Sixth Amendment counsel right attaches at or after initiation of adversary judicial criminal proceedings.",
+        "significance": "A failed Sixth Amendment argument does not eliminate a separate due-process challenge. Do not confuse Miranda safeguards with this attachment rule."
+      }
+    },
+    {
+      "id": "reading-CL685-M02-stack-v-boyle",
+      "moduleId": "CL685-M02",
+      "title": "Stack v. Boyle",
+      "citation": "342 U.S. 1 (1951)",
+      "locator": "Modern Criminal Procedure, 15th ed., chapter 13, Stack v. Boyle",
+      "scope": "Review draft from the supplied casebook’s reproduction or discussion of this decision. This is supplemental to the assigned seventh-edition treatise and does not certify completion of its pages.",
+      "fields": {
+        "facts": "Twelve Smith Act defendants received uniform $50,000 bail amounts. They offered individualized information, while the government relied on forfeitures by other defendants.",
+        "posture": "Review of unsuccessful efforts to reduce bail and obtain habeas relief.",
+        "issue": "Had bail been determined using methods appropriate to its permitted purpose?",
+        "holding": "The Court found the method improper and directed use of a renewed motion to reduce bail.",
+        "reasoning": "An amount above what is reasonably calculated to assure the particular defendant’s presence is excessive under the stated framework. The indictment and another person’s conduct did not replace an individualized assessment.",
+        "rule": "Bail must be set using standards relevant to assuring the individual defendant’s appearance.",
+        "significance": "Keep the historical federal bail framework and excessive-amount issue separate from an asserted unconditional constitutional right to release in every case."
+      }
+    },
+    {
+      "id": "reading-CL685-M04-arizona-v-hicks",
+      "moduleId": "CL685-M04",
+      "title": "Arizona v. Hicks",
+      "citation": "480 U.S. 321 (1987)",
+      "locator": "Modern Criminal Procedure, 15th ed., chapter 7, Arizona v. Hicks",
+      "scope": "Review draft from the supplied casebook’s reproduction or discussion of this decision. This is supplemental to the assigned seventh-edition treatise and does not certify completion of its pages.",
+      "fields": {
+        "facts": "During lawful entry responding to a fired weapon, an officer moved stereo components to expose serial numbers and then discovered that equipment was stolen.",
+        "posture": "Review of whether the additional manipulation was a permissible plain-view inspection.",
+        "issue": "Could reasonable suspicion support moving the equipment to inspect concealed serial numbers?",
+        "holding": "The movement was a separate search and was unreasonable under the asserted justification.",
+        "reasoning": "Looking at already exposed details differs from physically manipulating objects to reveal concealed information. The Court rejected a new intermediate category allowing this additional search solely because it was brief.",
+        "rule": "Lawful presence does not itself authorize a new search to expose information not already in view.",
+        "significance": "Analyze initial entry, observation, manipulation, and seizure as distinct acts. Do not use plain view as a label for information exposed only by another intrusion."
+      }
+    },
+    {
+      "id": "reading-CL685-M07-georgia-v-randolph",
+      "moduleId": "CL685-M07",
+      "title": "Georgia v. Randolph",
+      "citation": "547 U.S. 103 (2006)",
+      "locator": "Modern Criminal Procedure, 15th ed., chapter 7, Georgia v. Randolph",
+      "scope": "Review draft from the supplied casebook’s reproduction or discussion of this decision. This is supplemental to the assigned seventh-edition treatise and does not certify completion of its pages.",
+      "fields": {
+        "facts": "A physically present resident refused permission to search the shared home. Officers obtained consent from his wife, entered, and used the observations to obtain a warrant.",
+        "posture": "Review of exclusion based on the initial disputed-consent entry.",
+        "issue": "Did the other resident’s consent alone justify entry over the present resident’s express objection?",
+        "holding": "The Court upheld the rejection of the asserted consent justification on these facts.",
+        "reasoning": "Shared social expectations did not give one co-tenant’s invitation superiority over a present co-tenant’s objection. A separate safety justification would require its own analysis rather than reliance on the disputed invitation.",
+        "rule": "In the decision’s specified present-and-objecting setting, another co-occupant’s consent did not itself justify the entry.",
+        "significance": "Identify presence, objection, timing, scope, and the asserted exception. Do not state a rule for every absent-occupant or emergency situation from this brief alone."
+      }
+    },
+    {
+      "id": "reading-CL685-M13-apprendi-v-new-jersey",
+      "moduleId": "CL685-M13",
+      "title": "Apprendi v. New Jersey",
+      "citation": "530 U.S. 466 (2000)",
+      "locator": "Modern Criminal Procedure, 15th ed., chapter 27, Apprendi v. New Jersey",
+      "scope": "Review draft from the supplied casebook’s reproduction or discussion of this decision. This is supplemental to the assigned seventh-edition treatise and does not certify completion of its pages.",
+      "fields": {
+        "facts": "A firearm offense carried a ten-year maximum. After finding a bias-related purpose by a preponderance, a judge imposed a twelve-year sentence under an enhancement.",
+        "posture": "Constitutional challenge to the enhanced sentence after a guilty plea.",
+        "issue": "Could the judge’s finding authorize punishment above the maximum otherwise supported by the offense?",
+        "holding": "The Court rejected that allocation and standard of proof for the maximum-increasing fact.",
+        "reasoning": "Constitutional jury and proof protections concern the facts authorizing punishment, not merely whether the legislature calls them elements or sentencing factors. The decision stated a prior-conviction exception.",
+        "rule": "Other than the stated prior-conviction exception, a fact increasing the maximum must be submitted to a jury and proved beyond a reasonable doubt.",
+        "significance": "Find the maximum authorized before the disputed finding. Keep the assigned historical formulation separate from later sentencing developments not reviewed here."
+      }
     }
   ]
 }

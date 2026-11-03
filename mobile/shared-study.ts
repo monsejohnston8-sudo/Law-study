@@ -1,5 +1,7 @@
 import type Dexie from "dexie";
+import { courseName } from "../src/lib/display";
 import catalog from "../src/content/shared-study.json";
+import readings from "../src/content/reading-guides.json";
 // This catalog contains original explanations, never extracted textbook text.
 export async function seedSharedStudy(db: Dexie) {
   const revision = `shared-study-v${catalog.version}`;
@@ -13,7 +15,21 @@ export async function seedSharedStudy(db: Dexie) {
       const cases = catalog.cases.filter((e) =>
         e.moduleId.startsWith(courseId),
       );
+      const guides = readings.guides.filter((g) =>
+        g.moduleId.startsWith(courseId),
+      );
+      const assignments = readings.assignments.filter((g) =>
+        g.moduleId.startsWith(courseId),
+      );
       const passages = [
+        ...guides.map((g) => ({
+          id: g.id,
+          text: `${g.title}\n\n${g.sections.map((s) => `${s.heading}\n${s.body}`).join("\n\n")}\n\nReferences: ${g.references.join("; ")}\nSource scope: ${g.scope}`,
+        })),
+        ...assignments.map((a) => ({
+          id: `reading-assignment-${a.moduleId}`,
+          text: `Assigned reading list for ${a.title}\n\n${a.reading}\n\nAvailability: ${a.status}. A reading list is not proof of source completion.`,
+        })),
         ...entries.map((e) => ({
           id: e.id,
           text: `${e.title}\n\n${e.summary}\n\nExam checklist: ${e.checklist}\n\nQuestion: ${e.question}\nAnswer: ${e.answer}\n\nReference: ${e.locator}\nScope: ${e.scope}`,
@@ -25,14 +41,23 @@ export async function seedSharedStudy(db: Dexie) {
             .join("\n\n")}\n\nReference: ${e.locator}\nScope: ${e.scope}`,
         })),
       ];
-      const text = `Original shared study drafts — ${courseId}\nNot a textbook or an extract from a textbook. Review against your assigned sources.\n\n${passages.map((p) => p.text).join("\n\n---\n\n")}`;
+      const text = `Original shared study drafts — ${courseName(courseId)}\nNot a textbook or an extract from a textbook. Review against your assigned sources.\n\n${passages.map((p) => p.text).join("\n\n---\n\n")}`;
       const bytes = new TextEncoder().encode(text);
       const hash = Array.from(
         new Uint8Array(await crypto.subtle.digest("SHA-256", bytes)),
       )
         .map((n) => n.toString(16).padStart(2, "0"))
         .join("");
-      return { courseId, entries, cases, passages, text, hash };
+      return {
+        courseId,
+        entries,
+        cases,
+        guides,
+        assignments,
+        passages,
+        text,
+        hash,
+      };
     }),
   );
   await db.transaction("rw", db.tables, async () => {
@@ -45,7 +70,7 @@ export async function seedSharedStudy(db: Dexie) {
         id: sourceId,
         courseId: c.courseId,
         moduleId: null,
-        title: `Shared study notes — ${c.courseId}`,
+        title: `Shared study notes — ${courseName(c.courseId)}`,
         author: "Law Study original study explanations",
         edition: `Study catalog ${catalog.version}`,
         hash: c.hash,
@@ -61,12 +86,60 @@ export async function seedSharedStudy(db: Dexie) {
       if (!(await db.table("source").get(sourceId)))
         await db.table("source").add(source);
       if (!(await db.table("original").get(filename)))
-        await db
-          .table("original")
-          .put({
-            id: filename,
-            blob: new Blob([c.text], { type: "text/plain" }),
+        await db.table("original").put({
+          id: filename,
+          blob: new Blob([c.text], { type: "text/plain" }),
+        });
+      for (const item of [
+        ...c.guides.map((g) => ({
+          id: g.id,
+          moduleId: g.moduleId,
+          title: g.title,
+          kind: "Detailed reading notes",
+          origin: "Reading guide draft",
+          section: g.references.join("; "),
+        })),
+        ...c.assignments.map((a) => ({
+          id: `reading-assignment-${a.moduleId}`,
+          moduleId: a.moduleId,
+          title: `Assigned readings — ${a.title}`,
+          kind: "assigned reading",
+          origin: "Reading assignment",
+          section: `Supplied course outline: ${a.title}`,
+        })),
+      ]) {
+        if (!(await db.table("module").get(item.moduleId))) continue;
+        const passage = c.passages.find((p) => p.id === item.id)!;
+        const excerptId = `shared-source-${item.id}`;
+        const ex = {
+          id: excerptId,
+          sourceId,
+          page: 0,
+          section: item.section,
+          locatorVerified: true,
+          text: passage.text,
+          createdAt: stamp,
+          updatedAt: stamp,
+        };
+        if (!(await db.table("sourceExcerpt").get(excerptId))) {
+          await db.table("sourceExcerpt").add(ex);
+          const { text, ...meta } = ex;
+          await db.table("excerptMeta").put(meta);
+        }
+        if (!(await db.table("note").get(item.id)))
+          await db.table("note").add({
+            id: item.id,
+            moduleId: item.moduleId,
+            title: item.title,
+            kind: item.kind,
+            origin: item.origin,
+            status: "needs_review",
+            excerptId,
+            body: passage.text,
+            createdAt: stamp,
+            updatedAt: stamp,
           });
+      }
       for (const entry of [...c.entries, ...c.cases]) {
         if (!(await db.table("module").get(entry.moduleId))) continue;
         const excerptId = `shared-source-${entry.id}`;

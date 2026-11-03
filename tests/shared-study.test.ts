@@ -13,14 +13,14 @@ it("loads original shared notes automatically without exposing textbook extracts
     const api = phoneApi(db);
     const state = await api("state");
     expect(catalog.entries).toHaveLength(53);
-    expect(catalog.cases).toHaveLength(2);
+    expect(catalog.cases).toHaveLength(36);
     for (const entry of [...catalog.entries, ...catalog.cases]) {
       expect(entry).not.toHaveProperty("parentExcerptId");
       expect(entry).not.toHaveProperty("text");
       expect(entry).not.toHaveProperty("filename");
     }
     const source = state.courses[0].sources.find(
-      (s: any) => s.id === "shared-notes-CL650-v1",
+      (s: any) => s.id === "shared-notes-CL650-v2",
     );
     expect(source.type).toBe("notes");
     expect(source.rights).toContain("not included");
@@ -28,14 +28,12 @@ it("loads original shared notes automatically without exposing textbook extracts
       .table("flashcard")
       .filter((r) => r.origin === "Shared study draft")
       .first();
-    await db
-      .table("flashcard")
-      .update(card.id, {
-        answer: "My reviewed answer",
-        repetitions: 4,
-        due: "2030-01-01T00:00:00.000Z",
-      });
-    await db.table("meta").delete("shared-study-v1");
+    await db.table("flashcard").update(card.id, {
+      answer: "My reviewed answer",
+      repetitions: 4,
+      due: "2030-01-01T00:00:00.000Z",
+    });
+    await db.table("meta").delete("shared-study-v2");
     await api("state");
     const retained = await db.table("flashcard").get(card.id);
     expect(retained.answer).toBe("My reviewed answer");

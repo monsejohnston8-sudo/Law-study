@@ -1,0 +1,1058 @@
+{
+  "version": 2,
+  "guides": [
+    {
+      "id": "reading-guide-CL700-M01",
+      "moduleId": "CL700-M01",
+      "title": "Detailed reading notes — Non-Corporate Entities",
+      "references": [
+        "Cox & Hazen, Business Organizations Law, 5th ed. §§ 1.7–1.12, 1.14–1.15"
+      ],
+      "scope": "The supplied fifth edition matches the outline. These notes cover the identified topics, not every proposition in every assigned section. Historical statutory and tax discussions are not a statement of current law.",
+      "sections": [
+        {
+          "heading": "Formation and identifying the enterprise",
+          "body": "A general partnership is identified by a co-owned business for profit, not merely by the label on a document. An express agreement helps establish the relationship, but conduct may show an implied arrangement. Separate the evidence of profit participation from the ability to participate in important management decisions. An agreement that profit shares compensate a loan or services can have a different legal effect from an ownership arrangement. A joint venture generally concerns a narrower project or shorter duration, but its essential co-ownership and control questions resemble partnership questions."
+        },
+        {
+          "heading": "Liability and organization are separate inquiries",
+          "body": "A limited partnership uses a statutory formation process and separates general-partner and limited-partner positions. Identify the governing statute before applying the fifth edition’s historical discussion of limited-partner participation in management. An LLC combines an entity liability shield with an operating agreement and statutory defaults. Determine whether members manage directly or have appointed managers; the word member alone does not establish authority to transact. An entity shield does not answer whether a person is liable for that person’s own conduct or separate contractual undertaking."
+        },
+        {
+          "heading": "Contract, tax, and less familiar forms",
+          "body": "The LLC operating agreement supplies negotiated rules on governance, transfers, duration, and exits, subject to nonwaivable statutory limits. Read the statute and agreement together rather than assuming corporate defaults apply. The book contrasts pass-through treatment with entity-level taxation and possible owner-level tax on distributions; its historical tax eligibility numbers should not be reused as current advice. Joint stock companies can offer centralized management and transferable interests without the corporate liability shield. In a business trust, trustees hold legal title and manage assets for beneficial owners under the declaration of trust."
+        },
+        {
+          "heading": "Exam method and comparison",
+          "body": "Build a separate row for formation, management, owner exposure, transferability, duration, and tax treatment for each candidate form. On a lender-control problem, identify which provisions merely protect repayment and which give the lender meaningful participation as an owner. Do not equate economic dependence, a profit-based return, or a veto by itself with partnership. In an LLC problem, quote the operating-agreement term that displaces a default and identify any mandatory rule preventing displacement. The point is to explain the legal consequences of the facts, not select a label based only on the parties’ preferred terminology."
+        }
+      ]
+    },
+    {
+      "id": "reading-guide-CL700-M02",
+      "moduleId": "CL700-M02",
+      "title": "Detailed reading notes — Non-Traditional Corporations",
+      "references": [
+        "Cox & Hazen, Business Organizations Law, 5th ed. §§ 1.16–1.18, 1.20–1.21, 1.23"
+      ],
+      "scope": "The supplied fifth edition matches the outline. These notes cover the identified topics, not every proposition in every assigned section. Historical statutory and tax discussions are not a statement of current law.",
+      "sections": [
+        {
+          "heading": "Different classification questions",
+          "body": "Governmental or municipal corporations must be distinguished from private business corporations. A publicly held company is not necessarily a public governmental body: publicly held ordinarily concerns dispersed ownership and market trading of shares. Closely held describes ownership and the absence of a ready public market, not simply a business’s small size. A substantial enterprise can remain closely held. These classifications answer different questions and should not be treated as interchangeable."
+        },
+        {
+          "heading": "Nonprofit organization and economic activity",
+          "body": "Nonprofit corporate status concerns the organization’s purposes and restrictions on distributing benefits; it does not establish that the entity never receives revenue, owns valuable property, or pays employees. Identify the statutory category and permitted beneficiaries. Keep incorporation under nonprofit law separate from tax exemption. A conclusion about one does not automatically establish the other. Start with the actual organizational statute and governing documents rather than the everyday meaning of charity."
+        },
+        {
+          "heading": "Concentrated control and professional entities",
+          "body": "A corporation may have one shareholder, be family controlled, or be owned wholly or partly by a parent company. Sole ownership does not automatically erase the entity. Minority-investor risks arise where a controller can shape compensation, distributions, and exit opportunities. Professional corporations and professional LLCs add licensing constraints: the organizational form cannot authorize unlicensed practice. Distinguish a professional’s own service-related responsibility from exposure based solely on being an investor in the firm."
+        },
+        {
+          "heading": "Analysis checklist",
+          "body": "Ask who created the entity, what statutory purpose it serves, who holds ownership rights, whether a trading market exists, and whether occupational licensing limits ownership or management. For a parent-subsidiary problem, preserve the distinction between ownership control and the additional facts needed to disregard separate entities. For a nonprofit, do not infer tax exemption from the charter label. Use the classification to identify the applicable legal rules rather than treating classification itself as the answer to every liability question."
+        }
+      ]
+    },
+    {
+      "id": "reading-guide-CL700-M03",
+      "moduleId": "CL700-M03",
+      "title": "Detailed reading notes — Agency",
+      "references": [
+        "Cox & Hazen, Business Organizations Law, 5th ed. §§ 1.24, 8.1, 8.5, 8.10, 8.12"
+      ],
+      "scope": "The supplied fifth edition matches the outline. These notes cover the identified topics, not every proposition in every assigned section. Historical statutory and tax discussions are not a statement of current law.",
+      "sections": [
+        {
+          "heading": "Actual authority",
+          "body": "A corporation can act only through human agents. Actual authority concerns the principal’s communications to the agent and the powers reasonably included in the assignment. Read the charter, bylaws, board resolutions, delegated responsibilities, and established course of dealing. Express authorization for a task can include incidental acts needed to accomplish it. Distinguish the existence of authority from whether the agent complied with internal instructions; a departure can matter differently to the agent and the third party."
+        },
+        {
+          "heading": "Apparent authority and transaction type",
+          "body": "Apparent authority concerns the principal’s manifestations to a third party and the resulting reasonable understanding of the agent’s authority. An agent cannot establish it merely by asserting that authority exists. A president or CEO may have authority to carry out ordinary business through express delegation, implied responsibilities, or the corporation’s acquiescence. The title does not automatically authorize extraordinary transactions. Explain why the transaction is ordinary or exceptional in the business’s context."
+        },
+        {
+          "heading": "Ratification and evidence",
+          "body": "Ratification addresses an originally unauthorized act that the principal later adopts with the legally required knowledge and intent. It is an alternative to proving authority existed at the time of contracting. Acceptance of benefits may matter, but identify what the corporation knew and what conduct communicated adoption. For a major conveyance, mortgage, or long-term commitment, the book recommends obtaining formal evidence such as a certified board resolution rather than relying only on an officer’s assurance."
+        },
+        {
+          "heading": "Exam structure",
+          "body": "Identify the alleged principal, agent, third party, transaction, and relevant time. Analyze actual authority first, apparent authority separately, then ratification or estoppel if supported. For apparent authority, identify the principal’s particular manifestation and why reliance on it was reasonable. An internal restriction unknown to the third party is not necessarily dispositive. Conclude separately about the corporation’s obligation and any claim concerning the agent’s unauthorized conduct."
+        }
+      ]
+    },
+    {
+      "id": "reading-guide-CL700-M04",
+      "moduleId": "CL700-M04",
+      "title": "Detailed reading notes — Introduction to Corporations",
+      "references": [
+        "Cox & Hazen, Business Organizations Law, 5th ed. §§ 1.10, 2.1–2.9, 7.1–7.2, 9.1"
+      ],
+      "scope": "The supplied fifth edition matches the outline. These notes cover the identified topics, not every proposition in every assigned section. Historical statutory and tax discussions are not a statement of current law.",
+      "sections": [
+        {
+          "heading": "Entity and investors",
+          "body": "Corporate personality means that the corporation holds its own assets and contractual rights and bears its own obligations. A shareholder owns an equity interest rather than a fraction of each corporate asset. Keep limited liability analytically separate from that entity status: the corporation can owe a debt without its shareholders automatically owing the debt. Ownership changes ordinarily do not require the corporation to transfer every asset or renegotiate every obligation."
+        },
+        {
+          "heading": "Governance structure",
+          "body": "The conventional arrangement gives shareholders the power to elect directors and vote on specified fundamental matters; the board directs or oversees corporate affairs; officers conduct delegated operations. A shareholder majority is not automatically authorized to make every management decision directly. Conversely, the board’s broad management role is not a license to ignore shareholder votes required by statute or governing documents. State which institution has initial authority and what approvals the specific transaction requires."
+        },
+        {
+          "heading": "Historical development and enabling law",
+          "body": "The assigned history explains the transition from special governmental grants toward general incorporation statutes and greater organizational flexibility. The practical drafting consequence is to distinguish mandatory rules from defaults that may be changed in the charter or bylaws. Do not use the history to assume that every present statute is identical. The entity’s state of incorporation supplies the starting framework for its internal governance."
+        },
+        {
+          "heading": "Worked analysis method",
+          "body": "When an owner orders an officer to sign an agreement, identify whether the owner is acting as shareholder, director, officer, or a specially authorized agent. Then determine whether that capacity supplies the power asserted. A person may occupy several roles, but the legal consequences of each role differ. For a tax question, distinguish the entity’s state-law form from its tax classification and flag the historical scope of the assigned edition."
+        }
+      ]
+    },
+    {
+      "id": "reading-guide-CL700-M05",
+      "moduleId": "CL700-M05",
+      "title": "Detailed reading notes — Selection of Corporate Form",
+      "references": [
+        "Cox & Hazen, Business Organizations Law, 5th ed. §§ 1.5–1.6, 3.1–3.2"
+      ],
+      "scope": "The supplied fifth edition matches the outline. These notes cover the identified topics, not every proposition in every assigned section. Historical statutory and tax discussions are not a statement of current law.",
+      "sections": [
+        {
+          "heading": "Choosing a legal form",
+          "body": "Selection is a comparison of legal and practical consequences, not a universal preference for incorporation. Identify who will invest, who will manage, how much personal exposure participants accept, the expected duration of the venture, and how an owner can leave. Financing and transfer needs may favor an entity with stable centralized governance. Tax treatment, administrative expense, and the parties’ appetite for negotiated arrangements also matter. A form suitable at inception may require later conversion as the business changes."
+        },
+        {
+          "heading": "Choosing the organizing state",
+          "body": "The incorporating jurisdiction supplies not just statutory provisions but the case law on directors’ duties and investor rights. A local business may incur unnecessary costs by incorporating elsewhere: foreign qualification, recurring filings, fees, taxes, and counsel’s need to use unfamiliar law. A larger interstate enterprise may have stronger reasons to select another jurisdiction. Explain the actual tradeoff rather than asserting that a familiar corporate domicile is always best."
+        },
+        {
+          "heading": "Documents and operation",
+          "body": "Distinguish the place of formation from the places where the business conducts activities. Out-of-state incorporation does not eliminate qualification obligations in operating states. Separate internal governance choices from external regulatory duties. Identify which anticipated provisions the formation state permits, whether they must appear in the charter rather than bylaws, and whether the parties can administer them reliably."
+        },
+        {
+          "heading": "Exam answer organization",
+          "body": "Compare at least two plausible forms using facts about control, liability, raising capital, transfers, tax, and compliance costs. Then give a reasoned recommendation with its disadvantages. A conclusion that simply names a form without connecting each important feature to a client objective omits the legal analysis. Do not reuse historical tax eligibility thresholds from the fifth edition as current numerical requirements."
+        }
+      ]
+    },
+    {
+      "id": "reading-guide-CL700-M06",
+      "moduleId": "CL700-M06",
+      "title": "Detailed reading notes — Incorporation and Premature Commencement",
+      "references": [
+        "Cox & Hazen, Business Organizations Law, 5th ed. §§ 3.3–3.11, 5.1–5.12, 6.1–6.7"
+      ],
+      "scope": "The supplied fifth edition matches the outline. These notes cover the identified topics, not every proposition in every assigned section. Historical statutory and tax discussions are not a statement of current law.",
+      "sections": [
+        {
+          "heading": "Formation chronology",
+          "body": "Separate planning and promotion from filing and organizational action after filing. The book’s sequence includes financing arrangements, name reservation, selecting a registered office and agent, preparing and filing articles, paying fees, and conducting organizational meetings. Directors then organize governance through officers, bylaws, and authorized share issuances. Determine the point at which the governing statute recognizes corporate existence before analyzing who could act for it."
+        },
+        {
+          "heading": "Promoter contracts",
+          "body": "A promoter’s agreement made before incorporation raises separate questions about the promoter’s liability and the later corporation’s liability. A nonexistent principal cannot itself have authorized a contract when it was signed. Review the contract’s language about the parties, intended obligor, and any condition that incorporation occur. The later corporation may adopt the arrangement, but adoption does not necessarily release the promoter. Identify an actual agreement substituting the corporation and discharging the prior obligor before concluding that a novation occurred."
+        },
+        {
+          "heading": "Charter, bylaws, and statutory defaults",
+          "body": "Some provisions may be varied only in the articles; others may be placed in bylaws. Broad lawful-purpose clauses can allow operational flexibility, while an intentionally narrow purpose provision can constrain management. Determine whether a disputed term is permitted, properly located, and consistent with mandatory law. A charter is not merely a private deal among original founders because later investors also take interests under it."
+        },
+        {
+          "heading": "Defects and equitable doctrines",
+          "body": "When filing or organization is defective, distinguish statutory liability provisions from de facto corporation and corporation-by-estoppel reasoning. De facto analysis concerns an attempted formation and operation under a valid authorizing law. Estoppel examines a party’s conduct in treating the enterprise as corporate and the context of the claim. Do not assume either doctrine survives unchanged under every modern statute. Build a timeline linking the defect, the contract or injury, the parties’ knowledge, and the later corrective act."
+        }
+      ]
+    },
+    {
+      "id": "reading-guide-CL700-M07",
+      "moduleId": "CL700-M07",
+      "title": "Detailed reading notes — Piercing the Corporate Veil",
+      "references": [
+        "Cox & Hazen, Business Organizations Law, 5th ed. § 4.4, §§ 7.1–7.6; Macey, Moll & Hamilton, supplied 14th ed., ch. 6"
+      ],
+      "scope": "The supplied fifth edition matches the outline. These notes cover the identified topics, not every proposition in every assigned section. Historical statutory and tax discussions are not a statement of current law. The casebook supplied is the fourteenth edition; the outline names the fifteenth.",
+      "sections": [
+        {
+          "heading": "Starting presumption",
+          "body": "Separate corporate existence is the starting point. A corporation’s debt is its own, and incorporation for limited liability is itself legitimate. A parent’s ownership of all shares or an individual’s complete control does not automatically make the controller liable. Identify the specific creditor, the unpaid obligation, the person or related entity sought to be charged, and the legal reason for crossing the entity boundary."
+        },
+        {
+          "heading": "Operational separateness",
+          "body": "Relevant facts include separate accounts, accurate records, corporate decision-making, treatment of receipts, payment of personal expenses, and transfers among related companies. Explain how each fact shows genuine separateness or its misuse. The book treats intermingled affairs and disregard of formalities as important, but do not reduce a multi-factor inquiry to a single missed meeting. The governing jurisdiction and type of entity affect the weight of formalities."
+        },
+        {
+          "heading": "Domination, capitalization, and injury",
+          "body": "Domination is commonly paired with an additional requirement involving fraud, illegality, or serious unfairness. Connect the alleged misuse to the creditor’s loss. Undercapitalization is a factor, especially where foreseeable tort risks arise, but insufficient assets after an ordinary business failure do not by themselves prove abuse at formation. Distinguish voluntary contract creditors’ knowledge of the entity from injured persons who had no opportunity to bargain for protection."
+        },
+        {
+          "heading": "Case comparison and exam method",
+          "body": "Bartle refused to impose a subsidiary’s contract debts on its parent where separate indicia were maintained and the findings showed no fraud, deception, or injurious asset depletion. Use that result as a comparison, not a universal immunity for parent companies. Contrast facts showing deliberate diversion of assets or misleading treatment of the entities. Identify the governing test before applying ownership, control, records, capitalization, misuse, and the resulting inequity."
+        }
+      ]
+    },
+    {
+      "id": "reading-guide-CL700-M08",
+      "moduleId": "CL700-M08",
+      "title": "Detailed reading notes — Closely Held Corporations and Shares",
+      "references": [
+        "Cox & Hazen, Business Organizations Law, 5th ed. §§ 16.1–16.12 and ch. 18"
+      ],
+      "scope": "The supplied fifth edition matches the outline. These notes cover the identified topics, not every proposition in every assigned section. Historical statutory and tax discussions are not a statement of current law.",
+      "sections": [
+        {
+          "heading": "How investors obtain shares",
+          "body": "Distinguish an original subscription, a sale of treasury shares, and a transfer from an existing shareholder. An issuance brings newly created shares into investor ownership; a secondary transfer substitutes an owner of already outstanding shares. Authorized, issued, and outstanding describe different quantities. A share is the ownership interest, while a certificate is evidence of it. Do not infer that replacing or losing the certificate creates or extinguishes the underlying interest."
+        },
+        {
+          "heading": "Price and consideration",
+          "body": "A subscription must establish an enforceable undertaking to take and pay for specified shares. Unpaid subscription liability ordinarily runs to the corporation, with creditor remedies depending on the applicable procedural and statutory framework. Par value is not market value. Where a statute retains par value, identify its particular legal consequences rather than assuming it measures economic worth. For no-par shares, directors may have pricing flexibility, but the form and valuation of consideration remain separate issues."
+        },
+        {
+          "heading": "Payment and valuation",
+          "body": "The assigned discussion distinguishes statutes permitting traditional money, property, and completed services from provisions also accepting notes or future services. Identify the actual governing statute. The validity of the type of payment is distinct from whether the board valued it honestly. The book describes substantial deference to good-faith valuation and exceptions for fraud or deliberate overvaluation. Explain who challenges the issuance and what loss or statutory consequence is alleged."
+        },
+        {
+          "heading": "Capital structure",
+          "body": "Debt creates repayment obligations and priority rights defined by the instrument and applicable law; equity allocates residual participation and governance rights. Preferred shares may divide dividend, liquidation, conversion, and voting rights from those of common shares. Read the charter and instrument rather than reasoning from the word preferred alone. Compare a bondholder’s contractual protections with a shareholder’s organizational rights, and evaluate leverage, payment obligations, priority, and dilution separately."
+        }
+      ]
+    },
+    {
+      "id": "reading-guide-CL700-M09",
+      "moduleId": "CL700-M09",
+      "title": "Detailed reading notes — Preemptive Rights and Dilution",
+      "references": [
+        "Cox & Hazen, Business Organizations Law, 5th ed. § 16.14"
+      ],
+      "scope": "The supplied fifth edition matches the outline. These notes cover the identified topics, not every proposition in every assigned section. Historical statutory and tax discussions are not a statement of current law.",
+      "sections": [
+        {
+          "heading": "Purpose of preemptive rights",
+          "body": "Preemptive rights give qualifying existing owners an opportunity to subscribe proportionately to certain new issuances. Their purpose is to protect against dilution of economic participation and voting influence. Distinguish the existence of that opportunity from a guarantee that the corporation will never issue new shares. An investor who declines a valid proportional offer can still experience a reduced percentage holding."
+        },
+        {
+          "heading": "Finding the source and scope",
+          "body": "The book describes different statutory and charter approaches, including denying a default right or recognizing a right only when affirmatively granted. Begin with the governing statute and charter. Identify the covered class, type of issuance, eligible holders, and any exception. Do not infer a universal preemptive right solely because the investor acquired shares first."
+        },
+        {
+          "heading": "Proportionate analysis",
+          "body": "Calculate existing shares and voting power before the issuance, identify the total proposed new issue, and determine the eligible holder’s proportional allocation under the operative provision. Then test whether the offer honored notice, price, and timing requirements. Keep dilution of voting percentage distinct from whether an issuance transferred economic value by selling below an appropriate price."
+        },
+        {
+          "heading": "Fiduciary issues remain",
+          "body": "Compliance with a preemptive-right clause does not necessarily resolve whether directors used issuance authority for an improper purpose or unfairly favored insiders. Conversely, the absence of a contractual preemptive right does not eliminate all fiduciary constraints. State the particular legal basis for the challenge rather than treating preemption as the only possible objection. Address the requested remedy and the effect on both the corporation and existing holders."
+        }
+      ]
+    },
+    {
+      "id": "reading-guide-CL700-M10",
+      "moduleId": "CL700-M10",
+      "title": "Detailed reading notes — Shareholders, Directors and Voting",
+      "references": [
+        "Cox & Hazen, Business Organizations Law, 5th ed. §§ 9.1, 9.3–9.8, 9.11–9.15, 11.5, 13.16, 13.20, 13.30"
+      ],
+      "scope": "The supplied fifth edition matches the outline. These notes cover the identified topics, not every proposition in every assigned section. Historical statutory and tax discussions are not a statement of current law.",
+      "sections": [
+        {
+          "heading": "Who exercises management power",
+          "body": "The board has a collective governance role, while officers implement delegated operations. A majority shareholder is not automatically the corporation’s manager in a shareholder capacity. Distinguish selecting directors from controlling each board decision. A person who is simultaneously a shareholder, director, and officer must act through the powers and procedures associated with the relevant role."
+        },
+        {
+          "heading": "Valid collective action",
+          "body": "Identify notice, quorum, voting requirements, and the governing documents for the particular meeting. The presence of enough directors does not necessarily cure defective notice. Traditional board action requires a duly convened deliberative body; statutes may authorize written action without a meeting. In the book’s discussed written-consent framework, unanimity protects a dissenting director’s ability to require collective discussion. Verify the operative statute before assuming electronic messages or separate informal approvals suffice."
+        },
+        {
+          "heading": "Changing the board and voting arrangements",
+          "body": "For a vacancy, distinguish the authorized number of directors from the number actually in office and identify who may fill the particular seat. Cumulative voting can concentrate voting strength in support of a minority representative, but it is distinct from the ordinary rule for approving management action. Keep director elections, director removal, filling vacancies, and shareholder approvals in separate analytical boxes."
+        },
+        {
+          "heading": "Exam checklist",
+          "body": "Identify the proposed action and institution with authority; find statutory and document requirements; count qualified participants; test notice, quorum, and votes; then consider a valid consent or later ratification if supported. Specify how an interested director affects the particular statutory calculation instead of silently counting or excluding that director. A substantively reasonable outcome does not itself cure a legally invalid procedure."
+        }
+      ]
+    },
+    {
+      "id": "reading-guide-CL700-M11",
+      "moduleId": "CL700-M11",
+      "title": "Detailed reading notes — Deadlock and Controlling Shares",
+      "references": [
+        "Cox & Hazen, Business Organizations Law, 5th ed. ch. 14; Macey, Moll & Hamilton, supplied 14th ed., ch. 13A"
+      ],
+      "scope": "The supplied fifth edition matches the outline. These notes cover the identified topics, not every proposition in every assigned section. Historical statutory and tax discussions are not a statement of current law. Casebook edition mismatch remains unresolved.",
+      "sections": [
+        {
+          "heading": "Why close corporations create special risks",
+          "body": "In a closely held firm, ownership may be tied to employment, compensation, management participation, and an expected stream of distributions. Without a ready trading market, a minority owner cannot necessarily escape unfavorable treatment by selling. The same conduct that appears to be an ordinary management choice in a public company can therefore affect an owner’s entire investment arrangement."
+        },
+        {
+          "heading": "Deadlock",
+          "body": "Identify whether the blockage concerns shareholder votes, board votes, or both, and what business action cannot occur. Equal ownership does not establish that every decision is deadlocked; examine actual voting rules and the disputed action. Determine what tie-breaking, buyout, voting, or succession arrangements the parties adopted. A dissolution request requires the applicable statutory ground, not merely interpersonal hostility."
+        },
+        {
+          "heading": "Oppression and legitimate expectations",
+          "body": "A claim may concern termination of employment, denial of distributions, excessive compensation to controllers, exclusion from agreed management, or selective access to liquidity. State the jurisdiction’s theory rather than declaring that every disappointed expectation creates liability. Explain the investment-related expectation, the basis for treating it as legitimate, and any competing business justification. Separate harm to the corporation from an owner’s distinct individual injury."
+        },
+        {
+          "heading": "Remedies and planning",
+          "body": "Compare dissolution, a buyout, enforcement of an agreement, and other relief available under the governing statute and case law. Valuation and who must buy can be as important as establishing wrongdoing. Donahue illustrates a particular jurisdiction’s concern with equal access to a corporate share purchase in a close corporation; it is not an all-jurisdiction rule governing every redemption. Planning provisions should specify valuation, triggering events, funding, and the mechanics of exit rather than relying on an informal promise to be fair."
+        }
+      ]
+    },
+    {
+      "id": "reading-guide-CL700-M12",
+      "moduleId": "CL700-M12",
+      "title": "Detailed reading notes — Duty of Care and Business Judgment Rule",
+      "references": [
+        "Cox & Hazen, Business Organizations Law, 5th ed. §§ 10.1–10.8; Macey, Moll & Hamilton, supplied 14th ed., ch. 10"
+      ],
+      "scope": "The supplied fifth edition matches the outline. These notes cover the identified topics, not every proposition in every assigned section. Historical statutory and tax discussions are not a statement of current law. The casebook is a supplemental fourteenth-edition text.",
+      "sections": [
+        {
+          "heading": "Conduct standard versus judicial review",
+          "body": "The duty of care addresses what directors should do; the business judgment rule addresses when a court will defer to a decision. A bad result does not by itself establish a breach, and a favorable result does not prove an adequate process. Identify an actual decision, the information available, the time taken, and whether disinterested directors exercised judgment in good faith. Distinguish a decision from a failure to pay attention at all."
+        },
+        {
+          "heading": "Information and attention",
+          "body": "The assigned discussion treats regular attendance and attention to corporate affairs as real responsibilities. Analyze how directors obtained information, questioned assumptions, used advisors, and responded to warning signs. Reliance is not a synonym for blind acceptance. Evaluate the reason for relying, the subject matter, and what directors knew or should have investigated under the applicable standard."
+        },
+        {
+          "heading": "Comparing the case illustrations",
+          "body": "Shlensky involved objections to the Cubs’ refusal to install lights and play night baseball. The case illustrates why a court does not substitute business policy merely because an investor predicts a more profitable alternative. Smith v. Van Gorkom instead examined whether the merger decision was informed and concluded the process was deficient. Keep disagreement over business strategy separate from a claim that the board failed to inform itself before approving a major transaction."
+        },
+        {
+          "heading": "Exam sequence",
+          "body": "Identify the alleged failure and responsible directors, state the governing care and review standards, assess process using concrete facts, and analyze causation and remedy separately. Check whether a charter provision or statute limits monetary liability and whether its exceptions apply; do not assume it extinguishes every duty or every type of relief. Explain why the facts support deference or rebut it rather than using the business judgment rule as a conclusion without analysis."
+        }
+      ]
+    },
+    {
+      "id": "reading-guide-CL700-M13",
+      "moduleId": "CL700-M13",
+      "title": "Detailed reading notes — Duty of Loyalty and Conflicts",
+      "references": [
+        "Cox & Hazen, Business Organizations Law, 5th ed. §§ 10.9–10.15, 11.8–11.10; Macey, Moll & Hamilton, supplied 14th ed., ch. 11A–E"
+      ],
+      "scope": "The supplied fifth edition matches the outline. These notes cover the identified topics, not every proposition in every assigned section. Historical statutory and tax discussions are not a statement of current law. Supplied casebook is the fourteenth edition, not the fifteenth assigned.",
+      "sections": [
+        {
+          "heading": "Identify the conflict precisely",
+          "body": "A loyalty problem concerns the fiduciary’s personal interest or competing obligation, not simply an unsuccessful transaction. Identify the corporation, fiduciary, other party, financial interest, and decision influenced by that interest. Distinguish a transaction with the corporation, compensation, use of corporate property or information, and taking an opportunity that may belong to the corporation. Each category can involve different procedures and remedies."
+        },
+        {
+          "heading": "Disclosure, approval, and fairness",
+          "body": "For an interested transaction, analyze what material facts were disclosed, who approved it, whether the decision-makers were disinterested, and which statutory route applies. Do not assume any shareholder vote automatically cures the transaction. Approval and substantive fairness are related but distinct issues, and the effect on validity, burden of proof, or review standard depends on the governing law. Marciano illustrates judicial examination of fairness despite an inability to obtain the usual disinterested approval in a deadlocked firm."
+        },
+        {
+          "heading": "Corporate opportunities",
+          "body": "Ask how the fiduciary learned of the opportunity, the corporation’s activities and interest or expectancy, use of corporate resources, financial capacity as relevant under the governing test, disclosure, and the response of proper decision-makers. Taking an opportunity personally because management did not act immediately is not a complete defense. Equally, a business opportunity does not belong to the corporation merely because a director encountered it. Connect the facts to the jurisdiction’s actual test."
+        },
+        {
+          "heading": "Who owns the claim and what follows",
+          "body": "A wrong to corporate assets normally creates a corporate claim; reduced share value alone does not automatically create a personal claim for each owner. Distinguish direct injury from a derivative claim and analyze the applicable procedural requirements before selecting a remedy. Fiduciary disclosure also requires separating the existence of a duty from the materiality of an omitted fact. A sound answer addresses conflict, process, substantive review, claimant, causation, and relief in that order."
+        }
+      ]
+    },
+    {
+      "id": "reading-guide-CL650-M01",
+      "moduleId": "CL650-M01",
+      "title": "Detailed reading notes — Overview of the Constitution",
+      "references": [
+        "Supplied Constitutional Law detailed module notes, Module 1"
+      ],
+      "scope": "Based on supplied study notes, not independently authenticated copies of the assigned judicial opinions. Case summaries remain review drafts. Historical cases are discussed for the assigned course, not as a complete statement of present law.",
+      "sections": [
+        {
+          "heading": "Constitutional structure",
+          "body": "Begin with the Constitution as a source of delegated powers, institutional design, and limits. Identify the government actor and the source of that actor’s authority before discussing whether its policy is desirable. Separate federalism, which distributes authority between national and state governments, from separation of powers, which distributes responsibilities among national branches. A dispute can implicate both dimensions."
+        },
+        {
+          "heading": "Powers and rights are different questions",
+          "body": "Federal actors require a constitutional basis for action; state governments generally exercise a broader police power subject to constitutional limits. A claim that Congress lacks an enumerated power differs from a claim that an otherwise authorized measure violates a protected right. Work through both questions where the facts support them. Do not assume a legitimate governmental purpose alone supplies the missing constitutional authority."
+        },
+        {
+          "heading": "Judicial role and analysis",
+          "body": "Judicial review operates through actual cases and controversies, so identify the court’s jurisdiction and the claimant’s ability to obtain the requested remedy. Constitutional supremacy does not eliminate procedural limits on adjudication. When reading an opinion, separate the governing text, the dispute’s procedural posture, the legal rule, its application, and the disposition. A judicial statement outside the ground necessary to resolve the case may have a different status from the holding."
+        },
+        {
+          "heading": "Reading method",
+          "body": "For each assignment, make an actor–power–limitation–remedy map. Record which constitutional provision supports the power, which provision or structural principle limits it, and what a court could actually order. Use a case’s material facts to explain the boundary of the rule. The optional guide listed in the outline was not supplied, and a citation in the syllabus is not itself the underlying opinion."
+        }
+      ]
+    },
+    {
+      "id": "reading-guide-CL650-M02",
+      "moduleId": "CL650-M02",
+      "title": "Detailed reading notes — Federal Jurisdiction and Judicial Review",
+      "references": [
+        "Supplied Constitutional Law detailed module notes, Module 2; assigned Marbury, McCardle, Martin and Cooper readings"
+      ],
+      "scope": "Based on supplied study notes, not independently authenticated copies of the assigned judicial opinions. Case summaries remain review drafts. Historical cases are discussed for the assigned course, not as a complete statement of present law.",
+      "sections": [
+        {
+          "heading": "Two jurisdictional layers",
+          "body": "Federal judicial power must fit an Article III category and a statutory jurisdictional grant. A claim’s federal character does not answer every jurisdictional question. Distinguish the Supreme Court’s original jurisdiction from its appellate jurisdiction, and distinguish the constitutionally created Supreme Court from lower federal courts that Congress establishes. Identify the court and posture before discussing the merits."
+        },
+        {
+          "heading": "Marbury and McCardle",
+          "body": "Marbury separates a legal right, the availability of a remedy in principle, and the jurisdiction of the court asked to supply it. The Court did not issue the requested writ because the claimed original jurisdiction exceeded Article III. McCardle concerns Congress’s withdrawal of the particular statutory appellate route used in a pending habeas appeal. It did not hold the detention constitutional or decide that Congress can eliminate every conceivable avenue of review."
+        },
+        {
+          "heading": "Martin and Cooper",
+          "body": "Martin confirms that Supreme Court review can reach state-court judgments involving federal law; the source of the federal issue matters more than the tribunal in which litigation began. Uniform federal meaning and supremacy support that authority. Cooper addresses state officials’ obligation to comply with constitutional rulings rather than treating federal rights as optional when compliance provokes hostility. Keep state-court appellate review separate from the duty of state actors to obey controlling constitutional law."
+        },
+        {
+          "heading": "Exam synthesis",
+          "body": "Ask which court is being asked to act, whether original or appellate authority is invoked, what Article III permits, what statute grants, and whether justiciability requirements are met. Then identify the legal issue and remedy. Explain why jurisdiction and merits are separate: establishing that government acted unlawfully does not automatically establish that this court can grant this form of relief. Use each assigned case for the specific institutional problem it resolved rather than citing all four as interchangeable statements of judicial power."
+        }
+      ]
+    },
+    {
+      "id": "reading-guide-CL650-M03",
+      "moduleId": "CL650-M03",
+      "title": "Detailed reading notes — Justiciability: Standing",
+      "references": [
+        "Supplied Constitutional Law detailed module notes, Module 3; assigned standing cases"
+      ],
+      "scope": "Based on supplied study notes, not independently authenticated copies of the assigned judicial opinions. Case summaries remain review drafts. Historical cases are discussed for the assigned course, not as a complete statement of present law.",
+      "sections": [
+        {
+          "heading": "Constitutional minimum",
+          "body": "Analyze injury in fact, traceability, and redressability separately for each plaintiff, claim, and requested remedy. A concrete, personal injury must be actual or sufficiently imminent rather than an abstract desire for government compliance. Traceability asks whether the challenged conduct materially explains the injury; redressability asks whether the requested judicial relief would likely alleviate it. Uncontrolled third-party decisions can create problems for either inquiry."
+        },
+        {
+          "heading": "Lujan and Lyons",
+          "body": "Lujan’s members had an interest in observing wildlife, but vague future plans did not establish imminent personal injury. The requested relief also raised redressability problems. Lyons shows why past injury may support a damages claim while failing to establish the future threat needed for an injunction. Do not convert evidence of a completed unlawful act into proof that the same plaintiff will personally experience it again."
+        },
+        {
+          "heading": "Organizations, taxpayers, and third parties",
+          "body": "Organizational representation of members requires identifying an affected member and the relationship between the claim, the organization’s purpose, and individual participation. United Food allows statutory modification of the prudential participation restriction, not abolition of Article III injury. Flast recognizes a narrow taxpayer exception tied to taxing-and-spending action and a specific constitutional limitation. Eisenstadt illustrates third-party-rights reasoning in a prosecuted distributor’s challenge, not a general permission to litigate anyone’s rights."
+        },
+        {
+          "heading": "Statutory labels and answer structure",
+          "body": "The course’s discussion of Air Courier uses zone-of-interests terminology. Keep that statutory cause-of-action inquiry distinct from the constitutional minimum, and flag the terminology rather than merging it into injury in fact. Structure an answer plaintiff by plaintiff and remedy by remedy. Identify the personal stake, causal chain, practical effect of relief, and any additional representational or statutory issue. A strong merits argument does not cure a standing defect."
+        }
+      ]
+    },
+    {
+      "id": "reading-guide-CL650-M05",
+      "moduleId": "CL650-M05",
+      "title": "Detailed reading notes — Political Questions and Sovereign Immunity",
+      "references": [
+        "Supplied Constitutional Law detailed module notes, Module 5; assigned political-question, state-ground and immunity cases"
+      ],
+      "scope": "Based on supplied study notes, not independently authenticated copies of the assigned judicial opinions. Case summaries remain review drafts. Historical cases are discussed for the assigned course, not as a complete statement of present law.",
+      "sections": [
+        {
+          "heading": "Political question",
+          "body": "Start with the particular issue and Baker’s factors rather than declaring every politically important lawsuit nonjusticiable. Textual commitment to another branch and the absence of judicially manageable standards require explanation from the constitutional provision and requested decision. Baker allowed the equal-protection claim to proceed. United States v. Nixon concerned a concrete evidentiary dispute; Nixon v. United States concerned Senate impeachment procedures. Reversing the case names reverses the lesson."
+        },
+        {
+          "heading": "Adequate and independent state grounds",
+          "body": "Supreme Court review cannot change a judgment independently sustained by adequate state law. Identify every ground, remove the challenged federal ground, and ask whether the result would remain. Michigan v. Long addresses an ambiguous decision appearing primarily federal or interwoven with federal law and the effect of a plain statement of independent state-law control. Do not confuse this limit on review with a federal court’s discretionary abstention despite jurisdiction."
+        },
+        {
+          "heading": "Defendant, forum, source of law, and remedy",
+          "body": "For sovereign immunity, identify each defendant and each requested form of relief. A damages award payable by the state treasury differs from prospective relief directed to an official to end an ongoing federal violation. Edelman bars retroactive monetary relief disguised as an injunction. Pennhurst prevents using the federal-law rationale of Ex parte Young to obtain a federal order compelling state officials to follow state law."
+        },
+        {
+          "heading": "Waiver and abrogation",
+          "body": "Analyze clear state consent separately from congressional abrogation. Abrogation requires clear statutory intent and a constitutionally sufficient source of power. Fitzpatrick recognizes the significance of Fourteenth Amendment Section 5; Kimel requires examining whether the particular statute validly enforces the underlying constitutional right. Do not stop after finding that Congress mentioned states. Compare the right, the record of constitutional violations, and the remedy’s scope. Address each prospective, retrospective, official-capacity, and personal-capacity claim distinctly."
+        }
+      ]
+    },
+    {
+      "id": "reading-guide-CL685-M01",
+      "moduleId": "CL685-M01",
+      "title": "Detailed reading notes — Criminal Justice Process",
+      "references": [
+        "Modern Criminal Procedure: Cases, Comments, Questions, 15th ed., chapters 1–4"
+      ],
+      "scope": "Supplemental source: this casebook is not the assigned Criminal Procedure treatise, 7th edition. These notes support the listed assigned issues but do not certify completion of the assigned treatise pages. Review the assigned text when available.",
+      "sections": [
+        {
+          "heading": "Constitutional source and procedural stage",
+          "body": "Identify the right, its source, the government action challenged, and the stage of the criminal process. Federal constitutional protections, state constitutions, statutes, procedural rules, and supervisory doctrines can supply different grounds. A rule applicable in a federal prosecution does not automatically have the same source or reach in a state prosecution. Keep incorporation through the Fourteenth Amendment separate from the historical meaning of a particular Bill of Rights guarantee."
+        },
+        {
+          "heading": "Gideon and the scope of the decision",
+          "body": "Gideon involved a defendant unable to afford a lawyer who was denied appointed counsel for a state felony trial. The Court rejected the view that appointed counsel in that setting depended on exceptional circumstances and treated assistance of counsel as fundamental to a fair adversarial trial. The assignment should not be summarized as a right to a free attorney in every interaction with government. Ask which proceedings and consequences are involved before extending the rule."
+        },
+        {
+          "heading": "Comparisons and exam method",
+          "body": "Separate the Sixth Amendment assistance-of-counsel problem from Fifth Amendment interrogation safeguards. A person can have Miranda protections before the prosecution stage at which a Sixth Amendment right attaches. Conversely, a trial-stage right can matter even when no interrogation occurs. Record the stage, custody status, interrogation, formal proceedings, asserted right, and requested remedy in separate columns. The assigned Hurtado opinion is not reproduced by merely listing its citation; use the missing-source indicator for that unbriefed assignment."
+        }
+      ]
+    },
+    {
+      "id": "reading-guide-CL685-M02",
+      "moduleId": "CL685-M02",
+      "title": "Detailed reading notes — Pretrial Identification",
+      "references": [
+        "Modern Criminal Procedure: Cases, Comments, Questions, 15th ed., chapters 10 and 13"
+      ],
+      "scope": "Supplemental source: this casebook is not the assigned Criminal Procedure treatise, 7th edition. These notes support the listed assigned issues but do not certify completion of the assigned treatise pages. Review the assigned text when available.",
+      "sections": [
+        {
+          "heading": "Identification theories",
+          "body": "Separate a Sixth Amendment counsel challenge from a due-process reliability challenge. Ask when adversary judicial proceedings began and what type of identification procedure occurred. A physical lineup, a showup, and a photographic display do not necessarily have the same counsel analysis. Do not assume that any suggestive identification is governed only by one constitutional provision."
+        },
+        {
+          "heading": "Due process and reliability",
+          "body": "The supplemental identification chapter discusses police-arranged suggestiveness and reliability. Examine the witness’s opportunity to observe, attention, prior description, certainty in the relevant framework, and time elapsed. Describe the procedure and governmental involvement before applying the test. A finding that a process is suggestive does not by itself answer whether the resulting identification must be excluded. Nor does the absence of a particular counsel right automatically resolve a separate due-process argument."
+        },
+        {
+          "heading": "Bail and remedies",
+          "body": "Pretrial release raises an independent inquiry concerning appearance, conditions, the applicable statutory framework, and constitutional limits. Separate a claim that an amount is excessive from an assertion of an unconditional right to release. The outline assigns Kirby and Stack; the short supplied OCR pages concern identification discussion and do not establish that every assigned page or case has been fully supplied. Avoid treating a supplement chapter as proof of completion of the treatise reading."
+        }
+      ]
+    },
+    {
+      "id": "reading-guide-CL685-M03",
+      "moduleId": "CL685-M03",
+      "title": "Detailed reading notes — Introduction to Search and Seizure",
+      "references": [
+        "Modern Criminal Procedure: Cases, Comments, Questions, 15th ed., chapters 6"
+      ],
+      "scope": "Supplemental source: this casebook is not the assigned Criminal Procedure treatise, 7th edition. These notes support the listed assigned issues but do not certify completion of the assigned treatise pages. Review the assigned text when available.",
+      "sections": [
+        {
+          "heading": "Identify the protected interest",
+          "body": "Before asking whether police needed a warrant, determine whether governmental conduct was a search or seizure. Katz concerns interception of a private telephone conversation even without physical entry into the booth. Its rejection of a purely place-based or physical-entry approach does not convert every governmental observation into an invasion of a general constitutional right to privacy."
+        },
+        {
+          "heading": "Keep privacy and property routes separate",
+          "body": "Jones identifies installation and use of a GPS device on a vehicle as an information-gathering physical intrusion on a protected effect. The property-based analysis remains available alongside the privacy approach associated with Katz. A conclusion that movements could be observed in public does not by itself dispose of an actual physical-intrusion theory. Identify precisely what was attached, entered, observed, or recorded."
+        },
+        {
+          "heading": "From search to remedy",
+          "body": "A finding of a search begins rather than ends Fourth Amendment analysis. Identify the claimant’s own protected interest, the justification asserted, scope, and any warrant or exception. Then address exclusion separately. Do not say that Jones resolved every question about all location tracking or that Katz invalidates any recording. Mapp is assigned, but a general reference to exclusion does not substitute for a fully sourced brief of that opinion."
+        }
+      ]
+    },
+    {
+      "id": "reading-guide-CL685-M04",
+      "moduleId": "CL685-M04",
+      "title": "Detailed reading notes — Warrant Requirement",
+      "references": [
+        "Modern Criminal Procedure: Cases, Comments, Questions, 15th ed., chapters 6 and 7"
+      ],
+      "scope": "Supplemental source: this casebook is not the assigned Criminal Procedure treatise, 7th edition. These notes support the listed assigned issues but do not certify completion of the assigned treatise pages. Review the assigned text when available.",
+      "sections": [
+        {
+          "heading": "Define what requires justification",
+          "body": "Identify whether the state conduct is a search, a seizure of property, or a seizure of a person. A warrant application must connect the facts to the place, person, or evidence targeted. Probable cause evaluates the factual basis in context rather than requiring proof beyond a reasonable doubt. Keep an officer’s factual information separate from conclusions that simply repeat the statutory language."
+        },
+        {
+          "heading": "Warrant validity and execution",
+          "body": "A warrant analysis should separate the issuing authority, factual basis, particularity, and how the warrant was executed. Even a valid authorization does not necessarily permit every later investigative act. Ask whether officers remained within the authorized location and scope and whether a new intrusion required an independent basis. A lawful initial presence is not a blanket license to manipulate or inspect everything encountered."
+        },
+        {
+          "heading": "Assigned examples and limits",
+          "body": "Franks is identified in the supplied chapter’s discussion of challenges to an affidavit’s veracity; Hicks is assigned for a distinct additional-search problem. Do not collapse a challenge to the warrant’s factual foundation into a challenge to execution. For each issue, identify the alleged defect, its significance to the authorization, and the remedy. These notes are a roadmap from the supplemental chapters, not a claim that the assigned treatise sections or full case opinions have all been supplied."
+        }
+      ]
+    },
+    {
+      "id": "reading-guide-CL685-M05",
+      "moduleId": "CL685-M05",
+      "title": "Detailed reading notes — Stop and Frisk",
+      "references": [
+        "Modern Criminal Procedure: Cases, Comments, Questions, 15th ed., chapters 7"
+      ],
+      "scope": "Supplemental source: this casebook is not the assigned Criminal Procedure treatise, 7th edition. These notes support the listed assigned issues but do not certify completion of the assigned treatise pages. Review the assigned text when available.",
+      "sections": [
+        {
+          "heading": "Encounter, stop, and arrest",
+          "body": "Identify the moment and method of restraint. A consensual conversation is not automatically a seizure, and a stop is not automatically an arrest. Explain the facts that change the category rather than attaching a label to the entire encounter. The outline’s Hodari D. and Bostick assignments concern important boundary questions, so a general Terry summary cannot substitute for those additional analyses."
+        },
+        {
+          "heading": "Terry requires two justifications",
+          "body": "The investigative stop must have a sufficient particularized basis, and the protective frisk requires a separate safety rationale involving a reasonable belief that the person is armed and dangerous. Suspicion of criminal activity alone is not an automatic authorization for a weapons search. In Terry, repeated observation of men apparently checking a store supplied context; the officer did more than act on an unexplained feeling."
+        },
+        {
+          "heading": "Scope and escalation",
+          "body": "A protective frisk is directed at weapons rather than a general search for evidence. Explain why the chosen manner and duration fit the safety concern, and identify any later fact justifying escalation. A useful answer divides the encounter into initial approach, restraint, frisk, discovery, and any further search. If one stage is invalid, trace its consequences without assuming that every later item is automatically admissible or automatically excluded."
+        }
+      ]
+    },
+    {
+      "id": "reading-guide-CL685-M06",
+      "moduleId": "CL685-M06",
+      "title": "Detailed reading notes — Warrantless Vehicle, Premises and Container Searches",
+      "references": [
+        "Modern Criminal Procedure: Cases, Comments, Questions, 15th ed., chapters 7"
+      ],
+      "scope": "Supplemental source: this casebook is not the assigned Criminal Procedure treatise, 7th edition. These notes support the listed assigned issues but do not certify completion of the assigned treatise pages. Review the assigned text when available.",
+      "sections": [
+        {
+          "heading": "Chimel rationale",
+          "body": "A search incident to a lawful arrest is justified by officer safety and preservation of accessible evidence. Identify the arrestee’s person and the area within immediate control rather than treating arrest as authorization to search every nearby room or container. The scope must remain tied to the reasons for the exception."
+        },
+        {
+          "heading": "Gant and the vehicle problem",
+          "body": "Gant rejects a reading of Belton that allows a vehicle search after every recent occupant’s arrest. One route concerns an unsecured arrestee within reaching distance at the time of the search. A separate vehicle-specific route asks whether it is reasonable to believe evidence of the offense of arrest might be found in the vehicle. Explain each route independently; a secured arrestee can defeat the first without logically deciding the second."
+        },
+        {
+          "heading": "Independent exceptions",
+          "body": "Do not merge search incident to arrest, a vehicle evidence search supported by the applicable justification, consent, and an inventory rationale. Each has its own trigger and permitted scope. Gant involved a suspended-license arrest, a secured suspect, and cocaine in a jacket on the backseat; those facts explain why neither the accessibility rationale nor a search for evidence of that offense justified the search. The assigned Opperman reading requires separate inventory analysis rather than a label borrowed from Gant."
+        }
+      ]
+    },
+    {
+      "id": "reading-guide-CL685-M07",
+      "moduleId": "CL685-M07",
+      "title": "Detailed reading notes — Consent Searches and Entrapment",
+      "references": [
+        "Modern Criminal Procedure: Cases, Comments, Questions, 15th ed., chapters 7 and 8"
+      ],
+      "scope": "Supplemental source: this casebook is not the assigned Criminal Procedure treatise, 7th edition. These notes support the listed assigned issues but do not certify completion of the assigned treatise pages. Review the assigned text when available.",
+      "sections": [
+        {
+          "heading": "Consent as a distinct theory",
+          "body": "A consent argument requires examining whether consent was voluntary, whether the person had authority relevant to the search, and what scope was actually permitted. These are separate questions. Do not assume that a polite request establishes consent or that agreeing to one location or purpose authorizes an unlimited investigation. The actual words, surrounding pressures, and conduct matter."
+        },
+        {
+          "heading": "Multiple occupants and source limitations",
+          "body": "The outline assigns Randolph, so conflicting occupants cannot be resolved solely by saying one resident agreed. Identify presence, objection, authority, timing, and the exception police assert. The supplemental text supports studying consent issues, but these notes do not claim a full brief of every assigned consent decision or establish that all later qualifications have been supplied."
+        },
+        {
+          "heading": "Undercover conduct and entrapment",
+          "body": "An undercover officer’s concealment of identity is not itself the full entrapment inquiry. Distinguish government inducement from an opportunity to commit an offense, and distinguish approaches focusing on predisposition from approaches focusing on the character of government conduct. Use the course’s governing formulation. The assigned Jacobson and Russell decisions should be compared using their facts rather than treated as an automatic defense whenever an informant participated."
+        }
+      ]
+    },
+    {
+      "id": "reading-guide-CL685-M08",
+      "moduleId": "CL685-M08",
+      "title": "Detailed reading notes — Exclusionary Rule",
+      "references": [
+        "Modern Criminal Procedure: Cases, Comments, Questions, 15th ed., chapters 6 and 12"
+      ],
+      "scope": "Supplemental source: this casebook is not the assigned Criminal Procedure treatise, 7th edition. These notes support the listed assigned issues but do not certify completion of the assigned treatise pages. Review the assigned text when available.",
+      "sections": [
+        {
+          "heading": "Separate violation and exclusion",
+          "body": "Begin by identifying the specific constitutional violation and whose rights were affected. Then determine whether the challenged evidence was obtained through it. Exclusion is a remedy with its own scope and exceptions; neither the existence of a violation nor an officer’s assertion of good intentions alone resolves admissibility."
+        },
+        {
+          "heading": "Trace the evidence",
+          "body": "Draw a timeline for statements, physical objects, witness information, and later police actions. For derivative evidence, explain the causal relationship to the initial illegality and test the actually applicable doctrine: an independent lawful source differs from attenuation of an existing causal link. Do not assume that any intervening event automatically cures the original violation. Identify the facts that matter under the assigned case rather than listing exception names."
+        },
+        {
+          "heading": "Leon’s distinct inquiry",
+          "body": "Leon examines objectively reasonable reliance on a judicially issued warrant later found unsupported by probable cause. The analysis asks whether exclusion would serve the deterrence rationale in the circumstances and recognizes limits on reasonable reliance. It does not say that an officer’s subjective good intentions validate an unconstitutional search. Keep the warrant’s legal defect separate from the remedy and explain why reliance was or was not objectively reasonable. The outline’s additional Wong Sun, Brown, Elstad, and Strieff readings remain separate assignments."
+        }
+      ]
+    },
+    {
+      "id": "reading-guide-CL685-M09",
+      "moduleId": "CL685-M09",
+      "title": "Detailed reading notes — Limitations on Prosecutors",
+      "references": [
+        "Modern Criminal Procedure: Cases, Comments, Questions, 15th ed., chapters 21"
+      ],
+      "scope": "Supplemental source: this casebook is not the assigned Criminal Procedure treatise, 7th edition. These notes support the listed assigned issues but do not certify completion of the assigned treatise pages. Review the assigned text when available.",
+      "sections": [
+        {
+          "heading": "Three linked questions",
+          "body": "Identify evidence favorable to the defense, suppression or nondisclosure attributable to the prosecution, and materiality. Favorability can include impeachment as well as directly exculpatory information. The significance of an item depends on the charges, defense theory, witnesses, and record as a whole. Do not equate any discovery violation with the same constitutional remedy."
+        },
+        {
+          "heading": "Bagley and witness incentives",
+          "body": "The supplied chapter uses Bagley to develop the Brady obligation. Bagley involved undisclosed arrangements providing payment incentives to important government witnesses despite a defense request concerning inducements. That setting illustrates how information affecting credibility can matter even if it does not independently establish innocence. Ask what the undisclosed material could have done to the fact-finder’s assessment of the government’s case."
+        },
+        {
+          "heading": "Materiality and separate preservation questions",
+          "body": "The reasonable-probability formulation concerns confidence in the outcome, not a requirement that the defendant prove with certainty that acquittal would have occurred. Evaluate the combined significance of the suppressed evidence rather than isolating each item artificially. Distinguish a failure to disclose existing evidence from loss or destruction of material, which the outline addresses through Trombetta. These are supplemental notes on the topic; the assigned treatise pages and all preservation decisions are not certified complete."
+        }
+      ]
+    },
+    {
+      "id": "reading-guide-CL685-M10",
+      "moduleId": "CL685-M10",
+      "title": "Detailed reading notes — Fifth Amendment Privilege",
+      "references": [
+        "Modern Criminal Procedure: Cases, Comments, Questions, 15th ed., chapters 9"
+      ],
+      "scope": "Supplemental source: this casebook is not the assigned Criminal Procedure treatise, 7th edition. These notes support the listed assigned issues but do not certify completion of the assigned treatise pages. Review the assigned text when available.",
+      "sections": [
+        {
+          "heading": "Identify the trigger",
+          "body": "The Miranda framework concerns custodial interrogation, not every conversation between a suspect and an officer. Analyze custody and interrogation separately and identify the time each condition began. Distinguish the underlying privilege against compelled self-incrimination from the procedural warnings used to protect it. A statement can raise a voluntariness question even where a particular warning issue is absent."
+        },
+        {
+          "heading": "Warnings, waiver, and invocation",
+          "body": "Record which warnings were given, whether a legally sufficient waiver occurred, and whether the person later invoked silence or counsel. The fact that warnings were read does not automatically establish every element of waiver. Separate initial waiver from the rules governing renewed questioning after invocation. A later answer does not erase the need to analyze how police obtained permission to proceed."
+        },
+        {
+          "heading": "Interrogation beyond direct questions",
+          "body": "Innis includes express questions and their functional equivalent: police words or actions, apart from those normally attendant to custody, that officers should know are reasonably likely to elicit an incriminating response. The focus is not solely on an officer’s stated intention. Innis itself found the short conversation about a missing gun insufficient on the record to constitute interrogation. Apply the test to the known circumstances rather than declaring any overheard police conversation an interrogation."
+        }
+      ]
+    },
+    {
+      "id": "reading-guide-CL685-M11",
+      "moduleId": "CL685-M11",
+      "title": "Detailed reading notes — Miranda",
+      "references": [
+        "Modern Criminal Procedure: Cases, Comments, Questions, 15th ed., chapters 9"
+      ],
+      "scope": "Supplemental source: this casebook is not the assigned Criminal Procedure treatise, 7th edition. These notes support the listed assigned issues but do not certify completion of the assigned treatise pages. Review the assigned text when available.",
+      "sections": [
+        {
+          "heading": "Build a chronology",
+          "body": "List custody, warnings, questions, waiver, invocation, any break, renewed initiation, and later statements. Different rules can turn on which event happened first and who restarted the discussion. Do not treat a new signature on a warning form as a complete answer to a prior invocation problem."
+        },
+        {
+          "heading": "Silence and counsel are not interchangeable",
+          "body": "Identify exactly what the suspect communicated and which right was invoked. The course assigns Mosley and Berghuis alongside Henry and Patterson, so a single statement that questioning must stop conceals different doctrinal settings. Discuss clarity, initiation, waiver, and offense or proceeding context under the applicable assigned rule rather than transplanting a formula from another setting."
+        },
+        {
+          "heading": "Fifth and Sixth Amendment separation",
+          "body": "The Miranda counsel safeguard addresses custodial interrogation; the Sixth Amendment assistance-of-counsel right concerns adversary criminal proceedings and its own framework. An undercover interaction can therefore require analysis different from a standard warned interview. Identify the constitutional source before analyzing an informant’s conduct. The supplied chapter supports this distinction, but these notes do not assert a fully sourced brief or current-law update for every decision named in the outline."
+        }
+      ]
+    },
+    {
+      "id": "reading-guide-CL685-M12",
+      "moduleId": "CL685-M12",
+      "title": "Detailed reading notes — Double Jeopardy, Speedy Trial and Guilty Pleas",
+      "references": [
+        "Modern Criminal Procedure: Cases, Comments, Questions, 15th ed., chapters 20, 22 and 26"
+      ],
+      "scope": "Supplemental source: this casebook is not the assigned Criminal Procedure treatise, 7th edition. These notes support the listed assigned issues but do not certify completion of the assigned treatise pages. Review the assigned text when available.",
+      "sections": [
+        {
+          "heading": "Speedy trial balancing",
+          "body": "Barker evaluates length of delay, reasons, assertion of the right, and prejudice together. Delay is not assessed by a single constitutional number applicable to all cases. Identify which periods count and why the prosecution or defense caused them. A defendant’s failure to demand trial is relevant but not an automatic waiver of the constitutional protection."
+        },
+        {
+          "heading": "Pleas and informed choice",
+          "body": "A guilty plea changes the litigation posture and requires its own validity inquiry. Identify the defendant’s understanding of the charge and consequences relevant to the governing rule, voluntariness, counsel, and the record supporting acceptance. Do not treat an attractive bargain as conclusive proof that the plea was valid or that no earlier claim can matter. State which challenge survives the plea under the applicable assignment."
+        },
+        {
+          "heading": "Jeopardy and the second proceeding",
+          "body": "Before asking whether a new prosecution is prohibited, identify when jeopardy attached, how the first proceeding ended, who requested termination, and whether the same offense or a distinct issue is involved. A mistrial, acquittal, dismissal, and conviction have different consequences. The outline’s Perez, Kennedy, Lee, and Johnson assignments require these distinctions. Avoid the shorthand that any second courtroom appearance is unconstitutional."
+        }
+      ]
+    },
+    {
+      "id": "reading-guide-CL685-M13",
+      "moduleId": "CL685-M13",
+      "title": "Detailed reading notes — Trial Rights and Sentencing",
+      "references": [
+        "Modern Criminal Procedure: Cases, Comments, Questions, 15th ed., chapters 23 and 27"
+      ],
+      "scope": "Supplemental source: this casebook is not the assigned Criminal Procedure treatise, 7th edition. These notes support the listed assigned issues but do not certify completion of the assigned treatise pages. Review the assigned text when available.",
+      "sections": [
+        {
+          "heading": "Jury entitlement and waiver",
+          "body": "The right to a jury depends on the nature of the offense and the governing seriousness threshold, not merely the label criminal. Keep the existence of the right separate from whether it was validly waived and what participation the judge and prosecution must have under the applicable rule. The assigned Baldwin and Patton readings address these distinct issues."
+        },
+        {
+          "heading": "What facts change authorized punishment",
+          "body": "The supplemental sentencing chapter presents the distinction between facts used to select a sentence within an authorized range and facts that increase the legal maximum. Apprendi assigns qualifying maximum-increasing facts to a jury under the reasonable-doubt standard, subject to the prior-conviction exception stated in that decision. Identify the maximum authorized by the verdict before evaluating the additional fact-finding; a legislature’s label alone does not answer the constitutional question."
+        },
+        {
+          "heading": "Do not combine every sentencing issue",
+          "body": "Discretion over sentencing information, constitutional limits on capital punishment, and jury allocation of aggravating facts are different subjects. The outline assigns Williams, Furman, and Apprendi for those reasons. State the procedural rule and the particular restriction actually implicated. These notes preserve the assigned historical decision’s framing and are not a claim that every later sentencing case or current statutory scheme has been reviewed."
+        }
+      ]
+    },
+    {
+      "id": "reading-guide-CL685-M14",
+      "moduleId": "CL685-M14",
+      "title": "Detailed reading notes — Appellate Review",
+      "references": [
+        "Modern Criminal Procedure: Cases, Comments, Questions, 15th ed., chapters 4 and 28"
+      ],
+      "scope": "Supplemental source: this casebook is not the assigned Criminal Procedure treatise, 7th edition. These notes support the listed assigned issues but do not certify completion of the assigned treatise pages. Review the assigned text when available.",
+      "sections": [
+        {
+          "heading": "Identify the review vehicle",
+          "body": "Direct appeal, discretionary review, and collateral relief are not interchangeable. Identify the judgment challenged, the reviewing court, the source of review authority, and any preservation or finality issue. A claim that an error occurred at trial is different from a showing that this particular review vehicle authorizes relief for it. The supplemental chapter notes the distinction between creation of an appeal and constitutional requirements governing an appeal once available."
+        },
+        {
+          "heading": "Self-representation",
+          "body": "Faretta concerns a defendant’s informed choice to conduct the defense personally at trial. The Court distinguished the autonomy interest from the quality of the defendant’s legal skill. A knowing choice can require awareness of the disadvantages of self-representation without requiring the defendant to demonstrate the expertise of counsel. Do not extend this trial holding automatically to every appellate stage or every competency question."
+        },
+        {
+          "heading": "Habeas and source quality",
+          "body": "The supplied scanned material includes discussion of procedural default, exhaustion, timeliness, and federal habeas review, but OCR quality and incomplete pagination prevent treating all assigned sections as complete. Identify a separate collateral-review requirement before reaching underlying trial merits. The assigned Pearce, Sibron, and Johnson decisions require their own source texts for full briefs. A case name in the table of cases is not sufficient evidence to invent the facts or holding."
+        }
+      ]
+    }
+  ],
+  "assignments": [
+    {
+      "moduleId": "CL650-M01",
+      "title": "Overview of the Constitution",
+      "reading": "America Gets a Constitution - review the information on this webpage and watch the three-minute video. Both provide information about the history of the Constitution.\n\n\n\nAdditional Resources:\n\n\n\nThere is no required textbook for this course. However, the following text is optional and recommended if you want an additional resource:\n\nThe Glannon Guide to Constitutional Law: Powers and Liberties: Learning Constitutional Law Through Multiple-Choice Questions and Analysis, 4th ed. ISBN: 9798894101552\n\n\n\nYou may also review this annotated Constitution to see the Constitution’s text with explanations.\n\n\n\nThis outline document has a listing of the topics covered in this course. You should download the document and add the legal rules for each topic as we cover it.",
+      "status": "Study notes available; primary readings missing"
+    },
+    {
+      "moduleId": "CL650-M02",
+      "title": "Federal Jurisdiction and Judicial Review",
+      "reading": "Marbury v. Madison, 5 U.S. 137 (1803)\n\nEx Parte McCardle, 74 U.S. 506 (1869)\n\nMartin v. Hunter’s Lessee, 14 U.S. 304 (1816)\n\nAaron v. Cooper, 358 U.S. 1 (1958)",
+      "status": "Study notes available; primary readings missing"
+    },
+    {
+      "moduleId": "CL650-M03",
+      "title": "Justiciability: Standing",
+      "reading": "Lujan v. Defenders of Wildlife, 504 U.S. 555 (1992)\n\nCity of Los Angeles v. Lyons, 461 U.S. 95 (1983)\n\nUnited Food and Commercial Workers Union Local 751 v. Brown, 517 U.S. 544 (1996)\n\nAir Courier Conference of America v. American Postal Workers, 498 U.S. 517 (1991)\n\nFlast v. Cohen, 392 U.S. 83 (1968)\n\nEisenstadt v. Baird, 405 U.S. 438 (1972)\n\n\n\nOptional Reading\n\nElk Grove Unified School Dist. v. Newdow, 542 U.S. 1 (2004)\n\nMurthy v. Missouri, 603 U.S. 43 (2024)\n\nFDA v. Alliance for Hippocratic Medicine, (2024)",
+      "status": "Study notes available; primary readings missing"
+    },
+    {
+      "moduleId": "CL650-M04",
+      "title": "Justiciability: Timing",
+      "reading": "Poe v. Ullman, 367 U.S. 497 (1961)\n\nThomas v. Union Carbide, 473 U.S. 568 (1985)\n\nFriends of the Earth, Inc. v. Laidlaw Environmental Services, 528 U.S. 167 (2000)\n\nRoe v. Wade, 410 U.S. 113 (1973)\n\nLos Angeles v. Van Davis, 440 U.S. 625 (1979)\n\n\n\nOptional reading\n\n\n\nUnited Public Workers of America (C.I.O.) v. Mitchell, 330 U.S. 75 (1947)\n\nTexas v. United States, 523 U.S. 296 (1998)\n\nHonig v. Doe, 484 U.S. 305 (1988)",
+      "status": "Assigned source text missing"
+    },
+    {
+      "moduleId": "CL650-M05",
+      "title": "Political Questions and Sovereign Immunity",
+      "reading": "Baker v. Carr, 369 U.S. 186 (1962).\n\nU.S. v. Nixon, 418 U.S. 683 (1974).\n\nNixon v. U.S., 506 U.S. 224 (1993).\n\nMichigan v. Long, 463 U.S. 1032 (1983).\n\nEdelman v. Jordan, 415 U.S. 651 (1974).\n\nFitzpatrick v. Bitzer, 427 U.S. 445 (1976).\n\nKimel v. Florida Bd. of Regents, 528 U.S. 62 (2000).\n\n\n\nOptional Reading\n\nAlden v. Maine, 527 U.S. 706 (1999)\n\nPennhurst State Sch. V. Halderman,  465 U.S. 89 (1984)",
+      "status": "Study notes available; primary readings missing"
+    },
+    {
+      "moduleId": "CL650-M06",
+      "title": "Necessary and Proper Clause",
+      "reading": "Kleppe v. New Mexico, 426 U.S. 529 (1976).\n\nCity of Boerne v. Flores, 521 U.S. 507 (1997).\n\nM’Culloch v. State, 17 U.S. 316 (1819)\n\n\n\nOptional reading\n\nSabri v. U.S., 541 U.S. 600 (2004)\n\nU.S. v. Comstock, 560 U.S. 126 (2010)",
+      "status": "Assigned source text missing"
+    },
+    {
+      "moduleId": "CL650-M07",
+      "title": "Commerce Clause",
+      "reading": "U.S. v. Lopez, 514 U.S. 549 (1995).\n\nU.S. v. Morrison, 529 U.S. 598 (2000).\n\nGonzales v. Raich, 545 U.S. 1 (2005). \n\n\n\nNote: You will notice that these cases are not edited down for you as much. Dissenting and concurring opinions are still usually removed, but the full majority opinion is generally included as is. That is intentional to help you work on reading cases and pulling out the important information from them on your own, rather than having it edited in a way that does that for you.\n\n\n\nOptional reading:\n\nHeart of Atlanta Motel, Inc. v. U. S., 379 U.S. 241 (1964).\n\nKatzenbach v. McClung, 379 U.S. 294 (1964).",
+      "status": "Assigned source text missing"
+    },
+    {
+      "moduleId": "CL650-M08",
+      "title": "Taxing and Spending Clause",
+      "reading": "National Federation of Independent Business v. Sebelius, 567 U.S. 519 (2012).\n\nSouth Dakota v. Dole, 483 U.S. 203 (1987).\n\n\n\nOptional Reading\n\nPennhurst State School and Hospital v. Halderman, 451 U.S. 1 (1981).",
+      "status": "Assigned source text missing"
+    },
+    {
+      "moduleId": "CL650-M09",
+      "title": "State Powers and Federalism",
+      "reading": "Garcia v. San Antonio Metropolitan Transit Authority, 469 U.S. 528 (1985)\n\nNew York v. U.S., 505 U.S. 144 (1992)\n\nReno v. Condon, 528 U.S. 141 (2000)\n\nGregory v. Ashcroft, 501 U.S. 452 (1991)\n\n\n\nNote: You will notice that these cases are not edited down for you as much. Dissenting and concurring opinions are still usually removed, but the full majority opinion is generally included as is. That is intentional to help you work on reading cases and pulling out the important information from them on your own, as opposed to having it edited in a way that does that for you.\n\n\n\nOptional reading:\n\nPrintz v. U.S., 521 U.S. 898 (1997)",
+      "status": "Assigned source text missing"
+    },
+    {
+      "moduleId": "CL650-M10",
+      "title": "Limits on State Powers",
+      "reading": "Hunt v. Washington State Apple Advertising Com’n, 432 U.S. 333 (1977)\n\nPike v. Bruce Church, Inc., 397 U.S. 137 (1970)\n\nReeves, Inc. v. Stake, 447 U.S. 429 (1980)\n\nBaldwin v. Fish and Game Commission of Montana, 436 U.S. 371 (1978)\n\n\n\nOptional reading\n\n\n\nU.S. Term Limits, Inc. v. Thornton, 514 U.S. 779 (1995)\n\nGade v. National Solid Wastes Management Ass’n, 505 U.S. 88 (1992)",
+      "status": "Assigned source text missing"
+    },
+    {
+      "moduleId": "CL650-M11",
+      "title": "Executive Express and Inherent Powers",
+      "reading": "Youngstown Sheet & Tube Co. v. Sawyer, 343 U.S. 579 (1952).\n\nU.S. v. Curtiss-Wright Export Corporation, 299 U.S. 304 (1936).\n\nDames & Moore v. Regan, 453 U.S. 654 (1981).\n\nHamdi v. Rumsfeld, 542 U.S. 507 (2004).",
+      "status": "Assigned source text missing"
+    },
+    {
+      "moduleId": "CL650-M12",
+      "title": "Executive Appointment and Removal",
+      "reading": "Whitman v. American Trucking Associations, 531 U.S. 457 (2001).\n\nUnited States v. Arthrex, 141 S.Ct. 1970 (2021).\n\nSeila Law, LLC v. Consumer Financial Protection Bureau, 140 S.Ct. 2183 (2020).\n\nBowsher v. Synar, 478 U.S. 714 (1986).\n\n\n\nOptional Reading:\n\nEdmond v. United States, 520 U.S. 651 (1997).\n\nLucia v. Securities and Exchange Commission, 138 S.Ct. 2044 (2018).\n\nHumphrey's Ex'r v. U.S., 295 U.S. 602 (1935).\n\nMorrison v. Olson, 487 U.S. 654 (1988).\n\nKennedy v. Braidwood Mgmt Inc., 606 U.S. _ (2025)\n\nFederal Communications Commission v. Consumers’ Resch., 606 U.S. ___ (2025)",
+      "status": "Assigned source text missing"
+    },
+    {
+      "moduleId": "CL650-M13",
+      "title": "Executive Pardon and Privilege",
+      "reading": "Schick v. Reed, 419 U.S. 256 (1974).\n\nU.S. v. Nixon, 418 U.S. 683 (1974).",
+      "status": "Assigned source text missing"
+    },
+    {
+      "moduleId": "CL650-M14",
+      "title": "Immunity and Impeachment",
+      "reading": "Trump v. United States, 144 S.Ct. 2312 (2024).\n\nHarlow v. Fitzgerald, 457 U.S. 800 (1982).\n\nClinton v. Jones, 520 U.S. 681 (1997).\n\nHutchinson v. Proxmire, 443 U.S. 111 (1979).",
+      "status": "Assigned source text missing"
+    },
+    {
+      "moduleId": "CL650-M15",
+      "title": "Final Review",
+      "reading": "No assigned reading block was supplied for this module.",
+      "status": "Assignment not specified"
+    },
+    {
+      "moduleId": "CL685-M01",
+      "title": "Criminal Justice Process",
+      "reading": "Textbook\n\n\n\nLaFave, W., Israel, J., King, N., Kerr, O., and Leipold, A. Criminal Procedure, 7th Edition. West.\n\n§ 1.1 - 1.2, § 2.1 - 2.4, 2.7(c) and (d), § 11.1-11.4\n\npages 4-21, 56-69, 85-94, 676-720\n\n\n\nCases\n\n\n\nHurtado v. California, 110 U.S. 516 (1884)\n\nGideon v. Wainright, 372 U.S. 335 (1963)",
+      "status": "Supplemental source available"
+    },
+    {
+      "moduleId": "CL685-M02",
+      "title": "Pretrial Identification",
+      "reading": "Textbook\n\n\n\nLaFave, W., Israel, J., King, N., Kerr, O., and Leipold, A. Criminal Procedure, 7th Edition. West.\n\n●\t§§ 7:1 through 7.5; 9.1; and 12.1 through 12.5\n\n●\tpages 484-509, 606-615, 794-827.\n\n\n\nCases\n\n\n\nKirby v. Illinois, 406 U.S. 682 (1972).\n\nStack v. Boyle, 342 U.S. 1 (1951).",
+      "status": "Supplemental source available"
+    },
+    {
+      "moduleId": "CL685-M03",
+      "title": "Introduction to Search and Seizure",
+      "reading": "Textbook\n\n\n\nLaFave, W., Israel, J., King, N., Kerr, O., and Leipold, A. Criminal Procedure, 7th Edition. West.\n\n●\t§§ 3.3\n\n●\tpages 183–205.  \n\n\n\nCases\n\n\n\nMapp v. Ohio\n\nUnited States v. Jones\n\nKatz v. United States",
+      "status": "Supplemental source available"
+    },
+    {
+      "moduleId": "CL685-M04",
+      "title": "Warrant Requirement",
+      "reading": "Textbook\n\n\n\nLaFave, W., Israel, J., King, N., Kerr, O., and Leipold, A. Criminal Procedure, 7th Edition. West.\n\n●\t§§ 3.4, 3.5, 3.6\n\n●\tpages 205–261.  \n\n\n\nCases\n\n\n\nFranks v. Delaware\n\nArizona v. Hicks",
+      "status": "Supplemental source available"
+    },
+    {
+      "moduleId": "CL685-M05",
+      "title": "Stop and Frisk",
+      "reading": "Textbook\n\n\n\nLaFave, W., Israel, J., King, N., Kerr, O., and Leipold, A. Criminal Procedure, 7th Edition. West.\n\n●\t§§ 3.8\n\n●\tpages 275–300. \n\n\n\nCases\n\n\n\nTerry v. Ohio\n\nCalifornia v. Hodari D.\n\nFlorida v. Bostick",
+      "status": "Supplemental source available"
+    },
+    {
+      "moduleId": "CL685-M06",
+      "title": "Warrantless Vehicle, Premises and Container Searches",
+      "reading": "Textbook\n\n\n\nLaFave, W., Israel, J., King, N., Kerr, O., and Leipold, A. Criminal Procedure, 7th Edition. West.\n\n●\t§§ 3.10\n\n●\tpages 327–343. \n\n\n\nCases\n\n\n\nArizona v. Gant  \n\nNew York v. Belton   \n\nChimel v. California   \n\nSouth Dakota v. Opperman",
+      "status": "Supplemental source available"
+    },
+    {
+      "moduleId": "CL685-M07",
+      "title": "Consent Searches and Entrapment",
+      "reading": "Textbook\n\n\n\nLaFave, W., Israel, J., King, N., Kerr, O., and Leipold, A. Criminal Procedure, 7th Edition. West.\n\n●\t§§ 5.1-5.4\n\n●\tpages 389–403.\n\n\n\nCases\n\n\n\nGeorgia v. Randolph\n\nUnited States v. Jones\n\nJacobson v. United States\n\nUnited States v. Russell",
+      "status": "Supplemental source available"
+    },
+    {
+      "moduleId": "CL685-M08",
+      "title": "Exclusionary Rule",
+      "reading": "Textbook\n\n\n\nLaFave, W., Israel, J., King, N., Kerr, O., and Leipold, A. Criminal Procedure, 7th Edition. West.\n\n●\t§§ 9.1-9.6\n\n●\tpages 606–649. \n\n\n\nHandout\n\n\n\nRead the Warrant Exceptions handout. This is a great mnemonic for remembering the exceptions to the warrant requirement.\n\n\n\nCases\n\n\n\nWong Sun v. United States\n\nBrown v. Illinois\n\nUnited States v. Leon\n\nOregon v. Elstad\n\nUtah v. Streiff",
+      "status": "Supplemental source available"
+    },
+    {
+      "moduleId": "CL685-M09",
+      "title": "Limitations on Prosecutors",
+      "reading": "Textbook\n\nLaFave, W., Israel, J., King, N., Kerr, O., and Leipold, A. Criminal Procedure, 7th Edition. West.\n\n●\t§§ 24.3\n\n●\tpages 1348–1370.\n\n\n\nCases\n\n\n\nBrady v. Maryland\n\nUnited States v. Agurs\n\nCalifornia v. Trombetta",
+      "status": "Supplemental source available"
+    },
+    {
+      "moduleId": "CL685-M10",
+      "title": "Fifth Amendment Privilege",
+      "reading": "Textbook\n\n\n\nLaFave, W., Israel, J., King, N., Kerr, O., and Leipold, A. Criminal Procedure, 7th Edition. West.\n\n●\t§§ 6.5-6.10\n\n●\tpages 432–481.\n\n\n\nCases\n\n\n\nMiranda v. Arizona\n\nRhode Island v. Innis\n\nEdwards v. Arizona\n\nArizona v. Fulminante",
+      "status": "Supplemental source available"
+    },
+    {
+      "moduleId": "CL685-M11",
+      "title": "Miranda",
+      "reading": "Textbook\n\n\n\nLaFave, W., Israel, J., King, N., Kerr, O., and Leipold, A. Criminal Procedure, 7th Edition. West.\n\n●\t§§ 6.5-6.10\n\n●\tpages 432–481.\n\n\n\nCases\n\n\n\nBerghuis v. Thompkins\n\nUnited States v. Henry\n\nMichigan v. Mosely\n\nPatterson v. Illinois",
+      "status": "Supplemental source available"
+    },
+    {
+      "moduleId": "CL685-M12",
+      "title": "Double Jeopardy, Speedy Trial and Guilty Pleas",
+      "reading": "Textbook\n\n\n\nLaFave, W., Israel, J., King, N., Kerr, O., and Leipold, A. Criminal Procedure, 7th Edition. West.\n\n●\t§§ 18.1-18.5; 25.1-25.5; 21.1-21.2; 21.6\n\n●\tpages 1030-1057, 1427-1468, 1166-1201, 1246-1252.\n\n\n\nCases\n\n\n\nUnited States v. Perez\n\nOregon v. Kennedy\n\nLee v. United States\n\nOhio v. Johnson\n\nBarker v. Wingo",
+      "status": "Supplemental source available"
+    },
+    {
+      "moduleId": "CL685-M13",
+      "title": "Trial Rights and Sentencing",
+      "reading": "Textbook\n\n\n\nLaFave, W., Israel, J., King, N., Kerr, O., and Leipold, A. Criminal Procedure, 7th Edition. West.\n\n●\t§§ 22.1 - 22.4; 26.1 - 26.6\n\n●\tpages 1254-1292, 1470-1527.\n\n\n\nCases\n\n\n\nBaldwin v. New York\n\nPatton v. United States\n\nFurman v. Georgia\n\nWilliams v. New York\n\nApprendi v. New Jersey",
+      "status": "Supplemental source available"
+    },
+    {
+      "moduleId": "CL685-M14",
+      "title": "Appellate Review",
+      "reading": "Textbook\n\n\n\nLaFave, W., Israel, J., King, N., Kerr, O., and Leipold, A. Criminal Procedure, 7th Edition. West.\n\n●\t§§ 27.1 - 27.6; 28.3 - 28.4\n\n●\tpages 1542-1591, 1605-1625\n\n\n\nCases\n\n\n\nNorth Carolina v. Pearce\n\nSibron v. New York\n\nJohnson v. United States\n\nFaretta v. California",
+      "status": "Supplemental source available"
+    },
+    {
+      "moduleId": "CL685-M15",
+      "title": "Final Exam",
+      "reading": "None",
+      "status": "No assigned reading"
+    },
+    {
+      "moduleId": "CL700-M01",
+      "title": "Non-Corporate Entities",
+      "reading": "Macey, Jonathan R., and Douglas K. Moll. The Law of Business Organizations: Cases, Materials, and Problems (15th Edition), West Academic Publishing. [hereinafter, “Macy & Moll”]\n\n\n\nChapters 3A-3C, 3F, 3G, 18A-C, 18F, 18H, 18I\n\n\n\nCox, James D., and Thomas Lee Hazen. Business Organizations Law (5th edition), West Academic Publishing. [hereinafter, “Cox & Hazen”]\n\n\n\nSections 1.7-1.12; 1.14-1.15.",
+      "status": "Assigned source available in part"
+    },
+    {
+      "moduleId": "CL700-M02",
+      "title": "Non-Traditional Corporations",
+      "reading": "Macy & Moll, Chapters 19, 20A-C, 20F, 20H\n\n\n\nCox & Hazen, Sections 1.16-1.18, 1.20, 1.21, and 1.23.",
+      "status": "Assigned source available in part"
+    },
+    {
+      "moduleId": "CL700-M03",
+      "title": "Agency",
+      "reading": "Macy & Moll, Chapters 2A-2E\n\n\n\nCox & Hazen, Sections 1.7, 1.24, 8.1, 8.5, 8.10, 8.12.",
+      "status": "Assigned source available in part"
+    },
+    {
+      "moduleId": "CL700-M04",
+      "title": "Introduction to Corporations",
+      "reading": "Macy & Moll, Chapter 4\n\n\n\nCox & Hazen, Sections 1.10, 2.1-2.9, 7.1, 7.2, 9.1.",
+      "status": "Assigned source available in part"
+    },
+    {
+      "moduleId": "CL700-M05",
+      "title": "Selection of Corporate Form",
+      "reading": "Cox & Hazen, Sections 1.5-1.6; 3.1-3.2.",
+      "status": "Assigned source available in part"
+    },
+    {
+      "moduleId": "CL700-M06",
+      "title": "Incorporation and Premature Commencement",
+      "reading": "Macy & Moll, Chapters 5A, 5B, and 5D.\n\n\n\nCox & Hazen, Sections 3.3-3.11, 5.1-5.12, 6.1-6.7.",
+      "status": "Assigned source available in part"
+    },
+    {
+      "moduleId": "CL700-M07",
+      "title": "Piercing the Corporate Veil",
+      "reading": "Macy & Moll, Chapter 6.\n\n\n\nCox & Hazen, Sections 4.4, 7.1-7.6.",
+      "status": "Assigned source available in part"
+    },
+    {
+      "moduleId": "CL700-M08",
+      "title": "Closely Held Corporations and Shares",
+      "reading": "Macy & Moll, Chapters 7A-E\n\n\n\nCox & Hazen, Sections 16.1-16.12, Chapter 18.",
+      "status": "Assigned source available in part"
+    },
+    {
+      "moduleId": "CL700-M09",
+      "title": "Preemptive Rights and Dilution",
+      "reading": "Macy & Moll, Chapters 7G-H\n\n\n\nCox & Hazen, Section 16.14.",
+      "status": "Assigned source available in part"
+    },
+    {
+      "moduleId": "CL700-M10",
+      "title": "Shareholders, Directors and Voting",
+      "reading": "Macy & Moll, Chapters 8A-B\n\n\n\nCox & Hazen, Sections 9.1, 9.3-9.8, 9.11-9.15, 11.5, 13.16, 13.20, 13.30.",
+      "status": "Assigned source available in part"
+    },
+    {
+      "moduleId": "CL700-M11",
+      "title": "Deadlock and Controlling Shares",
+      "reading": "Macy & Moll, Chapters 8C, 13A.\n\n\n\nCox & Hazen, Chapter 14",
+      "status": "Assigned source available in part"
+    },
+    {
+      "moduleId": "CL700-M12",
+      "title": "Duty of Care and Business Judgment Rule",
+      "reading": "Macy & Moll, Chapter 10.\n\n\n\nCox & Hazen, Sections 10.1-10.8.",
+      "status": "Assigned source available in part"
+    },
+    {
+      "moduleId": "CL700-M13",
+      "title": "Duty of Loyalty and Conflicts",
+      "reading": "Macy & Moll, Chapters 11A-11E\n\n\n\nCox & Hazen, Sections 10.9-10.15, 11.8-11.10.",
+      "status": "Assigned source available in part"
+    },
+    {
+      "moduleId": "CL700-M14",
+      "title": "Corporations Essays",
+      "reading": "No assigned textbook reading",
+      "status": "No assigned reading"
+    },
+    {
+      "moduleId": "CL700-M15",
+      "title": "Final Review",
+      "reading": "No assigned reading",
+      "status": "No assigned reading"
+    }
+  ]
+}

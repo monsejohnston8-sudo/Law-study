@@ -21,6 +21,8 @@ import {
 } from "lucide-react";
 import { essayMarkdown } from "@/lib/study";
 import AIStudyPanel from "./ai-study-panel";
+import { courseName, moduleName, cleanLabel } from "@/lib/display";
+import readingGuides from "@/content/reading-guides.json";
 // Server DTOs include heterogeneous editorial model fields.
 type Row = Record<string, any>;
 type Module = Row & {
@@ -259,14 +261,15 @@ export default function Workspace() {
         <p className="nav-label">YOUR COURSES</p>
         {courses.map((c, i) => (
           <button
+            aria-label={courseName(c.id)}
             className={courseId === c.id ? "active" : ""}
             key={c.id}
             onClick={() => navigate("course", c.id)}
           >
             <span className={`course-dot tone-${i}`} />
             <span>
-              <small>{c.id}</small>
-              {c.title}
+              <small>Course</small>
+              {courseName(c.id)}
             </span>
           </button>
         ))}
@@ -477,9 +480,9 @@ export default function Workspace() {
                               <Layers />
                             )}
                           </span>
-                          <Badge>{c.id}</Badge>
+                          <Badge>Study course</Badge>
                         </div>
-                        <h3>{c.title}</h3>
+                        <h3>{courseName(c.id)}</h3>
                         <p className="muted">
                           15 modules · {c.sources.length} imported sources
                         </p>
@@ -502,7 +505,7 @@ export default function Workspace() {
                     </h3>
                     <p className="muted">
                       {continueModule
-                        ? `${continueModule.courseId} · Module ${continueModule.number} · Pick a source, take a note, make it yours.`
+                        ? `${courseName(continueModule.courseId)} · Module ${continueModule.number} · Pick a source, take a note, make it yours.`
                         : "Keep your knowledge fresh with review."}
                     </p>
                     {continueModule && (
@@ -528,7 +531,7 @@ export default function Workspace() {
                     {data.sessions.length ? (
                       data.sessions.slice(0, 4).map((s) => (
                         <p className="activity" key={s.id}>
-                          {s.kind} · {s.moduleId}
+                          {s.kind} · {moduleName(s.moduleId)}
                           <small>
                             {new Date(s.createdAt).toLocaleDateString()}
                           </small>
@@ -565,8 +568,10 @@ export default function Workspace() {
               <>
                 <div className="page-heading">
                   <div>
-                    <p className="eyebrow">{course.id} · COURSE OVERVIEW</p>
-                    <h2>{course.title}</h2>
+                    <p className="eyebrow">
+                      {courseName(course.id)} · COURSE OVERVIEW
+                    </p>
+                    <h2>{courseName(course.id)}</h2>
                     <p className="muted">
                       15 modules. Follow your assigned curriculum at your own
                       pace.
@@ -622,7 +627,7 @@ export default function Workspace() {
                   className="breadcrumb text-button"
                   onClick={() => navigate("course", module.courseId)}
                 >
-                  ← {module.courseId} · Course overview
+                  ← {courseName(module.courseId)} · Course overview
                 </button>
                 <div className="page-heading">
                   <div>
@@ -711,6 +716,22 @@ export default function Workspace() {
                     </section>
                     <section className="card">
                       <h3>Your study toolkit</h3>
+                      <p>
+                        {
+                          module.notes.filter(
+                            (n: Row) => n.kind === "Detailed reading notes",
+                          ).length
+                        }{" "}
+                        detailed reading guide ·{" "}
+                        {module.cases.filter((c: Row) => c.holding).length}{" "}
+                        available case briefs
+                      </p>
+                      <p className="muted">
+                        Reading coverage:{" "}
+                        {readingGuides.assignments.find(
+                          (a) => a.moduleId === module.id,
+                        )?.status ?? "Source coverage not assessed"}
+                      </p>
                       <p className="muted">
                         Use your verified materials to study. Missing answers
                         never enter a graded session.
@@ -720,7 +741,15 @@ export default function Workspace() {
                         onClick={() => setTab("Notes")}
                       >
                         <FileText size={18} />
-                        Write a note
+                        Read notes & study guides
+                        <ChevronRight size={16} />
+                      </button>
+                      <button
+                        className="tool-row"
+                        onClick={() => setTab("Cases")}
+                      >
+                        <BookOpen size={18} />
+                        Read case briefs
                         <ChevronRight size={16} />
                       </button>
                       <button
@@ -752,6 +781,16 @@ export default function Workspace() {
                 ) : tab === "Assigned Readings" ? (
                   <section className="card">
                     <h3>Assigned readings</h3>
+                    <p className="alert">
+                      {
+                        readingGuides.assignments.find(
+                          (a) => a.moduleId === module.id,
+                        )?.status
+                      }
+                      . These are reading assignments, not completion marks.
+                      Detailed notes and cases are in their own tabs;
+                      unsupported readings remain unbriefed.
+                    </p>
                     {module.notes.filter(
                       (n: Row) => n.kind === "assigned reading",
                     ).length ? (
@@ -859,19 +898,42 @@ export default function Workspace() {
                       </div>
                     </div>
                     {tab === "IRAC Essays" &&
-                      module.drafts.map((d: Row) => (
-                        <button
-                          className="tool-row"
-                          key={d.id}
-                          onClick={() => setEssay(d)}
-                        >
-                          <FileText size={18} />
-                          {d.title}
-                          <small>Resume draft</small>
-                        </button>
-                      ))}
+                      module.drafts
+                        .filter(
+                          (d: Row) => !d.title.startsWith("Mini module exam:"),
+                        )
+                        .map((d: Row) => (
+                          <button
+                            className="tool-row"
+                            key={d.id}
+                            onClick={() => setEssay(d)}
+                          >
+                            <FileText size={18} />
+                            {cleanLabel(d.title)}
+                            <small>Resume draft</small>
+                          </button>
+                        ))}
                     <div className="item-list">
                       {module[collections[kinds[tab]]]
+                        .filter(
+                          (r: Row) =>
+                            !(
+                              tab === "Cases" &&
+                              r.origin === "curriculum" &&
+                              r.status === "missing" &&
+                              !r.body &&
+                              module.cases.some(
+                                (c: Row) =>
+                                  c.holding &&
+                                  c.title
+                                    .toLowerCase()
+                                    .replace(/[^a-z0-9]/g, "") ===
+                                    r.title
+                                      .toLowerCase()
+                                      .replace(/[^a-z0-9]/g, ""),
+                              )
+                            ),
+                        )
                         .filter((r: Row) =>
                           tab === "Seminar & Quiz Feedback"
                             ? ["seminar", "quiz feedback"].includes(r.kind)
@@ -882,6 +944,13 @@ export default function Workspace() {
                                   "assigned reading",
                                 ].includes(r.kind)
                               : true,
+                        )
+                        .sort(
+                          (a: Row, b: Row) =>
+                            Number(a.status === "missing") -
+                              Number(b.status === "missing") ||
+                            Number(b.kind === "Detailed reading notes") -
+                              Number(a.kind === "Detailed reading notes"),
                         )
                         .map((item: Row) => (
                           <article className="card item" key={item.id}>
@@ -1025,7 +1094,7 @@ export default function Workspace() {
                       )
                       .flatMap((m) => [
                         {
-                          title: `${m.courseId} ${courses.find((c) => c.id === m.courseId)?.title} ${m.title}`,
+                          title: `${courseName(m.courseId)} · ${m.title}`,
                           body: m.coverage,
                           type: "Module",
                           m,
@@ -1074,7 +1143,7 @@ export default function Workspace() {
                           <h3>{r.title}</h3>
                           <p className="muted">
                             {r.body?.slice(0, 200) || "Content unavailable"} ·{" "}
-                            {r.m.id}
+                            {moduleName(r.m.id)}
                           </p>
                         </button>
                       ))
@@ -1193,7 +1262,7 @@ export default function Workspace() {
                       <span>
                         {r.title}
                         <small>
-                          {r.module.id} · {r.kind} · {r.origin}
+                          {moduleName(r.module.id)} · {r.kind} · {r.origin}
                         </small>
                       </span>
                       <ChevronRight size={18} />
@@ -1317,7 +1386,7 @@ function Filters({
           <option value="">All courses</option>
           {courses.map((c) => (
             <option key={c.id} value={c.id}>
-              {c.id} · {c.title}
+              {courseName(c.id)}
             </option>
           ))}
         </select>
@@ -1331,7 +1400,7 @@ function Filters({
             .flatMap((c) => c.modules)
             .map((m) => (
               <option key={m.id} value={m.id}>
-                {m.id} · {m.title}
+                {moduleName(m.id)} · {m.title}
               </option>
             ))}
         </select>
@@ -1345,7 +1414,8 @@ function Citation({ module, id }: { module: Module; id: string }) {
     if (e)
       return (
         <p className="citation">
-          Source: {s.title} · {e.page ? `page ${e.page}` : e.section} ·{" "}
+          Source: {cleanLabel(s.title)} ·{" "}
+          {e.page ? `page ${e.page}` : e.section} ·{" "}
           {e.page ? "location retained" : "location needs review"}
         </p>
       );
@@ -1502,7 +1572,7 @@ function Editor({
             >
               {modules.map((m) => (
                 <option key={m.id} value={m.id}>
-                  {m.id} · {m.title}
+                  {moduleName(m.id)} · {m.title}
                 </option>
               ))}
             </select>
@@ -1746,10 +1816,10 @@ function SourceViewer({
   return (
     <details className="card" onToggle={(e) => setOpen(e.currentTarget.open)}>
       <summary>
-        <strong>{s.title}</strong>
+        <strong>{cleanLabel(s.title)}</strong>
         <Badge>{s.status}</Badge>
         <small>
-          {s.courseId} · {s.moduleId || "Course library"} · {s.type}
+          {courseName(s.courseId)} · {moduleName(s.moduleId || "")} · {s.type}
         </small>
       </summary>
       <p className="muted">
@@ -1829,7 +1899,7 @@ function SourceViewer({
                     )
                     .map((m) => (
                       <option key={m.id} value={m.id}>
-                        {m.id} · {m.title}
+                        {moduleName(m.id)} · {m.title}
                       </option>
                     ))}
                 </select>
@@ -1958,7 +2028,7 @@ function ImportForm({
             <option value="">Choose a course</option>
             {courses.map((c) => (
               <option value={c.id} key={c.id}>
-                {c.id} · {c.title}
+                {courseName(c.id)}
               </option>
             ))}
           </select>
@@ -1971,7 +2041,7 @@ function ImportForm({
               .flatMap((c) => c.modules)
               .map((m) => (
                 <option value={m.id} key={m.id}>
-                  {m.id} · {m.title}
+                  {moduleName(m.id)} · {m.title}
                 </option>
               ))}
           </select>
@@ -2090,7 +2160,7 @@ function FlashStudy({
             {index + 1} / {cards.length} DUE CARDS
           </p>
           <div className="study-card">
-            <h3>{c.title}</h3>
+            <h3>{courseName(c.id)}</h3>
             {reveal ? (
               <p className="preserve">{c.answer}</p>
             ) : (
@@ -2157,7 +2227,7 @@ function Exam({
         <>
           <p className="muted">
             Only verified questions with complete answer keys are included.
-            Scope: {module.id}.
+            Scope: {courseName(module.courseId)} · {moduleName(module.id)}.
           </p>
           <label className="field">
             Topic
@@ -2371,7 +2441,7 @@ function Essay({
       <label className="field">
         Essay title
         <input
-          value={draft.title}
+          value={cleanLabel(draft.title)}
           onChange={(e) => update("title", e.target.value)}
         />
       </label>

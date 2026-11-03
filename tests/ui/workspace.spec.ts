@@ -6,7 +6,10 @@ test("dashboard, curriculum, persistent note, source import, and graded quiz", a
   await expect(
     page.getByRole("heading", { name: "A little progress. Every day." }),
   ).toBeVisible();
-  await page.getByRole("button", { name: /CL650/ }).first().click();
+  await page
+    .getByRole("button", { name: /Constitutional Law/ })
+    .first()
+    .click();
   await expect(
     page.getByRole("button", { name: /Content incomplete/ }),
   ).toHaveCount(0);
@@ -22,7 +25,10 @@ test("dashboard, curriculum, persistent note, source import, and graded quiz", a
     page.getByRole("heading", { name: "UI persistence check" }),
   ).toBeVisible();
   await page.reload();
-  await page.getByRole("button", { name: /CL650/ }).first().click();
+  await page
+    .getByRole("button", { name: /Constitutional Law/ })
+    .first()
+    .click();
   await page
     .getByRole("button", { name: /Overview of the Constitution/ })
     .click();
@@ -54,7 +60,10 @@ test("dashboard, curriculum, persistent note, source import, and graded quiz", a
       "Imported. Inspect the extraction below before creating study items.",
     ),
   ).toBeVisible();
-  await page.getByRole("button", { name: /CL650/ }).first().click();
+  await page
+    .getByRole("button", { name: /Constitutional Law/ })
+    .first()
+    .click();
   await page
     .getByRole("button", { name: /Overview of the Constitution/ })
     .click();
@@ -95,7 +104,10 @@ test("verified flashcard scheduling, keyboard controls, and resumable IRAC draft
   page,
 }) => {
   await page.goto("/");
-  await page.getByRole("button", { name: /CL650/ }).first().click();
+  await page
+    .getByRole("button", { name: /Constitutional Law/ })
+    .first()
+    .click();
   await page
     .getByRole("button", { name: /Overview of the Constitution/ })
     .click();
@@ -147,7 +159,10 @@ test("verified flashcard scheduling, keyboard controls, and resumable IRAC draft
     page.getByRole("button", { name: /Autosaved integration essay/ }),
   ).toBeVisible();
   await page.reload();
-  await page.getByRole("button", { name: /CL650/ }).first().click();
+  await page
+    .getByRole("button", { name: /Constitutional Law/ })
+    .first()
+    .click();
   await page
     .getByRole("button", { name: /Overview of the Constitution/ })
     .click();

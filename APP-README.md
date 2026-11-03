@@ -79,7 +79,7 @@ they are never added to the public shared catalog. Missing credentials or an AI
 error does not disable uploads, manual notes, existing exams, or other features.
 
 The public catalog (`src/content/shared-study.json`) contains 53 original study
-summaries/questions and two case briefs across 31 supported modules. Its references
+summaries/questions, 31 detailed guides, and 36 case briefs across supported modules. Its references
 include explicit source/edition limits. Original source text and original files
 are not part of the catalog. Mobile catalog upgrades add missing records without
 replacing personal edits, review schedules, or exam responses.
@@ -88,3 +88,28 @@ AI integration tests use mocked provider responses and original nonlegal fixture
 They verify request structure, consent, evidence rejection, errors, save confirmation,
 privacy between browser stores, and question persistence. A billed live-provider
 request requires a user's own valid key and has not been run in this workspace.
+
+## Assigned-reading companions (draft update)
+
+The expanded catalog includes 31 detailed module guides (about 7,400 words),
+53 shorter topic notes/questions, 36 structured case briefs, and 45 module reading
+records. Each guide supplies explanations, distinctions, case comparisons,
+exam-analysis steps, references, and scope limitations. Reading lists are not
+completion marks. The app puts detailed notes before short notes, completed briefs
+before unfilled placeholders, and hides a redundant empty case placeholder when
+an available brief has the same normalized name. Visible course/module labels use
+names and module numbers; database identifiers are preserved for existing progress.
+
+`src/content/reading-guides.json` maps the supplied outline assignments to source
+availability. Constitutional Law has supplied detailed notes for four modules,
+but most original assigned opinions are absent. The supplied Criminal Procedure
+casebook is supplemental to the assigned seventh-edition treatise. Business
+Organizations has the assigned Cox fifth edition and an earlier Macey casebook.
+Those differences are labeled rather than treating substitute books as complete
+assigned readings. Original book text is kept out of shared app assets.
+
+The mobile catalog upgrade adds missing study records without replacing edits or
+progress. For desktop, `npm run db:seed` now installs the reading companions as
+well as the curriculum. An existing seeded desktop database can also run
+`node --import tsx scripts/seed-reading-content.ts` additively. Catalog entries
+remain review drafts. This update is local and has not been published.

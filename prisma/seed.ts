@@ -62,5 +62,12 @@ export async function seed(client = db) {
 }
 if (process.argv[1]?.endsWith("seed.ts"))
   seed()
-    .then(() => console.log("Seeded 3 courses / 45 modules (idempotent)"))
+    .then(async () => {
+      const { seedReadingContent } =
+        await import("../scripts/seed-reading-content");
+      await seedReadingContent();
+      console.log(
+        "Seeded curriculum and source-linked reading companions (idempotent)",
+      );
+    })
     .finally(() => db.$disconnect());

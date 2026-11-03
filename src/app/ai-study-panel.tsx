@@ -7,6 +7,7 @@ import {
   generateAIStudy,
 } from "../lib/ai-client";
 import type { AIStudyDraft } from "../lib/ai-study";
+import { cleanLabel } from "../lib/display";
 type Row = Record<string, any>;
 export default function AIStudyPanel({
   excerpt: initialExcerpt,
@@ -54,7 +55,7 @@ export default function AIStudyPanel({
         {
           id: excerpt.id,
           text: text.slice(start, end),
-          locator: `${source.title} · ${excerpt.page ? `PDF page ${excerpt.page}` : excerpt.section} · characters ${start + 1}–${end}`,
+          locator: `${cleanLabel(source.title)} · ${excerpt.page ? `PDF page ${excerpt.page}` : excerpt.section} · characters ${start + 1}–${end}`,
         },
         mode,
         controller.current.signal,
@@ -167,7 +168,7 @@ export default function AIStudyPanel({
         </select>
       </label>
       <p className="citation">
-        {source.title} ·{" "}
+        {cleanLabel(source.title)} ·{" "}
         {excerpt.page ? `PDF page ${excerpt.page}` : excerpt.section}
       </p>
       <label className="field">
