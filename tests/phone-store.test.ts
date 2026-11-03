@@ -24,7 +24,14 @@ describe("iPhone local persistence", () => {
     const cards = state.courses.flatMap((c: any) =>
       c.modules.flatMap((m: any) => m.flashcards),
     );
-    expect(cards.every((c: any) => c.answer === null)).toBe(true);
+    expect(
+      cards
+        .filter((c: any) => c.origin === "curriculum")
+        .every((c: any) => c.answer === null),
+    ).toBe(true);
+    expect(
+      cards.filter((c: any) => c.origin === "Shared study draft"),
+    ).toHaveLength(53);
     const note = await api("item", {
       kind: "note",
       moduleId: "CL650-M01",
@@ -142,7 +149,9 @@ describe("iPhone local persistence", () => {
         updatedAt: stamp,
       });
     await restorePhone(db, data);
-    const sections = (await api("state")).courses[0].sources[0].excerpts;
+    const sections = (await api("state")).courses[0].sources.find(
+      (s: any) => s.id === "source-order",
+    ).excerpts;
     expect(sections.map((e: any) => e.section)).toEqual([
       "EPUB spine 2 · section.xhtml",
       "EPUB spine 10 · section.xhtml",

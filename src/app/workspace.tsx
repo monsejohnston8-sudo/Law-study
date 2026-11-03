@@ -20,6 +20,7 @@ import {
   X,
 } from "lucide-react";
 import { essayMarkdown } from "@/lib/study";
+import AIStudyPanel from "./ai-study-panel";
 // Server DTOs include heterogeneous editorial model fields.
 type Row = Record<string, any>;
 type Module = Row & {
@@ -145,6 +146,7 @@ export default function Workspace() {
     [filter, setFilter] = useState(""),
     [moduleFilter, setModuleFilter] = useState(""),
     [editor, setEditor] = useState<Row | null>(null),
+    [aiSelection, setAISelection] = useState<Row | null>(null),
     [study, setStudy] = useState<Module | null>(null),
     [exam, setExam] = useState<Module | null>(null),
     [essay, setEssay] = useState<Row | null>(null),
@@ -1097,8 +1099,8 @@ export default function Workspace() {
                     <p className="eyebrow">BRING YOUR MATERIALS TOGETHER</p>
                     <h2>Source library</h2>
                     <p className="muted">
-                      Private uploads. Traceable excerpts. You decide what
-                      enters your study collection.
+                      Shared study notes are included. Your uploads stay
+                      private. You decide what enters your study collection.
                     </p>
                   </div>
                 </div>
@@ -1106,16 +1108,49 @@ export default function Workspace() {
                   courses={courses}
                   initialModule={moduleFilter}
                   onImport={async (form) => {
-                    await perform(
+                    const wantsAI = form.get("generateAI") === "on";
+                    if (wantsAI && !form.get("moduleId"))
+                      throw new Error(
+                        "Choose a destination module before creating AI study notes.",
+                      );
+                    const imported = await perform(
                       "import",
                       form,
                       "Imported. Inspect the extraction below before creating study items.",
                     );
+                    if (wantsAI) {
+                      const latest = await api("state");
+                      const source = latest.courses
+                        .flatMap((c: Course) => c.sources)
+                        .find((s: Row) => s.id === imported.id);
+                      if (source?.excerpts.length) {
+                        const excerpt = await api(
+                          `excerpt?id=${encodeURIComponent(source.excerpts[0].id)}`,
+                        );
+                        if (excerpt?.text?.trim())
+                          setAISelection({
+                            source,
+                            excerpt,
+                            moduleId: form.get("moduleId"),
+                          });
+                        else
+                          setNotice(
+                            "Source imported. No usable text in the first section; inspect the source or provide OCR before AI generation.",
+                          );
+                      }
+                    }
                   }}
                 />
                 <SourceList
                   sources={sources}
                   modules={modules}
+                  onAI={(excerpt, source) =>
+                    setAISelection({
+                      excerpt,
+                      source,
+                      moduleId: source.moduleId,
+                    })
+                  }
                   onCreate={async (excerpt, source) => {
                     await refresh();
                     const m =
@@ -1192,7 +1227,7 @@ export default function Workspace() {
             )}
             <footer>
               CASEBOOK <span>Make knowledge your own.</span>
-              <span>Private workspace · No AI provider configured</span>
+              <span>Private workspace · Personal AI connection optional</span>
             </footer>
           </>
         )}
@@ -1232,6 +1267,22 @@ export default function Workspace() {
           }
         />
       )}{" "}
+      {aiSelection && (
+        <Modal
+          title="AI study notes and mini exam"
+          onClose={() => setAISelection(null)}
+        >
+          <AIStudyPanel
+            excerpt={aiSelection.excerpt}
+            source={aiSelection.source}
+            moduleId={aiSelection.moduleId}
+            onLoadExcerpt={(id) => api(`excerpt?id=${encodeURIComponent(id)}`)}
+            onSave={(v) =>
+              perform("ai-study", v, "Personal AI study draft added")
+            }
+          />
+        </Modal>
+      )}
       {essay && (
         <Essay
           initial={essay}
@@ -1602,7 +1653,7 @@ function Editor({
         </label>
         <p className="muted">
           Verify accuracy and provenance yourself. Imported text is reference
-          material. No AI generation is enabled.
+          material. AI-generated items remain drafts until you verify them.
         </p>
         {error && (
           <p role="alert" className="error">
@@ -1620,10 +1671,12 @@ function SourceList({
   sources,
   modules = [],
   onCreate,
+  onAI,
 }: {
   sources: Row[];
   modules?: Module[];
   onCreate?: (e: Row, s: Row) => void;
+  onAI?: (e: Row, s: Row) => void;
 }) {
   return (
     <section className="source-list">
@@ -1638,6 +1691,7 @@ function SourceList({
             modules={modules}
             key={s.id}
             onCreate={onCreate}
+            onAI={onAI}
           />
         ))
       ) : (
@@ -1657,10 +1711,12 @@ function SourceViewer({
   source: s,
   modules,
   onCreate,
+  onAI,
 }: {
   source: Row;
   modules: Module[];
   onCreate?: (e: Row, s: Row) => void;
+  onAI?: (e: Row, s: Row) => void;
 }) {
   const [open, setOpen] = useState(false),
     [index, setIndex] = useState(0),
@@ -1807,6 +1863,27 @@ function SourceViewer({
               >
                 Choose this excerpt & create item
               </button>
+              {onAI && (
+                <button
+                  className="outline"
+                  disabled={!target}
+                  onClick={async () => {
+                    try {
+                      const selected = passage
+                        ? await api("select-excerpt", {
+                            id: excerpt.id,
+                            text: passage,
+                          })
+                        : excerpt;
+                      onAI(selected, { ...s, moduleId: target });
+                    } catch (e) {
+                      setError(String(e));
+                    }
+                  }}
+                >
+                  AI summary, notes & exam questions
+                </button>
+              )}
             </>
           )}
         </div>
@@ -1942,6 +2019,11 @@ function ImportForm({
           {error}
         </p>
       )}
+      <label className="check-row">
+        <input type="checkbox" name="generateAI" />
+        After import, open AI summary, notes & mini-exam setup (requires my own
+        API key).
+      </label>
       <button className="primary" disabled={busy}>
         <Upload size={15} />
         {busy ? "Extracting…" : "Upload & inspect extraction"}
@@ -2555,8 +2637,10 @@ function SettingsPanel({
       <section className="card settings-card">
         <h3>Privacy & AI</h3>
         <p>
-          No analytics or AI provider is enabled. Uploaded documents are treated
-          as untrusted source text. The app sends nothing to an AI service.{" "}
+          No analytics. Uploaded documents are treated as untrusted source text.
+          AI generation is optional: only the displayed passage is sent to
+          OpenAI after you connect your own key and explicitly consent. API keys
+          stay in tab memory and are excluded from backups.{" "}
           {typeof window !== "undefined" && window.casebookTransport
             ? "Your library stays in this device’s browser storage. The app host serves application code and does not receive your books or study records."
             : "Run on loopback for personal use; public hosting of the desktop server requires authentication and upload isolation before deployment."}
@@ -2806,9 +2890,29 @@ function MiniModuleExam({
 }) {
   const title = `Mini module exam: ${module.id}`;
   const saved = module.drafts?.find((d: Row) => d.title === title);
-  const questions = (module.flashcards ?? [])
-    .filter((q: Row) => q.answer && q.excerptId && q.status !== "missing")
-    .slice(0, 5);
+  const available = (module.flashcards ?? []).filter(
+    (q: Row) => q.answer && q.excerptId && q.status !== "missing",
+  );
+  const personal = available.filter(
+    (q: Row) => q.origin !== "Shared study draft",
+  );
+  const [questionIds, setQuestionIds] = useState<string[]>(() => {
+    try {
+      const ids = JSON.parse(saved?.rule || "null");
+      if (
+        Array.isArray(ids) &&
+        ids.every((id) => typeof id === "string") &&
+        ids.length
+      )
+        return ids.filter((id) => available.some((q: Row) => q.id === id));
+    } catch {}
+    return (personal.length ? personal : available)
+      .slice(0, 5)
+      .map((q: Row) => q.id);
+  });
+  const questions = questionIds
+    .map((id) => available.find((q: Row) => q.id === id))
+    .filter(Boolean);
   const [answers, setAnswers] = useState<Record<string, string>>(() => {
     try {
       return JSON.parse(saved?.application || "{}");
@@ -2829,7 +2933,7 @@ function MiniModuleExam({
         moduleId: module.id,
         title,
         issue: "",
-        rule: "",
+        rule: JSON.stringify(questionIds),
         application: JSON.stringify(answers),
         conclusion: "",
         assessment: submit ? "submitted" : "draft",
@@ -2857,10 +2961,47 @@ function MiniModuleExam({
         looking, then submit to compare your work. This is self-reviewed
         practice; draft explanations do not produce an automatic grade.
       </p>
+      {available.length > 0 && (
+        <details>
+          <summary>
+            Choose exam questions ({questionIds.length}/5 selected)
+          </summary>
+          <p>
+            Your personal questions are selected first. Change the selection to
+            mix your uploads with shared study questions. Save the draft to keep
+            your selection.
+          </p>
+          {available.map((q: Row) => (
+            <label className="check-row" key={q.id}>
+              <input
+                type="checkbox"
+                aria-label={`Use question: ${q.title}`}
+                checked={questionIds.includes(q.id)}
+                disabled={
+                  busy ||
+                  (!questionIds.includes(q.id) && questionIds.length >= 5)
+                }
+                onChange={(e) => {
+                  setQuestionIds(
+                    e.target.checked
+                      ? [...questionIds, q.id]
+                      : questionIds.filter((id) => id !== q.id),
+                  );
+                  setSubmitted(false);
+                  setMessage(
+                    "Question selection changed — save your exam draft.",
+                  );
+                }}
+              />
+              {q.title} · {q.origin}
+            </label>
+          ))}
+        </details>
+      )}
       {!questions.length ? (
         <p className="muted">
-          No source-backed exam questions are available for this module yet.
-          Import supported study materials first.
+          No questions selected or available. Choose questions above, or import
+          supported study materials and generate your own.
         </p>
       ) : (
         <>

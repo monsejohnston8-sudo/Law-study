@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import { db } from "@/lib/db";
+import { aiSaveSchema, buildAIStudyRows } from "@/lib/ai-study";
 import { z } from "zod";
 import {
   fieldsByKind,
@@ -239,6 +240,28 @@ export async function POST(
       return json(source, 201);
     }
     const body = await req.json();
+    if (path[0] === "ai-study") {
+      const input = aiSaveSchema.parse(body);
+      const parent = await db.sourceExcerpt.findUniqueOrThrow({
+        where: { id: input.excerptId },
+        include: { source: true },
+      });
+      const module = await db.module.findUniqueOrThrow({
+        where: { id: input.moduleId },
+      });
+      if (
+        parent.source.courseId !== module.courseId ||
+        (parent.source.moduleId && parent.source.moduleId !== module.id)
+      )
+        throw new Error("Source and destination module do not match");
+      const result = buildAIStudyRows(input, parent);
+      await db.$transaction(async (tx) => {
+        await tx.sourceExcerpt.create({ data: result.excerpt });
+        await tx.note.create({ data: result.note });
+        await tx.flashcard.createMany({ data: result.cards });
+      });
+      return json({ notes: 1, questions: result.cards.length }, 201);
+    }
     if (path[0] === "select-excerpt") {
       const v = z
         .object({ id: z.string(), text: z.string().min(1).max(12000) })

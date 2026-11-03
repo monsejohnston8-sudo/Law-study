@@ -92,7 +92,7 @@ test("imports a private study package locally and reads source sections offline"
     .click();
   await expect(
     page.getByText(
-      `Imported 3 courses, 45 modules and ${process.env.CASEBOOK_PRIVATE_STUDY_PACKAGE ? 12 : 1} private sources.`,
+      `Imported 3 courses, 45 modules and ${process.env.CASEBOOK_PRIVATE_STUDY_PACKAGE ? 12 : 4} private sources.`,
     ),
   ).toBeVisible({ timeout: 60000 });
   await nav(page, "Import sources");
@@ -246,4 +246,195 @@ test("mini exam saves answers, reveals explanations only after submission, and s
   await expect(
     page.getByText("Alpha precedes beta.", { exact: true }),
   ).toBeVisible();
+});
+
+test("shared notes are automatic; personal upload AI stays private and feeds its module exam", async ({
+  page,
+  context,
+}) => {
+  let calls = 0;
+  await page.route("https://api.openai.com/v1/responses", async (route) => {
+    calls++;
+    const body = route.request().postDataJSON();
+    const input = JSON.parse(body.input);
+    const citation = {
+      excerptId: input.source.id,
+      support: "Alpha precedes beta.",
+    };
+    expect(input.source.text).toContain("Alpha precedes beta.");
+    expect(body.store).toBe(false);
+    await route.fulfill({
+      status: 200,
+      contentType: "application/json",
+      body: JSON.stringify({
+        status: "completed",
+        output: [
+          {
+            content: [
+              {
+                type: "output_text",
+                text: JSON.stringify({
+                  title: "Personal sequence notes",
+                  summary:
+                    "This private fixture covers the ordering of symbols.",
+                  notes: [
+                    {
+                      heading: "Sequence",
+                      explanation:
+                        "Alpha comes before beta in the supplied fixture.",
+                      citation,
+                    },
+                  ],
+                  questions: [
+                    {
+                      question: "According to my upload, what precedes beta?",
+                      answer: "Alpha.",
+                      explanation: "The uploaded passage gives this order.",
+                      citation,
+                    },
+                  ],
+                  limitations: ["Original nonlegal test content."],
+                }),
+              },
+            ],
+          },
+        ],
+      }),
+    });
+  });
+  await page.goto("/");
+  await expect(
+    page.getByRole("heading", { name: "A little progress. Every day." }),
+  ).toBeVisible();
+  await nav(page, "CL700 Corporations Business Organizations");
+  await page
+    .getByRole("button", { name: /Non-Corporate Entities/ })
+    .first()
+    .click();
+  await page.getByRole("button", { name: "Notes", exact: true }).click();
+  await expect(
+    page.getByRole("heading", {
+      name: "Recognizing a general partnership",
+      exact: true,
+    }),
+  ).toBeVisible();
+  await page
+    .getByRole("button", { name: "Mini Module Exam", exact: true })
+    .click();
+  await expect(page.getByLabel("Exam answer 1")).toBeVisible();
+  await nav(page, "Import sources");
+  const form = page.locator("form.import-form");
+  await form.locator('input[name="file"]').setInputFiles({
+    name: "private-original-notes.txt",
+    mimeType: "text/plain",
+    buffer: Buffer.from(
+      "Original private test material. Alpha precedes beta. Gamma follows beta.",
+    ),
+  });
+  await form.locator('input[name="title"]').fill("My private sequence reading");
+  await form.locator('select[name="courseId"]').selectOption("CL700");
+  await form.locator('select[name="moduleId"]').selectOption("CL700-M01");
+  await form.locator('input[name="rights"]').fill("Original test material");
+  await form.locator('input[name="generateAI"]').check();
+  await form
+    .getByRole("button", { name: "Upload & inspect extraction" })
+    .click();
+  const dialog = page.getByRole("dialog", {
+    name: "AI study notes and mini exam",
+  });
+  await expect(dialog).toBeVisible();
+  await dialog
+    .getByLabel("OpenAI API key", { exact: true })
+    .fill("sk-original-browser-test-key");
+  await dialog
+    .getByRole("button", { name: "Connect OpenAI", exact: true })
+    .click();
+  await expect(
+    dialog.getByRole("button", { name: "Generate study draft", exact: true }),
+  ).toBeDisabled();
+  expect(calls).toBe(0);
+  await dialog
+    .getByRole("combobox", { name: "Study format", exact: true })
+    .selectOption("depth");
+  await dialog
+    .getByLabel(
+      "Send this displayed passage to OpenAI to generate my study draft.",
+    )
+    .check();
+  await dialog
+    .getByRole("button", { name: "Generate study draft", exact: true })
+    .click();
+  await expect(
+    dialog.getByRole("heading", {
+      name: "Personal sequence notes",
+      exact: true,
+    }),
+  ).toBeVisible();
+  expect(calls).toBe(1);
+  expect(
+    await page.evaluate(async () => {
+      const data = await window.casebookTransport!("export");
+      return data.data.note.filter((n: any) => n.id.startsWith("personal-ai-"))
+        .length;
+    }),
+  ).toBe(0);
+  await dialog
+    .getByRole("button", {
+      name: "Confirm & add notes and exam questions",
+      exact: true,
+    })
+    .click();
+  await expect(dialog.getByText(/Added 1 note and 1 questions/)).toBeVisible();
+  await dialog
+    .getByRole("button", { name: "Close dialog", exact: true })
+    .click();
+  await nav(page, "CL700 Corporations Business Organizations");
+  await page
+    .getByRole("button", { name: /Non-Corporate Entities/ })
+    .first()
+    .click();
+  await page
+    .getByRole("button", { name: "Mini Module Exam", exact: true })
+    .click();
+  await expect(
+    page.getByText("1. According to my upload, what precedes beta?", {
+      exact: true,
+    }),
+  ).toBeVisible();
+  await page.getByLabel("Exam answer 1").fill("Alpha");
+  await page
+    .getByRole("button", { name: "Submit mini exam", exact: true })
+    .click();
+  await expect(page.getByText("Alpha.", { exact: true })).toBeVisible();
+  await page.reload();
+  await nav(page, "CL700 Corporations Business Organizations");
+  await page
+    .getByRole("button", { name: /Non-Corporate Entities/ })
+    .first()
+    .click();
+  await page
+    .getByRole("button", { name: "Mini Module Exam", exact: true })
+    .click();
+  await expect(page.getByLabel("Exam answer 1")).toHaveValue("Alpha");
+  const data = await page.evaluate(() => window.casebookTransport!("export"));
+  expect(JSON.stringify(data)).not.toContain("sk-original-browser-test-key");
+  const other = await context.browser()!.newContext();
+  try {
+    const visitor = await other.newPage();
+    await visitor.goto("http://127.0.0.1:3200/");
+    await expect(
+      visitor.getByRole("heading", { name: "A little progress. Every day." }),
+    ).toBeVisible();
+    const otherData = await visitor.evaluate(() =>
+      window.casebookTransport!("export"),
+    );
+    expect(
+      otherData.data.note.filter((n: any) => n.id.startsWith("personal-ai-")),
+    ).toHaveLength(0);
+    expect(
+      otherData.data.note.filter((n: any) => n.origin === "Shared study draft"),
+    ).toHaveLength(53);
+  } finally {
+    await other.close();
+  }
 });

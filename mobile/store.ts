@@ -1,4 +1,6 @@
 import Dexie from "dexie";
+import { seedSharedStudy } from "./shared-study";
+import { aiSaveSchema, buildAIStudyRows } from "../src/lib/ai-study";
 import { z } from "zod";
 import { tables, validateBackup } from "../src/lib/backup";
 import {
@@ -98,6 +100,7 @@ export async function seedPhone(db: Dexie) {
     }
     await rows(db, "meta").put({ id: "initialized", value: true });
   });
+  await seedSharedStudy(db);
 }
 function itemDefaults(kind: string, value: Record<string, any>): Row {
   const fields: Record<string, any> = {};
@@ -198,6 +201,10 @@ export async function restorePhone(
       await db.table("original").bulkPut(originals);
     }
     await rows(db, "meta").put({ id: "initialized", value: true });
+    await db
+      .table("meta")
+      .filter((r) => r.id.startsWith("shared-study-"))
+      .delete();
   });
 }
 export function phoneApi(db: Dexie) {
@@ -546,6 +553,39 @@ export function phoneApi(db: Dexie) {
         await rows(db, "meta").put({ id: "initialized", value: true });
       });
       return { ok: true };
+    }
+    if (route === "ai-study") {
+      const input = aiSaveSchema.parse(body);
+      const parent = await rows(db, "sourceExcerpt").get(input.excerptId);
+      const module = await rows(db, "module").get(input.moduleId);
+      const source = parent
+        ? await rows(db, "source").get(parent.sourceId)
+        : null;
+      if (
+        !parent ||
+        !module ||
+        !source ||
+        source.courseId !== module.courseId ||
+        (source.moduleId && source.moduleId !== module.id)
+      )
+        throw new Error("Source and destination module do not match");
+      const result = buildAIStudyRows(input, parent as any);
+      await db.transaction(
+        "rw",
+        [
+          db.table("sourceExcerpt"),
+          db.table("excerptMeta"),
+          db.table("note"),
+          db.table("flashcard"),
+        ],
+        async () => {
+          await rows(db, "sourceExcerpt").add(result.excerpt);
+          await rows(db, "excerptMeta").add(metadata(result.excerpt));
+          await rows(db, "note").add(result.note);
+          await rows(db, "flashcard").bulkAdd(result.cards);
+        },
+      );
+      return { notes: 1, questions: result.cards.length };
     }
     if (route === "import") return importDocument(db, body as FormData);
     throw new Error("Unknown local request");
