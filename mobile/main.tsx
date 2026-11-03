@@ -2,11 +2,13 @@ import React from "react";
 import { createRoot } from "react-dom/client";
 import { registerSW } from "virtual:pwa-register";
 import Workspace from "../src/app/workspace";
+import { mergeStudyPackage } from "./merge-package";
 import { createPhoneStore, phoneApi } from "./store";
 import { importStudyPackage, exportStudyPackage } from "./package";
 import "../src/app/globals.css";
 const db = createPhoneStore();
 window.casebookTransport = phoneApi(db);
+window.casebookMergePackage = (file) => mergeStudyPackage(db, file);
 window.casebookImportPackage = (file) => importStudyPackage(db, file);
 window.casebookExportPackage = () => exportStudyPackage(db);
 const applyUpdate = registerSW({

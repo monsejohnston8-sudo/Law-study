@@ -33,3 +33,20 @@ npm run build
 ```
 
 The phone tests use original, nonlegal fixtures and an iPhone viewport in Chromium. Physical iPhone/Safari installation requires a device check after deployment. The app preserves missing legal answers as missing; it does not fabricate textbook content.
+
+Mini module exams appear as the last module tab and in the overview toolkit.
+They use up to five answer-bearing, source-linked flashcards from that module.
+Learners save a draft, submit short answers, and compare against the source
+explanations. Draft material is labeled; exams do not automatically grade legal
+answers. Saved exam responses remain on the device and are included in backups.
+Modules without supported questions show a missing-materials message.
+
+On iPhone, Settings & backup → Add study materials merges a private study ZIP.
+The default keeps existing writing, exam responses, review schedules, attempts,
+and mastery progress. Full replacement remains a separate, explicit restore option.
+Export a private backup periodically because browser storage can be cleared.
+
+For local private curation, `scripts/import-study-drafts.ts` accepts a private JSON
+file containing summaries, questions, case briefs, and exact ranges into existing
+source excerpts. It imports review drafts idempotently without overwriting work.
+Never commit the input or include private study packages in the public app build.

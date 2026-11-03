@@ -83,6 +83,7 @@ test("imports a private study package locally and reads source sections offline"
     .setInputFiles(
       process.env.CASEBOOK_PRIVATE_STUDY_PACKAGE || "private/phone-fixture.zip",
     );
+  await page.getByLabel("Add study materials and keep my progress").uncheck();
   await page
     .getByLabel("Type IMPORT to replace the local collection")
     .fill("IMPORT");
@@ -102,6 +103,13 @@ test("imports a private study package locally and reads source sections offline"
     .locator("details")
     .filter({ has: page.getByText(title, { exact: true }) });
   await reader.locator("summary").click();
+  const spineOption = reader
+    .locator("option")
+    .filter({ hasText: /EPUB spine/ })
+    .first();
+  await reader
+    .getByRole("combobox", { name: "Extracted page / section", exact: true })
+    .selectOption((await spineOption.getAttribute("value")) as string);
   await expect(
     reader.getByRole("heading", { name: /EPUB spine/ }),
   ).toBeVisible();
@@ -138,4 +146,104 @@ test("imports a private study package locally and reads source sections offline"
   expect(downloaded.suggestedFilename()).toBe("Casebook-iPhone-Study-Data.zip");
   expect(await downloaded.failure()).toBeNull();
   expect(outbound).toHaveLength(0);
+});
+
+test("mini exam saves answers, reveals explanations only after submission, and survives a materials update", async ({
+  page,
+}) => {
+  await page.goto("/");
+  await expect(
+    page.getByRole("heading", { name: "A little progress. Every day." }),
+  ).toBeVisible();
+  await page.evaluate(async () => {
+    const api = window.casebookTransport!;
+    const form = new FormData();
+    for (const [k, v] of Object.entries({
+      courseId: "CL700",
+      moduleId: "CL700-M01",
+      title: "Exam fixture source",
+      author: "Test",
+      edition: "",
+      type: "notes",
+      rights: "Original fixture",
+    }))
+      form.set(k, v);
+    form.set(
+      "file",
+      new File(["Original fixture: alpha precedes beta."], "exam.txt", {
+        type: "text/plain",
+      }),
+    );
+    await api("import", form);
+    const state = await api("state");
+    const source = state.courses
+      .find((c: any) => c.id === "CL700")
+      .sources.find((s: any) => s.title === "Exam fixture source");
+    await api("item", {
+      kind: "flashcard",
+      moduleId: "CL700-M01",
+      title: "What precedes beta?",
+      status: "needs_review",
+      origin: "AI-generated draft",
+      excerptId: source.excerpts[0].id,
+      fields: { answer: "Alpha precedes beta." },
+    });
+  });
+  await page.reload();
+  await nav(page, "CL700 Corporations Business Organizations");
+  await page
+    .getByRole("button", { name: /Non-Corporate Entities/ })
+    .first()
+    .click();
+  await page
+    .getByRole("button", { name: "Mini Module Exam", exact: true })
+    .click();
+  await expect(
+    page.getByText("Alpha precedes beta.", { exact: true }),
+  ).toHaveCount(0);
+  await page.getByLabel("Exam answer 1").fill("Alpha");
+  await page
+    .getByRole("button", { name: "Save exam draft", exact: true })
+    .click();
+  await expect(
+    page.getByText("Exam draft saved on this device.", { exact: true }),
+  ).toBeVisible();
+  await page.reload();
+  await nav(page, "CL700 Corporations Business Organizations");
+  await page
+    .getByRole("button", { name: /Non-Corporate Entities/ })
+    .first()
+    .click();
+  await page
+    .getByRole("button", { name: "Mini Module Exam", exact: true })
+    .click();
+  await expect(page.getByLabel("Exam answer 1")).toHaveValue("Alpha");
+  await page
+    .getByRole("button", { name: "Submit mini exam", exact: true })
+    .click();
+  await expect(
+    page.getByText("Alpha precedes beta.", { exact: true }),
+  ).toBeVisible();
+  await nav(page, "Settings & backup");
+  await page
+    .getByLabel("Private study package", { exact: true })
+    .setInputFiles("private/phone-fixture.zip");
+  await page
+    .getByRole("button", { name: "Add study materials", exact: true })
+    .click();
+  await expect(
+    page.getByText(/Your existing work and progress were kept/),
+  ).toBeVisible();
+  await nav(page, "CL700 Corporations Business Organizations");
+  await page
+    .getByRole("button", { name: /Non-Corporate Entities/ })
+    .first()
+    .click();
+  await page
+    .getByRole("button", { name: "Mini Module Exam", exact: true })
+    .click();
+  await expect(page.getByLabel("Exam answer 1")).toHaveValue("Alpha");
+  await expect(
+    page.getByText("Alpha precedes beta.", { exact: true }),
+  ).toBeVisible();
 });

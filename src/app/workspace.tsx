@@ -47,6 +47,7 @@ const tabs = [
   "IRAC Essays",
   "Seminar & Quiz Feedback",
   "Sources",
+  "Mini Module Exam",
 ];
 const kinds: Record<string, string> = {
   "Rules & Elements": "rule",
@@ -736,6 +737,13 @@ export default function Workspace() {
                         Work through an essay
                         <ChevronRight size={16} />
                       </button>
+                      <button
+                        className="tool-row"
+                        onClick={() => setTab("Mini Module Exam")}
+                      >
+                        Take the end-of-module mini exam
+                        <ChevronRight size={16} />
+                      </button>
                       <Badge>{module.sources.length} imported sources</Badge>
                     </section>
                   </div>
@@ -789,6 +797,12 @@ export default function Workspace() {
                       Import a reading
                     </button>
                   </section>
+                ) : tab === "Mini Module Exam" ? (
+                  <MiniModuleExam
+                    key={module.id}
+                    module={libraryModule(module)}
+                    onSave={(v) => perform("essay", v, "Exam response saved")}
+                  />
                 ) : tab === "Sources" ? (
                   <SourceList sources={module.sources} />
                 ) : (
@@ -2660,13 +2674,15 @@ function PhonePackagePanel({
   const [busy, setBusy] = useState(false),
     [message, setMessage] = useState(""),
     [error, setError] = useState(""),
-    [confirmation, setConfirmation] = useState("");
+    [confirmation, setConfirmation] = useState(""),
+    [mergeMode, setMergeMode] = useState(true);
   return (
     <section className="card settings-card">
       <h3>Your iPhone study package</h3>
       <p>
-        Your books and study data stay on this device. This import replaces the
-        current local study collection. Nothing is uploaded to the app host.
+        Your books and study data stay on this device. Add new materials while
+        keeping your work, or explicitly choose a full backup restore. Nothing
+        is uploaded to the app host.
       </p>
       <form
         onSubmit={async (e) => {
@@ -2674,17 +2690,24 @@ function PhonePackagePanel({
           setBusy(true);
           setError("");
           try {
-            if (confirmation !== "IMPORT")
+            if (!mergeMode && confirmation !== "IMPORT")
               throw new Error("Type IMPORT to confirm replacement");
             const form = new FormData(e.currentTarget),
               file = form.get("studyPackage");
             if (!(file instanceof File))
               throw new Error("Choose the private study ZIP");
-            const result = await window.casebookImportPackage!(file);
+            if (mergeMode) {
+              const r = await window.casebookMergePackage!(file);
+              setMessage(
+                `Added ${r.added} study records and filled ${r.filled} missing items. Your existing work and progress were kept.`,
+              );
+            } else {
+              const r = await window.casebookImportPackage!(file);
+              setMessage(
+                `Imported ${r.courses} courses, ${r.modules} modules and ${r.sources} private sources.`,
+              );
+            }
             await onImported();
-            setMessage(
-              `Imported ${result.courses} courses, ${result.modules} modules and ${result.sources} private sources.`,
-            );
             setConfirmation("");
           } catch (e) {
             setError(String(e));
@@ -2702,18 +2725,32 @@ function PhonePackagePanel({
             required
           />
         </label>
-        <label className="field">
-          Type IMPORT to replace the local collection
+        <label className="check-row">
           <input
-            value={confirmation}
-            onChange={(e) => setConfirmation(e.target.value)}
+            type="checkbox"
+            checked={mergeMode}
+            onChange={(e) => setMergeMode(e.target.checked)}
           />
+          Add study materials and keep my progress
         </label>
+        {!mergeMode && (
+          <label className="field">
+            Type IMPORT to replace the local collection
+            <input
+              value={confirmation}
+              onChange={(e) => setConfirmation(e.target.value)}
+            />
+          </label>
+        )}
         <button
           className="primary"
-          disabled={busy || confirmation !== "IMPORT"}
+          disabled={busy || (!mergeMode && confirmation !== "IMPORT")}
         >
-          {busy ? "Importing private materials…" : "Import study package"}
+          {busy
+            ? "Importing private materials…"
+            : mergeMode
+              ? "Add study materials"
+              : "Import study package"}
         </button>
       </form>
       <button
@@ -2723,8 +2760,8 @@ function PhonePackagePanel({
           setBusy(true);
           setError("");
           try {
-            const blob = await window.casebookExportPackage!();
-            const url = URL.createObjectURL(blob),
+            const blob = await window.casebookExportPackage!(),
+              url = URL.createObjectURL(blob),
               a = document.createElement("a");
             a.href = url;
             a.download = "Casebook-iPhone-Study-Data.zip";
@@ -2756,6 +2793,128 @@ function PhonePackagePanel({
           {error}
         </p>
       )}
+    </section>
+  );
+}
+
+function MiniModuleExam({
+  module,
+  onSave,
+}: {
+  module: Module;
+  onSave: (v: Row) => Promise<Row>;
+}) {
+  const title = `Mini module exam: ${module.id}`;
+  const saved = module.drafts?.find((d: Row) => d.title === title);
+  const questions = (module.flashcards ?? [])
+    .filter((q: Row) => q.answer && q.excerptId && q.status !== "missing")
+    .slice(0, 5);
+  const [answers, setAnswers] = useState<Record<string, string>>(() => {
+    try {
+      return JSON.parse(saved?.application || "{}");
+    } catch {
+      return {};
+    }
+  });
+  const [record, setRecord] = useState<Row | undefined>(saved);
+  const [submitted, setSubmitted] = useState(saved?.assessment === "submitted");
+  const [message, setMessage] = useState("");
+  const [busy, setBusy] = useState(false);
+  const save = async (submit: boolean) => {
+    setBusy(true);
+    setMessage("Saving…");
+    try {
+      const row = await onSave({
+        id: record?.id,
+        moduleId: module.id,
+        title,
+        issue: "",
+        rule: "",
+        application: JSON.stringify(answers),
+        conclusion: "",
+        assessment: submit ? "submitted" : "draft",
+        checklist: "[]",
+        seconds: 0,
+      });
+      setRecord(row);
+      setSubmitted(submit);
+      setMessage(
+        submit
+          ? "Exam response saved. Compare your answers with the source-linked explanations below."
+          : "Exam draft saved on this device.",
+      );
+    } catch (e) {
+      setMessage(`Save failed: ${String(e)}`);
+    } finally {
+      setBusy(false);
+    }
+  };
+  return (
+    <section className="card">
+      <h3>End-of-module mini exam</h3>
+      <p>
+        Short-answer practice from your imported study materials. Answer without
+        looking, then submit to compare your work. This is self-reviewed
+        practice; draft explanations do not produce an automatic grade.
+      </p>
+      {!questions.length ? (
+        <p className="muted">
+          No source-backed exam questions are available for this module yet.
+          Import supported study materials first.
+        </p>
+      ) : (
+        <>
+          {questions.map((q: Row, i: number) => (
+            <article key={q.id}>
+              <label className="field">
+                <strong>
+                  {i + 1}. {q.title}
+                </strong>
+                <textarea
+                  aria-label={`Exam answer ${i + 1}`}
+                  rows={4}
+                  value={answers[q.id] ?? ""}
+                  onChange={(e) => {
+                    setAnswers({ ...answers, [q.id]: e.target.value });
+                    setSubmitted(false);
+                    setMessage(
+                      "Unsaved changes — save your draft before leaving.",
+                    );
+                  }}
+                />
+              </label>
+              {submitted && (
+                <div className="card">
+                  <Badge>
+                    {q.origin} · {q.status}
+                  </Badge>
+                  <p className="preserve">{q.answer}</p>
+                  <p className="muted">{q.body}</p>
+                  <Citation module={module} id={q.excerptId} />
+                </div>
+              )}
+            </article>
+          ))}
+          <div className="actions">
+            <button
+              className="outline"
+              disabled={busy}
+              onClick={() => save(false)}
+            >
+              Save exam draft
+            </button>
+            <button
+              disabled={
+                busy || questions.some((q: Row) => !answers[q.id]?.trim())
+              }
+              onClick={() => save(true)}
+            >
+              Submit mini exam
+            </button>
+          </div>
+        </>
+      )}
+      <p role="status">{message}</p>
     </section>
   );
 }
