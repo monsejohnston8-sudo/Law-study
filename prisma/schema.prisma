@@ -1,0 +1,244 @@
+generator client {
+ provider = "prisma-client-js"
+ engineType = "client"
+}
+datasource db {
+ provider = "sqlite"
+}
+model Course {
+ id String @id
+ title String
+ modules Module[]
+ sources Source[]
+ createdAt DateTime @default(now())
+ updatedAt DateTime @updatedAt
+}
+model Module {
+ id String @id
+ courseId String
+ course Course @relation(fields: [courseId], references: [id])
+ number Int
+ title String
+ coverage String
+ topics Topic[]
+ rules Rule[]
+ cases CaseBrief[]
+ flashcards Flashcard[]
+ mcqs MCQ[]
+ essays EssayPrompt[]
+ notes Note[]
+ sources Source[]
+ drafts EssayDraft[]
+ sessions StudySession[]
+ mastery MasteryProgress?
+ @@unique([courseId, number])
+}
+model Source {
+ id String @id @default(cuid())
+ courseId String
+ course Course @relation(fields: [courseId], references: [id])
+ moduleId String?
+ module Module? @relation(fields: [moduleId], references: [id])
+ title String
+ author String @default("")
+ edition String @default("")
+ hash String @unique
+ type String
+ rights String
+ filename String
+ mime String
+ status String
+ excerpts SourceExcerpt[]
+ createdAt DateTime @default(now())
+ updatedAt DateTime @updatedAt
+}
+model SourceExcerpt {
+ id String @id @default(cuid())
+ sourceId String
+ source Source @relation(fields: [sourceId], references: [id])
+ page Int
+ section String @default("")
+ locatorVerified Boolean @default(false)
+ text String
+ rules Rule[]
+ cases CaseBrief[]
+ flashcards Flashcard[]
+ mcqs MCQ[]
+ essays EssayPrompt[]
+ notes Note[]
+ createdAt DateTime @default(now())
+ updatedAt DateTime @updatedAt
+}
+model Topic {
+ id String @id
+ moduleId String
+ module Module @relation(fields: [moduleId], references: [id])
+ name String
+ rule String?
+ createdAt DateTime @default(now())
+ updatedAt DateTime @updatedAt
+}
+model Rule {
+ id String @id @default(cuid())
+ moduleId String
+ module Module @relation(fields: [moduleId], references: [id])
+ title String
+ body String?
+ status String @default("needs_review")
+ origin String @default("user-written")
+ excerptId String?
+ excerpt SourceExcerpt? @relation(fields: [excerptId], references: [id])
+ jurisdiction String @default("")
+ elements String @default("")
+ exceptions String @default("")
+ standardOfReview String @default("")
+ policy String @default("")
+ examples String @default("")
+ counterarguments String @default("")
+ createdAt DateTime @default(now())
+ updatedAt DateTime @updatedAt
+}
+model CaseBrief {
+ id String @id @default(cuid())
+ moduleId String
+ module Module @relation(fields: [moduleId], references: [id])
+ title String
+ body String?
+ status String @default("needs_review")
+ origin String @default("user-written")
+ excerptId String?
+ excerpt SourceExcerpt? @relation(fields: [excerptId], references: [id])
+ citation String @default("")
+ facts String @default("")
+ posture String @default("")
+ issue String @default("")
+ holding String @default("")
+ reasoning String @default("")
+ rule String @default("")
+ dissent String @default("")
+ significance String @default("")
+ createdAt DateTime @default(now())
+ updatedAt DateTime @updatedAt
+}
+model Flashcard {
+ id String @id @default(cuid())
+ moduleId String
+ module Module @relation(fields: [moduleId], references: [id])
+ title String
+ body String?
+ status String @default("needs_review")
+ origin String @default("user-written")
+ excerptId String?
+ excerpt SourceExcerpt? @relation(fields: [excerptId], references: [id])
+ answer String?
+ interval Int @default(0)
+ ease Float @default(2.5)
+ repetitions Int @default(0)
+ due DateTime @default(now())
+ reviews FlashcardReview[]
+ createdAt DateTime @default(now())
+ updatedAt DateTime @updatedAt
+}
+model MCQ {
+ id String @id @default(cuid())
+ moduleId String
+ module Module @relation(fields: [moduleId], references: [id])
+ title String
+ body String?
+ status String @default("needs_review")
+ origin String @default("user-written")
+ excerptId String?
+ excerpt SourceExcerpt? @relation(fields: [excerptId], references: [id])
+ options String @default("[]")
+ correct Int?
+ explanations String @default("[]")
+ topic String @default("")
+ difficulty String @default("medium")
+ attempts QuizAttempt[]
+ createdAt DateTime @default(now())
+ updatedAt DateTime @updatedAt
+}
+model EssayPrompt {
+ id String @id @default(cuid())
+ moduleId String
+ module Module @relation(fields: [moduleId], references: [id])
+ title String
+ body String?
+ status String @default("needs_review")
+ origin String @default("user-written")
+ excerptId String?
+ excerpt SourceExcerpt? @relation(fields: [excerptId], references: [id])
+ facts String @default("")
+ issueTags String @default("")
+ modelAnswer String?
+ rubric String @default("")
+ difficulty String @default("medium")
+ createdAt DateTime @default(now())
+ updatedAt DateTime @updatedAt
+}
+model Note {
+ id String @id @default(cuid())
+ moduleId String
+ module Module @relation(fields: [moduleId], references: [id])
+ title String
+ body String?
+ status String @default("needs_review")
+ origin String @default("user-written")
+ excerptId String?
+ excerpt SourceExcerpt? @relation(fields: [excerptId], references: [id])
+ kind String @default("notes")
+ createdAt DateTime @default(now())
+ updatedAt DateTime @updatedAt
+}
+model FlashcardReview {
+ id String @id @default(cuid())
+ flashcardId String
+ flashcard Flashcard @relation(fields: [flashcardId], references: [id])
+ rating Int
+ interval Int
+ createdAt DateTime @default(now())
+}
+model QuizAttempt {
+ id String @id @default(cuid())
+ mcqId String
+ mcq MCQ @relation(fields: [mcqId], references: [id])
+ selected Int
+ correct Boolean
+ createdAt DateTime @default(now())
+}
+model EssayDraft {
+ id String @id @default(cuid())
+ moduleId String
+ module Module @relation(fields: [moduleId], references: [id])
+ title String
+ issue String @default("")
+ rule String @default("")
+ application String @default("")
+ conclusion String @default("")
+ assessment String @default("")
+ checklist String @default("[]")
+ seconds Int @default(0)
+ createdAt DateTime @default(now())
+ updatedAt DateTime @updatedAt
+}
+model StudySession {
+ id String @id @default(cuid())
+ moduleId String
+ module Module @relation(fields: [moduleId], references: [id])
+ kind String
+ seconds Int @default(0)
+ createdAt DateTime @default(now())
+}
+model MasteryProgress {
+ id String @id @default(cuid())
+ moduleId String @unique
+ module Module @relation(fields: [moduleId], references: [id])
+ completed Boolean @default(false)
+ mastery Int @default(0)
+ updatedAt DateTime @updatedAt
+}
+model Preference {
+ id String @id @default("local")
+ theme String @default("light")
+ dailyGoal Int @default(20)
+}

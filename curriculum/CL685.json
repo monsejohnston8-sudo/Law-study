@@ -1,0 +1,379 @@
+{
+  "schema_version": "1.0",
+  "course_code": "CL685",
+  "course_title": "Criminal Procedure",
+  "source": "Previously uploaded 15-module course outline and known study discussions",
+  "important": "Curriculum map only. Does not contain every reading, quiz, seminar, or complete legal rule; blank values are intentional.",
+  "modules": [
+    {
+      "id": "CL685-M01",
+      "number": 1,
+      "title": "Criminal Justice Process",
+      "topics": [],
+      "cases": [],
+      "flashcards": [],
+      "quiz_questions": [],
+      "seminar_notes": [],
+      "practice_hypos": [],
+      "coverage": "curriculum mapped; full instructional content not yet imported"
+    },
+    {
+      "id": "CL685-M02",
+      "number": 2,
+      "title": "Pretrial Identification",
+      "topics": [
+        {
+          "name": "suggestive identification",
+          "rule": null
+        },
+        {
+          "name": "reliability",
+          "rule": null
+        }
+      ],
+      "cases": [
+        {
+          "name": "Kirby v. Illinois",
+          "brief": null
+        },
+        {
+          "name": "Perry v. New Hampshire",
+          "brief": null
+        },
+        {
+          "name": "Sexton v. Beaudreaux",
+          "brief": null
+        }
+      ],
+      "flashcards": [
+        {
+          "question": "Explain suggestive identification.",
+          "answer": null
+        },
+        {
+          "question": "Explain reliability.",
+          "answer": null
+        }
+      ],
+      "quiz_questions": [],
+      "seminar_notes": [],
+      "practice_hypos": [],
+      "coverage": "curriculum mapped; full instructional content not yet imported"
+    },
+    {
+      "id": "CL685-M03",
+      "number": 3,
+      "title": "Introduction to Search and Seizure",
+      "topics": [
+        {
+          "name": "reasonable expectation of privacy",
+          "rule": null
+        },
+        {
+          "name": "exclusionary rule",
+          "rule": null
+        }
+      ],
+      "cases": [
+        {
+          "name": "Mapp v. Ohio",
+          "brief": null
+        },
+        {
+          "name": "Katz v. United States",
+          "brief": null
+        },
+        {
+          "name": "United States v. Jones",
+          "brief": null
+        }
+      ],
+      "flashcards": [
+        {
+          "question": "Explain reasonable expectation of privacy.",
+          "answer": null
+        },
+        {
+          "question": "Explain exclusionary rule.",
+          "answer": null
+        }
+      ],
+      "quiz_questions": [],
+      "seminar_notes": [],
+      "practice_hypos": [],
+      "coverage": "curriculum mapped; full instructional content not yet imported"
+    },
+    {
+      "id": "CL685-M04",
+      "number": 4,
+      "title": "Warrant Requirement",
+      "topics": [
+        {
+          "name": "probable cause",
+          "rule": null
+        },
+        {
+          "name": "particularity",
+          "rule": null
+        }
+      ],
+      "cases": [
+        {
+          "name": "Franks v. Delaware",
+          "brief": null
+        },
+        {
+          "name": "Arizona v. Hicks",
+          "brief": null
+        }
+      ],
+      "flashcards": [
+        {
+          "question": "Explain probable cause.",
+          "answer": null
+        },
+        {
+          "question": "Explain particularity.",
+          "answer": null
+        }
+      ],
+      "quiz_questions": [],
+      "seminar_notes": [],
+      "practice_hypos": [],
+      "coverage": "curriculum mapped; full instructional content not yet imported"
+    },
+    {
+      "id": "CL685-M05",
+      "number": 5,
+      "title": "Stop and Frisk",
+      "topics": [
+        {
+          "name": "reasonable suspicion",
+          "rule": null
+        },
+        {
+          "name": "protective frisk",
+          "rule": null
+        }
+      ],
+      "cases": [
+        {
+          "name": "Terry v. Ohio",
+          "brief": null
+        }
+      ],
+      "flashcards": [
+        {
+          "question": "Explain reasonable suspicion.",
+          "answer": null
+        },
+        {
+          "question": "Explain protective frisk.",
+          "answer": null
+        }
+      ],
+      "quiz_questions": [],
+      "seminar_notes": [],
+      "practice_hypos": [],
+      "coverage": "curriculum mapped; full instructional content not yet imported"
+    },
+    {
+      "id": "CL685-M06",
+      "number": 6,
+      "title": "Warrantless Vehicle, Premises and Container Searches",
+      "topics": [
+        {
+          "name": "automobile exception",
+          "rule": null
+        },
+        {
+          "name": "plain view",
+          "rule": null
+        },
+        {
+          "name": "inventory searches",
+          "rule": null
+        }
+      ],
+      "cases": [],
+      "flashcards": [
+        {
+          "question": "Explain automobile exception.",
+          "answer": null
+        },
+        {
+          "question": "Explain plain view.",
+          "answer": null
+        },
+        {
+          "question": "Explain inventory searches.",
+          "answer": null
+        }
+      ],
+      "quiz_questions": [],
+      "seminar_notes": [],
+      "practice_hypos": [],
+      "coverage": "curriculum mapped; full instructional content not yet imported"
+    },
+    {
+      "id": "CL685-M07",
+      "number": 7,
+      "title": "Consent Searches and Entrapment",
+      "topics": [],
+      "cases": [],
+      "flashcards": [],
+      "quiz_questions": [],
+      "seminar_notes": [],
+      "practice_hypos": [],
+      "coverage": "curriculum mapped; full instructional content not yet imported"
+    },
+    {
+      "id": "CL685-M08",
+      "number": 8,
+      "title": "Exclusionary Rule",
+      "topics": [
+        {
+          "name": "good faith",
+          "rule": null
+        },
+        {
+          "name": "attenuation",
+          "rule": null
+        },
+        {
+          "name": "inevitable discovery",
+          "rule": null
+        }
+      ],
+      "cases": [],
+      "flashcards": [
+        {
+          "question": "Explain good faith.",
+          "answer": null
+        },
+        {
+          "question": "Explain attenuation.",
+          "answer": null
+        },
+        {
+          "question": "Explain inevitable discovery.",
+          "answer": null
+        }
+      ],
+      "quiz_questions": [],
+      "seminar_notes": [],
+      "practice_hypos": [],
+      "coverage": "curriculum mapped; full instructional content not yet imported"
+    },
+    {
+      "id": "CL685-M09",
+      "number": 9,
+      "title": "Limitations on Prosecutors",
+      "topics": [],
+      "cases": [],
+      "flashcards": [],
+      "quiz_questions": [],
+      "seminar_notes": [],
+      "practice_hypos": [],
+      "coverage": "curriculum mapped; full instructional content not yet imported"
+    },
+    {
+      "id": "CL685-M10",
+      "number": 10,
+      "title": "Fifth Amendment Privilege",
+      "topics": [],
+      "cases": [],
+      "flashcards": [],
+      "quiz_questions": [],
+      "seminar_notes": [],
+      "practice_hypos": [],
+      "coverage": "curriculum mapped; full instructional content not yet imported"
+    },
+    {
+      "id": "CL685-M11",
+      "number": 11,
+      "title": "Miranda",
+      "topics": [
+        {
+          "name": "custody",
+          "rule": null
+        },
+        {
+          "name": "interrogation",
+          "rule": null
+        },
+        {
+          "name": "waiver",
+          "rule": null
+        }
+      ],
+      "cases": [],
+      "flashcards": [
+        {
+          "question": "Explain custody.",
+          "answer": null
+        },
+        {
+          "question": "Explain interrogation.",
+          "answer": null
+        },
+        {
+          "question": "Explain waiver.",
+          "answer": null
+        }
+      ],
+      "quiz_questions": [],
+      "seminar_notes": [],
+      "practice_hypos": [],
+      "coverage": "curriculum mapped; full instructional content not yet imported"
+    },
+    {
+      "id": "CL685-M12",
+      "number": 12,
+      "title": "Double Jeopardy, Speedy Trial and Guilty Pleas",
+      "topics": [],
+      "cases": [],
+      "flashcards": [],
+      "quiz_questions": [],
+      "seminar_notes": [],
+      "practice_hypos": [],
+      "coverage": "curriculum mapped; full instructional content not yet imported"
+    },
+    {
+      "id": "CL685-M13",
+      "number": 13,
+      "title": "Trial Rights and Sentencing",
+      "topics": [],
+      "cases": [],
+      "flashcards": [],
+      "quiz_questions": [],
+      "seminar_notes": [],
+      "practice_hypos": [],
+      "coverage": "curriculum mapped; full instructional content not yet imported"
+    },
+    {
+      "id": "CL685-M14",
+      "number": 14,
+      "title": "Appellate Review",
+      "topics": [],
+      "cases": [],
+      "flashcards": [],
+      "quiz_questions": [],
+      "seminar_notes": [],
+      "practice_hypos": [],
+      "coverage": "curriculum mapped; full instructional content not yet imported"
+    },
+    {
+      "id": "CL685-M15",
+      "number": 15,
+      "title": "Final Exam",
+      "topics": [],
+      "cases": [],
+      "flashcards": [],
+      "quiz_questions": [],
+      "seminar_notes": [],
+      "practice_hypos": [],
+      "coverage": "curriculum mapped; full instructional content not yet imported"
+    }
+  ]
+}

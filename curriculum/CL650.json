@@ -1,0 +1,417 @@
+{
+  "schema_version": "1.0",
+  "course_code": "CL650",
+  "course_title": "Constitutional Law",
+  "source": "Previously uploaded 15-module course outline and known study discussions",
+  "important": "Curriculum map only. Does not contain every reading, quiz, seminar, or complete legal rule; blank values are intentional.",
+  "modules": [
+    {
+      "id": "CL650-M01",
+      "number": 1,
+      "title": "Overview of the Constitution",
+      "topics": [],
+      "cases": [],
+      "flashcards": [],
+      "quiz_questions": [],
+      "seminar_notes": [],
+      "practice_hypos": [],
+      "coverage": "curriculum mapped; full instructional content not yet imported"
+    },
+    {
+      "id": "CL650-M02",
+      "number": 2,
+      "title": "Federal Jurisdiction and Judicial Review",
+      "topics": [
+        {
+          "name": "judicial review",
+          "rule": null
+        },
+        {
+          "name": "Supreme Court appellate jurisdiction",
+          "rule": null
+        }
+      ],
+      "cases": [
+        {
+          "name": "Marbury v. Madison",
+          "brief": null
+        },
+        {
+          "name": "Ex parte McCardle",
+          "brief": null
+        },
+        {
+          "name": "Martin v. Hunter's Lessee",
+          "brief": null
+        },
+        {
+          "name": "Cooper v. Aaron",
+          "brief": null
+        }
+      ],
+      "flashcards": [
+        {
+          "question": "Explain judicial review.",
+          "answer": null
+        },
+        {
+          "question": "Explain Supreme Court appellate jurisdiction.",
+          "answer": null
+        }
+      ],
+      "quiz_questions": [],
+      "seminar_notes": [],
+      "practice_hypos": [],
+      "coverage": "curriculum mapped; full instructional content not yet imported"
+    },
+    {
+      "id": "CL650-M03",
+      "number": 3,
+      "title": "Justiciability: Standing",
+      "topics": [
+        {
+          "name": "injury in fact",
+          "rule": null
+        },
+        {
+          "name": "causation",
+          "rule": null
+        },
+        {
+          "name": "redressability",
+          "rule": null
+        },
+        {
+          "name": "associational standing",
+          "rule": null
+        }
+      ],
+      "cases": [
+        {
+          "name": "Lujan v. Defenders of Wildlife",
+          "brief": null
+        },
+        {
+          "name": "City of Los Angeles v. Lyons",
+          "brief": null
+        }
+      ],
+      "flashcards": [
+        {
+          "question": "Explain injury in fact.",
+          "answer": null
+        },
+        {
+          "question": "Explain causation.",
+          "answer": null
+        },
+        {
+          "question": "Explain redressability.",
+          "answer": null
+        },
+        {
+          "question": "Explain associational standing.",
+          "answer": null
+        }
+      ],
+      "quiz_questions": [],
+      "seminar_notes": [],
+      "practice_hypos": [],
+      "coverage": "curriculum mapped; full instructional content not yet imported"
+    },
+    {
+      "id": "CL650-M04",
+      "number": 4,
+      "title": "Justiciability: Timing",
+      "topics": [
+        {
+          "name": "ripeness",
+          "rule": null
+        },
+        {
+          "name": "mootness",
+          "rule": null
+        },
+        {
+          "name": "voluntary cessation",
+          "rule": null
+        }
+      ],
+      "cases": [],
+      "flashcards": [
+        {
+          "question": "Explain ripeness.",
+          "answer": null
+        },
+        {
+          "question": "Explain mootness.",
+          "answer": null
+        },
+        {
+          "question": "Explain voluntary cessation.",
+          "answer": null
+        }
+      ],
+      "quiz_questions": [],
+      "seminar_notes": [],
+      "practice_hypos": [],
+      "coverage": "curriculum mapped; full instructional content not yet imported"
+    },
+    {
+      "id": "CL650-M05",
+      "number": 5,
+      "title": "Political Questions and Sovereign Immunity",
+      "topics": [
+        {
+          "name": "political question doctrine",
+          "rule": null
+        },
+        {
+          "name": "sovereign immunity",
+          "rule": null
+        }
+      ],
+      "cases": [
+        {
+          "name": "Baker v. Carr",
+          "brief": null
+        },
+        {
+          "name": "United States v. Nixon",
+          "brief": null
+        },
+        {
+          "name": "Nixon v. United States",
+          "brief": null
+        },
+        {
+          "name": "Michigan v. Long",
+          "brief": null
+        }
+      ],
+      "flashcards": [
+        {
+          "question": "Explain political question doctrine.",
+          "answer": null
+        },
+        {
+          "question": "Explain sovereign immunity.",
+          "answer": null
+        }
+      ],
+      "quiz_questions": [],
+      "seminar_notes": [],
+      "practice_hypos": [],
+      "coverage": "curriculum mapped; full instructional content not yet imported"
+    },
+    {
+      "id": "CL650-M06",
+      "number": 6,
+      "title": "Necessary and Proper Clause",
+      "topics": [
+        {
+          "name": "enumerated powers",
+          "rule": null
+        },
+        {
+          "name": "necessary and proper",
+          "rule": null
+        }
+      ],
+      "cases": [
+        {
+          "name": "McCulloch v. Maryland",
+          "brief": null
+        },
+        {
+          "name": "City of Boerne v. Flores",
+          "brief": null
+        }
+      ],
+      "flashcards": [
+        {
+          "question": "Explain enumerated powers.",
+          "answer": null
+        },
+        {
+          "question": "Explain necessary and proper.",
+          "answer": null
+        }
+      ],
+      "quiz_questions": [],
+      "seminar_notes": [],
+      "practice_hypos": [],
+      "coverage": "curriculum mapped; full instructional content not yet imported"
+    },
+    {
+      "id": "CL650-M07",
+      "number": 7,
+      "title": "Commerce Clause",
+      "topics": [
+        {
+          "name": "interstate commerce",
+          "rule": null
+        },
+        {
+          "name": "substantial effects",
+          "rule": null
+        }
+      ],
+      "cases": [],
+      "flashcards": [
+        {
+          "question": "Explain interstate commerce.",
+          "answer": null
+        },
+        {
+          "question": "Explain substantial effects.",
+          "answer": null
+        }
+      ],
+      "quiz_questions": [],
+      "seminar_notes": [],
+      "practice_hypos": [],
+      "coverage": "curriculum mapped; full instructional content not yet imported"
+    },
+    {
+      "id": "CL650-M08",
+      "number": 8,
+      "title": "Taxing and Spending Clause",
+      "topics": [
+        {
+          "name": "general welfare",
+          "rule": null
+        },
+        {
+          "name": "spending conditions",
+          "rule": null
+        },
+        {
+          "name": "coercion",
+          "rule": null
+        }
+      ],
+      "cases": [],
+      "flashcards": [
+        {
+          "question": "Explain general welfare.",
+          "answer": null
+        },
+        {
+          "question": "Explain spending conditions.",
+          "answer": null
+        },
+        {
+          "question": "Explain coercion.",
+          "answer": null
+        }
+      ],
+      "quiz_questions": [],
+      "seminar_notes": [],
+      "practice_hypos": [],
+      "coverage": "curriculum mapped; full instructional content not yet imported"
+    },
+    {
+      "id": "CL650-M09",
+      "number": 9,
+      "title": "State Powers and Federalism",
+      "topics": [
+        {
+          "name": "federalism",
+          "rule": null
+        },
+        {
+          "name": "preemption",
+          "rule": null
+        }
+      ],
+      "cases": [],
+      "flashcards": [
+        {
+          "question": "Explain federalism.",
+          "answer": null
+        },
+        {
+          "question": "Explain preemption.",
+          "answer": null
+        }
+      ],
+      "quiz_questions": [],
+      "seminar_notes": [],
+      "practice_hypos": [],
+      "coverage": "curriculum mapped; full instructional content not yet imported"
+    },
+    {
+      "id": "CL650-M10",
+      "number": 10,
+      "title": "Limits on State Powers",
+      "topics": [],
+      "cases": [],
+      "flashcards": [],
+      "quiz_questions": [],
+      "seminar_notes": [],
+      "practice_hypos": [],
+      "coverage": "curriculum mapped; full instructional content not yet imported"
+    },
+    {
+      "id": "CL650-M11",
+      "number": 11,
+      "title": "Executive Express and Inherent Powers",
+      "topics": [],
+      "cases": [],
+      "flashcards": [],
+      "quiz_questions": [],
+      "seminar_notes": [],
+      "practice_hypos": [],
+      "coverage": "curriculum mapped; full instructional content not yet imported"
+    },
+    {
+      "id": "CL650-M12",
+      "number": 12,
+      "title": "Executive Appointment and Removal",
+      "topics": [],
+      "cases": [],
+      "flashcards": [],
+      "quiz_questions": [],
+      "seminar_notes": [],
+      "practice_hypos": [],
+      "coverage": "curriculum mapped; full instructional content not yet imported"
+    },
+    {
+      "id": "CL650-M13",
+      "number": 13,
+      "title": "Executive Pardon and Privilege",
+      "topics": [],
+      "cases": [],
+      "flashcards": [],
+      "quiz_questions": [],
+      "seminar_notes": [],
+      "practice_hypos": [],
+      "coverage": "curriculum mapped; full instructional content not yet imported"
+    },
+    {
+      "id": "CL650-M14",
+      "number": 14,
+      "title": "Immunity and Impeachment",
+      "topics": [],
+      "cases": [],
+      "flashcards": [],
+      "quiz_questions": [],
+      "seminar_notes": [],
+      "practice_hypos": [],
+      "coverage": "curriculum mapped; full instructional content not yet imported"
+    },
+    {
+      "id": "CL650-M15",
+      "number": 15,
+      "title": "Final Review",
+      "topics": [],
+      "cases": [],
+      "flashcards": [],
+      "quiz_questions": [],
+      "seminar_notes": [],
+      "practice_hypos": [],
+      "coverage": "curriculum mapped; full instructional content not yet imported"
+    }
+  ]
+}

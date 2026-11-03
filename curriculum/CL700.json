@@ -1,0 +1,347 @@
+{
+  "schema_version": "1.0",
+  "course_code": "CL700",
+  "course_title": "Corporations Business Organizations",
+  "source": "Previously uploaded 15-module course outline and known study discussions",
+  "important": "Curriculum map only. Does not contain every reading, quiz, seminar, or complete legal rule; blank values are intentional.",
+  "modules": [
+    {
+      "id": "CL700-M01",
+      "number": 1,
+      "title": "Non-Corporate Entities",
+      "topics": [
+        {
+          "name": "sole proprietorship",
+          "rule": null
+        },
+        {
+          "name": "partnership",
+          "rule": null
+        },
+        {
+          "name": "LLC",
+          "rule": null
+        },
+        {
+          "name": "limited partnership",
+          "rule": null
+        }
+      ],
+      "cases": [],
+      "flashcards": [
+        {
+          "question": "Explain sole proprietorship.",
+          "answer": null
+        },
+        {
+          "question": "Explain partnership.",
+          "answer": null
+        },
+        {
+          "question": "Explain LLC.",
+          "answer": null
+        },
+        {
+          "question": "Explain limited partnership.",
+          "answer": null
+        }
+      ],
+      "quiz_questions": [],
+      "seminar_notes": [],
+      "practice_hypos": [],
+      "coverage": "curriculum mapped; full instructional content not yet imported"
+    },
+    {
+      "id": "CL700-M02",
+      "number": 2,
+      "title": "Non-Traditional Corporations",
+      "topics": [
+        {
+          "name": "public corporation",
+          "rule": null
+        },
+        {
+          "name": "nonprofit corporation",
+          "rule": null
+        }
+      ],
+      "cases": [],
+      "flashcards": [
+        {
+          "question": "Explain public corporation.",
+          "answer": null
+        },
+        {
+          "question": "Explain nonprofit corporation.",
+          "answer": null
+        }
+      ],
+      "quiz_questions": [],
+      "seminar_notes": [],
+      "practice_hypos": [],
+      "coverage": "curriculum mapped; full instructional content not yet imported"
+    },
+    {
+      "id": "CL700-M03",
+      "number": 3,
+      "title": "Agency",
+      "topics": [
+        {
+          "name": "actual authority",
+          "rule": null
+        },
+        {
+          "name": "apparent authority",
+          "rule": null
+        },
+        {
+          "name": "ratification",
+          "rule": null
+        }
+      ],
+      "cases": [],
+      "flashcards": [
+        {
+          "question": "Explain actual authority.",
+          "answer": null
+        },
+        {
+          "question": "Explain apparent authority.",
+          "answer": null
+        },
+        {
+          "question": "Explain ratification.",
+          "answer": null
+        }
+      ],
+      "quiz_questions": [],
+      "seminar_notes": [],
+      "practice_hypos": [],
+      "coverage": "curriculum mapped; full instructional content not yet imported"
+    },
+    {
+      "id": "CL700-M04",
+      "number": 4,
+      "title": "Introduction to Corporations",
+      "topics": [],
+      "cases": [],
+      "flashcards": [],
+      "quiz_questions": [],
+      "seminar_notes": [],
+      "practice_hypos": [],
+      "coverage": "curriculum mapped; full instructional content not yet imported"
+    },
+    {
+      "id": "CL700-M05",
+      "number": 5,
+      "title": "Selection of Corporate Form",
+      "topics": [],
+      "cases": [],
+      "flashcards": [],
+      "quiz_questions": [],
+      "seminar_notes": [],
+      "practice_hypos": [],
+      "coverage": "curriculum mapped; full instructional content not yet imported"
+    },
+    {
+      "id": "CL700-M06",
+      "number": 6,
+      "title": "Incorporation and Premature Commencement",
+      "topics": [
+        {
+          "name": "promoter liability",
+          "rule": null
+        },
+        {
+          "name": "defective incorporation",
+          "rule": null
+        }
+      ],
+      "cases": [],
+      "flashcards": [
+        {
+          "question": "Explain promoter liability.",
+          "answer": null
+        },
+        {
+          "question": "Explain defective incorporation.",
+          "answer": null
+        }
+      ],
+      "quiz_questions": [],
+      "seminar_notes": [],
+      "practice_hypos": [],
+      "coverage": "curriculum mapped; full instructional content not yet imported"
+    },
+    {
+      "id": "CL700-M07",
+      "number": 7,
+      "title": "Piercing the Corporate Veil",
+      "topics": [
+        {
+          "name": "alter ego",
+          "rule": null
+        },
+        {
+          "name": "commingling",
+          "rule": null
+        },
+        {
+          "name": "undercapitalization",
+          "rule": null
+        }
+      ],
+      "cases": [],
+      "flashcards": [
+        {
+          "question": "Explain alter ego.",
+          "answer": null
+        },
+        {
+          "question": "Explain commingling.",
+          "answer": null
+        },
+        {
+          "question": "Explain undercapitalization.",
+          "answer": null
+        }
+      ],
+      "quiz_questions": [],
+      "seminar_notes": [],
+      "practice_hypos": [],
+      "coverage": "curriculum mapped; full instructional content not yet imported"
+    },
+    {
+      "id": "CL700-M08",
+      "number": 8,
+      "title": "Closely Held Corporations and Shares",
+      "topics": [],
+      "cases": [],
+      "flashcards": [],
+      "quiz_questions": [],
+      "seminar_notes": [],
+      "practice_hypos": [],
+      "coverage": "curriculum mapped; full instructional content not yet imported"
+    },
+    {
+      "id": "CL700-M09",
+      "number": 9,
+      "title": "Preemptive Rights and Dilution",
+      "topics": [],
+      "cases": [],
+      "flashcards": [],
+      "quiz_questions": [],
+      "seminar_notes": [],
+      "practice_hypos": [],
+      "coverage": "curriculum mapped; full instructional content not yet imported"
+    },
+    {
+      "id": "CL700-M10",
+      "number": 10,
+      "title": "Shareholders, Directors and Voting",
+      "topics": [],
+      "cases": [],
+      "flashcards": [],
+      "quiz_questions": [],
+      "seminar_notes": [],
+      "practice_hypos": [],
+      "coverage": "curriculum mapped; full instructional content not yet imported"
+    },
+    {
+      "id": "CL700-M11",
+      "number": 11,
+      "title": "Deadlock and Controlling Shares",
+      "topics": [],
+      "cases": [],
+      "flashcards": [],
+      "quiz_questions": [],
+      "seminar_notes": [],
+      "practice_hypos": [],
+      "coverage": "curriculum mapped; full instructional content not yet imported"
+    },
+    {
+      "id": "CL700-M12",
+      "number": 12,
+      "title": "Duty of Care and Business Judgment Rule",
+      "topics": [
+        {
+          "name": "business judgment rule",
+          "rule": null
+        },
+        {
+          "name": "duty of care",
+          "rule": null
+        }
+      ],
+      "cases": [],
+      "flashcards": [
+        {
+          "question": "Explain business judgment rule.",
+          "answer": null
+        },
+        {
+          "question": "Explain duty of care.",
+          "answer": null
+        }
+      ],
+      "quiz_questions": [],
+      "seminar_notes": [],
+      "practice_hypos": [],
+      "coverage": "curriculum mapped; full instructional content not yet imported"
+    },
+    {
+      "id": "CL700-M13",
+      "number": 13,
+      "title": "Duty of Loyalty and Conflicts",
+      "topics": [
+        {
+          "name": "self dealing",
+          "rule": null
+        },
+        {
+          "name": "corporate opportunity",
+          "rule": null
+        }
+      ],
+      "cases": [],
+      "flashcards": [
+        {
+          "question": "Explain self dealing.",
+          "answer": null
+        },
+        {
+          "question": "Explain corporate opportunity.",
+          "answer": null
+        }
+      ],
+      "quiz_questions": [],
+      "seminar_notes": [],
+      "practice_hypos": [],
+      "coverage": "curriculum mapped; full instructional content not yet imported"
+    },
+    {
+      "id": "CL700-M14",
+      "number": 14,
+      "title": "Corporations Essays",
+      "topics": [],
+      "cases": [],
+      "flashcards": [],
+      "quiz_questions": [],
+      "seminar_notes": [],
+      "practice_hypos": [],
+      "coverage": "curriculum mapped; full instructional content not yet imported"
+    },
+    {
+      "id": "CL700-M15",
+      "number": 15,
+      "title": "Final Review",
+      "topics": [],
+      "cases": [],
+      "flashcards": [],
+      "quiz_questions": [],
+      "seminar_notes": [],
+      "practice_hypos": [],
+      "coverage": "curriculum mapped; full instructional content not yet imported"
+    }
+  ]
+}

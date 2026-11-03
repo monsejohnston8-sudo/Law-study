@@ -1,0 +1,14 @@
+node_modules/
+.next/
+.env*
+!.env.example
+private/
+*.db
+*.db-journal
+test-results/
+playwright-report/
+
+.next-ui/
+*.tsbuildinfo
+
+phone-dist/
