@@ -104,6 +104,10 @@ export async function GET(
             ...m,
             mcqs: m.mcqs.map(({ correct, explanations, ...q }) => ({
               ...q,
+              practiceReady:
+                correct !== null &&
+                JSON.parse(q.options).length === 4 &&
+                JSON.parse(explanations).length === 4,
               gradable:
                 q.status === "verified" &&
                 correct !== null &&
@@ -368,14 +372,22 @@ export async function POST(
     }
     if (path[0] === "review") {
       const v = z
-        .object({ id: z.string(), rating: z.number().int().min(0).max(3) })
+        .object({
+          id: z.string(),
+          rating: z.number().int().min(0).max(3),
+          allowDrafts: z.boolean().default(false),
+        })
         .parse(body);
       return json(
         await db.$transaction(async (tx) => {
           const c = await tx.flashcard.findUniqueOrThrow({
             where: { id: v.id },
           });
-          if (!c.answer || c.status !== "verified")
+          if (
+            !c.answer ||
+            (c.status !== "verified" &&
+              !(v.allowDrafts && c.status === "needs_review" && c.excerptId))
+          )
             throw new Error("Only answered, verified cards can be studied");
           const next = schedule(c, v.rating);
           await tx.flashcard.update({ where: { id: c.id }, data: next });
@@ -395,13 +407,22 @@ export async function POST(
     }
     if (path[0] === "quiz") {
       const v = z
-        .object({ id: z.string(), selected: z.number().int().min(0).max(3) })
+        .object({
+          id: z.string(),
+          selected: z.number().int().min(0).max(3),
+          allowDraft: z.boolean().default(false),
+        })
         .parse(body);
       const q = await db.mCQ.findUniqueOrThrow({ where: { id: v.id } }),
-        result = grade(q, v.selected);
+        result = grade(q, v.selected, v.allowDraft);
       await db.$transaction([
         db.quizAttempt.create({
-          data: { mcqId: q.id, selected: v.selected, correct: result.correct },
+          data: {
+            mcqId: q.id,
+            selected: v.selected,
+            keyStatus: result.keyStatus,
+            correct: result.correct,
+          },
         }),
         db.studySession.create({
           data: { moduleId: q.moduleId, kind: "quiz" },
@@ -415,6 +436,8 @@ export async function POST(
           id: z.string().optional(),
           moduleId: z.string(),
           title: z.string().min(1),
+          promptId: z.string().nullable().optional(),
+          submittedAt: z.string().datetime().nullable().optional(),
           issue: z.string(),
           rule: z.string(),
           application: z.string(),
@@ -424,11 +447,24 @@ export async function POST(
           seconds: z.number().int().min(0),
         })
         .parse(body);
+      if (v.promptId) {
+        const prompt = await db.essayPrompt.findUnique({
+          where: { id: v.promptId },
+        });
+        if (!prompt || prompt.moduleId !== v.moduleId)
+          throw new Error("Essay prompt and module do not match");
+      }
+      if (
+        v.submittedAt &&
+        (!v.promptId ||
+          [v.issue, v.rule, v.application, v.conclusion].some((s) => !s.trim()))
+      )
+        throw new Error("Complete all four IRAC sections before submission");
       const { id, ...data } = v;
       return json(
         await db.essayDraft.upsert({
           where: { id: id ?? "__new__" },
-          create: data,
+          create: { ...data, ...(id ? { id } : {}) },
           update: data,
         }),
       );

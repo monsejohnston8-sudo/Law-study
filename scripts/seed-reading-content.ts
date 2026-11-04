@@ -28,6 +28,8 @@ export async function seedReadingContent(client = db) {
           "rule",
           "caseBrief",
           "flashcard",
+          "mCQ",
+          "essayPrompt",
           "note",
         ] as const) {
           const rows = snapshot.data[table].filter((r) =>
@@ -38,7 +40,8 @@ export async function seedReadingContent(client = db) {
                 : r.origin === "Shared study draft" ||
                   r.origin === "Reading guide draft" ||
                   r.origin === "Reading assignment" ||
-                  r.origin === "Definition study draft",
+                  r.origin === "Definition study draft" ||
+                  r.origin === "Casebook authored",
           );
           for (const row of rows)
             await (tx[table] as any).upsert({

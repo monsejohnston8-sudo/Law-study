@@ -40,9 +40,10 @@ export function grade(
     status: string;
   },
   selected: number,
+  allowDraft = false,
 ) {
   z.number().int().min(0).max(3).parse(selected);
-  if (q.status !== "verified")
+  if (q.status !== "verified" && !(allowDraft && q.status === "needs_review"))
     throw new Error("Question must be verified before grading");
   const parsed = mcqSchema.parse({
     options: JSON.parse(q.options),
@@ -51,6 +52,7 @@ export function grade(
   });
   return {
     correct: selected === parsed.correct,
+    keyStatus: q.status,
     correctOption: parsed.correct,
     explanations: parsed.explanations,
   };

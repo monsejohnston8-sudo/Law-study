@@ -21,6 +21,8 @@ import {
 } from "lucide-react";
 import { essayMarkdown } from "@/lib/study";
 import AIStudyPanel from "./ai-study-panel";
+import CourseCases from "./course-cases";
+import CourseMaterialUpload from "./course-material-upload";
 import {
   courseName,
   moduleName,
@@ -222,7 +224,11 @@ export default function Workspace() {
     modules.find((m) => !m.mastery?.completed);
   const accuracy = (m: Module) => {
     const ids = new Set(m.mcqs.map((q: Row) => q.id)),
-      attempts = data?.attempts.filter((a) => ids.has(a.mcqId)) ?? [];
+      attempts =
+        data?.attempts.filter(
+          (a) =>
+            ids.has(a.mcqId) && (!a.keyStatus || a.keyStatus === "verified"),
+        ) ?? [];
     return attempts.length
       ? `${Math.round((100 * attempts.filter((a) => a.correct).length) / attempts.length)}%`
       : "—";
@@ -726,6 +732,15 @@ export default function Workspace() {
                       <h3>Your study toolkit</h3>
                       <p>
                         {
+                          module.flashcards.filter(
+                            (c: Row) => c.answer && c.status !== "missing",
+                          ).length
+                        }{" "}
+                        answered flashcards · {module.mcqs.length} practice
+                        questions
+                      </p>
+                      <p>
+                        {
                           module.notes.filter(
                             (n: Row) => n.kind === "Detailed reading notes",
                           ).length
@@ -870,6 +885,32 @@ export default function Workspace() {
                       Import a reading
                     </button>
                   </section>
+                ) : tab === "Cases" ? (
+                  <>
+                    <div className="actions">
+                      <button onClick={() => edit("caseBrief", module)}>
+                        Add my case brief
+                      </button>
+                    </div>
+                    <CourseCases
+                      module={module}
+                      modules={modules}
+                      sourceLinks={(id) => <PrimarySourceLinks guideId={id} />}
+                      onEdit={(item) => edit("caseBrief", module, item)}
+                      sources={sources.filter(
+                        (s) => s.courseId === module.courseId,
+                      )}
+                      onRepair={
+                        typeof window !== "undefined" &&
+                        window.casebookRepairLibrary
+                          ? async () => {
+                              await window.casebookRepairLibrary!();
+                              await refresh();
+                            }
+                          : undefined
+                      }
+                    />
+                  </>
                 ) : tab === "Definitions" ? (
                   <section>
                     <div className="card">
@@ -952,9 +993,72 @@ export default function Workspace() {
                   <SourceList sources={module.sources} />
                 ) : (
                   <>
+                    {tab === "Seminar & Quiz Feedback" && (
+                      <>
+                        <CourseMaterialUpload
+                          module={module}
+                          onUpload={async (form, kind, label, comment) => {
+                            const imported = await api("import", form);
+                            const latest = await api("state");
+                            const source = latest.courses
+                              .flatMap((c: Course) => c.sources)
+                              .find((s: Row) => s.id === imported.id);
+                            const excerpt = source?.excerpts.length
+                              ? await api(
+                                  `excerpt?id=${encodeURIComponent(source.excerpts[0].id)}`,
+                                )
+                              : null;
+                            const preview = excerpt?.text
+                              ? String(excerpt.text).slice(0, 5000)
+                              : "No usable text was extracted. Inspect the original source and provide OCR if needed.";
+                            await perform(
+                              "item",
+                              {
+                                kind: "note",
+                                moduleId: module.id,
+                                title: imported.title,
+                                body: `Personal course material${label ? ` — ${label}` : ""}\n\n${comment}\n\nFirst section preview (full file and all sections are available below):\n${preview}`,
+                                excerptId: excerpt?.id ?? null,
+                                status: "needs_review",
+                                fields: { kind },
+                              },
+                              "Private course material imported",
+                            );
+                          }}
+                        />
+                        <SourceList
+                          sources={sources.filter(
+                            (s) =>
+                              s.courseId === module.courseId &&
+                              (!s.moduleId || s.moduleId === module.id) &&
+                              ["seminar", "quiz feedback"].includes(s.type),
+                          )}
+                        />
+                      </>
+                    )}
                     <div className="section-heading">
                       <h3>{tab}</h3>
                       <div className="actions">
+                        {tab === "Flashcards" && (
+                          <button
+                            className="primary"
+                            onClick={() =>
+                              setStudy({ ...module, includeDrafts: true })
+                            }
+                          >
+                            Study all answered cards
+                          </button>
+                        )}
+                        {tab === "Practice Questions" && (
+                          <button
+                            className="primary"
+                            onClick={() =>
+                              setExam({ ...module, includeDrafts: true })
+                            }
+                          >
+                            Practice authored questions
+                          </button>
+                        )}
                         {tab === "Flashcards" && (
                           <button
                             className="outline"
@@ -1010,7 +1114,14 @@ export default function Workspace() {
                           <button
                             className="tool-row"
                             key={d.id}
-                            onClick={() => setEssay(d)}
+                            onClick={() =>
+                              setEssay({
+                                ...d,
+                                prompt: module.essays.find(
+                                  (p: Row) => p.id === d.promptId,
+                                ),
+                              })
+                            }
                           >
                             <FileText size={18} />
                             {cleanLabel(d.title)}
@@ -1053,6 +1164,8 @@ export default function Workspace() {
                           (a: Row, b: Row) =>
                             Number(a.status === "missing") -
                               Number(b.status === "missing") ||
+                            Number(b.kind === "Complete module guide") -
+                              Number(a.kind === "Complete module guide") ||
                             Number(b.kind === "Detailed reading notes") -
                               Number(a.kind === "Detailed reading notes"),
                         )
@@ -1116,15 +1229,47 @@ export default function Workspace() {
                                 className="outline"
                                 onClick={() =>
                                   setEssay({
+                                    ...(module.drafts.find(
+                                      (d: Row) => d.promptId === item.id,
+                                    ) ?? {}),
+                                    id: module.drafts.find(
+                                      (d: Row) => d.promptId === item.id,
+                                    )?.id,
+                                    promptId: item.id,
+                                    submittedAt:
+                                      module.drafts.find(
+                                        (d: Row) => d.promptId === item.id,
+                                      )?.submittedAt ?? null,
                                     moduleId: module.id,
                                     title: item.title,
-                                    issue: "",
-                                    rule: "",
-                                    application: "",
-                                    conclusion: "",
-                                    assessment: "",
-                                    checklist: "[]",
-                                    seconds: 0,
+                                    issue:
+                                      module.drafts.find(
+                                        (d: Row) => d.promptId === item.id,
+                                      )?.issue ?? "",
+                                    rule:
+                                      module.drafts.find(
+                                        (d: Row) => d.promptId === item.id,
+                                      )?.rule ?? "",
+                                    application:
+                                      module.drafts.find(
+                                        (d: Row) => d.promptId === item.id,
+                                      )?.application ?? "",
+                                    conclusion:
+                                      module.drafts.find(
+                                        (d: Row) => d.promptId === item.id,
+                                      )?.conclusion ?? "",
+                                    assessment:
+                                      module.drafts.find(
+                                        (d: Row) => d.promptId === item.id,
+                                      )?.assessment ?? "",
+                                    checklist:
+                                      module.drafts.find(
+                                        (d: Row) => d.promptId === item.id,
+                                      )?.checklist ?? "[]",
+                                    seconds:
+                                      module.drafts.find(
+                                        (d: Row) => d.promptId === item.id,
+                                      )?.seconds ?? 0,
                                     prompt: item,
                                   })
                                 }
@@ -1428,8 +1573,8 @@ export default function Workspace() {
             setStudy(null);
             refresh();
           }}
-          onReview={(id, rating) =>
-            perform("review", { id, rating }, "Review saved")
+          onReview={(id, rating, allowDrafts) =>
+            perform("review", { id, rating, allowDrafts }, "Review saved")
           }
         />
       )}{" "}
@@ -1440,8 +1585,8 @@ export default function Workspace() {
             setExam(null);
             refresh();
           }}
-          onSubmit={(id, selected) =>
-            perform("quiz", { id, selected }, "Answer recorded")
+          onSubmit={(id, selected, allowDraft) =>
+            perform("quiz", { id, selected, allowDraft }, "Answer recorded")
           }
         />
       )}{" "}
@@ -2230,11 +2375,19 @@ function FlashStudy({
 }: {
   module: Module;
   onClose: () => void;
-  onReview: (id: string, rating: number) => Promise<unknown>;
+  onReview: (
+    id: string,
+    rating: number,
+    allowDrafts?: boolean,
+  ) => Promise<unknown>;
 }) {
+  const includeDrafts = Boolean(module.includeDrafts);
   const cards = module.flashcards.filter(
       (c: Row) =>
-        c.answer && c.status === "verified" && new Date(c.due) <= new Date(),
+        c.answer &&
+        (c.status === "verified" ||
+          (includeDrafts && c.status === "needs_review" && c.excerptId)) &&
+        new Date(c.due) <= new Date(),
     ),
     [index, setIndex] = useState(0),
     [reveal, setReveal] = useState(false),
@@ -2246,7 +2399,7 @@ function FlashStudy({
       if (!c || !reveal || busy) return;
       setBusy(true);
       try {
-        await onReview(c.id, rating);
+        await onReview(c.id, rating, includeDrafts);
         setIndex((i) => i + 1);
         setReveal(false);
       } catch (e) {
@@ -2255,7 +2408,7 @@ function FlashStudy({
         setBusy(false);
       }
     },
-    [c, reveal, busy, onReview],
+    [c, reveal, busy, onReview, includeDrafts],
   );
   useEffect(() => {
     const handle = (e: KeyboardEvent) => {
@@ -2282,7 +2435,12 @@ function FlashStudy({
             {index + 1} / {cards.length} DUE CARDS
           </p>
           <div className="study-card">
-            <h3>{courseName(c.id)}</h3>
+            <h3>{c.title}</h3>
+            {c.status !== "verified" && (
+              <p className="muted">
+                Source-based draft: compare with the cited reading.
+              </p>
+            )}
             {reveal ? (
               <p className="preserve">{c.answer}</p>
             ) : (
@@ -2321,7 +2479,11 @@ function Exam({
 }: {
   module: Module;
   onClose: () => void;
-  onSubmit: (id: string, selected: number) => Promise<Row>;
+  onSubmit: (
+    id: string,
+    selected: number,
+    allowDraft?: boolean,
+  ) => Promise<Row>;
 }) {
   const [topic, setTopic] = useState(""),
     [started, setStarted] = useState(false),
@@ -2333,8 +2495,12 @@ function Exam({
     [results, setResults] = useState<boolean[]>([]),
     [error, setError] = useState(""),
     [busy, setBusy] = useState(false);
+  const includeDrafts = Boolean(module.includeDrafts);
   const questions = module.mcqs.filter(
-      (q: Row) => q.gradable && (!topic || q.topic === topic),
+      (q: Row) =>
+        (q.gradable ||
+          (includeDrafts && q.status === "needs_review" && q.practiceReady)) &&
+        (!topic || q.topic === topic),
     ),
     q = questions[index],
     expired = started && minutes > 0 && remaining === 0;
@@ -2348,7 +2514,9 @@ function Exam({
       {!started ? (
         <>
           <p className="muted">
-            Only verified questions with complete answer keys are included.
+            {includeDrafts
+              ? "Includes authored draft questions with complete reference keys. Results compare your answer with the draft key; check the cited readings."
+              : "Only verified questions with complete answer keys are included."}
             Scope: {courseName(module.courseId)} · {moduleName(module.id)}.
           </p>
           <label className="field">
@@ -2436,7 +2604,7 @@ function Exam({
                 if (selected === null) return;
                 setBusy(true);
                 try {
-                  const r = await onSubmit(q.id, selected);
+                  const r = await onSubmit(q.id, selected, includeDrafts);
                   setResult(r);
                   setResults((old) => [...old, r.correct]);
                 } catch (e) {
@@ -2450,7 +2618,16 @@ function Exam({
             </button>
           ) : (
             <section className="feedback">
-              <h4>{result.correct ? "Correct" : "Review this answer"}</h4>
+              <h4>
+                {result.correct
+                  ? result.keyStatus === "verified"
+                    ? "Correct"
+                    : "Matches reference answer"
+                  : "Review this answer"}
+              </h4>
+              {result.keyStatus !== "verified" && (
+                <p>Draft reference key — not an official course answer.</p>
+              )}
               {result.explanations.map((ex: string, i: number) => (
                 <p key={i}>
                   <strong>
@@ -2493,49 +2670,53 @@ function Essay({
     [running, setRunning] = useState(false);
   const latest = useRef(draft),
     saved = useRef(JSON.stringify(initial)),
-    saving = useRef(false);
+    saving = useRef<Promise<void>>(Promise.resolve());
   latest.current = draft;
-  const save = useCallback(async () => {
-    if (saving.current) return;
-    const current = latest.current;
-    if (JSON.stringify(current) === saved.current) return;
-    saving.current = true;
-    setStatus("Saving…");
-    try {
-      const {
-        id,
-        moduleId,
-        title,
-        issue,
-        rule,
-        application,
-        conclusion,
-        assessment,
-        checklist,
-        seconds,
-      } = current;
-      const row = await onSave({
-        id,
-        moduleId,
-        title,
-        issue,
-        rule,
-        application,
-        conclusion,
-        assessment,
-        checklist,
-        seconds,
-      });
-      const next = { ...current, id: row.id };
-      saved.current = JSON.stringify(next);
-      latest.current = { ...latest.current, id: row.id };
-      setDraft((d: Row) => ({ ...d, id: row.id }));
-      setStatus("All changes saved");
-    } catch (e) {
-      setStatus(`Save failed: ${String(e)}`);
-    } finally {
-      saving.current = false;
-    }
+  const save = useCallback(() => {
+    const task = async () => {
+      const current = latest.current;
+      if (JSON.stringify(current) === saved.current) return;
+      setStatus("Saving…");
+      try {
+        const {
+          id,
+          moduleId,
+          title,
+          issue,
+          rule,
+          application,
+          conclusion,
+          assessment,
+          checklist,
+          seconds,
+          promptId,
+          submittedAt,
+        } = current;
+        const row = await onSave({
+          id,
+          moduleId,
+          title,
+          issue,
+          rule,
+          application,
+          conclusion,
+          assessment,
+          checklist,
+          seconds,
+          promptId,
+          submittedAt,
+        });
+        const next = { ...current, id: row.id };
+        saved.current = JSON.stringify(next);
+        latest.current = { ...latest.current, id: row.id };
+        setDraft((d: Row) => ({ ...d, id: row.id }));
+        setStatus("All changes saved");
+      } catch (e) {
+        setStatus(`Save failed: ${String(e)}`);
+      }
+    };
+    saving.current = saving.current.then(task, task);
+    return saving.current;
   }, [onSave]);
   useEffect(() => {
     const id = setInterval(save, 1500);
@@ -2555,7 +2736,15 @@ function Essay({
     else setStatus("Please save successfully before closing.");
   };
   const update = (k: string, v: unknown) => {
-    setDraft((d: Row) => ({ ...d, [k]: v }));
+    const next = {
+      ...latest.current,
+      [k]: v,
+      ...(["issue", "rule", "application", "conclusion"].includes(k)
+        ? { submittedAt: null }
+        : {}),
+    };
+    latest.current = next;
+    setDraft(next);
     setStatus("Unsaved changes");
   };
   return (
@@ -2628,9 +2817,45 @@ function Essay({
         />
       </label>
       <p className="muted">
-        Your self-assessment is not a professor’s grade. No automated grading or
-        invented model answer.
+        Your self-assessment and the sample analysis are practice feedback, not
+        a professor’s grade.
       </p>
+      {initial.prompt && (
+        <section className="card">
+          <button
+            className="primary"
+            disabled={
+              !["issue", "rule", "application", "conclusion"].every((k) =>
+                String(draft[k] || "").trim(),
+              )
+            }
+            onClick={async () => {
+              setRunning(false);
+              const next = {
+                ...latest.current,
+                submittedAt: new Date().toISOString(),
+              };
+              latest.current = next;
+              setDraft(next);
+              await save();
+              setDraft({ ...latest.current });
+            }}
+          >
+            Submit essay & compare model answer
+          </button>
+          {draft.submittedAt && saved.current === JSON.stringify(draft) && (
+            <div className="feedback">
+              <h3>Sample model answer</h3>
+              <p className="muted">
+                Original practice analysis, not an official course answer.
+                Editing your IRAC response hides this comparison until you
+                submit again.
+              </p>
+              <p className="preserve">{initial.prompt.modelAnswer}</p>
+            </div>
+          )}
+        </section>
+      )}
       <div className="actions">
         <button className="primary" onClick={save}>
           Save draft
@@ -2653,12 +2878,6 @@ function modulePrompt(initial: Row) {
       <p className="preserve">
         Rubric: {initial.prompt.rubric || "No sourced rubric supplied."}
       </p>
-      {initial.prompt.status === "verified" && initial.prompt.modelAnswer && (
-        <details>
-          <summary>Verified model answer</summary>
-          <p>{initial.prompt.modelAnswer}</p>
-        </details>
-      )}
     </div>
   ) : null;
 }
@@ -2685,6 +2904,32 @@ function SettingsPanel({
         <div>
           <p className="eyebrow">MAKE IT YOURS</p>
           <h2>Settings & data</h2>
+          <p>Built-in library edition 5</p>
+          <button
+            className="outline"
+            onClick={async () => {
+              try {
+                await window.casebookRepairLibrary?.();
+                await onPackageImported();
+              } catch (e) {
+                setError(String(e));
+              }
+            }}
+          >
+            Refresh built-in library
+          </button>
+          <button
+            className="outline"
+            onClick={async () => {
+              try {
+                await window.casebookCheckUpdate?.();
+              } catch (e) {
+                setError(String(e));
+              }
+            }}
+          >
+            Check for updates
+          </button>
           <p className="muted">
             Your study preferences and your data, under your control.
           </p>
@@ -2856,7 +3101,9 @@ function Analytics({ data, modules }: { data: State; modules: Module[] }) {
     question: questions.find((q) => q.id === a.mcqId),
   }));
   const groups = new Map<string, { correct: number; total: number }>();
-  for (const a of attempts) {
+  for (const a of attempts.filter(
+    (a) => !a.keyStatus || a.keyStatus === "verified",
+  )) {
     const key = `${courseName(a.question?.module.courseId ?? "")} · ${a.question?.topic || a.question?.module.title || "Untitled"}`;
     const v = groups.get(key) ?? { correct: 0, total: 0 };
     v.total++;
@@ -2929,7 +3176,8 @@ function Analytics({ data, modules }: { data: State; modules: Module[] }) {
             <p className="activity" key={a.id}>
               <span>
                 {a.question?.title ?? "Question"} ·{" "}
-                {a.correct ? "Correct" : "Revisit"}
+                {a.correct ? "Correct" : "Revisit"}{" "}
+                {a.keyStatus === "needs_review" ? "· draft-key comparison" : ""}
               </span>
               <small>{new Date(a.createdAt).toLocaleString()}</small>
             </p>
@@ -3086,7 +3334,19 @@ function MiniModuleExam({
     (q: Row) => q.answer && q.excerptId && q.status !== "missing",
   );
   const personal = available.filter(
-    (q: Row) => q.origin !== "Shared study draft",
+    (q: Row) =>
+      ![
+        "Shared study draft",
+        "Casebook authored",
+        "Reading guide draft",
+        "Definition study draft",
+      ].includes(q.origin),
+  );
+  const applications = available.filter(
+    (q: Row) =>
+      q.id.includes("-exam-") ||
+      q.id.includes("-application-") ||
+      q.id.startsWith("optional-exam-"),
   );
   const [questionIds, setQuestionIds] = useState<string[]>(() => {
     try {
@@ -3098,7 +3358,13 @@ function MiniModuleExam({
       )
         return ids.filter((id) => available.some((q: Row) => q.id === id));
     } catch {}
-    return (personal.length ? personal : available)
+    return (
+      personal.length
+        ? personal
+        : applications.length
+          ? applications
+          : available
+    )
       .slice(0, 5)
       .map((q: Row) => q.id);
   });

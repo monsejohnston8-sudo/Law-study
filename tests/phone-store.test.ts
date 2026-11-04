@@ -107,7 +107,7 @@ describe("iPhone local persistence", () => {
     const broken = structuredClone(backup);
     broken.data.note[0].moduleId = "missing-module";
     await expect(restorePhone(db, broken)).rejects.toThrow();
-    expect((await api("state")).courses[0].modules[0].notes[0].title).toBe(
+    expect((await api("state")).courses[0].modules[0].notes.find((n: any) => n.title === "Keep me")?.title).toBe(
       "Keep me",
     );
     await api("delete", { confirm: "DELETE" });

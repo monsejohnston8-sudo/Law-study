@@ -147,3 +147,24 @@ citations. Later assigned cases absent from that collection remain unbriefed.
 Only original explanations and source metadata are public assets, not uploaded
 textbook text or the assignment-answer PDF. The app and iPhone manifest retain
 **Casebook** as their name.
+
+## Complete module practice library (edition 5)
+
+All 45 modules include a consolidated source-linked study guide (622–3,499 words),
+at least 20 answered flashcards, and two Casebook-authored multiple-choice exercises.
+Use **Study all answered cards** or **Practice authored questions** to include
+clearly labeled draft material. The verified-only actions remain available.
+Draft-key comparisons are saved separately from verified accuracy statistics.
+
+Modules 4, 8, 10 and 14 in each of the three courses have original IRAC practice
+hypotheticals. Complete all four IRAC sections and submit to save the response
+and reveal a sample model answer. Reopening a submitted draft restores the
+comparison; editing the response hides it until resubmission. These are sample
+analyses, not official course answers or automated professor grades.
+
+The Cases tab shows the sourced course library with current-module briefs first.
+Related briefs explicitly name their own module and are not represented as assigned
+readings for the selected module. Unavailable assigned opinions remain unavailable.
+The Seminar & Quiz Feedback tab supports private course-specific uploads and notes.
+Use Settings → Refresh built-in library to restore missing built-ins additively;
+existing writing, uploaded materials and review schedules are retained.

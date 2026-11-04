@@ -20,7 +20,7 @@ it("loads original shared notes automatically without exposing textbook extracts
       expect(entry).not.toHaveProperty("filename");
     }
     const source = state.courses[0].sources.find(
-      (s: any) => s.id === "shared-notes-CL650-v4",
+      (s: any) => s.id === "shared-notes-CL650-v5",
     );
     expect(source.type).toBe("notes");
     expect(source.rights).toContain("not included");
@@ -33,7 +33,7 @@ it("loads original shared notes automatically without exposing textbook extracts
       repetitions: 4,
       due: "2030-01-01T00:00:00.000Z",
     });
-    await db.table("meta").delete("shared-study-v4");
+    await db.table("meta").delete("shared-study-v5");
     await api("state");
     const retained = await db.table("flashcard").get(card.id);
     expect(retained.answer).toBe("My reviewed answer");

@@ -199,6 +199,7 @@ model FlashcardReview {
  createdAt DateTime @default(now())
 }
 model QuizAttempt {
+ keyStatus String @default("verified")
  id String @id @default(cuid())
  mcqId String
  mcq MCQ @relation(fields: [mcqId], references: [id])
@@ -207,6 +208,8 @@ model QuizAttempt {
  createdAt DateTime @default(now())
 }
 model EssayDraft {
+ promptId String?
+ submittedAt DateTime?
  id String @id @default(cuid())
  moduleId String
  module Module @relation(fields: [moduleId], references: [id])

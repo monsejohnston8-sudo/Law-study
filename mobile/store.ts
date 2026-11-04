@@ -275,6 +275,10 @@ export function phoneApi(db: Dexie) {
               .filter((r) => r.moduleId === m.id)
               .map(({ correct, explanations, ...q }) => ({
                 ...q,
+                practiceReady:
+                  correct !== null &&
+                  JSON.parse(q.options).length === 4 &&
+                  JSON.parse(explanations).length === 4,
                 gradable:
                   q.status === "verified" &&
                   correct !== null &&
@@ -417,7 +421,11 @@ export function phoneApi(db: Dexie) {
     }
     if (route === "review") {
       const v = z
-        .object({ id: z.string(), rating: z.number().int().min(0).max(3) })
+        .object({
+          id: z.string(),
+          rating: z.number().int().min(0).max(3),
+          allowDrafts: z.boolean().default(false),
+        })
         .parse(body);
       return db.transaction(
         "rw",
@@ -426,7 +434,16 @@ export function phoneApi(db: Dexie) {
         db.table("studySession"),
         async () => {
           const card = await rows(db, "flashcard").get(v.id);
-          if (!card || !card.answer || card.status !== "verified")
+          if (
+            !card ||
+            !card.answer ||
+            (card.status !== "verified" &&
+              !(
+                v.allowDrafts &&
+                card.status === "needs_review" &&
+                card.excerptId
+              ))
+          )
             throw new Error("Only answered verified cards can be studied");
           const next = schedule(card as any, v.rating);
           await rows(db, "flashcard").put({
@@ -455,11 +472,15 @@ export function phoneApi(db: Dexie) {
     }
     if (route === "quiz") {
       const v = z
-        .object({ id: z.string(), selected: z.number().int().min(0).max(3) })
+        .object({
+          id: z.string(),
+          selected: z.number().int().min(0).max(3),
+          allowDraft: z.boolean().default(false),
+        })
         .parse(body);
       const q = await rows(db, "mCQ").get(v.id);
       if (!q) throw new Error("Question not found");
-      const result = grade(q as any, v.selected);
+      const result = grade(q as any, v.selected, v.allowDraft);
       await db.transaction(
         "rw",
         db.table("quizAttempt"),
@@ -469,6 +490,7 @@ export function phoneApi(db: Dexie) {
             id: id(),
             mcqId: q.id,
             selected: v.selected,
+            keyStatus: result.keyStatus,
             correct: result.correct,
             createdAt: now(),
           });
@@ -489,6 +511,8 @@ export function phoneApi(db: Dexie) {
           id: z.string().optional(),
           moduleId: z.string(),
           title: z.string().min(1),
+          promptId: z.string().nullable().optional(),
+          submittedAt: z.string().datetime().nullable().optional(),
           issue: z.string(),
           rule: z.string(),
           application: z.string(),
@@ -501,6 +525,17 @@ export function phoneApi(db: Dexie) {
       if (!(await rows(db, "module").get(v.moduleId)))
         throw new Error("Module not found");
       z.array(z.number().int().min(0).max(3)).parse(JSON.parse(v.checklist));
+      if (v.promptId) {
+        const prompt = await rows(db, "essayPrompt").get(v.promptId);
+        if (!prompt || prompt.moduleId !== v.moduleId)
+          throw new Error("Essay prompt and module do not match");
+      }
+      if (
+        v.submittedAt &&
+        (!v.promptId ||
+          [v.issue, v.rule, v.application, v.conclusion].some((s) => !s.trim()))
+      )
+        throw new Error("Complete all four IRAC sections before submission");
       const old = v.id ? await rows(db, "essayDraft").get(v.id) : null;
       const record = {
         createdAt: old?.createdAt ?? now(),

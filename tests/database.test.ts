@@ -12,7 +12,11 @@ beforeAll(async () => {
   dir = await mkdtemp(join(tmpdir(), "casebook-test-"));
   const path = join(dir, "test.db");
   const sql = new Database(path);
-  for (const name of ["202611030001_initial", "202611030002_course_sources"])
+  for (const name of [
+    "202611030001_initial",
+    "202611030002_course_sources",
+    "202611040001_practice_submissions",
+  ])
     sql.exec(await readFile(`prisma/migrations/${name}/migration.sql`, "utf8"));
   sql.close();
   db = new PrismaClient({

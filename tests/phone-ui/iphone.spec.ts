@@ -462,7 +462,9 @@ test("detailed readings and real briefs are visible without class codes", async 
     page.getByRole("heading", { name: /Detailed reading notes/ }),
   ).toBeVisible();
   await expect(
-    page.getByText(/Federal judicial power must fit an Article III category/),
+    page
+      .getByText(/Federal judicial power must fit an Article III category/)
+      .first(),
   ).toBeVisible();
   await page.getByRole("button", { name: "Cases", exact: true }).click();
   await expect(
@@ -609,10 +611,154 @@ test("Casebook shows the uploaded definitions and substantive notes in every mod
       exact: true,
     }),
   ).toBeVisible();
-  await expect(page.getByText(/Why Poe was dismissed/)).toBeVisible();
+  await expect(
+    page
+      .locator("article")
+      .filter({
+        has: page.getByRole("heading", {
+          name: "Complete module study guide — Justiciability: Timing",
+          exact: true,
+        }),
+      })
+      .getByText(/Why Poe was dismissed/),
+  ).toBeVisible();
   await page
     .getByText("Primary opinion sources and scope", { exact: true })
     .first()
     .click();
   await expect(page.getByRole("link", { name: /Poe v. Ullman/ })).toBeVisible();
+});
+
+test("authored cards, practice keys and submitted IRAC models work on a phone", async ({
+  page,
+}) => {
+  await page.goto("/");
+  await expect(
+    page.getByRole("heading", { name: "A little progress. Every day." }),
+  ).toBeVisible();
+  await nav(page, "Constitutional Law");
+  await page.locator(".module-row").nth(3).click();
+  await page.getByRole("button", { name: "Flashcards", exact: true }).click();
+  await page
+    .getByRole("button", { name: "Study all answered cards", exact: true })
+    .click();
+  await expect(page.getByText(/1 \/ 20 DUE CARDS/)).toBeVisible();
+  await page.getByRole("button", { name: /Reveal answer/ }).click();
+  await page.getByRole("button", { name: /Good/ }).click();
+  await page.getByRole("button", { name: "Close dialog", exact: true }).click();
+  await page
+    .getByRole("button", { name: "Practice Questions", exact: true })
+    .click();
+  await page
+    .getByRole("button", { name: "Practice authored questions", exact: true })
+    .click();
+  await expect(page.getByText("2 available questions")).toBeVisible();
+  await page.getByRole("button", { name: "Begin exam" }).click();
+  await page.getByRole("radio").first().check();
+  await page
+    .getByRole("button", { name: "Submit answer", exact: true })
+    .click();
+  await expect(
+    page.getByText("Draft reference key — not an official course answer."),
+  ).toBeVisible();
+  await page.getByRole("button", { name: "Close dialog", exact: true }).click();
+  await page.getByRole("button", { name: "IRAC Essays", exact: true }).click();
+  const prompt = page.locator("article").filter({
+    has: page.getByRole("heading", {
+      name: "A threatened prosecution that never happens",
+      exact: true,
+    }),
+  });
+  await prompt.getByRole("button", { name: "Write an IRAC response" }).click();
+  await expect(
+    page.getByRole("heading", { name: "Sample model answer", exact: true }),
+  ).toHaveCount(0);
+  for (const field of ["Issue", "Rule", "Application", "Conclusion"])
+    await page
+      .getByRole("textbox", { name: field, exact: true })
+      .fill(`My ${field.toLowerCase()} and supporting analysis.`);
+  await page
+    .getByRole("button", { name: "Submit essay & compare model answer" })
+    .click();
+  await expect(
+    page.getByRole("heading", { name: "Sample model answer", exact: true }),
+  ).toBeVisible();
+  await page.getByRole("button", { name: "Close dialog", exact: true }).click();
+  await page.reload();
+  await expect(
+    page.getByRole("heading", { name: "A little progress. Every day." }),
+  ).toBeVisible();
+  await nav(page, "Constitutional Law");
+  await page.locator(".module-row").nth(3).click();
+  await page.getByRole("button", { name: "IRAC Essays", exact: true }).click();
+  await page
+    .getByRole("button", {
+      name: /A threatened prosecution that never happens.*Resume draft/,
+    })
+    .click();
+  await expect(
+    page.getByRole("heading", { name: "Sample model answer", exact: true }),
+  ).toBeVisible();
+  await page
+    .getByRole("textbox", { name: "Application", exact: true })
+    .fill("Revised application.");
+  await expect(
+    page.getByRole("heading", { name: "Sample model answer", exact: true }),
+  ).toHaveCount(0);
+});
+
+test("private seminar uploads persist and cases are available across the course", async ({
+  page,
+}) => {
+  await page.goto("/");
+  await expect(
+    page.getByRole("heading", { name: "A little progress. Every day." }),
+  ).toBeVisible();
+  await nav(page, "Business Organizations");
+  await page.locator(".module-row").first().click();
+  await page.getByRole("button", { name: "Cases", exact: true }).click();
+  await expect(
+    page.getByRole("heading", { name: "Case brief library" }),
+  ).toBeVisible();
+  await expect(page.getByText(/Related course brief/).first()).toBeVisible();
+  await expect(
+    page.getByRole("heading", { name: "Holding", exact: true }).first(),
+  ).toBeVisible();
+  await page
+    .getByRole("button", { name: "Seminar & Quiz Feedback", exact: true })
+    .click();
+  await page
+    .getByLabel("Material title", { exact: true })
+    .fill("My own seminar handout");
+  await page
+    .getByLabel("My course or section name (optional)")
+    .fill("Evening course");
+  await page.getByLabel("Seminar or quiz file").setInputFiles({
+    name: "seminar.txt",
+    mimeType: "text/plain",
+    buffer: Buffer.from(
+      "My personal seminar notes about principal and agent relationships.",
+    ),
+  });
+  await page.getByRole("button", { name: "Upload to my module" }).click();
+  await expect(page.getByText(/Uploaded to your module/)).toBeVisible();
+  await page.reload();
+  await expect(
+    page.getByRole("heading", { name: "A little progress. Every day." }),
+  ).toBeVisible();
+  await nav(page, "Business Organizations");
+  await page.locator(".module-row").first().click();
+  await page
+    .getByRole("button", { name: "Seminar & Quiz Feedback", exact: true })
+    .click();
+  await expect(
+    page.getByRole("heading", { name: "My own seminar handout", exact: true }),
+  ).toBeVisible();
+  await expect(
+    page
+      .getByText(
+        /My personal seminar notes about principal and agent relationships/,
+      )
+      .first(),
+  ).toBeVisible();
 });

@@ -66,7 +66,7 @@ it("installs definitions in relevant modules without overwriting personal edits 
     ).toBe(true);
     const id = "definition-note-custodial-interrogation-CL685-M08";
     await db.table("note").update(id, { body: "My own explanation" });
-    await db.table("meta").delete("shared-study-v4");
+    await db.table("meta").delete("shared-study-v5");
     await api("state");
     expect((await db.table("note").get(id)).body).toBe("My own explanation");
     expect(

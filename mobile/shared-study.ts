@@ -3,10 +3,12 @@ import { courseName } from "../src/lib/display";
 import catalog from "../src/content/shared-study.json";
 import readings from "../src/content/reading-guides.json";
 import glossary from "../src/content/definitions.json";
+import curriculum from "../src/content/module-practice.json";
+import essayExercises from "../src/content/irac-exercises.json";
 // This catalog contains original explanations, never extracted textbook text.
-export async function seedSharedStudy(db: Dexie) {
+export async function seedSharedStudy(db: Dexie, force = false) {
   const revision = `shared-study-v${catalog.version}`;
-  if (await db.table("meta").get(revision)) return;
+  if (!force && (await db.table("meta").get(revision))) return;
   const stamp = new Date().toISOString();
   const prepared = await Promise.all(
     ["CL650", "CL685", "CL700"].map(async (courseId) => {
@@ -25,7 +27,17 @@ export async function seedSharedStudy(db: Dexie) {
       const definitions = glossary.terms.filter((t) =>
         t.moduleIds.some((mid) => mid.startsWith(courseId)),
       );
+      const units = curriculum.modules.filter((m) =>
+        m.moduleId.startsWith(courseId),
+      );
+      const essays = essayExercises.essays.filter((e) =>
+        e.moduleId.startsWith(courseId),
+      );
       const passages = [
+        ...units.map((m) => ({
+          id: m.id,
+          text: `${m.title}\n\n${m.sections.map((s) => `${s.heading}\n${s.body}`).join("\n\n")}\n\nReferences: ${m.references.join("; ")}\nSource scope: ${m.scope}`,
+        })),
         ...definitions.map((t) => ({
           id: `definition-${t.id}`,
           text: `${t.name}\n\nStudy definition\n${t.definition}\n\nExplanation\n${t.explanation}\n\nExample (original hypothetical)\n${t.example}\n\nExam pitfall\n${t.pitfall}\n\nReference: ${t.reference}\n\nStudy paraphrase and explanatory draft; original assignment wording is preserved privately.`,
@@ -63,6 +75,8 @@ export async function seedSharedStudy(db: Dexie) {
         guides,
         assignments,
         definitions,
+        units,
+        essays,
         passages,
         text,
         hash,
@@ -70,7 +84,7 @@ export async function seedSharedStudy(db: Dexie) {
     }),
   );
   await db.transaction("rw", db.tables, async () => {
-    if (await db.table("meta").get(revision)) return;
+    if (!force && (await db.table("meta").get(revision))) return;
     for (const c of prepared) {
       if (!(await db.table("course").get(c.courseId))) continue;
       const sourceId = `shared-notes-${c.courseId}-v${catalog.version}`,
@@ -182,52 +196,46 @@ export async function seedSharedStudy(db: Dexie) {
           };
           const noteId = `definition-note-${term.id}-${moduleId}`;
           if (!(await db.table("note").get(noteId)))
-            await db
-              .table("note")
-              .add({
-                ...common,
-                id: noteId,
-                kind: "Definitions & explanations",
-                body: passage.text,
-              });
+            await db.table("note").add({
+              ...common,
+              id: noteId,
+              kind: "Definitions & explanations",
+              body: passage.text,
+            });
           const ruleId = `definition-rule-${term.id}-${moduleId}`;
           if (!(await db.table("rule").get(ruleId)))
-            await db
-              .table("rule")
-              .add({
-                ...common,
-                id: ruleId,
-                body: term.definition,
-                elements: term.explanation,
-                exceptions: term.pitfall,
-                examples: term.example,
-                jurisdiction:
-                  "Course study notes; verify the applicable jurisdiction and date.",
-                standardOfReview: "",
-                policy: "",
-                counterarguments: "",
-              });
+            await db.table("rule").add({
+              ...common,
+              id: ruleId,
+              body: term.definition,
+              elements: term.explanation,
+              exceptions: term.pitfall,
+              examples: term.example,
+              jurisdiction:
+                "Course study notes; verify the applicable jurisdiction and date.",
+              standardOfReview: "",
+              policy: "",
+              counterarguments: "",
+            });
         }
         const cardId = `definition-card-${term.id}`;
         if (!(await db.table("flashcard").get(cardId)))
-          await db
-            .table("flashcard")
-            .add({
-              id: cardId,
-              moduleId: "CL685-M08",
-              title: `Define ${term.name.toLowerCase()} and identify an important limitation.`,
-              body: term.reference,
-              answer: `${term.definition} ${term.pitfall}`,
-              status: "needs_review",
-              origin: "Shared study draft",
-              excerptId,
-              interval: 0,
-              ease: 2.5,
-              repetitions: 0,
-              due: stamp,
-              createdAt: stamp,
-              updatedAt: stamp,
-            });
+          await db.table("flashcard").add({
+            id: cardId,
+            moduleId: "CL685-M08",
+            title: `Define ${term.name.toLowerCase()} and identify an important limitation.`,
+            body: term.reference,
+            answer: `${term.definition} ${term.pitfall}`,
+            status: "needs_review",
+            origin: "Shared study draft",
+            excerptId,
+            interval: 0,
+            ease: 2.5,
+            repetitions: 0,
+            due: stamp,
+            createdAt: stamp,
+            updatedAt: stamp,
+          });
       }
       for (const guide of c.guides) {
         if (!(await db.table("module").get(guide.moduleId))) continue;
@@ -323,6 +331,106 @@ export async function seedSharedStudy(db: Dexie) {
             citation: entry.citation,
             ...entry.fields,
             dissent: "",
+          });
+      }
+    }
+    for (const c of prepared) {
+      const sourceId = `shared-notes-${c.courseId}-v${catalog.version}`;
+      for (const unit of c.units) {
+        if (!(await db.table("module").get(unit.moduleId))) continue;
+        const excerptId = `shared-source-${unit.id}`,
+          passage = c.passages.find((p) => p.id === unit.id)!;
+        const ex = {
+          id: excerptId,
+          sourceId,
+          page: 0,
+          section: unit.title,
+          locatorVerified: true,
+          text: passage.text,
+          createdAt: stamp,
+          updatedAt: stamp,
+        };
+        if (!(await db.table("sourceExcerpt").get(excerptId))) {
+          await db.table("sourceExcerpt").add(ex);
+          const { text, ...meta } = ex;
+          await db.table("excerptMeta").put(meta);
+        }
+        const common = {
+          moduleId: unit.moduleId,
+          status: "needs_review",
+          origin: "Casebook authored",
+          excerptId,
+          createdAt: stamp,
+          updatedAt: stamp,
+        };
+        if (!(await db.table("note").get(unit.id)))
+          await db.table("note").add({
+            ...common,
+            id: unit.id,
+            title: unit.title,
+            kind: "Complete module guide",
+            body: passage.text,
+          });
+        const answered = await db
+          .table("flashcard")
+          .where("moduleId")
+          .equals(unit.moduleId)
+          .filter(
+            (r) =>
+              typeof r.answer === "string" &&
+              Boolean(r.answer.trim()) &&
+              r.status !== "missing",
+          )
+          .count();
+        let need = Math.max(0, 20 - answered);
+        for (const card of unit.cards) {
+          if (!need) break;
+          if (await db.table("flashcard").get(card.id)) continue;
+          await db.table("flashcard").add({
+            ...common,
+            id: card.id,
+            title: card.title,
+            body: `Source-backed recall and explanation. Topic: ${card.topic}. Check the linked study material.`,
+            answer: card.answer,
+            interval: 0,
+            ease: 2.5,
+            repetitions: 0,
+            due: stamp,
+          });
+          need--;
+        }
+        for (const q of unit.practiceQuestions)
+          if (!(await db.table("mCQ").get(q.id)))
+            await db.table("mCQ").add({
+              ...common,
+              id: q.id,
+              title: q.title,
+              body: "Original source-grounded practice exercise. The draft answer key and explanations appear after submission.",
+              options: JSON.stringify(q.options),
+              correct: q.correct,
+              explanations: JSON.stringify(q.explanations),
+              topic: q.topic,
+              difficulty: "medium",
+            });
+      }
+      for (const essay of c.essays) {
+        if (!(await db.table("module").get(essay.moduleId))) continue;
+        if (!(await db.table("essayPrompt").get(essay.id)))
+          await db.table("essayPrompt").add({
+            id: essay.id,
+            moduleId: essay.moduleId,
+            title: essay.title,
+            body: essay.scope,
+            status: "needs_review",
+            origin: "Casebook authored",
+            excerptId: `shared-source-complete-guide-${essay.moduleId}`,
+            facts: essay.facts,
+            issueTags: "Source-grounded IRAC practice",
+            modelAnswer: essay.modelAnswer,
+            rubric: essay.rubric,
+            difficulty: "medium",
+            createdAt: stamp,
+            updatedAt: stamp,
           });
       }
     }

@@ -52,7 +52,7 @@ it("adds substantial reading notes and cases without replacing an earlier edited
       .table("caseBrief")
       .filter((c) => c.id.startsWith("study-case-reading-"))
       .delete();
-    await db.table("meta").delete("shared-study-v4");
+    await db.table("meta").delete("shared-study-v5");
     await db.table("meta").put({ id: "shared-study-v1", value: true });
     const state = await api("state");
     expect(
