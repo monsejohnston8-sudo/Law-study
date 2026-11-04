@@ -552,12 +552,67 @@ test("optional readings and authored application questions are available without
   ).toBeVisible();
   const raw = await page.evaluate(() => window.casebookTransport!("export"));
   const qs = raw.data.flashcard.filter(
-    (q: any) => q.id.includes("-exam-") || q.id.startsWith("optional-exam-"),
+    (q: any) =>
+      q.id.includes("-exam-") ||
+      q.id.startsWith("optional-exam-") ||
+      q.id.includes("-application-"),
   );
-  expect(qs).toHaveLength(64);
+  expect(qs).toHaveLength(100);
   expect(
     qs.every(
       (q: any) => q.answer && q.excerptId && q.status === "needs_review",
     ),
   ).toBe(true);
+});
+
+test("Casebook shows the uploaded definitions and substantive notes in every module", async ({
+  page,
+}) => {
+  await page.goto("/");
+  await expect(
+    page.getByRole("heading", { name: "A little progress. Every day." }),
+  ).toBeVisible();
+  await expect(page).toHaveTitle("Casebook");
+  await nav(page, "Criminal Procedure");
+  await page.getByRole("button", { name: /Exclusionary Rule/ }).click();
+  await page.getByRole("button", { name: "Definitions", exact: true }).click();
+  await expect(
+    page.getByRole("heading", { name: "Custodial interrogation", exact: true }),
+  ).toBeVisible();
+  await expect(
+    page
+      .getByText(/Custody and interrogation are distinct requirements/)
+      .first(),
+  ).toBeVisible();
+  await expect(
+    page.getByRole("heading", { name: "Protective sweep", exact: true }),
+  ).toBeVisible();
+  expect(
+    await page.evaluate(
+      () => document.documentElement.scrollWidth <= innerWidth,
+    ),
+  ).toBe(true);
+  const data = await page.evaluate(() => window.casebookTransport!("state"));
+  const modules = data.courses.flatMap((c: any) => c.modules);
+  expect(modules).toHaveLength(45);
+  expect(
+    modules.every((m: any) =>
+      m.notes.some((n: any) => n.kind === "Detailed reading notes"),
+    ),
+  ).toBe(true);
+  await nav(page, "Constitutional Law");
+  await page.getByRole("button", { name: /Justiciability: Timing/ }).click();
+  await page.getByRole("button", { name: "Notes", exact: true }).click();
+  await expect(
+    page.getByRole("heading", {
+      name: "Detailed reading notes — Justiciability: Timing",
+      exact: true,
+    }),
+  ).toBeVisible();
+  await expect(page.getByText(/Why Poe was dismissed/)).toBeVisible();
+  await page
+    .getByText("Primary opinion sources and scope", { exact: true })
+    .first()
+    .click();
+  await expect(page.getByRole("link", { name: /Poe v. Ullman/ })).toBeVisible();
 });

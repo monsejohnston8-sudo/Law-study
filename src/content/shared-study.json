@@ -1,5 +1,5 @@
 {
-  "version": 3,
+  "version": 4,
   "description": "Original concise study explanations and practice questions. No textbook text or files. Drafts require review.",
   "entries": [
     {
@@ -1282,6 +1282,261 @@
         "reasoning": "The federal-law supremacy rationale for Ex parte Young did not support judicial orders based only on state law; supplemental jurisdiction did not override the immunity problem.",
         "rule": "For the asserted official-capacity relief, prospective form alone does not suffice: the source of the violated duty matters.",
         "significance": "Distinguish this 1984 state-law immunity case from the different 1981 Pennhurst decision listed as optional in the spending-power module."
+      }
+    },
+    {
+      "id": "primary-case-poe",
+      "moduleId": "CL650-M04",
+      "title": "Poe v. Ullman",
+      "citation": "367 U.S. 497 (1961)",
+      "locator": "Poe v. Ullman, 367 U.S. 497 (1961); CourtListener mirror source ad9b39eb85",
+      "scope": "Historical primary-opinion study draft. A CourtListener mirror copy, not an authenticated official-report scan. Treat the historical decision separately from later legal developments.",
+      "fields": {
+        "facts": "Patients and a physician sought pre-enforcement declarations concerning Connecticut contraception restrictions in light of medical needs and the state’s enforcement history.",
+        "posture": "Supreme Court review of the stated constitutional or institutional issue; see the linked source record for the full procedural history.",
+        "issue": "Whether the controversy was suitable for constitutional adjudication in the form presented.",
+        "holding": "The Court dismissed the appeals without resolving the constitutional merits.",
+        "reasoning": "The opinion announcing the judgment emphasized the actual enforcement history and absence of the concrete controversy it considered necessary. Separate opinions differed over the justiciability analysis.",
+        "rule": "Assess the actual pre-enforcement controversy rather than equating the existence of a criminal statute with a resolved merits dispute.",
+        "significance": "Use the facts and posture to state the decision’s boundary; distinguish it from later legal developments and other assigned cases not reviewed here."
+      }
+    },
+    {
+      "id": "primary-case-mcculloch",
+      "moduleId": "CL650-M06",
+      "title": "McCulloch v. Maryland",
+      "citation": "17 U.S. 316 (1819)",
+      "locator": "McCulloch v. Maryland, 17 U.S. 316 (1819); CourtListener mirror source 1cf7d2c507",
+      "scope": "Historical primary-opinion study draft. Mirror metadata/header incorrectly label the reporter page as 159. The text identifies the 1819 McCulloch opinion; the assigned citation is 17 U.S. 316. Source pagination has not been independently authenticated.",
+      "fields": {
+        "facts": "Maryland challenged the federal bank and sought to impose a state tax affecting its operations.",
+        "posture": "Supreme Court review of the stated constitutional or institutional issue; see the linked source record for the full procedural history.",
+        "issue": "Whether Congress could incorporate the bank and the state could impose the challenged tax.",
+        "holding": "The Court sustained the federal implementing power and rejected the state tax as asserted against the federal instrument.",
+        "reasoning": "The Constitution need not enumerate every implementing means. Appropriate means tied to a legitimate constitutional end remain bounded by constitutional limits and supremacy.",
+        "rule": "Identify the enumerated end, appropriate means, independent prohibitions and any state interference with valid federal operations.",
+        "significance": "Use the facts and posture to state the decision’s boundary; distinguish it from later legal developments and other assigned cases not reviewed here."
+      }
+    },
+    {
+      "id": "primary-case-boerne",
+      "moduleId": "CL650-M06",
+      "title": "City of Boerne v. Flores",
+      "citation": "521 U.S. 507 (1997)",
+      "locator": "City of Boerne v. Flores, 521 U.S. 507 (1997); CourtListener mirror source 51dd9a64a7",
+      "scope": "Historical primary-opinion study draft. A CourtListener mirror copy, not an authenticated official-report scan. Treat the historical decision separately from later legal developments.",
+      "fields": {
+        "facts": "A church’s building-permit dispute led to a claim under RFRA against local authorities.",
+        "posture": "Supreme Court review of the stated constitutional or institutional issue; see the linked source record for the full procedural history.",
+        "issue": "Whether Congress’s asserted Fourteenth Amendment enforcement authority supported RFRA’s application in this state/local setting.",
+        "holding": "The Court rejected that asserted enforcement-power basis for the legislation’s application.",
+        "reasoning": "Congress may enforce constitutional guarantees but not redefine their substantive content. The injury and legislative remedy require congruence and proportionality.",
+        "rule": "Separate enforcement of an existing right from a legislative change to the substantive constitutional standard.",
+        "significance": "Use the facts and posture to state the decision’s boundary; distinguish it from later legal developments and other assigned cases not reviewed here."
+      }
+    },
+    {
+      "id": "primary-case-lopez",
+      "moduleId": "CL650-M07",
+      "title": "United States v. Lopez",
+      "citation": "514 U.S. 549 (1995)",
+      "locator": "United States v. Lopez, 514 U.S. 549 (1995); CourtListener mirror source 8e436c7ce3",
+      "scope": "Historical primary-opinion study draft. A CourtListener mirror copy, not an authenticated official-report scan. Treat the historical decision separately from later legal developments.",
+      "fields": {
+        "facts": "A student prosecuted under the 1990 federal school-zone firearm statute contested Congress’s commerce authority.",
+        "posture": "Supreme Court review of the stated constitutional or institutional issue; see the linked source record for the full procedural history.",
+        "issue": "Whether the challenged possession provision fell within the asserted commerce power.",
+        "holding": "The Court affirmed the reversal of the conviction and rejected the provision’s asserted commerce basis.",
+        "reasoning": "The law before the Court regulated possession without the commercial connection required under the theory advanced. An attenuated economic-effects chain did not establish unlimited national authority.",
+        "rule": "Classify channels, instrumentalities/persons/things in commerce, or substantial-effects regulation before applying the relevant analysis.",
+        "significance": "Use the facts and posture to state the decision’s boundary; distinguish it from later legal developments and other assigned cases not reviewed here."
+      }
+    },
+    {
+      "id": "primary-case-morrison",
+      "moduleId": "CL650-M07",
+      "title": "United States v. Morrison",
+      "citation": "529 U.S. 598 (2000)",
+      "locator": "United States v. Morrison, 529 U.S. 598 (2000); CourtListener mirror source 3db2ba9730",
+      "scope": "Historical primary-opinion study draft. A CourtListener mirror copy, not an authenticated official-report scan. Treat the historical decision separately from later legal developments.",
+      "fields": {
+        "facts": "A federal statute supplied a civil remedy for victims of gender-motivated violence by private actors.",
+        "posture": "Supreme Court review of the stated constitutional or institutional issue; see the linked source record for the full procedural history.",
+        "issue": "Whether the remedy was supported by the asserted Commerce Clause or Fourteenth Amendment enforcement theories.",
+        "holding": "The Court rejected the challenged remedy under those theories.",
+        "reasoning": "The regulated violence was noneconomic in the Court’s analysis, and findings did not remove the constitutional boundary. The separate Section 5 argument confronted the state-action limitation.",
+        "rule": "Analyze each power and target independently; important objectives and findings are not by themselves constitutional authority.",
+        "significance": "Use the facts and posture to state the decision’s boundary; distinguish it from later legal developments and other assigned cases not reviewed here."
+      }
+    },
+    {
+      "id": "primary-case-dole",
+      "moduleId": "CL650-M08",
+      "title": "South Dakota v. Dole",
+      "citation": "483 U.S. 203 (1987)",
+      "locator": "South Dakota v. Dole, 483 U.S. 203 (1987); CourtListener mirror source d193eb674c",
+      "scope": "Historical primary-opinion study draft. A CourtListener mirror copy, not an authenticated official-report scan. Treat the historical decision separately from later legal developments.",
+      "fields": {
+        "facts": "Congress withheld a small percentage of specified highway funds from states permitting alcohol purchase below the chosen age.",
+        "posture": "Supreme Court review of the stated constitutional or institutional issue; see the linked source record for the full procedural history.",
+        "issue": "Whether the conditional grant exceeded the asserted constitutional limits.",
+        "holding": "The Court sustained the condition in the arrangement before it.",
+        "reasoning": "The funding condition was analyzed through the spending framework, including general welfare, clear notice, relatedness, independent constitutional limits and the coercion objection.",
+        "rule": "Distinguish conditional spending from direct regulation and examine the actual financial and legal choice.",
+        "significance": "Use the facts and posture to state the decision’s boundary; distinguish it from later legal developments and other assigned cases not reviewed here."
+      }
+    },
+    {
+      "id": "primary-case-nfib",
+      "moduleId": "CL650-M08",
+      "title": "National Federation of Independent Business v. Sebelius",
+      "citation": "567 U.S. 519 (2012)",
+      "locator": "National Federation of Independent Business v. Sebelius, 567 U.S. 519 (2012); CourtListener mirror source 9f0f5a7cb1",
+      "scope": "Historical primary-opinion study draft. A CourtListener mirror copy, not an authenticated official-report scan. Treat the historical decision separately from later legal developments.",
+      "fields": {
+        "facts": "Challenges to the Affordable Care Act addressed an individual-coverage payment and conditions on expanded Medicaid.",
+        "posture": "Supreme Court review of the stated constitutional or institutional issue; see the linked source record for the full procedural history.",
+        "issue": "How the challenged provisions fared under the distinct commerce, taxing and spending theories.",
+        "holding": "The mandate payment was sustained under a taxing construction; the threatened loss of existing Medicaid funds received the separate coercion analysis and limitation described in the opinions.",
+        "reasoning": "The statutory label did not decide the constitutional tax characterization. A threat to established program funding differed from a modest new funding condition. Different parts of the opinions had different joiners.",
+        "rule": "Analyze each provision and power separately; do not attribute all reasoning to one unanimous Court or treat a hypothetical ability to refuse as dispositive.",
+        "significance": "Use the facts and posture to state the decision’s boundary; distinguish it from later legal developments and other assigned cases not reviewed here."
+      }
+    },
+    {
+      "id": "primary-case-new-york",
+      "moduleId": "CL650-M09",
+      "title": "New York v. United States",
+      "citation": "505 U.S. 144 (1992)",
+      "locator": "New York v. United States, 505 U.S. 144 (1992); CourtListener mirror source 2deb2c8d86",
+      "scope": "Historical primary-opinion study draft. A CourtListener mirror copy, not an authenticated official-report scan. Treat the historical decision separately from later legal developments.",
+      "fields": {
+        "facts": "A federal radioactive-waste scheme used several incentives, including a take-title mechanism directed at states.",
+        "posture": "Supreme Court review of the stated constitutional or institutional issue; see the linked source record for the full procedural history.",
+        "issue": "Whether the federal mechanisms permissibly encouraged state action or impermissibly compelled it.",
+        "holding": "The Court upheld two mechanisms but rejected the take-title arrangement.",
+        "reasoning": "Congress’s substantial regulatory authority did not itself authorize commanding state government to assume the challenged regulatory burden. Presenting a choice did not cure the problem where its substance remained impermissible.",
+        "rule": "Identify the actual target and required conduct, distinguish inducement from commandeering, and analyze each provision separately.",
+        "significance": "Use the facts and posture to state the decision’s boundary; distinguish it from later legal developments and other assigned cases not reviewed here."
+      }
+    },
+    {
+      "id": "primary-case-pike",
+      "moduleId": "CL650-M10",
+      "title": "Pike v. Bruce Church, Inc.",
+      "citation": "397 U.S. 137 (1970)",
+      "locator": "Pike v. Bruce Church, Inc., 397 U.S. 137 (1970); CourtListener mirror source 2763f00aee",
+      "scope": "Historical primary-opinion study draft. A CourtListener mirror copy, not an authenticated official-report scan. Treat the historical decision separately from later legal developments.",
+      "fields": {
+        "facts": "Arizona required local packing that prevented shipment of uncrated cantaloupes to a nearby California packing facility.",
+        "posture": "Supreme Court review of the stated constitutional or institutional issue; see the linked source record for the full procedural history.",
+        "issue": "Whether the order imposed an unconstitutional interstate-commerce burden.",
+        "holding": "The Court upheld relief against the challenged order.",
+        "reasoning": "The opinion compared the operational burden and local interest under the historical framework for evenhanded regulation with incidental interstate effects.",
+        "rule": "Identify the concrete interstate burden, putative local benefit and applicable framework rather than asserting that any expense invalidates local law.",
+        "significance": "Use the facts and posture to state the decision’s boundary; distinguish it from later legal developments and other assigned cases not reviewed here."
+      }
+    },
+    {
+      "id": "primary-case-hunt",
+      "moduleId": "CL650-M10",
+      "title": "Hunt v. Washington State Apple Advertising Commission",
+      "citation": "432 U.S. 333 (1977)",
+      "locator": "Hunt v. Washington State Apple Advertising Commission, 432 U.S. 333 (1977); CourtListener mirror source b112ffaf60",
+      "scope": "Historical primary-opinion study draft. A CourtListener mirror copy, not an authenticated official-report scan. Treat the historical decision separately from later legal developments.",
+      "fields": {
+        "facts": "North Carolina’s apple-container rule excluded Washington’s state-grade labels despite their market significance.",
+        "posture": "Supreme Court review of the stated constitutional or institutional issue; see the linked source record for the full procedural history.",
+        "issue": "Whether the facially neutral label rule imposed impermissible discrimination and interstate burdens.",
+        "holding": "The Court affirmed the judgment invalidating the challenged restriction.",
+        "reasoning": "The regulation’s effects removed a competitive grading advantage and imposed discriminatory burdens notwithstanding its neutral phrasing. The stated purpose did not eliminate scrutiny of actual operation.",
+        "rule": "Facial neutrality does not end the discrimination inquiry; explain economic effects and the asserted justification.",
+        "significance": "Use the facts and posture to state the decision’s boundary; distinguish it from later legal developments and other assigned cases not reviewed here."
+      }
+    },
+    {
+      "id": "primary-case-youngstown",
+      "moduleId": "CL650-M11",
+      "title": "Youngstown Sheet & Tube Co. v. Sawyer",
+      "citation": "343 U.S. 579 (1952)",
+      "locator": "Youngstown Sheet & Tube Co. v. Sawyer, 343 U.S. 579 (1952); CourtListener mirror source 3f7359c0e4",
+      "scope": "Historical primary-opinion study draft. A CourtListener mirror copy, not an authenticated official-report scan. Treat the historical decision separately from later legal developments.",
+      "fields": {
+        "facts": "The President ordered possession and operation of steel mills to avert the consequences of a threatened strike.",
+        "posture": "Supreme Court review of the stated constitutional or institutional issue; see the linked source record for the full procedural history.",
+        "issue": "Whether statutory or constitutional authority supported that domestic seizure.",
+        "holding": "The Court rejected the asserted executive seizure authority.",
+        "reasoning": "The majority required a statutory or constitutional source rather than necessity alone. Jackson’s separate concurrence organized executive authority by its relation to Congress’s authorization, silence or opposition.",
+        "rule": "Distinguish majority reasoning from a concurrence and determine Congress’s actual position before applying the familiar categories.",
+        "significance": "Use the facts and posture to state the decision’s boundary; distinguish it from later legal developments and other assigned cases not reviewed here."
+      }
+    },
+    {
+      "id": "primary-case-whitman",
+      "moduleId": "CL650-M12",
+      "title": "Whitman v. American Trucking Associations",
+      "citation": "531 U.S. 457 (2001)",
+      "locator": "Whitman v. American Trucking Associations, 531 U.S. 457 (2001); CourtListener mirror source 5b11d6d7ba",
+      "scope": "Historical primary-opinion study draft. A CourtListener mirror copy, not an authenticated official-report scan. Treat the historical decision separately from later legal developments.",
+      "fields": {
+        "facts": "The EPA’s air-quality standard-setting authority was challenged as an unconstitutional delegation, alongside statutory interpretation issues.",
+        "posture": "Supreme Court review of the stated constitutional or institutional issue; see the linked source record for the full procedural history.",
+        "issue": "Whether Congress supplied sufficient guidance and whether an agency could cure a missing constitutional standard itself.",
+        "holding": "The Court rejected the delegation challenge to the statutory standard and rejected the agency-cure theory; other issues received separate dispositions.",
+        "reasoning": "The constitutional inquiry concerned the delegation Congress actually made. An agency’s self-restraint could not create a missing congressional standard.",
+        "rule": "Keep delegation, statutory cost questions, appointment and removal issues analytically separate.",
+        "significance": "Use the facts and posture to state the decision’s boundary; distinguish it from later legal developments and other assigned cases not reviewed here."
+      }
+    },
+    {
+      "id": "primary-case-schick",
+      "moduleId": "CL650-M13",
+      "title": "Schick v. Reed",
+      "citation": "419 U.S. 256 (1974)",
+      "locator": "Schick v. Reed, 419 U.S. 256 (1974); CourtListener mirror source da673cb4c1",
+      "scope": "Historical primary-opinion study draft. A CourtListener mirror copy, not an authenticated official-report scan. Treat the historical decision separately from later legal developments.",
+      "fields": {
+        "facts": "A presidential commutation replaced a death sentence with life imprisonment subject to a no-parole condition.",
+        "posture": "Supreme Court review of the stated constitutional or institutional issue; see the linked source record for the full procedural history.",
+        "issue": "Whether the condition was invalid because it was not specifically supplied by the sentencing statutes.",
+        "holding": "The Court sustained the conditional commutation on the facts.",
+        "reasoning": "The constitutional clemency power included the recognized ability to impose conditions that did not themselves offend the Constitution, even without a matching statutory condition.",
+        "rule": "Identify the clemency act and asserted independent limit. Do not assume every possible condition is valid or confuse clemency with executive privilege.",
+        "significance": "Use the facts and posture to state the decision’s boundary; distinguish it from later legal developments and other assigned cases not reviewed here."
+      }
+    },
+    {
+      "id": "primary-case-harlow",
+      "moduleId": "CL650-M14",
+      "title": "Harlow v. Fitzgerald",
+      "citation": "457 U.S. 800 (1982)",
+      "locator": "Harlow v. Fitzgerald, 457 U.S. 800 (1982); CourtListener mirror source 2fce8331e3",
+      "scope": "Historical primary-opinion study draft. A CourtListener mirror copy, not an authenticated official-report scan. Treat the historical decision separately from later legal developments.",
+      "fields": {
+        "facts": "Senior White House aides faced civil-damages allegations concerning official conduct in the Fitzgerald dispute.",
+        "posture": "Supreme Court review of the stated constitutional or institutional issue; see the linked source record for the full procedural history.",
+        "issue": "What standard governed the immunity asserted by these officials.",
+        "holding": "The Court articulated an objective qualified-immunity formulation tied to clearly established rights.",
+        "reasoning": "The standard addresses rights a reasonable official would have known at the relevant time and the burdens associated with subjective-good-faith litigation.",
+        "rule": "Analyze actor, function, time, right and civil remedy. Establishing a legal violation alone does not complete the qualified-immunity inquiry.",
+        "significance": "Use the facts and posture to state the decision’s boundary; distinguish it from later legal developments and other assigned cases not reviewed here."
+      }
+    },
+    {
+      "id": "primary-case-clinton",
+      "moduleId": "CL650-M14",
+      "title": "Clinton v. Jones",
+      "citation": "520 U.S. 681 (1997)",
+      "locator": "Clinton v. Jones, 520 U.S. 681 (1997); CourtListener mirror source 227ede34d4",
+      "scope": "Historical primary-opinion study draft. A CourtListener mirror copy, not an authenticated official-report scan. Treat the historical decision separately from later legal developments.",
+      "fields": {
+        "facts": "A civil action sought damages from the sitting President based on alleged unofficial conduct before taking office.",
+        "posture": "Supreme Court review of the stated constitutional or institutional issue; see the linked source record for the full procedural history.",
+        "issue": "Whether presidential status constitutionally required general deferral of that action until the term ended.",
+        "holding": "The Court rejected the asserted categorical constitutional postponement.",
+        "reasoning": "The functional protection of official decision-making did not automatically cover the alleged pre-office unofficial conduct. Litigation management was distinct from immunity.",
+        "rule": "Classify official versus unofficial conduct and civil versus criminal proceedings; this historical civil decision does not substitute for the unreviewed 2024 criminal-immunity assignment.",
+        "significance": "Use the facts and posture to state the decision’s boundary; distinguish it from later legal developments and other assigned cases not reviewed here."
       }
     }
   ]

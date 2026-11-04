@@ -2,6 +2,7 @@ import type Dexie from "dexie";
 import { courseName } from "../src/lib/display";
 import catalog from "../src/content/shared-study.json";
 import readings from "../src/content/reading-guides.json";
+import glossary from "../src/content/definitions.json";
 // This catalog contains original explanations, never extracted textbook text.
 export async function seedSharedStudy(db: Dexie) {
   const revision = `shared-study-v${catalog.version}`;
@@ -21,7 +22,14 @@ export async function seedSharedStudy(db: Dexie) {
       const assignments = readings.assignments.filter((g) =>
         g.moduleId.startsWith(courseId),
       );
+      const definitions = glossary.terms.filter((t) =>
+        t.moduleIds.some((mid) => mid.startsWith(courseId)),
+      );
       const passages = [
+        ...definitions.map((t) => ({
+          id: `definition-${t.id}`,
+          text: `${t.name}\n\nStudy definition\n${t.definition}\n\nExplanation\n${t.explanation}\n\nExample (original hypothetical)\n${t.example}\n\nExam pitfall\n${t.pitfall}\n\nReference: ${t.reference}\n\nStudy paraphrase and explanatory draft; original assignment wording is preserved privately.`,
+        })),
         ...guides.map((g) => ({
           id: g.id,
           text: `${g.title}\n\n${g.sections.map((s) => `${s.heading}\n${s.body}`).join("\n\n")}\n\nReferences: ${g.references.join("; ")}\nSource scope: ${g.scope}`,
@@ -54,6 +62,7 @@ export async function seedSharedStudy(db: Dexie) {
         cases,
         guides,
         assignments,
+        definitions,
         passages,
         text,
         hash,
@@ -140,28 +149,106 @@ export async function seedSharedStudy(db: Dexie) {
             updatedAt: stamp,
           });
       }
+      for (const term of c.definitions) {
+        const excerptId = `shared-source-definition-${term.id}`;
+        const passage = c.passages.find(
+          (p) => p.id === `definition-${term.id}`,
+        )!;
+        const ex = {
+          id: excerptId,
+          sourceId,
+          page: 0,
+          section: `Study definition: ${term.name}. ${term.reference}`,
+          locatorVerified: true,
+          text: passage.text,
+          createdAt: stamp,
+          updatedAt: stamp,
+        };
+        if (!(await db.table("sourceExcerpt").get(excerptId))) {
+          await db.table("sourceExcerpt").add(ex);
+          const { text, ...meta } = ex;
+          await db.table("excerptMeta").put(meta);
+        }
+        for (const moduleId of term.moduleIds) {
+          if (!(await db.table("module").get(moduleId))) continue;
+          const common = {
+            moduleId,
+            title: term.name,
+            status: "needs_review",
+            origin: "Definition study draft",
+            excerptId,
+            createdAt: stamp,
+            updatedAt: stamp,
+          };
+          const noteId = `definition-note-${term.id}-${moduleId}`;
+          if (!(await db.table("note").get(noteId)))
+            await db
+              .table("note")
+              .add({
+                ...common,
+                id: noteId,
+                kind: "Definitions & explanations",
+                body: passage.text,
+              });
+          const ruleId = `definition-rule-${term.id}-${moduleId}`;
+          if (!(await db.table("rule").get(ruleId)))
+            await db
+              .table("rule")
+              .add({
+                ...common,
+                id: ruleId,
+                body: term.definition,
+                elements: term.explanation,
+                exceptions: term.pitfall,
+                examples: term.example,
+                jurisdiction:
+                  "Course study notes; verify the applicable jurisdiction and date.",
+                standardOfReview: "",
+                policy: "",
+                counterarguments: "",
+              });
+        }
+        const cardId = `definition-card-${term.id}`;
+        if (!(await db.table("flashcard").get(cardId)))
+          await db
+            .table("flashcard")
+            .add({
+              id: cardId,
+              moduleId: "CL685-M08",
+              title: `Define ${term.name.toLowerCase()} and identify an important limitation.`,
+              body: term.reference,
+              answer: `${term.definition} ${term.pitfall}`,
+              status: "needs_review",
+              origin: "Shared study draft",
+              excerptId,
+              interval: 0,
+              ease: 2.5,
+              repetitions: 0,
+              due: stamp,
+              createdAt: stamp,
+              updatedAt: stamp,
+            });
+      }
       for (const guide of c.guides) {
         if (!(await db.table("module").get(guide.moduleId))) continue;
         for (const q of guide.examQuestions) {
           if (!(await db.table("flashcard").get(q.id)))
-            await db
-              .table("flashcard")
-              .add({
-                id: q.id,
-                moduleId: guide.moduleId,
-                title: q.question,
-                body: q.explanation,
-                answer: q.answer,
-                status: "needs_review",
-                origin: "Shared study draft",
-                excerptId: `shared-source-${guide.id}`,
-                interval: 0,
-                ease: 2.5,
-                repetitions: 0,
-                due: stamp,
-                createdAt: stamp,
-                updatedAt: stamp,
-              });
+            await db.table("flashcard").add({
+              id: q.id,
+              moduleId: guide.moduleId,
+              title: q.question,
+              body: q.explanation,
+              answer: q.answer,
+              status: "needs_review",
+              origin: "Shared study draft",
+              excerptId: `shared-source-${guide.id}`,
+              interval: 0,
+              ease: 2.5,
+              repetitions: 0,
+              due: stamp,
+              createdAt: stamp,
+              updatedAt: stamp,
+            });
         }
       }
       for (const entry of [...c.entries, ...c.cases]) {

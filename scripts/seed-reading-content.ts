@@ -37,7 +37,8 @@ export async function seedReadingContent(client = db) {
                 ? String(r.id).startsWith("shared-source-")
                 : r.origin === "Shared study draft" ||
                   r.origin === "Reading guide draft" ||
-                  r.origin === "Reading assignment",
+                  r.origin === "Reading assignment" ||
+                  r.origin === "Definition study draft",
           );
           for (const row of rows)
             await (tx[table] as any).upsert({

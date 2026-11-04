@@ -28,6 +28,7 @@ import {
   displayState,
 } from "@/lib/display";
 import readingGuides from "@/content/reading-guides.json";
+import primarySources from "@/content/primary-sources.json";
 // Server DTOs include heterogeneous editorial model fields.
 type Row = Record<string, any>;
 type Module = Row & {
@@ -49,6 +50,7 @@ const tabs = [
   "Assigned Readings",
   "Optional Readings",
   "Rules & Elements",
+  "Definitions",
   "Cases",
   "Notes",
   "Flashcards",
@@ -781,6 +783,17 @@ export default function Workspace() {
                         Take the end-of-module mini exam
                         <ChevronRight size={16} />
                       </button>
+                      {module.notes.some(
+                        (n: Row) => n.kind === "Definitions & explanations",
+                      ) && (
+                        <button
+                          className="tool-row"
+                          onClick={() => setTab("Definitions")}
+                        >
+                          Definitions, examples & exam pitfalls
+                          <ChevronRight size={16} />
+                        </button>
+                      )}
                       <Badge>{module.sources.length} imported sources</Badge>
                     </section>
                   </div>
@@ -797,11 +810,25 @@ export default function Workspace() {
                       Detailed notes and cases are in their own tabs;
                       unsupported readings remain unbriefed.
                     </p>
+                    <article>
+                      <h4>From the supplied outline</h4>
+                      <p className="preserve">
+                        {readingGuides.assignments.find(
+                          (a) => a.moduleId === module.id,
+                        )?.requiredReading ?? "No assignment specified."}
+                      </p>
+                    </article>
                     {module.notes.filter(
-                      (n: Row) => n.kind === "assigned reading",
+                      (n: Row) =>
+                        n.kind === "assigned reading" &&
+                        n.origin !== "Reading assignment",
                     ).length ? (
                       module.notes
-                        .filter((n: Row) => n.kind === "assigned reading")
+                        .filter(
+                          (n: Row) =>
+                            n.kind === "assigned reading" &&
+                            n.origin !== "Reading assignment",
+                        )
                         .map((n: Row) => (
                           <article key={n.id}>
                             <Badge>
@@ -822,9 +849,8 @@ export default function Workspace() {
                         ))
                     ) : (
                       <p>
-                        The curriculum map provides no verified assigned
-                        readings for this module. Add assignments from an actual
-                        syllabus.
+                        Add your own reading notes or assignments from another
+                        syllabus when needed.
                       </p>
                     )}
                     <p className="muted">
@@ -843,6 +869,41 @@ export default function Workspace() {
                     >
                       Import a reading
                     </button>
+                  </section>
+                ) : tab === "Definitions" ? (
+                  <section>
+                    <div className="card">
+                      <h3>Definitions & explanations</h3>
+                      <p>
+                        Study paraphrases from the supplied Module 8
+                        definitions, with explanations, original examples, and
+                        limits from the available casebook. Original source
+                        wording remains private. These are review drafts.
+                      </p>
+                    </div>
+                    {module.notes
+                      .filter(
+                        (n: Row) => n.kind === "Definitions & explanations",
+                      )
+                      .map((n: Row) => (
+                        <article className="card" key={n.id}>
+                          <h3>{n.title}</h3>
+                          <p className="preserve">{n.body}</p>
+                          <Citation
+                            module={libraryModule(module)}
+                            id={n.excerptId}
+                          />
+                        </article>
+                      ))}
+                    {!module.notes.some(
+                      (n: Row) => n.kind === "Definitions & explanations",
+                    ) && (
+                      <p className="card">
+                        This uploaded glossary does not cover the current
+                        module. Use its detailed Notes and Rules & Elements, or
+                        add your own source definitions.
+                      </p>
+                    )}
                   </section>
                 ) : tab === "Optional Readings" ? (
                   <section className="card">
@@ -1002,6 +1063,7 @@ export default function Workspace() {
                               <small>{item.origin}</small>
                             </div>
                             <h3>{item.title}</h3>
+                            <PrimarySourceLinks guideId={item.id} />
                             {kinds[tab] === "caseBrief" &&
                               item.body?.startsWith("Optional reading") && (
                                 <Badge>Optional reading</Badge>
@@ -3187,5 +3249,36 @@ function MiniModuleExam({
       )}
       <p role="status">{message}</p>
     </section>
+  );
+}
+
+function PrimarySourceLinks({ guideId }: { guideId: string }) {
+  const guide = readingGuides.guides.find((g) => g.id === guideId);
+  const ids =
+    guide?.primarySourceIds ??
+    (guideId.startsWith("study-case-primary-case-")
+      ? [guideId.slice("study-case-primary-case-".length)]
+      : []);
+  if (!ids.length) return null;
+  return (
+    <details>
+      <summary>Primary opinion sources and scope</summary>
+      {ids.map((id) => {
+        const source = primarySources.sources.find((s) => s.id === id);
+        return source ? (
+          <p key={id}>
+            <a
+              href={source.mirrorUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {source.title} — {source.citation} (source data)
+            </a>
+            <br />
+            <small>{source.sourceNote}</small>
+          </p>
+        ) : null;
+      })}
+    </details>
   );
 }

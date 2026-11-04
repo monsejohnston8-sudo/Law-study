@@ -1,0 +1,297 @@
+{
+  "version": 1,
+  "source": "User-supplied Criminal Procedure Module 8 Assignment Answers, two-page PDF. Study paraphrases and explanatory notes, not a verbatim republication.",
+  "terms": [
+    {
+      "id": "arrest",
+      "name": "Arrest",
+      "page": 1,
+      "moduleIds": [
+        "CL685-M08",
+        "CL685-M01",
+        "CL685-M04",
+        "CL685-M05",
+        "CL685-M06"
+      ],
+      "definition": "A taking into custody that subjects a person to the level of restraint associated with arrest. A lawful criminal arrest generally requires probable cause.",
+      "explanation": "Identify the objective restraint and the legally relevant completion of the seizure, not simply an officer’s private intention. Distinguish an arrest from a consensual interaction and a brief investigative stop. Then separately ask whether the arrest had legal justification; an unlawful arrest is still an arrest for purposes of identifying the challenged conduct.",
+      "example": "Hypothetical: an officer orders a person to remain and applies handcuffs. Analyze the circumstances and degree of restraint before deciding whether this is an investigative stop or an arrest and what justification is required.",
+      "pitfall": "The handout’s shorthand about officer intention does not mean an uncommunicated thought alone arrests someone. Classification and lawfulness are separate questions.",
+      "reference": "User-supplied Criminal Procedure Module 8 Assignment Answers, PDF page 1; Modern Criminal Procedure, 15th ed., chs. 6–7, seizure and stop discussions."
+    },
+    {
+      "id": "automobile",
+      "name": "Automobile exception",
+      "page": 1,
+      "moduleIds": [
+        "CL685-M08",
+        "CL685-M06"
+      ],
+      "definition": "A vehicle-evidence search doctrine permitting a warrantless search when the required probable cause supports finding evidence or contraband in the place searched.",
+      "explanation": "Define the object of the search and explain why the facts establish probable cause. The permitted area depends on where that object could be located. The handout explains that the vehicle need not literally be moving when probable cause arises and that delay does not by itself require a different result. Do not confuse this theory with searching incident to an occupant’s arrest.",
+      "example": "Hypothetical: officers have probable cause to believe a particular vehicle contains a weapon. Explain which spaces could contain that weapon and distinguish that justification from a separate inventory policy.",
+      "pitfall": "A vehicle’s presence alone is not probable cause. A traffic arrest alone is not the same justification as probable cause to find evidence in the vehicle.",
+      "reference": "User-supplied Criminal Procedure Module 8 Assignment Answers, PDF page 1; Modern Criminal Procedure, 15th ed., ch. 7, vehicle-search discussion; assigned Gant comparison."
+    },
+    {
+      "id": "consent",
+      "name": "Consent search",
+      "page": 1,
+      "moduleIds": [
+        "CL685-M08",
+        "CL685-M07"
+      ],
+      "definition": "A warrantless search resting on permission that is voluntarily given under the totality of the circumstances and valid for the asserted scope.",
+      "explanation": "Analyze voluntariness, the consenting person’s authority, and the scope of permission as separate elements. Identify the words used, surrounding pressures, and the particular place or item searched. Where occupants disagree, the applicable co-occupant rules require their own analysis. Consent does not erase every problem arising from an earlier unlawful detention.",
+      "example": "Hypothetical: a person permits inspection of a bag but disputes a later search elsewhere. Determine what the permission reasonably covered instead of declaring the entire investigation consensual.",
+      "pitfall": "Permission to one search is not permission to any search. A polite request does not alone establish voluntariness, and a person’s lack of ownership does not alone resolve authority.",
+      "reference": "User-supplied Criminal Procedure Module 8 Assignment Answers, PDF page 1; Modern Criminal Procedure, 15th ed., ch. 7, consent and Randolph discussions."
+    },
+    {
+      "id": "custodial-interrogation",
+      "name": "Custodial interrogation",
+      "page": 1,
+      "moduleIds": [
+        "CL685-M08",
+        "CL685-M10",
+        "CL685-M11"
+      ],
+      "definition": "Interrogation occurring while the person is in custody for purposes of the Miranda framework. Custody and interrogation are distinct requirements.",
+      "explanation": "The handout combines an arrest-like custody description with questioning. Keep the two inquiries separate: determine the restraint and circumstances relevant to custody, then ask whether express questioning or its functional equivalent occurred. Innis includes conduct officers should know is reasonably likely to elicit an incriminating response, beyond conduct ordinarily attendant to custody. A statement may be volunteered without being a product of interrogation.",
+      "example": "Hypothetical: officers transport a restrained suspect without asking questions. Custody does not by itself establish interrogation; examine any remarks or actions alleged to be its functional equivalent.",
+      "pitfall": "The fact that someone cannot leave does not by itself establish every Miranda requirement. Conversely, avoiding a question mark does not necessarily avoid interrogation.",
+      "reference": "User-supplied Criminal Procedure Module 8 Assignment Answers, PDF page 1; Modern Criminal Procedure, 15th ed., ch. 9, Miranda and Innis."
+    },
+    {
+      "id": "mere-encounter",
+      "name": "Mere encounter",
+      "page": 1,
+      "moduleIds": [
+        "CL685-M08",
+        "CL685-M05"
+      ],
+      "definition": "A consensual police-citizen interaction that the person may decline or terminate without being compelled to cooperate.",
+      "explanation": "Assess the total circumstances objectively. Separate an officer’s request for information from conduct communicating compulsory compliance. Do not classify an encounter solely by the officer’s unexpressed intent. If an initially consensual interaction becomes a stop or arrest, identify when the change occurred and what justified the new restraint. The handout’s emphasis on ability to decline helps distinguish cooperation from compelled participation.",
+      "example": "Hypothetical: an officer asks a pedestrian a question without restraining movement. Identify any additional facts indicating coercion before treating the request itself as a seizure.",
+      "pitfall": "The categories can change during one encounter. Voluntary cooperation at the beginning does not authorize every later detention or search.",
+      "reference": "User-supplied Criminal Procedure Module 8 Assignment Answers, PDF page 1; Modern Criminal Procedure, 15th ed., ch. 7, street encounters and stop analysis."
+    },
+    {
+      "id": "exigency",
+      "name": "Exigent circumstances",
+      "page": 1,
+      "moduleIds": [
+        "CL685-M08",
+        "CL685-M06"
+      ],
+      "definition": "Emergency circumstances that can justify acting without a warrant within the limits of the particular emergency.",
+      "explanation": "Describe the actual urgency and explain why obtaining a warrant was incompatible with addressing it. Identify the government interest, supporting facts, action taken, scope and duration. A lawful initial emergency response is not an unlimited authorization for a later evidence search. Distinguish this justification from consent, a protective sweep, an inventory, or a vehicle search, even when more than one theory is asserted.",
+      "example": "Hypothetical: officers enter to address an immediate danger and later continue searching after it ends. Analyze the initial entry and later investigative activity separately.",
+      "pitfall": "Calling something an emergency does not establish it. Tie the scope and timing of police action to the facts supporting the exception rather than listing the exception’s name.",
+      "reference": "User-supplied Criminal Procedure Module 8 Assignment Answers, PDF page 1; Modern Criminal Procedure, 15th ed., ch. 7, warrant exceptions."
+    },
+    {
+      "id": "independent-source",
+      "name": "Independent source doctrine",
+      "page": 1,
+      "moduleIds": [
+        "CL685-M08"
+      ],
+      "definition": "A basis for admitting evidence actually obtained through a lawful source genuinely independent of the challenged illegality.",
+      "explanation": "Trace the actual acquisition of the evidence. In the supplied exclusionary-rule chapter, an untainted later warrant can present a different issue from merely relying on information gained through an unlawful entry. Explain which facts supported the lawful source and whether the investigation or decision depended on the earlier illegality. Keep actual independence separate from a hypothetical assertion about what police would have found.",
+      "example": "Hypothetical: police make an unlawful entry and later obtain a warrant. Identify what supported the warrant and why the later acquisition was or was not genuinely independent.",
+      "pitfall": "A later warrant is not automatically independent merely because it exists. Identify the source of its information and the causal role of the original illegality.",
+      "reference": "User-supplied Criminal Procedure Module 8 Assignment Answers, PDF page 1; Modern Criminal Procedure, 15th ed., ch. 12, independent-source discussion."
+    },
+    {
+      "id": "inevitable-discovery",
+      "name": "Inevitable discovery rule",
+      "page": 1,
+      "moduleIds": [
+        "CL685-M08"
+      ],
+      "definition": "A remedial doctrine allowing evidence obtained unlawfully when the government makes the required showing that lawful discovery was inevitable.",
+      "explanation": "The uploaded handout specifies proof by a preponderance of the evidence. Explain the lawful route, actual investigative circumstances, and why discovery would have occurred rather than merely could have occurred. Unlike an actual independent source, this inquiry evaluates a counterfactual lawful path. State the facts that make that path inevitable under the governing doctrine rather than filling the gap with speculation.",
+      "example": "Hypothetical: the government claims a lawful search already underway would have located the same item. Examine the actual search area, timing and established steps supporting that claim.",
+      "pitfall": "Possibility is not inevitability. The doctrine concerns admissibility and does not retroactively make the unlawful investigative act lawful.",
+      "reference": "User-supplied Criminal Procedure Module 8 Assignment Answers, PDF page 1; Module 8 uploaded definition; Modern Criminal Procedure, 15th ed., ch. 12, exclusionary-rule exceptions."
+    },
+    {
+      "id": "inventory",
+      "name": "Inventory search",
+      "page": 1,
+      "moduleIds": [
+        "CL685-M08",
+        "CL685-M06"
+      ],
+      "definition": "A search associated with lawful custody of property for recognized caretaking purposes and carried out under the applicable standardized policy.",
+      "explanation": "Start with the lawfulness of the custody or impoundment. Identify the inventory policy, its permitted scope, and how officers followed it. The handout emphasizes protecting property and guarding against missing-property claims. Distinguish those purposes from a general evidence investigation. The absence of a probable-cause requirement for the asserted inventory theory does not mean the inventory is free of legal constraints.",
+      "example": "Hypothetical: officers impound a vehicle and make an inventory. Explain the authority for impoundment and the governing procedures instead of treating a list of items as proof of a valid inventory.",
+      "pitfall": "Saying inventory after a search is not a substitute for a valid policy and its lawful application. Keep a vehicle-evidence search and an inventory analytically separate.",
+      "reference": "User-supplied Criminal Procedure Module 8 Assignment Answers, PDF page 1; Modern Criminal Procedure, 15th ed., ch. 7, vehicle and inventory discussions."
+    },
+    {
+      "id": "material-witness",
+      "name": "Material witness",
+      "page": 1,
+      "moduleIds": [
+        "CL685-M08",
+        "CL685-M01",
+        "CL685-M02"
+      ],
+      "definition": "A person whose testimony is important to a criminal proceeding and whose attendance presents the relevant legal concern; detention requires the applicable legal authority and conditions.",
+      "explanation": "The handout describes detention where testimony is needed and there is a danger of nonappearance. Identify the witness’s role, why the testimony matters, the attendance concern and the governing detention procedure. Keep witness detention separate from an arrest on probable cause that the witness committed an offense. Do not infer unlimited detention power merely from an investigator’s desire to interview someone.",
+      "example": "Hypothetical: police need testimony from a person not accused of an offense. Identify the asserted witness-related legal authority before analyzing detention as if it were an ordinary criminal arrest.",
+      "pitfall": "Being useful to an investigation does not itself establish every condition for detaining a material witness. Identify the actual proceeding and the specific legal mechanism.",
+      "reference": "User-supplied Criminal Procedure Module 8 Assignment Answers, PDF page 1; User-supplied Module 8 assignment definition. Additional statutory details were not supplied in this document."
+    },
+    {
+      "id": "plain-view",
+      "name": "Plain view",
+      "page": 2,
+      "moduleIds": [
+        "CL685-M08",
+        "CL685-M04",
+        "CL685-M06"
+      ],
+      "definition": "A warrantless-seizure theory concerning an item observed from a legally justified position whose incriminating character has the required probable-cause basis.",
+      "explanation": "Identify lawful observation, any separate access question, and why the item’s character was sufficiently apparent. Do not merge observation with a later act revealing hidden information. Hicks illustrates that moving equipment to expose a serial number is a separate search, even when the initial presence is lawful. Explain each intrusion in sequence rather than treating plain view as a general exploratory-search exception.",
+      "example": "Hypothetical: an officer sees a stereo but moves it to read a concealed number. Separate what was already exposed from what the additional manipulation revealed.",
+      "pitfall": "Plain view does not automatically authorize moving or opening an item to create the view. A bare suspicion of criminality is not the same as the required probable cause.",
+      "reference": "User-supplied Criminal Procedure Module 8 Assignment Answers, PDF page 2; Modern Criminal Procedure, 15th ed., ch. 7, Hicks and plain-view discussion."
+    },
+    {
+      "id": "probable-cause",
+      "name": "Probable cause",
+      "page": 2,
+      "moduleIds": [
+        "CL685-M08",
+        "CL685-M03",
+        "CL685-M04",
+        "CL685-M05",
+        "CL685-M06"
+      ],
+      "definition": "A context-sensitive probability judgment based on sufficiently trustworthy facts, greater than mere suspicion but not proof of guilt beyond a reasonable doubt.",
+      "explanation": "Specify the object of the judgment: probable cause to arrest a particular person differs from probable cause to find particular evidence in a place. Identify facts known at the legally relevant time and the inferences they support under the totality of circumstances. The handout uses fair probability rather than a fixed numerical score. Do not use evidence learned only after the challenged act to supply its original justification.",
+      "example": "Hypothetical: officers have information linking an offense to a location but little connecting a particular occupant. Analyze place-search and person-arrest justifications separately.",
+      "pitfall": "The standard is not a trial verdict and not an unexplained hunch. Always specify probable cause for what, based on which facts, at what time.",
+      "reference": "User-supplied Criminal Procedure Module 8 Assignment Answers, PDF page 2; Modern Criminal Procedure, 15th ed., ch. 6, probable-cause and warrants discussion."
+    },
+    {
+      "id": "protective-sweep",
+      "name": "Protective sweep",
+      "page": 2,
+      "moduleIds": [
+        "CL685-M08",
+        "CL685-M06"
+      ],
+      "definition": "A limited safety inspection of spaces where a dangerous person could be found, subject to the legal conditions for the particular sweep.",
+      "explanation": "The handout’s brief description should be read with Buie’s distinctions. In its in-home-arrest setting, immediately adjoining spaces from which an attack could be launched receive a different analysis from a broader sweep, which needs the specified articulable danger-based facts. The inspection is cursory, person-focused and limited in duration. Do not convert lawful presence or an arrest label into permission to search the entire premises for evidence.",
+      "example": "Hypothetical: following an in-home arrest, officers inspect an area farther from the arrest scene. Identify the safety facts and explain why the location could conceal a dangerous person.",
+      "pitfall": "The handout’s broad reference to entry or an outside arrest is not a universal rule covering every setting. Check the governing authority and its factual prerequisites.",
+      "reference": "User-supplied Criminal Procedure Module 8 Assignment Answers, PDF page 2; Modern Criminal Procedure, 15th ed., ch. 7, Maryland v. Buie discussion."
+    },
+    {
+      "id": "reasonable-suspicion",
+      "name": "Reasonable suspicion",
+      "page": 2,
+      "moduleIds": [
+        "CL685-M08",
+        "CL685-M05"
+      ],
+      "definition": "A particularized and objective basis for suspicion supported by specific articulable facts and rational inferences, assessed in context.",
+      "explanation": "State what is suspected and why. The facts supporting an investigative stop do not automatically establish that a person is armed and dangerous for frisk purposes. The handout’s fair-possibility shorthand is not a numerical formula. Distinguish a justified inference from an unexplained impression and evaluate the facts available before the restraint or search being challenged.",
+      "example": "Hypothetical: an officer describes suspicious conduct but supplies no reason to believe a weapon is present. Evaluate the stop justification and the separate frisk justification.",
+      "pitfall": "Do not use the same conclusory sentence to establish a stop, an arrest and a weapons search. The required suspicion and permissible intrusion vary with the action.",
+      "reference": "User-supplied Criminal Procedure Module 8 Assignment Answers, PDF page 2; Modern Criminal Procedure, 15th ed., ch. 7, Terry and related street-encounter discussions."
+    },
+    {
+      "id": "search-incident",
+      "name": "Search incident to arrest",
+      "page": 2,
+      "moduleIds": [
+        "CL685-M08",
+        "CL685-M06"
+      ],
+      "definition": "A search tied to a lawful arrest and its recognized safety or evidence-preservation justifications, limited by the governing rule for the place and circumstances.",
+      "explanation": "Analyze the arrestee and accessible area under the Chimel rationale. For a vehicle, Gant distinguishes the specified accessibility condition from the separate reasonable-belief route for evidence of the arrest offense. Identify conditions at the time of search. A secured arrestee’s inability to reach the vehicle can defeat one rationale without automatically resolving every independent exception.",
+      "example": "Hypothetical: a handcuffed driver is secured away from a car after a suspended-license arrest. Explain accessibility and evidence-of-that-offense separately before reaching a conclusion.",
+      "pitfall": "The right to arrest is not an unlimited right to search every nearby location. Do not substitute inventory or probable-cause vehicle reasoning without establishing that distinct basis.",
+      "reference": "User-supplied Criminal Procedure Module 8 Assignment Answers, PDF page 2; Modern Criminal Procedure, 15th ed., ch. 7, Chimel and Gant."
+    },
+    {
+      "id": "warrant",
+      "name": "Search warrant",
+      "page": 2,
+      "moduleIds": [
+        "CL685-M08",
+        "CL685-M04"
+      ],
+      "definition": "Judicial authorization to conduct a specified search and seize designated material under the governing legal requirements.",
+      "explanation": "Identify the issuer, evidentiary showing, place to be searched, objects authorized and limits on execution. The uploaded handout notes that sworn information can be presented by affidavit or, in applicable procedures, oral testimony. Validity of the authorization is separate from whether officers executed it within its lawful scope. A warrant’s existence also differs from the separate remedial question whether evidence must be excluded if a defect is later found.",
+      "example": "Hypothetical: a warrant authorizes a search for a large item. Analyze whether the challenged location or container could hold it before assuming every space on the premises may be searched.",
+      "pitfall": "Judicial signature alone does not answer factual basis, particularity, execution, or the remedy for a defect. Address the particular issue raised.",
+      "reference": "User-supplied Criminal Procedure Module 8 Assignment Answers, PDF page 2; Modern Criminal Procedure, 15th ed., ch. 6, warrants and probable-cause discussions."
+    },
+    {
+      "id": "seizure",
+      "name": "Seizure",
+      "page": 2,
+      "moduleIds": [
+        "CL685-M08",
+        "CL685-M03",
+        "CL685-M05"
+      ],
+      "definition": "For property, meaningful interference with a possessory interest; for a person, the legally relevant restraint on liberty under the applicable seizure framework.",
+      "explanation": "Identify which kind of seizure is alleged and the precise event that completed it. Separate taking property from searching for information about it. For people, the rules governing force, assertions of authority and submission require attention to the particular encounter. A stop and an arrest can both involve restraints while demanding different justifications.",
+      "example": "Hypothetical: an officer observes a bag, opens it, and keeps it. Distinguish observation, the information-gathering search and the interference with possession rather than treating all three as a single act.",
+      "pitfall": "Not every police interaction is a seizure. Equally, the fact that conduct is not a search does not establish that there was no seizure of property or a person.",
+      "reference": "User-supplied Criminal Procedure Module 8 Assignment Answers, PDF page 2; Modern Criminal Procedure, 15th ed., chs. 6–7, search and seizure distinctions."
+    },
+    {
+      "id": "stop-frisk",
+      "name": "Stop and frisk",
+      "page": 2,
+      "moduleIds": [
+        "CL685-M08",
+        "CL685-M05"
+      ],
+      "definition": "A limited investigative stop and a separately justified protective weapons frisk under the Terry framework.",
+      "explanation": "The stop requires the relevant reasonable suspicion of criminal activity. The frisk requires the additional reasonable armed-and-dangerous safety basis and remains limited to its protective purpose. Work through approach, restraint, frisk, discovery and any escalation as separate stages. Facts that arise after a weapon is found cannot simply be projected backward to justify the initial frisk.",
+      "example": "Hypothetical: an officer reasonably stops a suspect but searches pockets for ordinary evidence without a safety basis. Analyze why a justified stop does not itself establish a justified frisk.",
+      "pitfall": "A frisk is not an automatic incident of every stop and is not a general evidentiary search. Explain both justification and scope.",
+      "reference": "User-supplied Criminal Procedure Module 8 Assignment Answers, PDF page 2; Modern Criminal Procedure, 15th ed., ch. 7, Terry v. Ohio."
+    },
+    {
+      "id": "voluntariness",
+      "name": "Voluntariness",
+      "page": 2,
+      "moduleIds": [
+        "CL685-M08",
+        "CL685-M07",
+        "CL685-M10",
+        "CL685-M11"
+      ],
+      "definition": "A context-dependent inquiry into whether consent or a statement resulted from a legally impermissible coercive setting or conduct; the governing doctrine depends on the right and event.",
+      "explanation": "For consent searches, assess the total circumstances instead of treating a yes response as conclusive. For a confession, analyze the applicable due-process and interrogation safeguards separately. The handout’s references to threats, coercion and deception are issue signals, not a rule that every deception has an identical legal result. State which doctrine governs and how the actual pressure affected the choice.",
+      "example": "Hypothetical: a search follows permission given during a contested detention. Analyze the detention, voluntary consent and any resulting causal-remedy problem separately.",
+      "pitfall": "Do not collapse voluntariness, knowledge, waiver and the effects of earlier illegality into a single conclusion. A Miranda issue and a consent-search issue are not the same test.",
+      "reference": "User-supplied Criminal Procedure Module 8 Assignment Answers, PDF page 2; Modern Criminal Procedure, 15th ed., chs. 7 and 9, consent and interrogation discussions."
+    },
+    {
+      "id": "waiver",
+      "name": "Waiver",
+      "page": 2,
+      "moduleIds": [
+        "CL685-M08",
+        "CL685-M10",
+        "CL685-M11"
+      ],
+      "definition": "Relinquishment of a legal right under the knowledge, voluntariness and other requirements applicable to that particular right.",
+      "explanation": "Identify the right, who held it, the event said to relinquish it, and the governing standard. In the Miranda setting, warnings, understanding, a sufficient waiver, invocation and later renewed questioning each require analysis. Some doctrines permit an implied waiver, but an inference still needs support. Consent-search voluntariness should not automatically be recast as the identical formal waiver requirement used for every other constitutional right.",
+      "example": "Hypothetical: an arrested suspect signs a form after warnings. Explain why the signature is evidence to evaluate rather than a conclusive answer to knowledge, voluntariness, prior invocation or the lawfulness of renewed questioning.",
+      "pitfall": "The word waiver does not supply one universal test. A later answer or signed form cannot erase the need to analyze the right and sequence of events.",
+      "reference": "User-supplied Criminal Procedure Module 8 Assignment Answers, PDF page 2; Modern Criminal Procedure, 15th ed., chs. 7 and 9, consent and Miranda."
+    }
+  ]
+}

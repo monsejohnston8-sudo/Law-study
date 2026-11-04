@@ -1,0 +1,140 @@
+{
+  "sources": [
+    {
+      "id": "poe",
+      "title": "Poe v. Ullman",
+      "citation": "367 U.S. 497 (1961)",
+      "mirrorUrl": "https://raw.githubusercontent.com/brianwc/bulk_scotus/master/1900s/1961/106282.json",
+      "blobSha": "ad9b39eb8541356d5d64cf454906d9a4c005298d",
+      "textSha256": "cb3c543e570d91fbfdf20c3786f6c257d63251e570f17ca536405a90d860cbf7",
+      "sourceNote": "A CourtListener mirror copy, not an authenticated official-report scan. Treat the historical decision separately from later legal developments."
+    },
+    {
+      "id": "mcculloch",
+      "title": "McCulloch v. Maryland",
+      "citation": "17 U.S. 316 (1819)",
+      "mirrorUrl": "https://raw.githubusercontent.com/brianwc/bulk_scotus/master/1800s/1819/1320585.json",
+      "blobSha": "1cf7d2c5079eae1fb52d3f6964d82b4b87b6bbc0",
+      "textSha256": "8b10be7a8bab49fd1697448c8ee65b786047fb21fdecd1b562fb2f2f0e1fdded",
+      "sourceNote": "Mirror metadata/header incorrectly label the reporter page as 159. The text identifies the 1819 McCulloch opinion; the assigned citation is 17 U.S. 316. Source pagination has not been independently authenticated."
+    },
+    {
+      "id": "boerne",
+      "title": "City of Boerne v. Flores",
+      "citation": "521 U.S. 507 (1997)",
+      "mirrorUrl": "https://raw.githubusercontent.com/brianwc/bulk_scotus/master/1900s/1997/118140.json",
+      "blobSha": "51dd9a64a726a8e9c8d351937cf6b79728981145",
+      "textSha256": "77f5c6658d4e3cf7a0bb5a140ca42b1da05f57a7ce2bb6cd9b45c9e97fb2fd13",
+      "sourceNote": "A CourtListener mirror copy, not an authenticated official-report scan. Treat the historical decision separately from later legal developments."
+    },
+    {
+      "id": "lopez",
+      "title": "United States v. Lopez",
+      "citation": "514 U.S. 549 (1995)",
+      "mirrorUrl": "https://raw.githubusercontent.com/brianwc/bulk_scotus/master/1900s/1995/117927.json",
+      "blobSha": "8e436c7ce386496ae99adf7fb03443544562f176",
+      "textSha256": "201a69b73f44d719812cf0d8220257d4b518f6003c9f2501f9329f5ecf386e84",
+      "sourceNote": "A CourtListener mirror copy, not an authenticated official-report scan. Treat the historical decision separately from later legal developments."
+    },
+    {
+      "id": "morrison",
+      "title": "United States v. Morrison",
+      "citation": "529 U.S. 598 (2000)",
+      "mirrorUrl": "https://raw.githubusercontent.com/brianwc/bulk_scotus/master/2000s/2000/118363.json",
+      "blobSha": "3db2ba9730ddaea7ca506f2b3f902c88b3d414cc",
+      "textSha256": "9e91f8f44ffebee948eb245993f4036f4040489d5c8f146d2c175cc8da1eb927",
+      "sourceNote": "A CourtListener mirror copy, not an authenticated official-report scan. Treat the historical decision separately from later legal developments."
+    },
+    {
+      "id": "dole",
+      "title": "South Dakota v. Dole",
+      "citation": "483 U.S. 203 (1987)",
+      "mirrorUrl": "https://raw.githubusercontent.com/brianwc/bulk_scotus/master/1900s/1987/111939.json",
+      "blobSha": "d193eb674c083bdc5b65440e2b749a9380b3b68a",
+      "textSha256": "9512dd8ff08c33b6674bafc272a501d4a3d107038b0f2e7d9de991ee23957825",
+      "sourceNote": "A CourtListener mirror copy, not an authenticated official-report scan. Treat the historical decision separately from later legal developments."
+    },
+    {
+      "id": "nfib",
+      "title": "National Federation of Independent Business v. Sebelius",
+      "citation": "567 U.S. 519 (2012)",
+      "mirrorUrl": "https://raw.githubusercontent.com/brianwc/bulk_scotus/master/2000s/2012/809122.json",
+      "blobSha": "9f0f5a7cb17948357609ce2e1feeb9a2e7946de6",
+      "textSha256": "66389dee7dc42803e6c5aeb1da02f81066271932b3362f198ff95b0857e55328",
+      "sourceNote": "A CourtListener mirror copy, not an authenticated official-report scan. Treat the historical decision separately from later legal developments."
+    },
+    {
+      "id": "new-york",
+      "title": "New York v. United States",
+      "citation": "505 U.S. 144 (1992)",
+      "mirrorUrl": "https://raw.githubusercontent.com/brianwc/bulk_scotus/master/1900s/1992/112768.json",
+      "blobSha": "2deb2c8d8627307d781b246600cf844e69265172",
+      "textSha256": "7b328a16ebe6dce57b25a4448591defe56d1ef1babe2e8af66459b142d3d14a1",
+      "sourceNote": "A CourtListener mirror copy, not an authenticated official-report scan. Treat the historical decision separately from later legal developments."
+    },
+    {
+      "id": "pike",
+      "title": "Pike v. Bruce Church, Inc.",
+      "citation": "397 U.S. 137 (1970)",
+      "mirrorUrl": "https://raw.githubusercontent.com/brianwc/bulk_scotus/master/1900s/1970/108085.json",
+      "blobSha": "2763f00aeeee4ed890d80d824640844ed6679c95",
+      "textSha256": "56c317e7fbe40bad08f948be5ef3a9fa52b376e9b8885038d053a1bc0a03c05d",
+      "sourceNote": "A CourtListener mirror copy, not an authenticated official-report scan. Treat the historical decision separately from later legal developments."
+    },
+    {
+      "id": "hunt",
+      "title": "Hunt v. Washington State Apple Advertising Commission",
+      "citation": "432 U.S. 333 (1977)",
+      "mirrorUrl": "https://raw.githubusercontent.com/brianwc/bulk_scotus/master/1900s/1977/109703.json",
+      "blobSha": "b112ffaf6022dc80ad910fd1498536823904c4de",
+      "textSha256": "2da891d2c3154b961b89ec2de05d454fb61b3d84bbc2819bc6fa6b23e39d12d0",
+      "sourceNote": "A CourtListener mirror copy, not an authenticated official-report scan. Treat the historical decision separately from later legal developments."
+    },
+    {
+      "id": "youngstown",
+      "title": "Youngstown Sheet & Tube Co. v. Sawyer",
+      "citation": "343 U.S. 579 (1952)",
+      "mirrorUrl": "https://raw.githubusercontent.com/brianwc/bulk_scotus/master/1900s/1952/105018.json",
+      "blobSha": "3f7359c0e46033ea0f9ececff41da129a2476d6f",
+      "textSha256": "817627e3024f6ee8ef47210d12c595284d9d3d1c62b8da013d6bf6346e2a6317",
+      "sourceNote": "A CourtListener mirror copy, not an authenticated official-report scan. Treat the historical decision separately from later legal developments."
+    },
+    {
+      "id": "whitman",
+      "title": "Whitman v. American Trucking Associations",
+      "citation": "531 U.S. 457 (2001)",
+      "mirrorUrl": "https://raw.githubusercontent.com/brianwc/bulk_scotus/master/2000s/2001/118410.json",
+      "blobSha": "5b11d6d7bafff8dbdc0f4587841bfb2c6c3a0fd3",
+      "textSha256": "aff379f363e66a5974be636847ffd453882d811ced6bfb3263923f2333c6b2ef",
+      "sourceNote": "A CourtListener mirror copy, not an authenticated official-report scan. Treat the historical decision separately from later legal developments."
+    },
+    {
+      "id": "schick",
+      "title": "Schick v. Reed",
+      "citation": "419 U.S. 256 (1974)",
+      "mirrorUrl": "https://raw.githubusercontent.com/brianwc/bulk_scotus/master/1900s/1974/109121.json",
+      "blobSha": "da673cb4c1ad1185e86bac616522e94cf2e0d840",
+      "textSha256": "7dd153b7a0b648cad3d32857df0c730c788fc05f681d2cb7356958c7a9c30290",
+      "sourceNote": "A CourtListener mirror copy, not an authenticated official-report scan. Treat the historical decision separately from later legal developments."
+    },
+    {
+      "id": "harlow",
+      "title": "Harlow v. Fitzgerald",
+      "citation": "457 U.S. 800 (1982)",
+      "mirrorUrl": "https://raw.githubusercontent.com/brianwc/bulk_scotus/master/1900s/1982/110763.json",
+      "blobSha": "2fce8331e3469cb663fe32789060bba10ef082ca",
+      "textSha256": "025df0db170f4900af37e099105d9f2c3af8be2f57e212e537f5e191eedbeda7",
+      "sourceNote": "A CourtListener mirror copy, not an authenticated official-report scan. Treat the historical decision separately from later legal developments."
+    },
+    {
+      "id": "clinton",
+      "title": "Clinton v. Jones",
+      "citation": "520 U.S. 681 (1997)",
+      "mirrorUrl": "https://raw.githubusercontent.com/brianwc/bulk_scotus/master/1900s/1997/118115.json",
+      "blobSha": "227ede34d428399015d18ddde769014ff5c9c021",
+      "textSha256": "9ea4dc78ebca7130a53fdcb79d05477621caeea9c1a95f66df6b630576b0cdcb",
+      "sourceNote": "A CourtListener mirror copy, not an authenticated official-report scan. Treat the historical decision separately from later legal developments."
+    }
+  ],
+  "provenance": "Public-domain judicial opinions retrieved from the documented CourtListener collection mirrored at github.com/brianwc/bulk_scotus. Only original study explanations, bibliographic metadata and links are bundled; full source copies remain in the private research workspace."
+}

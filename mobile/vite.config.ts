@@ -14,7 +14,7 @@ export default defineConfig({
       registerType: "prompt",
       includeAssets: ["apple-touch-icon.png", "icon-192.png", "icon-512.png"],
       manifest: {
-        name: "Casebook · Law Study",
+        name: "Casebook",
         short_name: "Casebook",
         description: "Your private, offline law school study workspace.",
         start_url: "./",

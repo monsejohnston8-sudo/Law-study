@@ -1,5 +1,5 @@
 {
-  "version": 3,
+  "version": 4,
   "guides": [
     {
       "id": "reading-guide-CL700-M01",
@@ -40,7 +40,8 @@
           "answer": "Identify member-managed or manager-managed governance, the operating agreement, statutory defaults and mandatory limits, and the actual or apparent authority for this transaction. Membership alone does not answer every authority question.",
           "explanation": "Original practice question based on this module’s source-linked detailed guide. The supplied fifth edition matches the outline. These notes cover the identified topics, not every proposition in every assigned section. Historical statutory and tax discussions are not a statement of current law."
         }
-      ]
+      ],
+      "primarySourceIds": []
     },
     {
       "id": "reading-guide-CL700-M02",
@@ -81,7 +82,8 @@
           "answer": "Neither follows. Review the organizational statute, purposes and distribution restrictions. Tax exemption is a separate inquiry and cannot be inferred from revenue or the nonprofit label alone.",
           "explanation": "Original practice question based on this module’s source-linked detailed guide. The supplied fifth edition matches the outline. These notes cover the identified topics, not every proposition in every assigned section. Historical statutory and tax discussions are not a statement of current law."
         }
-      ]
+      ],
+      "primarySourceIds": []
     },
     {
       "id": "reading-guide-CL700-M03",
@@ -122,7 +124,8 @@
           "answer": "Ratification. Examine the corporation’s knowledge, intent and adoption conduct. Keep later adoption separate from proving that authority existed when the contract was originally signed.",
           "explanation": "Original practice question based on this module’s source-linked detailed guide. The supplied fifth edition matches the outline. These notes cover the identified topics, not every proposition in every assigned section. Historical statutory and tax discussions are not a statement of current law."
         }
-      ]
+      ],
+      "primarySourceIds": []
     },
     {
       "id": "reading-guide-CL700-M04",
@@ -163,7 +166,8 @@
           "answer": "Shareholder voting powers, collective board authority, and the officer’s delegated agency authority. A person can hold several roles, but each asserted act needs authority in the relevant capacity.",
           "explanation": "Original practice question based on this module’s source-linked detailed guide. The supplied fifth edition matches the outline. These notes cover the identified topics, not every proposition in every assigned section. Historical statutory and tax discussions are not a statement of current law."
         }
-      ]
+      ],
+      "primarySourceIds": []
     },
     {
       "id": "reading-guide-CL700-M05",
@@ -204,7 +208,8 @@
           "answer": "Compare plausible forms using formation, management, investor liability, financing, transfer and exit, duration, tax and compliance costs. Connect each feature to the founders’ goals and discuss disadvantages of the recommendation.",
           "explanation": "Original practice question based on this module’s source-linked detailed guide. The supplied fifth edition matches the outline. These notes cover the identified topics, not every proposition in every assigned section. Historical statutory and tax discussions are not a statement of current law."
         }
-      ]
+      ],
+      "primarySourceIds": []
     },
     {
       "id": "reading-guide-CL700-M06",
@@ -245,7 +250,8 @@
           "answer": "Not on that premise. Identify the mandatory document requirement, whether it was satisfied, and the effect of the defect. Distinguish charter provisions, bylaws and informal understandings.",
           "explanation": "Original practice question based on this module’s source-linked detailed guide. The supplied fifth edition matches the outline. These notes cover the identified topics, not every proposition in every assigned section. Historical statutory and tax discussions are not a statement of current law."
         }
-      ]
+      ],
+      "primarySourceIds": []
     },
     {
       "id": "reading-guide-CL700-M07",
@@ -286,7 +292,8 @@
           "answer": "Failure after ordinary business losses differs from capitalization inadequate for foreseeable risks under the applicable test. Analyze timing, business risks, other misuse factors, and the jurisdiction’s requirements rather than treating insolvency as conclusive.",
           "explanation": "Original practice question based on this module’s source-linked detailed guide. The supplied fifth edition matches the outline. These notes cover the identified topics, not every proposition in every assigned section. Historical statutory and tax discussions are not a statement of current law. The casebook supplied is the fourteenth edition; the outline names the fifteenth."
         }
-      ]
+      ],
+      "primarySourceIds": []
     },
     {
       "id": "reading-guide-CL700-M08",
@@ -327,7 +334,8 @@
           "answer": "No. Par value, market value, eligibility of the consideration and valuation are separate issues. Apply the governing statute and examine the board’s valuation under the relevant standard.",
           "explanation": "Original practice question based on this module’s source-linked detailed guide. The supplied fifth edition matches the outline. These notes cover the identified topics, not every proposition in every assigned section. Historical statutory and tax discussions are not a statement of current law."
         }
-      ]
+      ],
+      "primarySourceIds": []
     },
     {
       "id": "reading-guide-CL700-M09",
@@ -368,7 +376,8 @@
           "answer": "A preemptive opportunity is different from a guarantee against all dilution. Also analyze any independent fiduciary challenge to pricing or purpose rather than assuming the proportional offer resolves every issue.",
           "explanation": "Original practice question based on this module’s source-linked detailed guide. The supplied fifth edition matches the outline. These notes cover the identified topics, not every proposition in every assigned section. Historical statutory and tax discussions are not a statement of current law."
         }
-      ]
+      ],
+      "primarySourceIds": []
     },
     {
       "id": "reading-guide-CL700-M10",
@@ -409,7 +418,8 @@
           "answer": "No. Notice, quorum and voting requirements are distinct. Examine waiver or another valid procedure under the governing law rather than treating the headcount as dispositive.",
           "explanation": "Original practice question based on this module’s source-linked detailed guide. The supplied fifth edition matches the outline. These notes cover the identified topics, not every proposition in every assigned section. Historical statutory and tax discussions are not a statement of current law."
         }
-      ]
+      ],
+      "primarySourceIds": []
     },
     {
       "id": "reading-guide-CL700-M11",
@@ -450,7 +460,8 @@
           "answer": "In a close corporation, employment, management and distributions may be central to legitimate investment expectations and liquidity. Analyze the governing oppression or fiduciary theory, business justification, individual versus corporate injury, and available remedies.",
           "explanation": "Original practice question based on this module’s source-linked detailed guide. The supplied fifth edition matches the outline. These notes cover the identified topics, not every proposition in every assigned section. Historical statutory and tax discussions are not a statement of current law. Casebook edition mismatch remains unresolved."
         }
-      ]
+      ],
+      "primarySourceIds": []
     },
     {
       "id": "reading-guide-CL700-M12",
@@ -491,7 +502,8 @@
           "answer": "The former challenges the decision-making process, as illustrated by Van Gorkom; the latter challenged a business-policy choice. Explain the information and deliberation actually used instead of treating every objection as mere strategy disagreement.",
           "explanation": "Original practice question based on this module’s source-linked detailed guide. The supplied fifth edition matches the outline. These notes cover the identified topics, not every proposition in every assigned section. Historical statutory and tax discussions are not a statement of current law. The casebook is a supplemental fourteenth-edition text."
         }
-      ]
+      ],
+      "primarySourceIds": []
     },
     {
       "id": "reading-guide-CL700-M13",
@@ -532,7 +544,8 @@
           "answer": "Analyze how it arose, corporate activities and interest or expectancy, resources, relevant financial capacity, disclosure and proper rejection under the governing test. Neither personal discovery nor mere status as officer supplies the entire answer.",
           "explanation": "Original practice question based on this module’s source-linked detailed guide. The supplied fifth edition matches the outline. These notes cover the identified topics, not every proposition in every assigned section. Historical statutory and tax discussions are not a statement of current law. Supplied casebook is the fourteenth edition, not the fifteenth assigned."
         }
-      ]
+      ],
+      "primarySourceIds": []
     },
     {
       "id": "reading-guide-CL650-M01",
@@ -573,7 +586,8 @@
           "answer": "Federalism concerns national-state allocation; separation of powers concerns allocation among national branches. Analyze each supported issue separately and then identify jurisdiction and the available remedy.",
           "explanation": "Original practice question based on this module’s source-linked detailed guide. Based on supplied study notes, not independently authenticated copies of the assigned judicial opinions. Case summaries remain review drafts. Historical cases are discussed for the assigned course, not as a complete statement of present law."
         }
-      ]
+      ],
+      "primarySourceIds": []
     },
     {
       "id": "reading-guide-CL650-M02",
@@ -614,7 +628,8 @@
           "answer": "No. McCardle separates jurisdiction from merits and identifies the particular route removed. Determine whether another review route remains instead of assuming every form of judicial review disappeared.",
           "explanation": "Original practice question based on this module’s source-linked detailed guide. Based on supplied study notes, not independently authenticated copies of the assigned judicial opinions. Case summaries remain review drafts. Historical cases are discussed for the assigned course, not as a complete statement of present law."
         }
-      ]
+      ],
+      "primarySourceIds": []
     },
     {
       "id": "reading-guide-CL650-M03",
@@ -655,7 +670,8 @@
           "answer": "Trace the plaintiff’s particular injury to the challenged officials and test whether relief would change the platform’s independent choices. Murthy illustrates why a broad narrative of influence is not enough to establish traceability and redressability.",
           "explanation": "Original practice question based on this module’s source-linked detailed guide. Based on supplied study notes, not independently authenticated copies of the assigned judicial opinions. Case summaries remain review drafts. Historical cases are discussed for the assigned course, not as a complete statement of present law."
         }
-      ]
+      ],
+      "primarySourceIds": []
     },
     {
       "id": "reading-guide-CL650-M05",
@@ -696,7 +712,8 @@
           "answer": "The presidential subpoena case involved a reviewable evidentiary privilege dispute; the judicial impeachment case involved textual commitment and political-question limits. The parties’ reversed order identifies different disputes and doctrinal outcomes.",
           "explanation": "Original practice question based on this module’s source-linked detailed guide. Based on supplied study notes, not independently authenticated copies of the assigned judicial opinions. Case summaries remain review drafts. Historical cases are discussed for the assigned course, not as a complete statement of present law."
         }
-      ]
+      ],
+      "primarySourceIds": []
     },
     {
       "id": "reading-guide-CL685-M01",
@@ -733,7 +750,8 @@
           "answer": "Identify whether the rule is constitutional, incorporated, statutory, procedural or supervisory. The same result or label does not establish an identical source and reach in state proceedings.",
           "explanation": "Original practice question based on this module’s source-linked detailed guide. Supplemental source: this casebook is not the assigned Criminal Procedure treatise, 7th edition. These notes support the listed assigned issues but do not certify completion of the assigned treatise pages. Review the assigned text when available."
         }
-      ]
+      ],
+      "primarySourceIds": []
     },
     {
       "id": "reading-guide-CL685-M02",
@@ -770,7 +788,8 @@
           "answer": "The required individualized assessment cannot be replaced by those general facts. Analyze the permitted purpose, each defendant’s circumstances and whether the amount exceeds what is reasonably calculated under the governing framework.",
           "explanation": "Original practice question based on this module’s source-linked detailed guide. Supplemental source: this casebook is not the assigned Criminal Procedure treatise, 7th edition. These notes support the listed assigned issues but do not certify completion of the assigned treatise pages. Review the assigned text when available."
         }
-      ]
+      ],
+      "primarySourceIds": []
     },
     {
       "id": "reading-guide-CL685-M03",
@@ -807,7 +826,8 @@
           "answer": "No. Continue with the claimant’s protected interest, warrant or exception, reasonableness and the separate exclusion inquiry. Search status begins rather than finishes the constitutional and remedial analysis.",
           "explanation": "Original practice question based on this module’s source-linked detailed guide. Supplemental source: this casebook is not the assigned Criminal Procedure treatise, 7th edition. These notes support the listed assigned issues but do not certify completion of the assigned treatise pages. Review the assigned text when available."
         }
-      ]
+      ],
+      "primarySourceIds": []
     },
     {
       "id": "reading-guide-CL685-M04",
@@ -844,7 +864,8 @@
           "answer": "The former attacks the factual basis for authorization; execution asks whether officers stayed within lawful scope when acting. Identify the alleged defect, its significance and the applicable remedial framework separately.",
           "explanation": "Original practice question based on this module’s source-linked detailed guide. Supplemental source: this casebook is not the assigned Criminal Procedure treatise, 7th edition. These notes support the listed assigned issues but do not certify completion of the assigned treatise pages. Review the assigned text when available."
         }
-      ]
+      ],
+      "primarySourceIds": []
     },
     {
       "id": "reading-guide-CL685-M05",
@@ -881,7 +902,8 @@
           "answer": "At the specific point and by the specific restraint alleged. Divide the approach, restraint, frisk, discovery and escalation; explain supporting facts rather than assigning one label to the whole encounter.",
           "explanation": "Original practice question based on this module’s source-linked detailed guide. Supplemental source: this casebook is not the assigned Criminal Procedure treatise, 7th edition. These notes support the listed assigned issues but do not certify completion of the assigned treatise pages. Review the assigned text when available."
         }
-      ]
+      ],
+      "primarySourceIds": []
     },
     {
       "id": "reading-guide-CL685-M06",
@@ -918,7 +940,8 @@
           "answer": "Each exception has its own trigger, purpose and scope. Establish an actual independent justification from the facts rather than treating the names of exceptions as interchangeable.",
           "explanation": "Original practice question based on this module’s source-linked detailed guide. Supplemental source: this casebook is not the assigned Criminal Procedure treatise, 7th edition. These notes support the listed assigned issues but do not certify completion of the assigned treatise pages. Review the assigned text when available."
         }
-      ]
+      ],
+      "primarySourceIds": []
     },
     {
       "id": "reading-guide-CL685-M07",
@@ -955,7 +978,8 @@
           "answer": "No. Distinguish opportunity from inducement and identify whether the governing approach emphasizes predisposition or government conduct. Apply the course’s test to the actual facts.",
           "explanation": "Original practice question based on this module’s source-linked detailed guide. Supplemental source: this casebook is not the assigned Criminal Procedure treatise, 7th edition. These notes support the listed assigned issues but do not certify completion of the assigned treatise pages. Review the assigned text when available."
         }
-      ]
+      ],
+      "primarySourceIds": []
     },
     {
       "id": "reading-guide-CL685-M08",
@@ -992,7 +1016,8 @@
           "answer": "No. The inquiry concerns objectively reasonable reliance and its limits, not merely subjective good intentions. Separate the warrant defect from the deterrence-based exclusion analysis.",
           "explanation": "Original practice question based on this module’s source-linked detailed guide. Supplemental source: this casebook is not the assigned Criminal Procedure treatise, 7th edition. These notes support the listed assigned issues but do not certify completion of the assigned treatise pages. Review the assigned text when available."
         }
-      ]
+      ],
+      "primarySourceIds": []
     },
     {
       "id": "reading-guide-CL685-M09",
@@ -1029,7 +1054,8 @@
           "answer": "No. Identify the applicable legal disclosure rule and materiality or prejudice framework. The constitutional inquiry is not identical to every discovery-rule violation, and lost evidence raises separate preservation questions.",
           "explanation": "Original practice question based on this module’s source-linked detailed guide. Supplemental source: this casebook is not the assigned Criminal Procedure treatise, 7th edition. These notes support the listed assigned issues but do not certify completion of the assigned treatise pages. Review the assigned text when available."
         }
-      ]
+      ],
+      "primarySourceIds": []
     },
     {
       "id": "reading-guide-CL685-M10",
@@ -1066,7 +1092,8 @@
           "answer": "No. Innis includes the functional equivalent: relevant conduct officers should know is reasonably likely to elicit an incriminating response. Apply that standard to what officers knew and did; not every overheard conversation qualifies.",
           "explanation": "Original practice question based on this module’s source-linked detailed guide. Supplemental source: this casebook is not the assigned Criminal Procedure treatise, 7th edition. These notes support the listed assigned issues but do not certify completion of the assigned treatise pages. Review the assigned text when available."
         }
-      ]
+      ],
+      "primarySourceIds": []
     },
     {
       "id": "reading-guide-CL685-M11",
@@ -1103,7 +1130,8 @@
           "answer": "They have different constitutional sources and procedural triggers. Identify custody and interrogation separately from adversary proceedings and the relevant government conduct, including any undercover elicitation.",
           "explanation": "Original practice question based on this module’s source-linked detailed guide. Supplemental source: this casebook is not the assigned Criminal Procedure treatise, 7th edition. These notes support the listed assigned issues but do not certify completion of the assigned treatise pages. Review the assigned text when available."
         }
-      ]
+      ],
+      "primarySourceIds": []
     },
     {
       "id": "reading-guide-CL685-M12",
@@ -1140,7 +1168,8 @@
           "answer": "No. Establish attachment, how proceedings ended, who sought termination, and the applicable offense and exception questions. Mistrial, acquittal, dismissal and conviction are not interchangeable.",
           "explanation": "Original practice question based on this module’s source-linked detailed guide. Supplemental source: this casebook is not the assigned Criminal Procedure treatise, 7th edition. These notes support the listed assigned issues but do not certify completion of the assigned treatise pages. Review the assigned text when available."
         }
-      ]
+      ],
+      "primarySourceIds": []
     },
     {
       "id": "reading-guide-CL685-M13",
@@ -1177,7 +1206,8 @@
           "answer": "No. The constitutional analysis concerns the effect of the fact on authorized punishment, not merely the legislative label. Distinguish that question from selection within an already authorized range.",
           "explanation": "Original practice question based on this module’s source-linked detailed guide. Supplemental source: this casebook is not the assigned Criminal Procedure treatise, 7th edition. These notes support the listed assigned issues but do not certify completion of the assigned treatise pages. Review the assigned text when available."
         }
-      ]
+      ],
+      "primarySourceIds": []
     },
     {
       "id": "reading-guide-CL685-M14",
@@ -1214,7 +1244,8 @@
           "answer": "No. Identify the source and scope of review, procedural default, exhaustion, timeliness and other applicable limits before reaching the underlying claim. Direct appeal and collateral review are distinct.",
           "explanation": "Original practice question based on this module’s source-linked detailed guide. Supplemental source: this casebook is not the assigned Criminal Procedure treatise, 7th edition. These notes support the listed assigned issues but do not certify completion of the assigned treatise pages. Review the assigned text when available."
         }
-      ]
+      ],
+      "primarySourceIds": []
     },
     {
       "id": "reading-optional-guide-CL650-M03",
@@ -1245,7 +1276,8 @@
           "answer": "No. These threshold decisions did not resolve the underlying merits. Explain the particular standing or representative-capacity defect before drawing any conclusion about the substantive claim.",
           "explanation": "Based on the optional-reading comparison notes. Review against the cited supplied source."
         }
-      ]
+      ],
+      "primarySourceIds": []
     },
     {
       "id": "reading-optional-guide-CL650-M05",
@@ -1275,6 +1307,870 @@
           "question": "May a federal court rely on Ex parte Young merely because an order against a state officer is prospective?",
           "answer": "No. The federal-law basis and other conditions matter. The supplied Pennhurst notes reject using that rationale to compel compliance solely with state law.",
           "explanation": "Based on the optional-reading comparison notes. Review against the cited supplied source."
+        }
+      ],
+      "primarySourceIds": []
+    },
+    {
+      "id": "reading-primary-guide-CL650-M04",
+      "moduleId": "CL650-M04",
+      "title": "Detailed reading notes — Justiciability: Timing",
+      "references": [
+        "Poe v. Ullman, 367 U.S. 497 (1961)"
+      ],
+      "scope": "Original notes based on the identified historical judicial opinions retrieved from a documented CourtListener mirror. This is partial coverage of the assigned reading list, not a current-law certification or proof every assigned decision was supplied.",
+      "primarySourceIds": [
+        "poe"
+      ],
+      "sections": [
+        {
+          "heading": "Timing is distinct from merits",
+          "body": "Justiciability asks whether this dispute is suitable for adjudication now. Ripeness concerns a controversy asserted too early; mootness concerns whether a previously live controversy has ceased. The doctrines must be analyzed using the requested remedy and actual facts. Poe is the supplied primary anchor for the pre-enforcement side of this module. Its refusal to adjudicate did not validate the challenged contraception restrictions on the merits. The newly retrieved source does not supply all other timing cases assigned in the outline."
+        },
+        {
+          "heading": "Why Poe was dismissed",
+          "body": "Patients and a physician sought declarations concerning Connecticut restrictions before the prosecutions they feared had occurred. The opinion announcing the judgment emphasized a long enforcement history and the actual prospect of prosecution, not only the fact that legislation remained on the books. The Court’s members differed over the justiciability analysis. Distinguish the plurality’s reasoning, a concurrence in the judgment, and dissenting views rather than attributing every paragraph to a unanimous Court."
+        },
+        {
+          "heading": "How to analyze a pre-enforcement problem",
+          "body": "Identify the exact conduct the plaintiff wishes to undertake, the prohibition alleged to cover it, actual enforcement actions or threats, and the practical harm of waiting. Compare those facts with the historical enforcement record discussed in Poe. A theoretical legal disagreement or the mere existence of a statute should not replace an explanation of the controversy. Equally, do not turn Poe into a universal requirement that a person first violate a law and accept punishment before any challenge is possible."
+        },
+        {
+          "heading": "Connections and limits",
+          "body": "For an answer about timing, first separate standing, ripeness and mootness rather than using them as interchangeable labels. Explain what has happened and what still depends on contingencies. If the question raises later cessation, recurrence or duration of injury, identify the additional assigned doctrine needing a source. Roe and the remaining module opinions have not been treated as supplied merely because their names appear in the outline. This guide addresses Poe’s historical threshold issue, not current contraception or abortion rights."
+        }
+      ],
+      "examQuestions": [
+        {
+          "id": "primary-exam-CL650-M04-1",
+          "question": "Hypothetical: a plaintiff cites an old criminal statute but identifies no recent enforcement or concrete threat. What does Poe require the analysis to examine?",
+          "answer": "Examine the actual controversy, intended conduct, enforcement history and realistic prospect of enforcement, and the reasons for deciding now. Distinguish the threshold question from whether the statute is constitutional; do not turn Poe into a universal rule requiring prosecution first.",
+          "explanation": "Original notes based on the identified historical judicial opinions retrieved from a documented CourtListener mirror. This is partial coverage of the assigned reading list, not a current-law certification or proof every assigned decision was supplied."
+        },
+        {
+          "id": "primary-exam-CL650-M04-2",
+          "question": "How would you structure a fact-specific analysis of this module’s constitutional issue?",
+          "answer": "Identify the actor, constitutional source, challenged conduct, and procedural posture. State the relevant rule from the source-backed guide, apply the material facts and strongest counterargument, then reach a limited conclusion about the requested relief. Distinguish the historical holding from unreviewed later decisions.",
+          "explanation": "Original notes based on the identified historical judicial opinions retrieved from a documented CourtListener mirror. This is partial coverage of the assigned reading list, not a current-law certification or proof every assigned decision was supplied."
+        }
+      ]
+    },
+    {
+      "id": "reading-primary-guide-CL650-M06",
+      "moduleId": "CL650-M06",
+      "title": "Detailed reading notes — Necessary and Proper Clause",
+      "references": [
+        "McCulloch v. Maryland, 17 U.S. 316 (1819)",
+        "City of Boerne v. Flores, 521 U.S. 507 (1997)"
+      ],
+      "scope": "Original notes based on the identified historical judicial opinions retrieved from a documented CourtListener mirror. This is partial coverage of the assigned reading list, not a current-law certification or proof every assigned decision was supplied. The McCulloch mirror has inconsistent reporter-page metadata; verify official pagination before citing a pinpoint.",
+      "primarySourceIds": [
+        "mcculloch",
+        "boerne"
+      ],
+      "sections": [
+        {
+          "heading": "Enumerated ends and implementing means",
+          "body": "McCulloch separates a legitimate constitutional end from the means Congress selects to accomplish it. The Constitution need not list every instrument Congress may use in executing an enumerated power. The opinion treats incorporation of a national bank as an implementing measure rather than requiring a freestanding express bank clause. Explain the relation between the asserted end and chosen means; the Necessary and Proper Clause is not a substitute for identifying a constitutional objective."
+        },
+        {
+          "heading": "Appropriateness and constitutional limits",
+          "body": "The classic formulation permits appropriate means plainly adapted to a legitimate end when they are not prohibited and remain consistent with the Constitution’s letter and spirit. That is not an assertion that any useful policy is valid. Identify the power being implemented, how the measure advances it, and any independent prohibition. The case also concerns a state’s attempt to tax a federal instrument, which raises supremacy and the ability to frustrate federal operations rather than merely another question about Congress’s preferred policy."
+        },
+        {
+          "heading": "Enforcement is not rewriting the right",
+          "body": "City of Boerne examined RFRA in a dispute over a church building permit. The Court distinguished enforcing Fourteenth Amendment protections from changing the underlying substantive constitutional standard. Its congruence-and-proportionality formulation asks about the injury to be prevented or remedied and the fit of the chosen legislation. Identify the constitutional right, relevant state conduct, evidentiary justification and reach of the remedy instead of assuming that Congress’s use of an enforcement label establishes authority."
+        },
+        {
+          "heading": "Exam comparison and source caution",
+          "body": "Analyze the source of power before selecting a standard. A measure implementing an enumerated end and a statute asserted to enforce a constitutional right raise related but distinct questions. Do not apply a single unexplained reasonableness test to both. The McCulloch mirror’s reporter page is inconsistent with the assigned citation; its identifiable opinion text supports these doctrinal notes, but its apparent page markers should not be used as authenticated pinpoint citations. Other assigned cases remain separate readings."
+        }
+      ],
+      "examQuestions": [
+        {
+          "id": "primary-exam-CL650-M06-1",
+          "question": "Why must an answer distinguish a legitimate congressional end from its chosen means?",
+          "answer": "The implementing-means analysis needs an identified constitutional objective and a sufficient relationship to it, with independent constitutional limits preserved. Merely describing a policy as useful or calling a measure necessary does not establish the whole inquiry.",
+          "explanation": "Original notes based on the identified historical judicial opinions retrieved from a documented CourtListener mirror. This is partial coverage of the assigned reading list, not a current-law certification or proof every assigned decision was supplied. The McCulloch mirror has inconsistent reporter-page metadata; verify official pagination before citing a pinpoint."
+        },
+        {
+          "id": "primary-exam-CL650-M06-2",
+          "question": "How would you structure a fact-specific analysis of this module’s constitutional issue?",
+          "answer": "Identify the actor, constitutional source, challenged conduct, and procedural posture. State the relevant rule from the source-backed guide, apply the material facts and strongest counterargument, then reach a limited conclusion about the requested relief. Distinguish the historical holding from unreviewed later decisions.",
+          "explanation": "Original notes based on the identified historical judicial opinions retrieved from a documented CourtListener mirror. This is partial coverage of the assigned reading list, not a current-law certification or proof every assigned decision was supplied. The McCulloch mirror has inconsistent reporter-page metadata; verify official pagination before citing a pinpoint."
+        }
+      ]
+    },
+    {
+      "id": "reading-primary-guide-CL650-M07",
+      "moduleId": "CL650-M07",
+      "title": "Detailed reading notes — Commerce Clause",
+      "references": [
+        "United States v. Lopez, 514 U.S. 549 (1995)",
+        "United States v. Morrison, 529 U.S. 598 (2000)"
+      ],
+      "scope": "Original notes based on the identified historical judicial opinions retrieved from a documented CourtListener mirror. This is partial coverage of the assigned reading list, not a current-law certification or proof every assigned decision was supplied.",
+      "primarySourceIds": [
+        "lopez",
+        "morrison"
+      ],
+      "sections": [
+        {
+          "heading": "Classify the asserted commerce power",
+          "body": "Lopez identifies channels of interstate commerce, instrumentalities and persons or things in commerce, and activities substantially affecting interstate commerce. Choose the relevant category before applying its test. The Gun-Free School Zones Act at issue addressed possession in a school zone without the interstate-commerce connection the government needed under the challenged theory. Do not assume that a local act is unreachable simply because it occurs within one state; explain why the asserted category does or does not cover it."
+        },
+        {
+          "heading": "Nature of the activity and the causal chain",
+          "body": "The opinion distinguishes the regulated conduct from a lengthy series of effects on education, economic productivity and the national economy. If every link rests on a very broad generalization, explain why the proposed theory would lack a meaningful stopping point. Evaluate the activity, statutory elements, relation to a broader scheme and the particular constitutional theory rather than substituting the conclusion that the issue is important."
+        },
+        {
+          "heading": "Morrison’s two sources of power",
+          "body": "Morrison rejected the federal civil remedy for gender-motivated violence under the theories before the Court. Its commerce discussion addressed noneconomic violent conduct and the claimed aggregate economic consequences. Its Fourteenth Amendment analysis separately addressed the state-action boundary and the remedy directed at private conduct. Congressional findings did not themselves decide the constitutional limit. Identify the claim against the actor and the source of authority separately."
+        },
+        {
+          "heading": "Comparisons and unreviewed assignments",
+          "body": "When comparing Lopez and Morrison, focus on the regulated conduct, jurisdictional connection, inference chain and legal basis rather than equating all intrastate activity with invalidity. Distinguish state regulation from federal enumerated-power analysis. Raich is also assigned but was not located in this retrieval; these notes do not claim to resolve its broader-regulatory-scheme analysis from a missing primary text. Use a separate verified source before treating that part of the reading as complete."
+        }
+      ],
+      "examQuestions": [
+        {
+          "id": "primary-exam-CL650-M07-1",
+          "question": "Hypothetical: Congress supports a law regulating local noneconomic conduct with findings about its national economic effects. Does that alone answer the commerce issue?",
+          "answer": "No. Classify the asserted category, examine the conduct, statutory connection and inference chain, and apply the relevant limits. Morrison shows that findings do not themselves establish constitutional authority; additional theories such as Section 5 need separate analysis.",
+          "explanation": "Original notes based on the identified historical judicial opinions retrieved from a documented CourtListener mirror. This is partial coverage of the assigned reading list, not a current-law certification or proof every assigned decision was supplied."
+        },
+        {
+          "id": "primary-exam-CL650-M07-2",
+          "question": "How would you structure a fact-specific analysis of this module’s constitutional issue?",
+          "answer": "Identify the actor, constitutional source, challenged conduct, and procedural posture. State the relevant rule from the source-backed guide, apply the material facts and strongest counterargument, then reach a limited conclusion about the requested relief. Distinguish the historical holding from unreviewed later decisions.",
+          "explanation": "Original notes based on the identified historical judicial opinions retrieved from a documented CourtListener mirror. This is partial coverage of the assigned reading list, not a current-law certification or proof every assigned decision was supplied."
+        }
+      ]
+    },
+    {
+      "id": "reading-primary-guide-CL650-M08",
+      "moduleId": "CL650-M08",
+      "title": "Detailed reading notes — Taxing and Spending Clause",
+      "references": [
+        "South Dakota v. Dole, 483 U.S. 203 (1987)",
+        "National Federation of Independent Business v. Sebelius, 567 U.S. 519 (2012)"
+      ],
+      "scope": "Original notes based on the identified historical judicial opinions retrieved from a documented CourtListener mirror. This is partial coverage of the assigned reading list, not a current-law certification or proof every assigned decision was supplied.",
+      "primarySourceIds": [
+        "dole",
+        "nfib"
+      ],
+      "sections": [
+        {
+          "heading": "Taxing, spending and direct regulation",
+          "body": "A measure can involve more than one proposed source of congressional power. Do not assume that failure of one theory determines all others. Dole concerns conditions on federal funding rather than a direct national command to enact a particular drinking age. NFIB requires separating the commerce argument, constitutional tax construction and spending condition attached to Medicaid expansion. Identify the precise provision and theory before stating the result."
+        },
+        {
+          "heading": "Conditional spending under Dole",
+          "body": "The decision discusses the general welfare, clarity of conditions, relation to the federal program and independent constitutional limits. It also addresses when financial inducement could become coercion. The small percentage of highway funding at issue and the actual freedom to reject the condition mattered to the result. The fact that a spending condition encourages policy Congress could not simply command directly is not itself the same as requiring unconstitutional conduct."
+        },
+        {
+          "heading": "NFIB’s distinct inquiries",
+          "body": "The individual-mandate payment was sustained under a constitutional taxing-power construction, and the opinion distinguishes a statutory label from the functional constitutional analysis. The Medicaid issue involved a threat to existing funding, not merely the terms of a new incremental grant. Compare the scale, notice, change in program and practical ability to refuse. A rule that any funding condition is voluntary whenever a state can theoretically say no misses the coercion issue."
+        },
+        {
+          "heading": "Read the divisions in the opinions",
+          "body": "NFIB contains multiple opinions and different joiners for different sections. Record which proposition belongs to the Court, the Chief Justice’s separate analysis or another opinion before claiming a single unanimous rationale. Keep the 2012 statutory arrangement separate from current program details or later litigation. In an exam, analyze each provision under each asserted constitutional power and limit the conclusion to the issue the source actually resolves."
+        }
+      ],
+      "examQuestions": [
+        {
+          "id": "primary-exam-CL650-M08-1",
+          "question": "Why should a funding-condition answer compare the actual financial choice rather than simply say the state may refuse?",
+          "answer": "The coercion inquiry concerns the nature and scale of the inducement, including the relationship to existing funding and the practical choice. Dole’s modest withheld share and NFIB’s existing-Medicaid threat were not equivalent arrangements.",
+          "explanation": "Original notes based on the identified historical judicial opinions retrieved from a documented CourtListener mirror. This is partial coverage of the assigned reading list, not a current-law certification or proof every assigned decision was supplied."
+        },
+        {
+          "id": "primary-exam-CL650-M08-2",
+          "question": "How would you structure a fact-specific analysis of this module’s constitutional issue?",
+          "answer": "Identify the actor, constitutional source, challenged conduct, and procedural posture. State the relevant rule from the source-backed guide, apply the material facts and strongest counterargument, then reach a limited conclusion about the requested relief. Distinguish the historical holding from unreviewed later decisions.",
+          "explanation": "Original notes based on the identified historical judicial opinions retrieved from a documented CourtListener mirror. This is partial coverage of the assigned reading list, not a current-law certification or proof every assigned decision was supplied."
+        }
+      ]
+    },
+    {
+      "id": "reading-primary-guide-CL650-M09",
+      "moduleId": "CL650-M09",
+      "title": "Detailed reading notes — State Powers and Federalism",
+      "references": [
+        "New York v. United States, 505 U.S. 144 (1992)"
+      ],
+      "scope": "Original notes based on the identified historical judicial opinions retrieved from a documented CourtListener mirror. This is partial coverage of the assigned reading list, not a current-law certification or proof every assigned decision was supplied.",
+      "primarySourceIds": [
+        "new-york"
+      ],
+      "sections": [
+        {
+          "heading": "Regulation and commandeering",
+          "body": "New York addressed three mechanisms in a federal radioactive-waste scheme, not an undifferentiated rejection of federal environmental legislation. Congress could encourage state action through constitutionally permissible mechanisms, but could not simply compel the states to administer the federal regulatory choice. Identify who must act and what the challenged provision demands."
+        },
+        {
+          "heading": "The take-title problem",
+          "body": "The disputed mechanism required a state to regulate under the federal scheme or take ownership of waste and assume the accompanying burden. The Court did not treat that choice as a cure when both alternatives implicated the constitutional problem described. Explain the two asserted options rather than assuming that presenting a nominal choice always makes a command voluntary."
+        },
+        {
+          "heading": "Accountability and institutional roles",
+          "body": "A command to a state legislature can obscure responsibility: voters may attribute the imposed policy to state officials even though federal law dictated it. Distinguish Congress regulating under its own authority from requiring the state to carry out a regulatory program. Cooperation, valid inducements and preemption under a lawful federal rule need their own analysis. Do not collapse every federal effect on state activity into the same doctrine."
+        },
+        {
+          "heading": "Exam framework and remaining readings",
+          "body": "Identify the federal source of power, the target, mandatory conduct, financial or legal alternatives and the role left to state decision-makers. Analyze each challenged provision independently. Garcia, Reno, Gregory and the optional Printz assignment present additional settings not fully supplied by this single opinion. This primary guide establishes the New York comparison; it does not silently brief those other cases or announce the current state of every federalism doctrine."
+        }
+      ],
+      "examQuestions": [
+        {
+          "id": "primary-exam-CL650-M09-1",
+          "question": "Hypothetical: a federal law offers a state two options, both requiring the state to assume the federal program’s regulatory burden. Is the word choice dispositive?",
+          "answer": "No. Identify the substance of both alternatives and whether they supply a genuinely permissible option. New York’s take-title analysis rejects relying on the form of a choice without examining its constitutional content.",
+          "explanation": "Original notes based on the identified historical judicial opinions retrieved from a documented CourtListener mirror. This is partial coverage of the assigned reading list, not a current-law certification or proof every assigned decision was supplied."
+        },
+        {
+          "id": "primary-exam-CL650-M09-2",
+          "question": "How would you structure a fact-specific analysis of this module’s constitutional issue?",
+          "answer": "Identify the actor, constitutional source, challenged conduct, and procedural posture. State the relevant rule from the source-backed guide, apply the material facts and strongest counterargument, then reach a limited conclusion about the requested relief. Distinguish the historical holding from unreviewed later decisions.",
+          "explanation": "Original notes based on the identified historical judicial opinions retrieved from a documented CourtListener mirror. This is partial coverage of the assigned reading list, not a current-law certification or proof every assigned decision was supplied."
+        }
+      ]
+    },
+    {
+      "id": "reading-primary-guide-CL650-M10",
+      "moduleId": "CL650-M10",
+      "title": "Detailed reading notes — Limits on State Powers",
+      "references": [
+        "Pike v. Bruce Church, Inc., 397 U.S. 137 (1970)",
+        "Hunt v. Washington State Apple Advertising Commission, 432 U.S. 333 (1977)"
+      ],
+      "scope": "Original notes based on the identified historical judicial opinions retrieved from a documented CourtListener mirror. This is partial coverage of the assigned reading list, not a current-law certification or proof every assigned decision was supplied.",
+      "primarySourceIds": [
+        "pike",
+        "hunt"
+      ],
+      "sections": [
+        {
+          "heading": "Different kinds of interstate-commerce burdens",
+          "body": "Separate discrimination against interstate commerce from incidental effects of an evenhanded local measure. Pike states the historical formulation for evenhanded regulation serving a legitimate local interest whose incidental burden is alleged to be clearly excessive relative to its putative local benefits. Hunt shows why facially neutral language does not end an inquiry into discriminatory effects. Identify the actual economic mechanism rather than choosing a test from the statute’s title."
+        },
+        {
+          "heading": "Pike’s packing requirement",
+          "body": "Arizona’s order prevented the company from sending uncrated cantaloupes to a nearby California facility. Explain the imposed operational burden, the local purpose advanced and the relationship between them. The case’s balancing language is tied to that regulatory setting. A bare statement that compliance is expensive is not the entire analysis; identify the interstate burden and the claimed benefit with concrete facts."
+        },
+        {
+          "heading": "Hunt’s labeling effect",
+          "body": "North Carolina required apple containers to show only the applicable federal grade or no grade, excluding Washington’s distinctive grading labels. The opinion examined the removal of a competitive advantage and the resulting interstate burden, notwithstanding neutral phrasing. Distinguish the stated consumer-protection rationale from the regulation’s actual impact and any less discriminatory way to pursue the objective."
+        },
+        {
+          "heading": "Keep adjacent doctrines separate",
+          "body": "An answer should identify discrimination, purpose and effect, the relevant justification, and the burden under the selected framework. The outline also assigns market-participant and privileges-and-immunities materials; those are not interchangeable with Pike or Hunt and are not supplied merely by a citation here. These are historical source-based notes, not a claim to have researched every later limitation or refinement of dormant-commerce analysis."
+        }
+      ],
+      "examQuestions": [
+        {
+          "id": "primary-exam-CL650-M10-1",
+          "question": "Why does neutral wording not finish the analysis of a state labeling requirement?",
+          "answer": "Hunt examines the actual discriminatory effects and removal of an out-of-state competitive advantage. Explain the economic operation and asserted justification rather than equating facial neutrality with constitutional validity.",
+          "explanation": "Original notes based on the identified historical judicial opinions retrieved from a documented CourtListener mirror. This is partial coverage of the assigned reading list, not a current-law certification or proof every assigned decision was supplied."
+        },
+        {
+          "id": "primary-exam-CL650-M10-2",
+          "question": "How would you structure a fact-specific analysis of this module’s constitutional issue?",
+          "answer": "Identify the actor, constitutional source, challenged conduct, and procedural posture. State the relevant rule from the source-backed guide, apply the material facts and strongest counterargument, then reach a limited conclusion about the requested relief. Distinguish the historical holding from unreviewed later decisions.",
+          "explanation": "Original notes based on the identified historical judicial opinions retrieved from a documented CourtListener mirror. This is partial coverage of the assigned reading list, not a current-law certification or proof every assigned decision was supplied."
+        }
+      ]
+    },
+    {
+      "id": "reading-primary-guide-CL650-M11",
+      "moduleId": "CL650-M11",
+      "title": "Detailed reading notes — Executive Express and Inherent Powers",
+      "references": [
+        "Youngstown Sheet & Tube Co. v. Sawyer, 343 U.S. 579 (1952)"
+      ],
+      "scope": "Original notes based on the identified historical judicial opinions retrieved from a documented CourtListener mirror. This is partial coverage of the assigned reading list, not a current-law certification or proof every assigned decision was supplied.",
+      "primarySourceIds": [
+        "youngstown"
+      ],
+      "sections": [
+        {
+          "heading": "Source of executive authority",
+          "body": "The steel-seizure dispute concerned whether the President could direct federal possession and operation of private mills to avert a strike during a wartime emergency. The majority’s starting point was that authority must come from an act of Congress or the Constitution. Neither the urgency of the policy problem nor the President’s description of the crisis supplied a free-standing lawmaking power."
+        },
+        {
+          "heading": "Majority and concurrence",
+          "body": "Identify Justice Black’s majority reasoning separately from Justice Jackson’s concurrence. The majority rejected the asserted seizure authority on the legal sources before it. Jackson’s familiar three-category framework evaluates executive action in relation to Congress: authorization, absence of grant or denial, and incompatibility with expressed or implied congressional will. The categories organize analysis; they are not a substitute for reading the statute or identifying an exclusive executive power."
+        },
+        {
+          "heading": "Apply the categories with facts",
+          "body": "For an authorization claim, identify the statutory text and scope of the power granted. For silence, explain why the matter remains open and the President’s independent authority is relevant. For conflict, identify Congress’s position and why the claimed exclusive presidential power could or could not prevail. Do not classify a case as congressional silence merely because no single sentence says the President shall not do precisely this act."
+        },
+        {
+          "heading": "Bounded conclusions",
+          "body": "Distinguish the domestic seizure of private property from all other foreign-affairs or emergency powers. The opinion includes multiple separate writings, so do not attribute every analytical formulation to a unanimous Court. Curtiss-Wright, Dames & Moore and Hamdi are additional assigned contexts not fully provided by the Youngstown retrieval. A careful answer uses this source for the separation-of-powers issue it resolves and flags the additional reading needed for other settings."
+        }
+      ],
+      "examQuestions": [
+        {
+          "id": "primary-exam-CL650-M11-1",
+          "question": "What is missing from an argument that an emergency alone authorizes presidential seizure of private property?",
+          "answer": "Identify statutory or constitutional authority and Congress’s relevant position. Youngstown rejects treating necessity alone as a source of lawmaking power. Separate the majority’s reasoning from Jackson’s concurrence and apply the actual facts to any category used.",
+          "explanation": "Original notes based on the identified historical judicial opinions retrieved from a documented CourtListener mirror. This is partial coverage of the assigned reading list, not a current-law certification or proof every assigned decision was supplied."
+        },
+        {
+          "id": "primary-exam-CL650-M11-2",
+          "question": "How would you structure a fact-specific analysis of this module’s constitutional issue?",
+          "answer": "Identify the actor, constitutional source, challenged conduct, and procedural posture. State the relevant rule from the source-backed guide, apply the material facts and strongest counterargument, then reach a limited conclusion about the requested relief. Distinguish the historical holding from unreviewed later decisions.",
+          "explanation": "Original notes based on the identified historical judicial opinions retrieved from a documented CourtListener mirror. This is partial coverage of the assigned reading list, not a current-law certification or proof every assigned decision was supplied."
+        }
+      ]
+    },
+    {
+      "id": "reading-primary-guide-CL650-M12",
+      "moduleId": "CL650-M12",
+      "title": "Detailed reading notes — Executive Appointment and Removal",
+      "references": [
+        "Whitman v. American Trucking Associations, 531 U.S. 457 (2001)"
+      ],
+      "scope": "Original notes based on the identified historical judicial opinions retrieved from a documented CourtListener mirror. This is partial coverage of the assigned reading list, not a current-law certification or proof every assigned decision was supplied. Newer assigned decisions not available in this collection remain unbriefed; do not extrapolate this historical treatment to those decisions.",
+      "primarySourceIds": [
+        "whitman"
+      ],
+      "sections": [
+        {
+          "heading": "Delegation as a distinct institutional question",
+          "body": "Whitman examines the statutory standard guiding EPA air-quality decisions and the objection that Congress had transferred legislative power without an adequate principle. Begin with the actual provision and what policy choices it leaves to the agency. Delegation, appointment, removal and review of an officer’s decision are different issues even if they arise in the same administrative setting."
+        },
+        {
+          "heading": "Congress’s standard and the agency’s discretion",
+          "body": "The opinion rejected the delegation challenge to the standard before it. Explain the guidance supplied by the statute and why the Court considered it sufficient under its framework. Do not say that every broad grant is constitutional, or that any agency choice is necessarily legislation. The particular language about protecting public health with the required safety margin matters to the analysis."
+        },
+        {
+          "heading": "An agency cannot repair a missing constitutional delegation",
+          "body": "The Court rejected the idea that an agency could cure an unconstitutional standardless delegation by voluntarily adopting its own limiting construction. The constitutional issue concerns the authority Congress supplied, not merely the restraint the agency promises. Keep that conclusion separate from the opinion’s statutory question about whether costs could be considered in setting the standards at issue."
+        },
+        {
+          "heading": "Missing modern assignments and exam method",
+          "body": "The outline also assigns Arthrex and Seila Law and lists further optional materials on institutional control. Those newer texts were not located in the retrieved collection and are not summarized here as if read. Identify the exact delegation, appointment, removal or review issue, the office and function, and the operative legal source. This guide supplies a historical nondelegation anchor; additional source-backed treatment is needed before answering the modern assigned cases."
+        }
+      ],
+      "examQuestions": [
+        {
+          "id": "primary-exam-CL650-M12-1",
+          "question": "Can an agency’s promise to exercise discretion narrowly cure a constitutionally standardless delegation under Whitman’s analysis?",
+          "answer": "No. The Court treats the adequacy of Congress’s delegation as a constitutional question. A discretionary agency limitation cannot itself supply the legislative standard Congress omitted; assess the statute’s actual guidance.",
+          "explanation": "Original notes based on the identified historical judicial opinions retrieved from a documented CourtListener mirror. This is partial coverage of the assigned reading list, not a current-law certification or proof every assigned decision was supplied. Newer assigned decisions not available in this collection remain unbriefed; do not extrapolate this historical treatment to those decisions."
+        },
+        {
+          "id": "primary-exam-CL650-M12-2",
+          "question": "How would you structure a fact-specific analysis of this module’s constitutional issue?",
+          "answer": "Identify the actor, constitutional source, challenged conduct, and procedural posture. State the relevant rule from the source-backed guide, apply the material facts and strongest counterargument, then reach a limited conclusion about the requested relief. Distinguish the historical holding from unreviewed later decisions.",
+          "explanation": "Original notes based on the identified historical judicial opinions retrieved from a documented CourtListener mirror. This is partial coverage of the assigned reading list, not a current-law certification or proof every assigned decision was supplied. Newer assigned decisions not available in this collection remain unbriefed; do not extrapolate this historical treatment to those decisions."
+        }
+      ]
+    },
+    {
+      "id": "reading-primary-guide-CL650-M13",
+      "moduleId": "CL650-M13",
+      "title": "Detailed reading notes — Executive Pardon and Privilege",
+      "references": [
+        "Schick v. Reed, 419 U.S. 256 (1974)"
+      ],
+      "scope": "Original notes based on the identified historical judicial opinions retrieved from a documented CourtListener mirror. This is partial coverage of the assigned reading list, not a current-law certification or proof every assigned decision was supplied.",
+      "primarySourceIds": [
+        "schick"
+      ],
+      "sections": [
+        {
+          "heading": "Clemency and privilege must be separated",
+          "body": "This module combines different presidential powers. Schick concerns the conditions attached to a commutation; the earlier supplied United States v. Nixon notes concern a claim of executive privilege against a criminal-trial subpoena. Do not reason that a broad clemency power automatically answers an evidentiary privilege question, or that a limitation on privilege proves a particular commutation condition invalid."
+        },
+        {
+          "heading": "Schick’s conditional commutation",
+          "body": "The President commuted a death sentence to life imprisonment with a no-parole condition. The challenge concerned the validity of that condition rather than whether the original prosecution should have succeeded. The opinion recognizes authority to impose commutation conditions not specifically provided by statute when they do not themselves offend the Constitution. Identify the clemency act, condition and asserted constitutional objection."
+        },
+        {
+          "heading": "Text, function and limits",
+          "body": "The analysis concerns the constitutional pardon power and the historically recognized ability to attach conditions. Distinguish reducing a sentence from exercising ordinary legislative authority to rewrite all sentencing laws. A conclusion that the Constitution authorizes conditional commutation does not make every possible condition valid. Examine what the condition does and the independent constitutional limit actually asserted."
+        },
+        {
+          "heading": "Exam structure",
+          "body": "For clemency, identify the offense and authority, the form of relief, the condition and the legal objection. For privilege, identify the information sought, the proceeding, asserted confidentiality interest and demonstrated evidentiary need, using the separately available Nixon material. Keep each claim and remedy distinct. These source-based notes address the assigned historical decisions and do not claim to resolve every contemporary question about pardons or presidential confidentiality."
+        }
+      ],
+      "examQuestions": [
+        {
+          "id": "primary-exam-CL650-M13-1",
+          "question": "Does Schick establish that any condition attached to a presidential commutation is valid?",
+          "answer": "No. Its reasoning permits the recognized conditional commutation within constitutional limits, including conditions not specifically supplied by statute. Identify the actual condition and whether it independently offends the Constitution; do not transfer that reasoning to executive privilege.",
+          "explanation": "Original notes based on the identified historical judicial opinions retrieved from a documented CourtListener mirror. This is partial coverage of the assigned reading list, not a current-law certification or proof every assigned decision was supplied."
+        },
+        {
+          "id": "primary-exam-CL650-M13-2",
+          "question": "How would you structure a fact-specific analysis of this module’s constitutional issue?",
+          "answer": "Identify the actor, constitutional source, challenged conduct, and procedural posture. State the relevant rule from the source-backed guide, apply the material facts and strongest counterargument, then reach a limited conclusion about the requested relief. Distinguish the historical holding from unreviewed later decisions.",
+          "explanation": "Original notes based on the identified historical judicial opinions retrieved from a documented CourtListener mirror. This is partial coverage of the assigned reading list, not a current-law certification or proof every assigned decision was supplied."
+        }
+      ]
+    },
+    {
+      "id": "reading-primary-guide-CL650-M14",
+      "moduleId": "CL650-M14",
+      "title": "Detailed reading notes — Immunity and Impeachment",
+      "references": [
+        "Harlow v. Fitzgerald, 457 U.S. 800 (1982)",
+        "Clinton v. Jones, 520 U.S. 681 (1997)"
+      ],
+      "scope": "Original notes based on the identified historical judicial opinions retrieved from a documented CourtListener mirror. This is partial coverage of the assigned reading list, not a current-law certification or proof every assigned decision was supplied. Newer assigned decisions not available in this collection remain unbriefed; do not extrapolate this historical treatment to those decisions.",
+      "primarySourceIds": [
+        "harlow",
+        "clinton"
+      ],
+      "sections": [
+        {
+          "heading": "Separate actor, conduct and proceeding",
+          "body": "An immunity analysis must identify who is sued, for what conduct, in what proceeding and for which remedy. Harlow concerns senior presidential aides and civil damages for official acts. Clinton v. Jones concerns civil litigation against a sitting President based on alleged unofficial conduct preceding the presidency. Neither can be used as a universal answer to every presidential criminal, civil or legislative-immunity problem."
+        },
+        {
+          "heading": "Harlow’s objective formulation",
+          "body": "The decision articulates protection from civil damages tied to clearly established statutory or constitutional rights of which a reasonable official would have known. Identify the relevant right and the law at the time of the challenged conduct. The objective formulation serves the concern with avoiding unnecessary litigation burdens associated with inquiries into subjective good faith. Establishing that conduct was wrong is different from completing the qualified-immunity analysis."
+        },
+        {
+          "heading": "Clinton and unofficial pre-office conduct",
+          "body": "The Court rejected the claim that the Constitution required general postponement of this civil suit until the President left office. The functional rationale protecting official decision-making did not automatically extend to the alleged earlier unofficial conduct. Distinguish categorical immunity or mandatory delay from ordinary case-management measures a court can consider in handling litigation responsibly."
+        },
+        {
+          "heading": "Do not fill gaps with assumptions",
+          "body": "The outline separately assigns Trump v. United States and Hutchinson v. Proxmire, which concern other immunity settings. The retrieved historical collection does not supply the 2024 Trump opinion; this guide does not invent its criminal-immunity analysis. For an exam, first classify actor, function, timing, proceeding and remedy, then apply the correct source. An answer about presidential status alone misses the legally significant distinctions."
+        }
+      ],
+      "examQuestions": [
+        {
+          "id": "primary-exam-CL650-M14-1",
+          "question": "Why does a civil suit against an official not permit a one-word immunity answer?",
+          "answer": "Identify the actor, official or unofficial conduct, timing, civil or criminal setting, and requested remedy. Harlow and Clinton concern different functions and standards; neither substitutes for unreviewed newer criminal-immunity decisions.",
+          "explanation": "Original notes based on the identified historical judicial opinions retrieved from a documented CourtListener mirror. This is partial coverage of the assigned reading list, not a current-law certification or proof every assigned decision was supplied. Newer assigned decisions not available in this collection remain unbriefed; do not extrapolate this historical treatment to those decisions."
+        },
+        {
+          "id": "primary-exam-CL650-M14-2",
+          "question": "How would you structure a fact-specific analysis of this module’s constitutional issue?",
+          "answer": "Identify the actor, constitutional source, challenged conduct, and procedural posture. State the relevant rule from the source-backed guide, apply the material facts and strongest counterargument, then reach a limited conclusion about the requested relief. Distinguish the historical holding from unreviewed later decisions.",
+          "explanation": "Original notes based on the identified historical judicial opinions retrieved from a documented CourtListener mirror. This is partial coverage of the assigned reading list, not a current-law certification or proof every assigned decision was supplied. Newer assigned decisions not available in this collection remain unbriefed; do not extrapolate this historical treatment to those decisions."
+        }
+      ]
+    },
+    {
+      "id": "reading-review-guide-CL650-M15",
+      "moduleId": "CL650-M15",
+      "title": "Detailed review notes — Constitutional Law final review",
+      "references": [
+        "Supplied Constitutional Law detailed module notes, Module 2; assigned Marbury, McCardle, Martin and Cooper readings",
+        "Supplied Constitutional Law detailed module notes, Module 3; assigned standing cases",
+        "Supplied Constitutional Law detailed module notes, Module 5; assigned political-question, state-ground and immunity cases",
+        "McCulloch v. Maryland, 17 U.S. 316 (1819)",
+        "City of Boerne v. Flores, 521 U.S. 507 (1997)",
+        "United States v. Lopez, 514 U.S. 549 (1995)",
+        "United States v. Morrison, 529 U.S. 598 (2000)",
+        "South Dakota v. Dole, 483 U.S. 203 (1987)",
+        "National Federation of Independent Business v. Sebelius, 567 U.S. 519 (2012)",
+        "New York v. United States, 505 U.S. 144 (1992)",
+        "Pike v. Bruce Church, Inc., 397 U.S. 137 (1970)",
+        "Hunt v. Washington State Apple Advertising Commission, 432 U.S. 333 (1977)",
+        "Youngstown Sheet & Tube Co. v. Sawyer, 343 U.S. 579 (1952)",
+        "Whitman v. American Trucking Associations, 531 U.S. 457 (2001)",
+        "Schick v. Reed, 419 U.S. 256 (1974)",
+        "Harlow v. Fitzgerald, 457 U.S. 800 (1982)",
+        "Clinton v. Jones, 520 U.S. 681 (1997)"
+      ],
+      "scope": "Cumulative original study notes drawn from the existing module companions. No new assigned textbook content or official exam rubric is claimed.",
+      "primarySourceIds": [
+        "mcculloch",
+        "boerne",
+        "lopez",
+        "morrison",
+        "dole",
+        "nfib",
+        "new-york",
+        "pike",
+        "hunt",
+        "youngstown",
+        "whitman",
+        "schick",
+        "harlow",
+        "clinton"
+      ],
+      "sections": [
+        {
+          "heading": "Review method and limits",
+          "body": "This is a cumulative companion to existing source-linked module guides, not an additional assigned reading. Begin by identifying the parties, institutional roles, chronological sequence, claim, governing source and remedy. Organize an answer around the material issues rather than reciting every rule you remember. For each issue, state the relevant source-backed standard, apply the important facts, address the strongest counterargument and reach a limited conclusion. Keep historical holdings and unreviewed later developments separate. The topic summaries below are reused from the underlying original guides so that missing source material is not replaced by invented textbook content."
+        },
+        {
+          "heading": "Federal Jurisdiction and Judicial Review",
+          "body": "Federal judicial power must fit an Article III category and a statutory jurisdictional grant. A claim’s federal character does not answer every jurisdictional question. Distinguish the Supreme Court’s original jurisdiction from its appellate jurisdiction, and distinguish the constitutionally created Supreme Court from lower federal courts that Congress establishes. Identify the court and posture before discussing the merits."
+        },
+        {
+          "heading": "Justiciability: Standing",
+          "body": "Analyze injury in fact, traceability, and redressability separately for each plaintiff, claim, and requested remedy. A concrete, personal injury must be actual or sufficiently imminent rather than an abstract desire for government compliance. Traceability asks whether the challenged conduct materially explains the injury; redressability asks whether the requested judicial relief would likely alleviate it. Uncontrolled third-party decisions can create problems for either inquiry."
+        },
+        {
+          "heading": "Political Questions and Sovereign Immunity",
+          "body": "Start with the particular issue and Baker’s factors rather than declaring every politically important lawsuit nonjusticiable. Textual commitment to another branch and the absence of judicially manageable standards require explanation from the constitutional provision and requested decision. Baker allowed the equal-protection claim to proceed. United States v. Nixon concerned a concrete evidentiary dispute; Nixon v. United States concerned Senate impeachment procedures. Reversing the case names reverses the lesson."
+        },
+        {
+          "heading": "Necessary and Proper Clause",
+          "body": "McCulloch separates a legitimate constitutional end from the means Congress selects to accomplish it. The Constitution need not list every instrument Congress may use in executing an enumerated power. The opinion treats incorporation of a national bank as an implementing measure rather than requiring a freestanding express bank clause. Explain the relation between the asserted end and chosen means; the Necessary and Proper Clause is not a substitute for identifying a constitutional objective."
+        },
+        {
+          "heading": "Commerce Clause",
+          "body": "Lopez identifies channels of interstate commerce, instrumentalities and persons or things in commerce, and activities substantially affecting interstate commerce. Choose the relevant category before applying its test. The Gun-Free School Zones Act at issue addressed possession in a school zone without the interstate-commerce connection the government needed under the challenged theory. Do not assume that a local act is unreachable simply because it occurs within one state; explain why the asserted category does or does not cover it."
+        },
+        {
+          "heading": "Taxing and Spending Clause",
+          "body": "A measure can involve more than one proposed source of congressional power. Do not assume that failure of one theory determines all others. Dole concerns conditions on federal funding rather than a direct national command to enact a particular drinking age. NFIB requires separating the commerce argument, constitutional tax construction and spending condition attached to Medicaid expansion. Identify the precise provision and theory before stating the result."
+        },
+        {
+          "heading": "State Powers and Federalism",
+          "body": "New York addressed three mechanisms in a federal radioactive-waste scheme, not an undifferentiated rejection of federal environmental legislation. Congress could encourage state action through constitutionally permissible mechanisms, but could not simply compel the states to administer the federal regulatory choice. Identify who must act and what the challenged provision demands."
+        },
+        {
+          "heading": "Limits on State Powers",
+          "body": "Separate discrimination against interstate commerce from incidental effects of an evenhanded local measure. Pike states the historical formulation for evenhanded regulation serving a legitimate local interest whose incidental burden is alleged to be clearly excessive relative to its putative local benefits. Hunt shows why facially neutral language does not end an inquiry into discriminatory effects. Identify the actual economic mechanism rather than choosing a test from the statute’s title."
+        },
+        {
+          "heading": "Executive Express and Inherent Powers",
+          "body": "The steel-seizure dispute concerned whether the President could direct federal possession and operation of private mills to avert a strike during a wartime emergency. The majority’s starting point was that authority must come from an act of Congress or the Constitution. Neither the urgency of the policy problem nor the President’s description of the crisis supplied a free-standing lawmaking power."
+        },
+        {
+          "heading": "Executive Appointment and Removal",
+          "body": "Whitman examines the statutory standard guiding EPA air-quality decisions and the objection that Congress had transferred legislative power without an adequate principle. Begin with the actual provision and what policy choices it leaves to the agency. Delegation, appointment, removal and review of an officer’s decision are different issues even if they arise in the same administrative setting."
+        },
+        {
+          "heading": "Executive Pardon and Privilege",
+          "body": "This module combines different presidential powers. Schick concerns the conditions attached to a commutation; the earlier supplied United States v. Nixon notes concern a claim of executive privilege against a criminal-trial subpoena. Do not reason that a broad clemency power automatically answers an evidentiary privilege question, or that a limitation on privilege proves a particular commutation condition invalid."
+        },
+        {
+          "heading": "Immunity and Impeachment",
+          "body": "An immunity analysis must identify who is sued, for what conduct, in what proceeding and for which remedy. Harlow concerns senior presidential aides and civil damages for official acts. Clinton v. Jones concerns civil litigation against a sitting President based on alleged unofficial conduct preceding the presidency. Neither can be used as a universal answer to every presidential criminal, civil or legislative-immunity problem."
+        },
+        {
+          "heading": "Self-check before submitting",
+          "body": "Check that each conclusion follows from an actual rule and identified facts. Keep threshold issues, substantive authority, legal violations and remedies in separate analytical steps where the facts require them. Distinguish the status of a source, including supplemental editions and missing assigned opinions, from your confidence in an answer. Use case comparisons to explain boundaries rather than citing names without analysis. Revisit the module’s full notes and source references for qualifications that this compressed review does not reproduce. These are self-review materials, not an official grading rubric or a prediction of the examination’s content."
+        }
+      ],
+      "examQuestions": [
+        {
+          "id": "reading-review-guide-CL650-M15-exam-1",
+          "question": "How should you turn the supplied facts into an organized analysis rather than an unconnected rule list?",
+          "answer": "Identify parties, roles, events and requested relief. Select only issues raised by those facts, state the source-backed rule, apply the material facts and strongest counterargument, and conclude separately on each issue. Use the underlying guides for qualifications.",
+          "explanation": "Cumulative original study notes drawn from the existing module companions. No new assigned textbook content or official exam rubric is claimed."
+        },
+        {
+          "id": "reading-review-guide-CL650-M15-exam-2",
+          "question": "Does this cumulative review establish that every assigned source was supplied or predict the official examination rubric?",
+          "answer": "No. It compiles the identified available module guides, retains their scope limits and does not certify missing readings or provide an official grading scheme. Check source availability and the actual course instructions.",
+          "explanation": "Cumulative original study notes drawn from the existing module companions. No new assigned textbook content or official exam rubric is claimed."
+        },
+        {
+          "id": "reading-review-guide-CL650-M15-application-1",
+          "question": "A President orders seizure of a private factory during an emergency without identifying a statute. How should the authority argument be analyzed?",
+          "answer": "Identify a statutory or constitutional source, Congress’s position and any asserted exclusive presidential power. Youngstown’s majority does not accept necessity alone as lawmaking authority. Distinguish Jackson’s separate concurrence and explain the appropriate category from the actual statutory facts.",
+          "explanation": "Cumulative original study notes drawn from the existing module companions. No new assigned textbook content or official exam rubric is claimed."
+        },
+        {
+          "id": "reading-review-guide-CL650-M15-application-2",
+          "question": "Congress calls a new state-law remedy Fourteenth Amendment enforcement. What should a constitutional analysis examine beyond that label?",
+          "answer": "Identify the underlying constitutional right, state conduct, injury to be prevented or remedied, and fit of the statutory response. Apply the sourced enforcement framework, including Boerne’s congruence and proportionality distinction; Congress’s chosen label does not itself establish authority.",
+          "explanation": "Cumulative original study notes drawn from the existing module companions. No new assigned textbook content or official exam rubric is claimed."
+        }
+      ]
+    },
+    {
+      "id": "reading-review-guide-CL685-M15",
+      "moduleId": "CL685-M15",
+      "title": "Detailed review notes — Criminal Procedure final review",
+      "references": [
+        "Modern Criminal Procedure: Cases, Comments, Questions, 15th ed., chapters 6",
+        "Modern Criminal Procedure: Cases, Comments, Questions, 15th ed., chapters 6 and 7",
+        "Modern Criminal Procedure: Cases, Comments, Questions, 15th ed., chapters 7",
+        "Modern Criminal Procedure: Cases, Comments, Questions, 15th ed., chapters 7 and 8",
+        "Modern Criminal Procedure: Cases, Comments, Questions, 15th ed., chapters 6 and 12",
+        "Modern Criminal Procedure: Cases, Comments, Questions, 15th ed., chapters 21",
+        "Modern Criminal Procedure: Cases, Comments, Questions, 15th ed., chapters 9",
+        "Modern Criminal Procedure: Cases, Comments, Questions, 15th ed., chapters 20, 22 and 26",
+        "Modern Criminal Procedure: Cases, Comments, Questions, 15th ed., chapters 23 and 27",
+        "Modern Criminal Procedure: Cases, Comments, Questions, 15th ed., chapters 4 and 28"
+      ],
+      "scope": "Cumulative original study notes drawn from the existing module companions. No new assigned textbook content or official exam rubric is claimed.",
+      "primarySourceIds": [],
+      "sections": [
+        {
+          "heading": "Review method and limits",
+          "body": "This is a cumulative companion to existing source-linked module guides, not an additional assigned reading. Begin by identifying the parties, institutional roles, chronological sequence, claim, governing source and remedy. Organize an answer around the material issues rather than reciting every rule you remember. For each issue, state the relevant source-backed standard, apply the important facts, address the strongest counterargument and reach a limited conclusion. Keep historical holdings and unreviewed later developments separate. The topic summaries below are reused from the underlying original guides so that missing source material is not replaced by invented textbook content."
+        },
+        {
+          "heading": "Introduction to Search and Seizure",
+          "body": "Before asking whether police needed a warrant, determine whether governmental conduct was a search or seizure. Katz concerns interception of a private telephone conversation even without physical entry into the booth. Its rejection of a purely place-based or physical-entry approach does not convert every governmental observation into an invasion of a general constitutional right to privacy."
+        },
+        {
+          "heading": "Warrant Requirement",
+          "body": "Identify whether the state conduct is a search, a seizure of property, or a seizure of a person. A warrant application must connect the facts to the place, person, or evidence targeted. Probable cause evaluates the factual basis in context rather than requiring proof beyond a reasonable doubt. Keep an officer’s factual information separate from conclusions that simply repeat the statutory language."
+        },
+        {
+          "heading": "Stop and Frisk",
+          "body": "Identify the moment and method of restraint. A consensual conversation is not automatically a seizure, and a stop is not automatically an arrest. Explain the facts that change the category rather than attaching a label to the entire encounter. The outline’s Hodari D. and Bostick assignments concern important boundary questions, so a general Terry summary cannot substitute for those additional analyses."
+        },
+        {
+          "heading": "Warrantless Vehicle, Premises and Container Searches",
+          "body": "A search incident to a lawful arrest is justified by officer safety and preservation of accessible evidence. Identify the arrestee’s person and the area within immediate control rather than treating arrest as authorization to search every nearby room or container. The scope must remain tied to the reasons for the exception."
+        },
+        {
+          "heading": "Consent Searches and Entrapment",
+          "body": "A consent argument requires examining whether consent was voluntary, whether the person had authority relevant to the search, and what scope was actually permitted. These are separate questions. Do not assume that a polite request establishes consent or that agreeing to one location or purpose authorizes an unlimited investigation. The actual words, surrounding pressures, and conduct matter."
+        },
+        {
+          "heading": "Exclusionary Rule",
+          "body": "Begin by identifying the specific constitutional violation and whose rights were affected. Then determine whether the challenged evidence was obtained through it. Exclusion is a remedy with its own scope and exceptions; neither the existence of a violation nor an officer’s assertion of good intentions alone resolves admissibility."
+        },
+        {
+          "heading": "Limitations on Prosecutors",
+          "body": "Identify evidence favorable to the defense, suppression or nondisclosure attributable to the prosecution, and materiality. Favorability can include impeachment as well as directly exculpatory information. The significance of an item depends on the charges, defense theory, witnesses, and record as a whole. Do not equate any discovery violation with the same constitutional remedy."
+        },
+        {
+          "heading": "Fifth Amendment Privilege",
+          "body": "The Miranda framework concerns custodial interrogation, not every conversation between a suspect and an officer. Analyze custody and interrogation separately and identify the time each condition began. Distinguish the underlying privilege against compelled self-incrimination from the procedural warnings used to protect it. A statement can raise a voluntariness question even where a particular warning issue is absent."
+        },
+        {
+          "heading": "Miranda",
+          "body": "List custody, warnings, questions, waiver, invocation, any break, renewed initiation, and later statements. Different rules can turn on which event happened first and who restarted the discussion. Do not treat a new signature on a warning form as a complete answer to a prior invocation problem."
+        },
+        {
+          "heading": "Double Jeopardy, Speedy Trial and Guilty Pleas",
+          "body": "Barker evaluates length of delay, reasons, assertion of the right, and prejudice together. Delay is not assessed by a single constitutional number applicable to all cases. Identify which periods count and why the prosecution or defense caused them. A defendant’s failure to demand trial is relevant but not an automatic waiver of the constitutional protection."
+        },
+        {
+          "heading": "Trial Rights and Sentencing",
+          "body": "The right to a jury depends on the nature of the offense and the governing seriousness threshold, not merely the label criminal. Keep the existence of the right separate from whether it was validly waived and what participation the judge and prosecution must have under the applicable rule. The assigned Baldwin and Patton readings address these distinct issues."
+        },
+        {
+          "heading": "Appellate Review",
+          "body": "Direct appeal, discretionary review, and collateral relief are not interchangeable. Identify the judgment challenged, the reviewing court, the source of review authority, and any preservation or finality issue. A claim that an error occurred at trial is different from a showing that this particular review vehicle authorizes relief for it. The supplemental chapter notes the distinction between creation of an appeal and constitutional requirements governing an appeal once available."
+        },
+        {
+          "heading": "Self-check before submitting",
+          "body": "Check that each conclusion follows from an actual rule and identified facts. Keep threshold issues, substantive authority, legal violations and remedies in separate analytical steps where the facts require them. Distinguish the status of a source, including supplemental editions and missing assigned opinions, from your confidence in an answer. Use case comparisons to explain boundaries rather than citing names without analysis. Revisit the module’s full notes and source references for qualifications that this compressed review does not reproduce. These are self-review materials, not an official grading rubric or a prediction of the examination’s content."
+        }
+      ],
+      "examQuestions": [
+        {
+          "id": "reading-review-guide-CL685-M15-exam-1",
+          "question": "How should you turn the supplied facts into an organized analysis rather than an unconnected rule list?",
+          "answer": "Identify parties, roles, events and requested relief. Select only issues raised by those facts, state the source-backed rule, apply the material facts and strongest counterargument, and conclude separately on each issue. Use the underlying guides for qualifications.",
+          "explanation": "Cumulative original study notes drawn from the existing module companions. No new assigned textbook content or official exam rubric is claimed."
+        },
+        {
+          "id": "reading-review-guide-CL685-M15-exam-2",
+          "question": "Does this cumulative review establish that every assigned source was supplied or predict the official examination rubric?",
+          "answer": "No. It compiles the identified available module guides, retains their scope limits and does not certify missing readings or provide an official grading scheme. Check source availability and the actual course instructions.",
+          "explanation": "Cumulative original study notes drawn from the existing module companions. No new assigned textbook content or official exam rubric is claimed."
+        },
+        {
+          "id": "reading-review-guide-CL685-M15-application-1",
+          "question": "An officer justifies a frisk solely by the grounds for an investigative stop, then calls the discovered item admissible because the stop was lawful. What steps are missing?",
+          "answer": "Analyze the stop’s justification, the separate armed-and-dangerous basis for a frisk, its protective scope, and any later escalation. Then analyze the violation and exclusion/remedial issues separately. A lawful initial stop does not answer every later search or admissibility question.",
+          "explanation": "Cumulative original study notes drawn from the existing module companions. No new assigned textbook content or official exam rubric is claimed."
+        },
+        {
+          "id": "reading-review-guide-CL685-M15-application-2",
+          "question": "Officers arrest a driver for a suspended license, secure the driver, and search the car while also invoking an unspecified inventory policy. How should the theories be separated?",
+          "answer": "Assess Gant’s accessibility and offense-evidence routes independently. For inventory, identify lawful custody, the actual standardized policy and its application. Do not substitute one exception’s name for proof of another’s prerequisites.",
+          "explanation": "Cumulative original study notes drawn from the existing module companions. No new assigned textbook content or official exam rubric is claimed."
+        }
+      ]
+    },
+    {
+      "id": "reading-review-guide-CL700-M14",
+      "moduleId": "CL700-M14",
+      "title": "Detailed review notes — Business Organizations essay preparation",
+      "references": [
+        "Cox & Hazen, Business Organizations Law, 5th ed. §§ 1.24, 8.1, 8.5, 8.10, 8.12",
+        "Cox & Hazen, Business Organizations Law, 5th ed. §§ 3.3–3.11, 5.1–5.12, 6.1–6.7",
+        "Cox & Hazen, Business Organizations Law, 5th ed. § 4.4, §§ 7.1–7.6; Macey, Moll & Hamilton, supplied 14th ed., ch. 6",
+        "Cox & Hazen, Business Organizations Law, 5th ed. §§ 9.1, 9.3–9.8, 9.11–9.15, 11.5, 13.16, 13.20, 13.30",
+        "Cox & Hazen, Business Organizations Law, 5th ed. §§ 10.1–10.8; Macey, Moll & Hamilton, supplied 14th ed., ch. 10",
+        "Cox & Hazen, Business Organizations Law, 5th ed. §§ 10.9–10.15, 11.8–11.10; Macey, Moll & Hamilton, supplied 14th ed., ch. 11A–E"
+      ],
+      "scope": "Cumulative original study notes drawn from the existing module companions. No new assigned textbook content or official exam rubric is claimed.",
+      "primarySourceIds": [],
+      "sections": [
+        {
+          "heading": "Review method and limits",
+          "body": "This is a cumulative companion to existing source-linked module guides, not an additional assigned reading. Begin by identifying the parties, institutional roles, chronological sequence, claim, governing source and remedy. Organize an answer around the material issues rather than reciting every rule you remember. For each issue, state the relevant source-backed standard, apply the important facts, address the strongest counterargument and reach a limited conclusion. Keep historical holdings and unreviewed later developments separate. The topic summaries below are reused from the underlying original guides so that missing source material is not replaced by invented textbook content."
+        },
+        {
+          "heading": "Agency",
+          "body": "A corporation can act only through human agents. Actual authority concerns the principal’s communications to the agent and the powers reasonably included in the assignment. Read the charter, bylaws, board resolutions, delegated responsibilities, and established course of dealing. Express authorization for a task can include incidental acts needed to accomplish it. Distinguish the existence of authority from whether the agent complied with internal instructions; a departure can matter differently to the agent and the third party."
+        },
+        {
+          "heading": "Incorporation and Premature Commencement",
+          "body": "Separate planning and promotion from filing and organizational action after filing. The book’s sequence includes financing arrangements, name reservation, selecting a registered office and agent, preparing and filing articles, paying fees, and conducting organizational meetings. Directors then organize governance through officers, bylaws, and authorized share issuances. Determine the point at which the governing statute recognizes corporate existence before analyzing who could act for it."
+        },
+        {
+          "heading": "Piercing the Corporate Veil",
+          "body": "Separate corporate existence is the starting point. A corporation’s debt is its own, and incorporation for limited liability is itself legitimate. A parent’s ownership of all shares or an individual’s complete control does not automatically make the controller liable. Identify the specific creditor, the unpaid obligation, the person or related entity sought to be charged, and the legal reason for crossing the entity boundary."
+        },
+        {
+          "heading": "Shareholders, Directors and Voting",
+          "body": "The board has a collective governance role, while officers implement delegated operations. A majority shareholder is not automatically the corporation’s manager in a shareholder capacity. Distinguish selecting directors from controlling each board decision. A person who is simultaneously a shareholder, director, and officer must act through the powers and procedures associated with the relevant role."
+        },
+        {
+          "heading": "Duty of Care and Business Judgment Rule",
+          "body": "The duty of care addresses what directors should do; the business judgment rule addresses when a court will defer to a decision. A bad result does not by itself establish a breach, and a favorable result does not prove an adequate process. Identify an actual decision, the information available, the time taken, and whether disinterested directors exercised judgment in good faith. Distinguish a decision from a failure to pay attention at all."
+        },
+        {
+          "heading": "Duty of Loyalty and Conflicts",
+          "body": "A loyalty problem concerns the fiduciary’s personal interest or competing obligation, not simply an unsuccessful transaction. Identify the corporation, fiduciary, other party, financial interest, and decision influenced by that interest. Distinguish a transaction with the corporation, compensation, use of corporate property or information, and taking an opportunity that may belong to the corporation. Each category can involve different procedures and remedies."
+        },
+        {
+          "heading": "Self-check before submitting",
+          "body": "Check that each conclusion follows from an actual rule and identified facts. Keep threshold issues, substantive authority, legal violations and remedies in separate analytical steps where the facts require them. Distinguish the status of a source, including supplemental editions and missing assigned opinions, from your confidence in an answer. Use case comparisons to explain boundaries rather than citing names without analysis. Revisit the module’s full notes and source references for qualifications that this compressed review does not reproduce. These are self-review materials, not an official grading rubric or a prediction of the examination’s content."
+        }
+      ],
+      "examQuestions": [
+        {
+          "id": "reading-review-guide-CL700-M14-exam-1",
+          "question": "How should you turn the supplied facts into an organized analysis rather than an unconnected rule list?",
+          "answer": "Identify parties, roles, events and requested relief. Select only issues raised by those facts, state the source-backed rule, apply the material facts and strongest counterargument, and conclude separately on each issue. Use the underlying guides for qualifications.",
+          "explanation": "Cumulative original study notes drawn from the existing module companions. No new assigned textbook content or official exam rubric is claimed."
+        },
+        {
+          "id": "reading-review-guide-CL700-M14-exam-2",
+          "question": "Does this cumulative review establish that every assigned source was supplied or predict the official examination rubric?",
+          "answer": "No. It compiles the identified available module guides, retains their scope limits and does not certify missing readings or provide an official grading scheme. Check source availability and the actual course instructions.",
+          "explanation": "Cumulative original study notes drawn from the existing module companions. No new assigned textbook content or official exam rubric is claimed."
+        },
+        {
+          "id": "reading-review-guide-CL700-M14-application-1",
+          "question": "A promoter signs before incorporation and assumes corporate adoption releases personal liability. What should an essay distinguish?",
+          "answer": "Identify the original parties and contractual obligation, later corporate adoption, and a separate novation or release. Adoption can concern corporate liability without necessarily discharging the promoter. Apply the actual contract and later agreement rather than treating incorporation as automatic substitution.",
+          "explanation": "Cumulative original study notes drawn from the existing module companions. No new assigned textbook content or official exam rubric is claimed."
+        },
+        {
+          "id": "reading-review-guide-CL700-M14-application-2",
+          "question": "Directors approve a transaction that benefits one of them after little investigation. What separate fiduciary problems may require analysis?",
+          "answer": "Identify the conflict and any disclosure/approval/fairness framework separately from the board’s information and care process. Use the governing jurisdiction and source-backed standards, then address the claimant, causation and remedy. Neither approval nor a favorable price automatically answers every issue.",
+          "explanation": "Cumulative original study notes drawn from the existing module companions. No new assigned textbook content or official exam rubric is claimed."
+        }
+      ]
+    },
+    {
+      "id": "reading-review-guide-CL700-M15",
+      "moduleId": "CL700-M15",
+      "title": "Detailed review notes — Business Organizations final review",
+      "references": [
+        "Cox & Hazen, Business Organizations Law, 5th ed. §§ 1.7–1.12, 1.14–1.15",
+        "Cox & Hazen, Business Organizations Law, 5th ed. §§ 1.16–1.18, 1.20–1.21, 1.23",
+        "Cox & Hazen, Business Organizations Law, 5th ed. §§ 1.24, 8.1, 8.5, 8.10, 8.12",
+        "Cox & Hazen, Business Organizations Law, 5th ed. §§ 1.10, 2.1–2.9, 7.1–7.2, 9.1",
+        "Cox & Hazen, Business Organizations Law, 5th ed. §§ 1.5–1.6, 3.1–3.2",
+        "Cox & Hazen, Business Organizations Law, 5th ed. §§ 3.3–3.11, 5.1–5.12, 6.1–6.7",
+        "Cox & Hazen, Business Organizations Law, 5th ed. § 4.4, §§ 7.1–7.6; Macey, Moll & Hamilton, supplied 14th ed., ch. 6",
+        "Cox & Hazen, Business Organizations Law, 5th ed. §§ 16.1–16.12 and ch. 18",
+        "Cox & Hazen, Business Organizations Law, 5th ed. § 16.14",
+        "Cox & Hazen, Business Organizations Law, 5th ed. §§ 9.1, 9.3–9.8, 9.11–9.15, 11.5, 13.16, 13.20, 13.30",
+        "Cox & Hazen, Business Organizations Law, 5th ed. ch. 14; Macey, Moll & Hamilton, supplied 14th ed., ch. 13A",
+        "Cox & Hazen, Business Organizations Law, 5th ed. §§ 10.1–10.8; Macey, Moll & Hamilton, supplied 14th ed., ch. 10",
+        "Cox & Hazen, Business Organizations Law, 5th ed. §§ 10.9–10.15, 11.8–11.10; Macey, Moll & Hamilton, supplied 14th ed., ch. 11A–E"
+      ],
+      "scope": "Cumulative original study notes drawn from the existing module companions. No new assigned textbook content or official exam rubric is claimed.",
+      "primarySourceIds": [],
+      "sections": [
+        {
+          "heading": "Review method and limits",
+          "body": "This is a cumulative companion to existing source-linked module guides, not an additional assigned reading. Begin by identifying the parties, institutional roles, chronological sequence, claim, governing source and remedy. Organize an answer around the material issues rather than reciting every rule you remember. For each issue, state the relevant source-backed standard, apply the important facts, address the strongest counterargument and reach a limited conclusion. Keep historical holdings and unreviewed later developments separate. The topic summaries below are reused from the underlying original guides so that missing source material is not replaced by invented textbook content."
+        },
+        {
+          "heading": "Non-Corporate Entities",
+          "body": "A general partnership is identified by a co-owned business for profit, not merely by the label on a document. An express agreement helps establish the relationship, but conduct may show an implied arrangement. Separate the evidence of profit participation from the ability to participate in important management decisions. An agreement that profit shares compensate a loan or services can have a different legal effect from an ownership arrangement. A joint venture generally concerns a narrower project or shorter duration, but its essential co-ownership and control questions resemble partnership questions."
+        },
+        {
+          "heading": "Non-Traditional Corporations",
+          "body": "Governmental or municipal corporations must be distinguished from private business corporations. A publicly held company is not necessarily a public governmental body: publicly held ordinarily concerns dispersed ownership and market trading of shares. Closely held describes ownership and the absence of a ready public market, not simply a business’s small size. A substantial enterprise can remain closely held. These classifications answer different questions and should not be treated as interchangeable."
+        },
+        {
+          "heading": "Agency",
+          "body": "A corporation can act only through human agents. Actual authority concerns the principal’s communications to the agent and the powers reasonably included in the assignment. Read the charter, bylaws, board resolutions, delegated responsibilities, and established course of dealing. Express authorization for a task can include incidental acts needed to accomplish it. Distinguish the existence of authority from whether the agent complied with internal instructions; a departure can matter differently to the agent and the third party."
+        },
+        {
+          "heading": "Introduction to Corporations",
+          "body": "Corporate personality means that the corporation holds its own assets and contractual rights and bears its own obligations. A shareholder owns an equity interest rather than a fraction of each corporate asset. Keep limited liability analytically separate from that entity status: the corporation can owe a debt without its shareholders automatically owing the debt. Ownership changes ordinarily do not require the corporation to transfer every asset or renegotiate every obligation."
+        },
+        {
+          "heading": "Selection of Corporate Form",
+          "body": "Selection is a comparison of legal and practical consequences, not a universal preference for incorporation. Identify who will invest, who will manage, how much personal exposure participants accept, the expected duration of the venture, and how an owner can leave. Financing and transfer needs may favor an entity with stable centralized governance. Tax treatment, administrative expense, and the parties’ appetite for negotiated arrangements also matter. A form suitable at inception may require later conversion as the business changes."
+        },
+        {
+          "heading": "Incorporation and Premature Commencement",
+          "body": "Separate planning and promotion from filing and organizational action after filing. The book’s sequence includes financing arrangements, name reservation, selecting a registered office and agent, preparing and filing articles, paying fees, and conducting organizational meetings. Directors then organize governance through officers, bylaws, and authorized share issuances. Determine the point at which the governing statute recognizes corporate existence before analyzing who could act for it."
+        },
+        {
+          "heading": "Piercing the Corporate Veil",
+          "body": "Separate corporate existence is the starting point. A corporation’s debt is its own, and incorporation for limited liability is itself legitimate. A parent’s ownership of all shares or an individual’s complete control does not automatically make the controller liable. Identify the specific creditor, the unpaid obligation, the person or related entity sought to be charged, and the legal reason for crossing the entity boundary."
+        },
+        {
+          "heading": "Closely Held Corporations and Shares",
+          "body": "Distinguish an original subscription, a sale of treasury shares, and a transfer from an existing shareholder. An issuance brings newly created shares into investor ownership; a secondary transfer substitutes an owner of already outstanding shares. Authorized, issued, and outstanding describe different quantities. A share is the ownership interest, while a certificate is evidence of it. Do not infer that replacing or losing the certificate creates or extinguishes the underlying interest."
+        },
+        {
+          "heading": "Preemptive Rights and Dilution",
+          "body": "Preemptive rights give qualifying existing owners an opportunity to subscribe proportionately to certain new issuances. Their purpose is to protect against dilution of economic participation and voting influence. Distinguish the existence of that opportunity from a guarantee that the corporation will never issue new shares. An investor who declines a valid proportional offer can still experience a reduced percentage holding."
+        },
+        {
+          "heading": "Shareholders, Directors and Voting",
+          "body": "The board has a collective governance role, while officers implement delegated operations. A majority shareholder is not automatically the corporation’s manager in a shareholder capacity. Distinguish selecting directors from controlling each board decision. A person who is simultaneously a shareholder, director, and officer must act through the powers and procedures associated with the relevant role."
+        },
+        {
+          "heading": "Deadlock and Controlling Shares",
+          "body": "In a closely held firm, ownership may be tied to employment, compensation, management participation, and an expected stream of distributions. Without a ready trading market, a minority owner cannot necessarily escape unfavorable treatment by selling. The same conduct that appears to be an ordinary management choice in a public company can therefore affect an owner’s entire investment arrangement."
+        },
+        {
+          "heading": "Duty of Care and Business Judgment Rule",
+          "body": "The duty of care addresses what directors should do; the business judgment rule addresses when a court will defer to a decision. A bad result does not by itself establish a breach, and a favorable result does not prove an adequate process. Identify an actual decision, the information available, the time taken, and whether disinterested directors exercised judgment in good faith. Distinguish a decision from a failure to pay attention at all."
+        },
+        {
+          "heading": "Duty of Loyalty and Conflicts",
+          "body": "A loyalty problem concerns the fiduciary’s personal interest or competing obligation, not simply an unsuccessful transaction. Identify the corporation, fiduciary, other party, financial interest, and decision influenced by that interest. Distinguish a transaction with the corporation, compensation, use of corporate property or information, and taking an opportunity that may belong to the corporation. Each category can involve different procedures and remedies."
+        },
+        {
+          "heading": "Self-check before submitting",
+          "body": "Check that each conclusion follows from an actual rule and identified facts. Keep threshold issues, substantive authority, legal violations and remedies in separate analytical steps where the facts require them. Distinguish the status of a source, including supplemental editions and missing assigned opinions, from your confidence in an answer. Use case comparisons to explain boundaries rather than citing names without analysis. Revisit the module’s full notes and source references for qualifications that this compressed review does not reproduce. These are self-review materials, not an official grading rubric or a prediction of the examination’s content."
+        }
+      ],
+      "examQuestions": [
+        {
+          "id": "reading-review-guide-CL700-M15-exam-1",
+          "question": "How should you turn the supplied facts into an organized analysis rather than an unconnected rule list?",
+          "answer": "Identify parties, roles, events and requested relief. Select only issues raised by those facts, state the source-backed rule, apply the material facts and strongest counterargument, and conclude separately on each issue. Use the underlying guides for qualifications.",
+          "explanation": "Cumulative original study notes drawn from the existing module companions. No new assigned textbook content or official exam rubric is claimed."
+        },
+        {
+          "id": "reading-review-guide-CL700-M15-exam-2",
+          "question": "Does this cumulative review establish that every assigned source was supplied or predict the official examination rubric?",
+          "answer": "No. It compiles the identified available module guides, retains their scope limits and does not certify missing readings or provide an official grading scheme. Check source availability and the actual course instructions.",
+          "explanation": "Cumulative original study notes drawn from the existing module companions. No new assigned textbook content or official exam rubric is claimed."
+        },
+        {
+          "id": "reading-review-guide-CL700-M15-application-1",
+          "question": "A chief executive signs an extraordinary transaction after an instruction from a controlling shareholder. What authority issues should be examined?",
+          "answer": "Distinguish shareholder, board and officer roles; actual delegation; principal manifestations and reasonable third-party reliance; and any later ratification. Controlling ownership and the CEO title do not alone establish every step of corporate authorization.",
+          "explanation": "Cumulative original study notes drawn from the existing module companions. No new assigned textbook content or official exam rubric is claimed."
+        },
+        {
+          "id": "reading-review-guide-CL700-M15-application-2",
+          "question": "A new share issue dilutes a minority owner who alleges both a denied subscription opportunity and an unfair purpose. What legal questions differ?",
+          "answer": "Find any preemptive right in the governing statute and charter, its covered issuance and compliance conditions. Separately analyze a supported fiduciary challenge to the issue’s purpose or terms. The existence or absence of one right does not resolve every dilution claim.",
+          "explanation": "Cumulative original study notes drawn from the existing module companions. No new assigned textbook content or official exam rubric is claimed."
         }
       ]
     }
@@ -1315,7 +2211,7 @@
       "moduleId": "CL650-M04",
       "title": "Justiciability: Timing",
       "reading": "Poe v. Ullman, 367 U.S. 497 (1961)\n\nThomas v. Union Carbide, 473 U.S. 568 (1985)\n\nFriends of the Earth, Inc. v. Laidlaw Environmental Services, 528 U.S. 167 (2000)\n\nRoe v. Wade, 410 U.S. 113 (1973)\n\nLos Angeles v. Van Davis, 440 U.S. 625 (1979)\n\n\n\nOptional reading\n\n\n\nUnited Public Workers of America (C.I.O.) v. Mitchell, 330 U.S. 75 (1947)\n\nTexas v. United States, 523 U.S. 296 (1998)\n\nHonig v. Doe, 484 U.S. 305 (1988)",
-      "status": "Assigned source text missing",
+      "status": "Partial primary reading available",
       "requiredReading": "Poe v. Ullman, 367 U.S. 497 (1961)\n\nThomas v. Union Carbide, 473 U.S. 568 (1985)\n\nFriends of the Earth, Inc. v. Laidlaw Environmental Services, 528 U.S. 167 (2000)\n\nRoe v. Wade, 410 U.S. 113 (1973)\n\nLos Angeles v. Van Davis, 440 U.S. 625 (1979)",
       "optionalReadings": [
         "United Public Workers of America (C.I.O.) v. Mitchell, 330 U.S. 75 (1947)",
@@ -1338,7 +2234,7 @@
       "moduleId": "CL650-M06",
       "title": "Necessary and Proper Clause",
       "reading": "Kleppe v. New Mexico, 426 U.S. 529 (1976).\n\nCity of Boerne v. Flores, 521 U.S. 507 (1997).\n\nM’Culloch v. State, 17 U.S. 316 (1819)\n\n\n\nOptional reading\n\nSabri v. U.S., 541 U.S. 600 (2004)\n\nU.S. v. Comstock, 560 U.S. 126 (2010)",
-      "status": "Assigned source text missing",
+      "status": "Partial primary reading available",
       "requiredReading": "Kleppe v. New Mexico, 426 U.S. 529 (1976).\n\nCity of Boerne v. Flores, 521 U.S. 507 (1997).\n\nM’Culloch v. State, 17 U.S. 316 (1819)",
       "optionalReadings": [
         "Sabri v. U.S., 541 U.S. 600 (2004)",
@@ -1349,7 +2245,7 @@
       "moduleId": "CL650-M07",
       "title": "Commerce Clause",
       "reading": "U.S. v. Lopez, 514 U.S. 549 (1995).\n\nU.S. v. Morrison, 529 U.S. 598 (2000).\n\nGonzales v. Raich, 545 U.S. 1 (2005). \n\n\n\nNote: You will notice that these cases are not edited down for you as much. Dissenting and concurring opinions are still usually removed, but the full majority opinion is generally included as is. That is intentional to help you work on reading cases and pulling out the important information from them on your own, rather than having it edited in a way that does that for you.\n\n\n\nOptional reading:\n\nHeart of Atlanta Motel, Inc. v. U. S., 379 U.S. 241 (1964).\n\nKatzenbach v. McClung, 379 U.S. 294 (1964).",
-      "status": "Assigned source text missing",
+      "status": "Partial primary reading available",
       "requiredReading": "U.S. v. Lopez, 514 U.S. 549 (1995).\n\nU.S. v. Morrison, 529 U.S. 598 (2000).\n\nGonzales v. Raich, 545 U.S. 1 (2005). \n\n\n\nNote: You will notice that these cases are not edited down for you as much. Dissenting and concurring opinions are still usually removed, but the full majority opinion is generally included as is. That is intentional to help you work on reading cases and pulling out the important information from them on your own, rather than having it edited in a way that does that for you.",
       "optionalReadings": [
         "Heart of Atlanta Motel, Inc. v. U. S., 379 U.S. 241 (1964).",
@@ -1360,7 +2256,7 @@
       "moduleId": "CL650-M08",
       "title": "Taxing and Spending Clause",
       "reading": "National Federation of Independent Business v. Sebelius, 567 U.S. 519 (2012).\n\nSouth Dakota v. Dole, 483 U.S. 203 (1987).\n\n\n\nOptional Reading\n\nPennhurst State School and Hospital v. Halderman, 451 U.S. 1 (1981).",
-      "status": "Assigned source text missing",
+      "status": "Partial primary reading available",
       "requiredReading": "National Federation of Independent Business v. Sebelius, 567 U.S. 519 (2012).\n\nSouth Dakota v. Dole, 483 U.S. 203 (1987).",
       "optionalReadings": [
         "Pennhurst State School and Hospital v. Halderman, 451 U.S. 1 (1981)."
@@ -1370,7 +2266,7 @@
       "moduleId": "CL650-M09",
       "title": "State Powers and Federalism",
       "reading": "Garcia v. San Antonio Metropolitan Transit Authority, 469 U.S. 528 (1985)\n\nNew York v. U.S., 505 U.S. 144 (1992)\n\nReno v. Condon, 528 U.S. 141 (2000)\n\nGregory v. Ashcroft, 501 U.S. 452 (1991)\n\n\n\nNote: You will notice that these cases are not edited down for you as much. Dissenting and concurring opinions are still usually removed, but the full majority opinion is generally included as is. That is intentional to help you work on reading cases and pulling out the important information from them on your own, as opposed to having it edited in a way that does that for you.\n\n\n\nOptional reading:\n\nPrintz v. U.S., 521 U.S. 898 (1997)",
-      "status": "Assigned source text missing",
+      "status": "Partial primary reading available",
       "requiredReading": "Garcia v. San Antonio Metropolitan Transit Authority, 469 U.S. 528 (1985)\n\nNew York v. U.S., 505 U.S. 144 (1992)\n\nReno v. Condon, 528 U.S. 141 (2000)\n\nGregory v. Ashcroft, 501 U.S. 452 (1991)\n\n\n\nNote: You will notice that these cases are not edited down for you as much. Dissenting and concurring opinions are still usually removed, but the full majority opinion is generally included as is. That is intentional to help you work on reading cases and pulling out the important information from them on your own, as opposed to having it edited in a way that does that for you.",
       "optionalReadings": [
         "Printz v. U.S., 521 U.S. 898 (1997)"
@@ -1380,7 +2276,7 @@
       "moduleId": "CL650-M10",
       "title": "Limits on State Powers",
       "reading": "Hunt v. Washington State Apple Advertising Com’n, 432 U.S. 333 (1977)\n\nPike v. Bruce Church, Inc., 397 U.S. 137 (1970)\n\nReeves, Inc. v. Stake, 447 U.S. 429 (1980)\n\nBaldwin v. Fish and Game Commission of Montana, 436 U.S. 371 (1978)\n\n\n\nOptional reading\n\n\n\nU.S. Term Limits, Inc. v. Thornton, 514 U.S. 779 (1995)\n\nGade v. National Solid Wastes Management Ass’n, 505 U.S. 88 (1992)",
-      "status": "Assigned source text missing",
+      "status": "Partial primary reading available",
       "requiredReading": "Hunt v. Washington State Apple Advertising Com’n, 432 U.S. 333 (1977)\n\nPike v. Bruce Church, Inc., 397 U.S. 137 (1970)\n\nReeves, Inc. v. Stake, 447 U.S. 429 (1980)\n\nBaldwin v. Fish and Game Commission of Montana, 436 U.S. 371 (1978)",
       "optionalReadings": [
         "U.S. Term Limits, Inc. v. Thornton, 514 U.S. 779 (1995)",
@@ -1391,7 +2287,7 @@
       "moduleId": "CL650-M11",
       "title": "Executive Express and Inherent Powers",
       "reading": "Youngstown Sheet & Tube Co. v. Sawyer, 343 U.S. 579 (1952).\n\nU.S. v. Curtiss-Wright Export Corporation, 299 U.S. 304 (1936).\n\nDames & Moore v. Regan, 453 U.S. 654 (1981).\n\nHamdi v. Rumsfeld, 542 U.S. 507 (2004).",
-      "status": "Assigned source text missing",
+      "status": "Partial primary reading available",
       "requiredReading": "Youngstown Sheet & Tube Co. v. Sawyer, 343 U.S. 579 (1952).\n\nU.S. v. Curtiss-Wright Export Corporation, 299 U.S. 304 (1936).\n\nDames & Moore v. Regan, 453 U.S. 654 (1981).\n\nHamdi v. Rumsfeld, 542 U.S. 507 (2004).",
       "optionalReadings": []
     },
@@ -1399,7 +2295,7 @@
       "moduleId": "CL650-M12",
       "title": "Executive Appointment and Removal",
       "reading": "Whitman v. American Trucking Associations, 531 U.S. 457 (2001).\n\nUnited States v. Arthrex, 141 S.Ct. 1970 (2021).\n\nSeila Law, LLC v. Consumer Financial Protection Bureau, 140 S.Ct. 2183 (2020).\n\nBowsher v. Synar, 478 U.S. 714 (1986).\n\n\n\nOptional Reading:\n\nEdmond v. United States, 520 U.S. 651 (1997).\n\nLucia v. Securities and Exchange Commission, 138 S.Ct. 2044 (2018).\n\nHumphrey's Ex'r v. U.S., 295 U.S. 602 (1935).\n\nMorrison v. Olson, 487 U.S. 654 (1988).\n\nKennedy v. Braidwood Mgmt Inc., 606 U.S. _ (2025)\n\nFederal Communications Commission v. Consumers’ Resch., 606 U.S. ___ (2025)",
-      "status": "Assigned source text missing",
+      "status": "Partial primary reading available",
       "requiredReading": "Whitman v. American Trucking Associations, 531 U.S. 457 (2001).\n\nUnited States v. Arthrex, 141 S.Ct. 1970 (2021).\n\nSeila Law, LLC v. Consumer Financial Protection Bureau, 140 S.Ct. 2183 (2020).\n\nBowsher v. Synar, 478 U.S. 714 (1986).",
       "optionalReadings": [
         "Edmond v. United States, 520 U.S. 651 (1997).",
@@ -1414,7 +2310,7 @@
       "moduleId": "CL650-M13",
       "title": "Executive Pardon and Privilege",
       "reading": "Schick v. Reed, 419 U.S. 256 (1974).\n\nU.S. v. Nixon, 418 U.S. 683 (1974).",
-      "status": "Assigned source text missing",
+      "status": "Partial primary reading available",
       "requiredReading": "Schick v. Reed, 419 U.S. 256 (1974).\n\nU.S. v. Nixon, 418 U.S. 683 (1974).",
       "optionalReadings": []
     },
@@ -1422,7 +2318,7 @@
       "moduleId": "CL650-M14",
       "title": "Immunity and Impeachment",
       "reading": "Trump v. United States, 144 S.Ct. 2312 (2024).\n\nHarlow v. Fitzgerald, 457 U.S. 800 (1982).\n\nClinton v. Jones, 520 U.S. 681 (1997).\n\nHutchinson v. Proxmire, 443 U.S. 111 (1979).",
-      "status": "Assigned source text missing",
+      "status": "Partial primary reading available",
       "requiredReading": "Trump v. United States, 144 S.Ct. 2312 (2024).\n\nHarlow v. Fitzgerald, 457 U.S. 800 (1982).\n\nClinton v. Jones, 520 U.S. 681 (1997).\n\nHutchinson v. Proxmire, 443 U.S. 111 (1979).",
       "optionalReadings": []
     },

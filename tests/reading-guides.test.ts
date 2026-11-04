@@ -7,8 +7,8 @@ import { courseName, moduleName, cleanLabel } from "../src/lib/display";
 it("maps every assignment and distinguishes missing and supplemental readings", () => {
   expect(guides.assignments).toHaveLength(45);
   expect(new Set(guides.assignments.map((a) => a.moduleId)).size).toBe(45);
-  expect(guides.guides).toHaveLength(33);
-  expect(catalog.cases).toHaveLength(41);
+  expect(guides.guides).toHaveLength(47);
+  expect(catalog.cases).toHaveLength(56);
   for (const g of guides.guides) {
     expect(g.references.length).toBeGreaterThan(0);
     expect(g.sections.length).toBeGreaterThanOrEqual(3);
@@ -21,7 +21,7 @@ it("maps every assignment and distinguishes missing and supplemental readings", 
   }
   expect(
     guides.assignments.find((a) => a.moduleId === "CL650-M04")!.status,
-  ).toBe("Assigned source text missing");
+  ).toBe("Partial primary reading available");
   expect(
     guides.guides.find((g) => g.moduleId === "CL685-M01")!.scope,
   ).toContain("not the assigned");
@@ -52,7 +52,7 @@ it("adds substantial reading notes and cases without replacing an earlier edited
       .table("caseBrief")
       .filter((c) => c.id.startsWith("study-case-reading-"))
       .delete();
-    await db.table("meta").delete("shared-study-v3");
+    await db.table("meta").delete("shared-study-v4");
     await db.table("meta").put({ id: "shared-study-v1", value: true });
     const state = await api("state");
     expect(
@@ -60,14 +60,14 @@ it("adds substantial reading notes and cases without replacing an earlier edited
         .table("note")
         .filter((n) => n.kind === "Detailed reading notes")
         .count(),
-    ).toBe(33);
+    ).toBe(47);
     expect((await db.table("note").get(old.id)).body).toBe(
       "My edited earlier note",
     );
     const cases = state.courses
       .flatMap((c: any) => c.modules.flatMap((m: any) => m.cases))
       .filter((c: any) => c.holding);
-    expect(cases).toHaveLength(41);
+    expect(cases).toHaveLength(56);
     expect(
       await db
         .table("note")
@@ -80,7 +80,7 @@ it("adds substantial reading notes and cases without replacing an earlier edited
         .table("note")
         .filter((n) => n.kind === "Detailed reading notes")
         .count(),
-    ).toBe(33);
+    ).toBe(47);
   } finally {
     await db.delete();
   }
@@ -130,7 +130,7 @@ it("includes optional assignments and explicitly authored questions with sourced
       .optionalReadings.join(" "),
   ).toContain("Alden");
   const questions = guides.guides.flatMap((g) => g.examQuestions);
-  expect(questions).toHaveLength(64);
+  expect(questions).toHaveLength(100);
   for (const q of questions) {
     expect(q.question.length).toBeGreaterThan(30);
     expect(q.answer.length).toBeGreaterThan(40);

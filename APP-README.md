@@ -122,3 +122,28 @@ guides, 41 briefs, and 117 answer-bearing practice cards. Listed-only optional
 readings remain identified as absent sources. Display normalization also handles
 legacy titles and spaced/hyphenated class codes while preserving saved exam
 lookup keys, user writing, backups, and original documents.
+
+## Casebook: definitions and full module-note coverage
+
+The next catalog revision adds the 20 terms from the supplied Module 8 assignment
+answer PDF as original study paraphrases, explanations, hypothetical examples and
+exam pitfalls. The original two-page PDF stays private. The glossary appears in
+Module 8 and relevant Criminal Procedure modules (51 note placements), with a
+Definitions tab and 20 review cards. Custody/interrogation, stop/frisk, protective
+sweeps, and consent/waiver are distinguished rather than repeating shorthand as
+an unlimited rule.
+
+Every one of the 45 modules now has a substantive note guide, including cumulative
+review companions for final-review modules. There are 47 guides, 56 case briefs,
+100 authored guide questions plus 20 glossary cards and the 53 original topic
+cards. Notes remain drafts with source limits; a guide does not certify completion
+of every assignment. Existing work and progress are not overwritten.
+
+Missing Constitutional Law coverage was expanded using 15 identified historical
+opinions from a documented CourtListener mirror (`src/content/primary-sources.json`).
+Source links and caveats are visible. One McCulloch copy has inconsistent reporter
+pagination, explicitly flagged; it must not be used for authenticated pinpoint
+citations. Later assigned cases absent from that collection remain unbriefed.
+Only original explanations and source metadata are public assets, not uploaded
+textbook text or the assignment-answer PDF. The app and iPhone manifest retain
+**Casebook** as their name.
